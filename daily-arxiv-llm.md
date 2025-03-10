@@ -1,5 +1,12 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-03-07
+
+* [Dynamic Pricing for On-Demand DNN Inference in the Edge-AI Market](https://arxiv.org/abs/2503.04521)
+* [Speculative MoE: Communication Efficient Parallel MoE Inference with Speculative Token and Expert Pre-scheduling](https://arxiv.org/abs/2503.04398)
+* [Malware Detection at the Edge with Lightweight LLMs: A Performance Evaluation](https://arxiv.org/abs/2503.04302)
+
+
 ### 2025-03-06
 
 * [Enhancing Memory Efficiency in Large Language Model Training Through Chronos-aware Pipeline Parallelism](https://arxiv.org/abs/2503.03182)
