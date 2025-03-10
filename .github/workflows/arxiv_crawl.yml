@@ -21,7 +21,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install requests beautifulsoup4 pytz python-dotenv
+          pip install requests beautifulsoup4 pytz
       - name: Run crawler and update arxiv.md
         run: |
           python tools/paper.py
@@ -29,7 +29,7 @@ jobs:
         run: |
           git config --local user.name "zhixin612"
           git config --local user.email "zhao612@tju.edu.cn"
-          git commit -m "Update daily arxiv papers" || echo "No changes to commit"
+          git commit -a -m "Update daily arxiv papers" || echo "No changes to commit"
           git push
         env: 
          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
