@@ -1,0 +1,35 @@
+name: Arxiv Paper Crawler
+
+on:
+  schedule:
+    - cron: '0 12 */1 * *'  # Runs at UTC 12:00, every 2 days. --> UTC+8 20:00
+  workflow_dispatch:
+    
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  crawl:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests beautifulsoup4 pytz python-dotenv
+      - name: Run crawler and update arxiv.md
+        run: |
+          python tools/paper.py
+      - name: Commit changes
+        run: |
+          git config --local user.name "zhixin612"
+          git config --local user.email "zhao612@tju.edu.cn"
+          git commit -m "Update daily arxiv papers" || echo "No changes to commit"
+          git push
+        env: 
+         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
