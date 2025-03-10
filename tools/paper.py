@@ -4,7 +4,7 @@ import requests
 from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
 
-PAPER_FILE_NAME = '../daily-arxiv-llm.md'
+PAPER_FILE_NAME = 'daily-arxiv-llm.md'
 WARNING_TEXT = "The paper list will be updated automatically, please do not edit.\n\n"
 
 
@@ -125,5 +125,7 @@ if __name__ == "__main__":
     now = datetime.now(pytz.timezone("Asia/Shanghai"))
     start_date = get_start_date()
     end_date = (now - timedelta(days=1)).strftime("%Y-%m-%d")
+
+    print(f'fetch papers from {start_date} to {end_date}')
 
     main(start_date, end_date)
