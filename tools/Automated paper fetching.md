@@ -1,6 +1,10 @@
 # Automated paper fetching
 
-## Deployment
+## 2025-03-10: update github action
+
+Update the previous server deployment mode to use GitHub Actions.
+
+## 2025-02-11: deployment (deprecated)
 
 ​	The automated paper scraping script has been deployed on server 153 using crontab, and it automatically runs every day at 20:20 to fetch papers related to large model inference from the past day. Please avoid manually editing the `daily-arxiv-llm.md` file, as this could cause the content of the file to become disorganized.
 

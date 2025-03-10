@@ -2,8 +2,15 @@ The paper list will be updated automatically, please do not edit.
 
 ### 2025-03-06
 
+* [Enhancing Memory Efficiency in Large Language Model Training Through Chronos-aware Pipeline Parallelism](https://arxiv.org/abs/2503.03182)
 * [Environment-Aware Dynamic Pruning for Pipelined Edge Inference](https://arxiv.org/abs/2503.03070)
 
+
+### 2025-03-05
+
+* [SpecInF: Exploiting Idle GPU Resources in Distributed DL Training via Speculative Inference Filling](https://arxiv.org/abs/2503.02550)
+* [CoServe: Efficient Collaboration-of-Experts (CoE) Model Inference with Limited Memory](https://arxiv.org/abs/2503.02354)
+* [VQ-LLM: High-performance Code Generation for Vector Quantization Augmented LLM Inference](https://arxiv.org/abs/2503.02236)
 ### 2025-03-04
 
 * [Improving inference time in multi-TPU systems with profiled model segmentation](https://arxiv.org/abs/2503.01025)
@@ -24,6 +31,12 @@ The paper list will be updated automatically, please do not edit.
 
 * [CLLoRA: An Approach to Measure the Effects of the Context Length for LLM Fine-Tuning](https://arxiv.org/abs/2502.18910)
 
+### 2025-02-25
+
+* [FairKV: Balancing Per-Head KV Cache for Fast Multi-GPU Inference](https://arxiv.org/abs/2502.15804)
+* [Hybrid Offline-online Scheduling Method for Large Language Model Inference Optimization](https://arxiv.org/abs/2502.15763)
+* [LoXR: Performance Evaluation of Locally Executing LLMs on XR Devices](https://arxiv.org/abs/2502.15761)
+* [DistrEE: Distributed Early Exit of Deep Neural Network Inference on Edge Devices](https://arxiv.org/abs/2502.15735)
 
 ### 2025-02-24
 
@@ -36,6 +49,7 @@ The paper list will be updated automatically, please do not edit.
 * [Optimizing the Longhorn Cloud-native Software Defined Storage Engine for High Performance](https://arxiv.org/abs/2502.14419)
 * [CarbonEdge: Leveraging Mesoscale Spatial Carbon-Intensity Variations for Low Carbon Edge Computing](https://arxiv.org/abs/2502.14076)
 * [LServe: Efficient Long-sequence LLM Serving with Unified Sparse Attention](https://arxiv.org/abs/2502.14866)
+* [LLM4FaaS: No-Code Application Development using LLMs and FaaS](https://arxiv.org/abs/2502.14450)
 
 ### 2025-02-20
 
@@ -75,7 +89,6 @@ The paper list will be updated automatically, please do not edit.
 
 * [MoETuner: Optimized Mixture of Expert Serving with Balanced Expert Placement and Token Routing](https://arxiv.org/abs/2502.06643)
 * [fMoE: Fine-Grained Expert Offloading for Large Mixture-of-Experts Serving](https://arxiv.org/abs/2502.05370)
-
 
 ### 2025-02-10
 
@@ -174,4 +187,3 @@ The paper list will be updated automatically, please do not edit.
 
 * [FlashInfer: Efficient and Customizable Attention Engine for LLM Inference Serving](https://arxiv.org/abs/2501.01005)
 * [Dynamic Optimization of Storage Systems Using Reinforcement Learning Techniques](https://arxiv.org/abs/2501.00068)
-
