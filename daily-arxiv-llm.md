@@ -1,5 +1,12 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-03-11
+
+* [Seesaw: High-throughput LLM Inference via Model Re-sharding](https://arxiv.org/abs/2503.06433)
+* [eMoE: Task-aware Memory Efficient Mixture-of-Experts-Based (MoE) Model Inference](https://arxiv.org/abs/2503.06823)
+* [Distributed Graph Neural Network Inference With Just-In-Time Compilation For Industry-Scale Graphs](https://arxiv.org/abs/2503.06208)
+
+
 ### 2025-03-10
 
 * [Optimizing LLM Inference Throughput via Memory-aware and SLA-constrained Dynamic Batching](https://arxiv.org/abs/2503.05248)
