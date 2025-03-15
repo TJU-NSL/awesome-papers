@@ -1,5 +1,12 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-03-14
+
+* [SPPO:Efficient Long-sequence LLM Training via Adaptive Sequence Pipeline Parallel Offloading](https://arxiv.org/abs/2503.10377)
+* [Collaborative Speculative Inference for Efficient LLM Inference Serving](https://arxiv.org/abs/2503.10325)
+* [MoE-Gen: High-Throughput MoE Inference on a Single GPU with Module-Based Batching](https://arxiv.org/abs/2503.09716)
+
+
 ### 2025-03-13
 
 * [Performance Models for a Two-tiered Storage System](https://arxiv.org/abs/2503.08966)
