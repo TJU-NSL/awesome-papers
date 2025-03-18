@@ -1,5 +1,12 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-03-17
+
+* [Beyond A Single AI Cluster: A Survey of Decentralized LLM Training](https://arxiv.org/abs/2503.11023)
+* [LLMPerf: GPU Performance Modeling meets Large Language Models](https://arxiv.org/abs/2503.11244)
+* [Samoyeds: Accelerating MoE Models with Structured Sparsity Leveraging Sparse Tensor Cores](https://arxiv.org/abs/2503.10725)
+
+
 ### 2025-03-14
 
 * [SPPO:Efficient Long-sequence LLM Training via Adaptive Sequence Pipeline Parallel Offloading](https://arxiv.org/abs/2503.10377)
