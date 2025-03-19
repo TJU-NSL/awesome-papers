@@ -18,8 +18,6 @@
 
 ---
 ## TODO list
-* [EuroSys'25 Spring](https://2025.eurosys.org/accepted-papers.html)
-* [NSDI'25](https://www.usenix.org/conference/nsdi25/technical-sessions)
 * [SIGCOMM'25](https://conferences.sigcomm.org/sigcomm/2025/cfp/) Review results’ notification	Tuesday April 29, 2025
 * [OSDI'25](https://www.usenix.org/conference/osdi25/call-for-papers) Notification to authors: Tuesday, March 25, 2025
 
@@ -28,7 +26,7 @@
 * See [daily-arxiv-llm.md](daily-arxiv-llm.md)
 
 ---
-## [EuroSys'25 Spring]([EuroSys 2025](https://2025.eurosys.org/accepted-papers.html))
+## [EuroSys 2025 Spring](https://2025.eurosys.org/accepted-papers.html))
 
 + Flex: Fast, Accurate DNN Inference on Low-Cost Edges Using Heterogeneous Accelerator Execution
 + Fast State Restoration in LLM Serving with HCache
@@ -40,7 +38,7 @@
 + BCP: A Unified Checkpointing System for Large Foundation Model Development
 
 ---
-## [NSDI'25]([NSDI '25 Technical Sessions | USENIX](https://www.usenix.org/conference/nsdi25/technical-sessions))
+## [NSDI 2025](https://www.usenix.org/conference/nsdi25/technical-sessions)
 
 + Accelerating Design Space Exploration for LLM Training Systems with Multi-experiment Parallel Simulation
 + Optimizing RLHF Training for Large Language Models with Stage Fusion
