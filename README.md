@@ -20,8 +20,6 @@
 ## TODO list
 * [EuroSys'25 Spring](https://2025.eurosys.org/accepted-papers.html)
 * [NSDI'25](https://www.usenix.org/conference/nsdi25/technical-sessions)
-* [HPCA'25](https://hpca-conf.org/2025/main-program/)
-* [PPoPP'25](https://ppopp25.sigplan.org/track/PPoPP-2025-Main-Conference-1?#event-overview)
 * [SIGCOMM'25](https://conferences.sigcomm.org/sigcomm/2025/cfp/) Review results’ notification	Tuesday April 29, 2025
 * [OSDI'25](https://www.usenix.org/conference/osdi25/call-for-papers) Notification to authors: Tuesday, March 25, 2025
 
