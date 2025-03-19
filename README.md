@@ -6,13 +6,10 @@
 * Papes.cool:
   * [https://papers.cool/arxiv/cs.LG](https://papers.cool/arxiv/cs.LG): Machine Learning
   * [https://papers.cool/arxiv/cs.DC](https://papers.cool/arxiv/cs.DC): Distributed, Parallel, and Cluster Computing
-  * [https://papers.cool/arxiv/cs.OS](https://papers.cool/arxiv/cs.OS): Operating Systems
-  * [https://papers.cool/arxiv/cs.CL](https://papers.cool/arxiv/cs.CL): Computation and Language
 * Find Related Papers
   * Connect Papers: [https://www.connectedpapers.com/](https://www.connectedpapers.com)
   * Sematic Scholar: [https://www.semanticscholar.org/](https://www.semanticscholar.org)
 
-## awesome papers
 <!-- -------------------------------------------------------------------------- Template (DE NOT DELETE) -----------------------------------------------------------------------------
 [Template] * (conf/trans/arxiv) Paper title [link](http_source_link) [NOTE: key words / author / affiliation]
 [Examples] * (NIPS'17) Attention Is All You Need [link](https://arxiv.org/abs/1706.03762) [Attention | Google]
@@ -21,20 +18,15 @@
 
 ---
 ## TODO list
-* [SC'24](https://sc24.conference-program.com/)
-* ICML'24
-* [PPoPP'24](https://conf.researchr.org/track/PPoPP-2024/PPoPP-2024-papers#event-overview)
+* [EuroSys'25 Spring](https://2025.eurosys.org/accepted-papers.html)
+* [NSDI'25](https://www.usenix.org/conference/nsdi25/technical-sessions)
+* [HPCA'25](https://hpca-conf.org/2025/main-program/)
+* [SIGCOMM'25](https://conferences.sigcomm.org/sigcomm/2025/cfp/) Review results’ notification	Tuesday April 29, 2025
+* [OSDI'25](https://www.usenix.org/conference/osdi25/call-for-papers) Notification to authors: Tuesday, March 25, 2025
 
 ---
-## [arxiv papers]
-* NanoFlow: Towards Optimal Large Language Model Serving Throughput [2408.12757](https://arxiv.org/abs/2408.12757) [github](https://github.com/efeslab/Nanoflow)
-* Efficient LLM Scheduling by Learning to Rank [2408.15792](http://www.arxiv.org/abs/2408.15792) [Hao-ai-lab]
-* DSP: Dynamic Sequence Parallelism for Multi-Dimensional Transformers [2403.10266](https://arxiv.org/abs/2403.10266)
-* [ICML'24] Quest: Query-Aware Sparsity for Efficient Long-Context LLM Inference [2406.10774](https://arxiv.org/abs/2406.10774) [github](https://github.com/mit-han-lab/Quest)
-* [COLM'24] Keep the Cost Down: A Review on Methods to Optimize LLM's KV-Cache Consumption [paper](https://openreview.net/forum?id=8tKjqqMM5z#discussion)
-* Slice-Level Scheduling for High Throughput and Load Balanced LLM Serving [2406.13511](https://arxiv.org/abs/2406.13511)
-* LoongServe: Efficiently Serving Long-context Large Language Models with Elastic Sequence Parallelism [2404.09526](https://arxiv.org/abs/2404.09526)
-
+## arxiv papers (update daily)
+* See [daily-arxiv-llm.md](daily-arxiv-llm.md)
 
 ---
 ## [SIGCOMM 2024](https://conferences.sigcomm.org/sigcomm/2024/accepted-papers/)
