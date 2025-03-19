@@ -28,6 +28,26 @@
 * See [daily-arxiv-llm.md](daily-arxiv-llm.md)
 
 ---
+## [EuroSys'25 Spring]([EuroSys 2025](https://2025.eurosys.org/accepted-papers.html))
+
++ Flex: Fast, Accurate DNN Inference on Low-Cost Edges Using Heterogeneous Accelerator Execution
++ Fast State Restoration in LLM Serving with HCache
++ Multiplexing Dynamic Deep Learning Workloads with SLO-awareness in GPU Clusters
++ JABAS: Joint Adaptive Batching and Automatic Scaling for DNN Training on Heterogeneous GPUs
++ Stateful Large Language Model Serving with Pensieve
++ CacheBlend: Fast Large Language Model Serving for RAG with Cached Knowledge Fusion
++ SimAI: Unifying Architecture Design and Performance Tunning for Large-Scale Large Language Model Training with Scalability and Precision
++ BCP: A Unified Checkpointing System for Large Foundation Model Development
+
+---
+## [NSDI'25]([NSDI '25 Technical Sessions | USENIX](https://www.usenix.org/conference/nsdi25/technical-sessions))
+
++ Accelerating Design Space Exploration for LLM Training Systems with Multi-experiment Parallel Simulation
++ Optimizing RLHF Training for Large Language Models with Stage Fusion
++ Minder: Faulty Machine Detection for Large-scale Distributed Model Training
++ Holmes: Localizing Irregularities in LLM Training with Mega-scale GPU Clusters
+
+---
 ## [PPoPP 2025](https://ppopp25.sigplan.org/track/PPoPP-2025-Main-Conference-1?#event-overview)
 
 ### Deep Neural Networks
