@@ -26,7 +26,7 @@
 * See [daily-arxiv-llm.md](daily-arxiv-llm.md)
 
 ---
-## [EuroSys 2025 Spring](https://2025.eurosys.org/accepted-papers.html))
+## [EuroSys 2025 Spring](https://2025.eurosys.org/accepted-papers.html)
 
 + Flex: Fast, Accurate DNN Inference on Low-Cost Edges Using Heterogeneous Accelerator Execution
 + Fast State Restoration in LLM Serving with HCache
