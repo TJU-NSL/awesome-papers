@@ -30,6 +30,34 @@
 * See [daily-arxiv-llm.md](daily-arxiv-llm.md)
 
 ---
+## [PPoPP 2025](https://ppopp25.sigplan.org/track/PPoPP-2025-Main-Conference-1?#event-overview)
+
+### Deep Neural Networks
+
++ FlashTensor: Optimizing Tensor Programs by Leveraging Fine-grained Tensor Property
++ Mario: Near Zero-cost Activation Checkpointing in Pipeline Parallelism
++ COMPSO: Optimizing Gradient Compression for Distributed Training with Second-Order Optimizers
+
+### Large Language Models
+
++ WeiPipe: Weight Pipeline Parallelism for Communication-Effective Long-Context Large Model Training
++ MARLIN: Mixed-Precision Auto-Regressive Parallel Inference on Large Language Models
++ ATTNChecker: Highly-Optimized Fault Tolerant Attention for Large Language Model Training
+
+
+---
+## [HPCA 2025](https://hpca-conf.org/2025/main-program/)
+
++ Adyna: Accelerating Dynamic Neural Networks with Adaptive Scheduling
++ EDA: Energy-Efficient Inter-Layer Model Compilation for Edge DNN Inference Acceleration
++ BitMoD: Bit-serial Mixture-of-Datatype LLM Acceleration
++ DynamoLLM: Designing LLM Inference Clusters for Performance and Energy Efficiency
++ Anda: Unlocking Efficient LLM Inference with a Variable-Length Grouped Activation Data Format
++ LAD: Efficient Accelerator for Generative Inference of LLM with Locality Aware Decoding
++ PAISE: PIM-Accelerated Inference Scheduling Engine for Transformer-based LLM
+
+
+---
 ## [SIGCOMM 2024](https://conferences.sigcomm.org/sigcomm/2024/accepted-papers/)
 * CacheGen: KV Cache Compression and Streaming for Fast Large Language Model Serving
 ### Networking and Training
