@@ -1,5 +1,11 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-03-18
+
+* [Adaptive Fault Tolerance Mechanisms of Large Language Models in Cloud Computing Environments](https://arxiv.org/abs/2503.12228)
+* [FAILS: A Framework for Automated Collection and Analysis of LLM Service Incidents](https://arxiv.org/abs/2503.12185)
+
+
 ### 2025-03-17
 
 * [Beyond A Single AI Cluster: A Survey of Decentralized LLM Training](https://arxiv.org/abs/2503.11023)
