@@ -1,5 +1,10 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-03-19
+
+* [Do Large Language Models Understand Performance Optimization?](https://arxiv.org/abs/2503.13772)
+
+
 ### 2025-03-18
 
 * [Adaptive Fault Tolerance Mechanisms of Large Language Models in Cloud Computing Environments](https://arxiv.org/abs/2503.12228)
