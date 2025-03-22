@@ -1,5 +1,11 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-03-21
+
+* [SPIN: Accelerating Large Language Model Inference with Heterogeneous Speculative Models](https://arxiv.org/abs/2503.15921)
+* [ATTENTION2D: Communication Efficient Distributed Self-Attention Mechanism](https://arxiv.org/abs/2503.15758)
+
+
 ### 2025-03-20
 
 * [Efficient allocation of image recognition and LLM tasks on multi-GPU system](https://arxiv.org/abs/2503.15252)
