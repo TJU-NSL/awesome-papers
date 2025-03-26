@@ -1,5 +1,14 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-03-25
+
+* [Jenga: Effective Memory Management for Serving LLM with Heterogeneity](https://arxiv.org/abs/2503.18292)
+* [Risk Management for Distributed Arbitrage Systems: Integrating Artificial Intelligence](https://arxiv.org/abs/2503.18265)
+* [WLB-LLM: Workload-Balanced 4D Parallelism for Large Language Model Training](https://arxiv.org/abs/2503.17924)
+* [PipeBoost: Resilient Pipelined Architecture for Fast Serverless LLM Scaling](https://arxiv.org/abs/2503.17707)
+* [A Generative Caching System for Large Language Models](https://arxiv.org/abs/2503.17603)
+
+
 ### 2025-03-24
 
 * [Improving the End-to-End Efficiency of Offline Inference for Multi-LLM Applications Based on Sampling and Simulation](https://arxiv.org/abs/2503.16893)
