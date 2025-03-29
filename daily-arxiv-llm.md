@@ -1,5 +1,12 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-03-28
+
+* [Robust DNN Partitioning and Resource Allocation Under Uncertain Inference Time](https://arxiv.org/abs/2503.21476)
+* [Optimizing Multi-DNN Inference on Mobile Devices through Heterogeneous Processor Co-Execution](https://arxiv.org/abs/2503.21109)
+* [Scalability Evaluation of HPC Multi-GPU Training for ECG-based LLMs](https://arxiv.org/abs/2503.21033)
+
+
 ### 2025-03-27
 
 * [Injecting Adrenaline into LLM Serving: Boosting Resource Utilization and Throughput via Attention Disaggregation](https://arxiv.org/abs/2503.20552)
