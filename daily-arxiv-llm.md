@@ -1,5 +1,10 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-03-31
+
+* [Niyama : Breaking the Silos of LLM Inference Serving](https://arxiv.org/abs/2503.22562)
+
+
 ### 2025-03-28
 
 * [Robust DNN Partitioning and Resource Allocation Under Uncertain Inference Time](https://arxiv.org/abs/2503.21476)
