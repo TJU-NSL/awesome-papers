@@ -1,5 +1,10 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-04-02
+
+* [AMP4EC: Adaptive Model Partitioning Framework for Efficient Deep Learning Inference in Edge Computing Environments](https://arxiv.org/abs/2504.00407)
+
+
 ### 2025-04-01
 
 * [OrchMLLM: Orchestrate Multimodal Data with Batch Post-Balancing to Accelerate Multimodal Large Language Model Training](https://arxiv.org/abs/2503.23830)
