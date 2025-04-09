@@ -1,5 +1,15 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-04-08
+
+* [IntentContinuum: Using LLMs to Support Intent-Based Computing Across the Compute Continuum](https://arxiv.org/abs/2504.04429)
+* [HeterMoE: Efficient Training of Mixture-of-Experts Models on Heterogeneous GPUs](https://arxiv.org/abs/2504.03871)
+* [FlowKV: A Disaggregated Inference Framework with Low-Latency KV Cache Transfer and Load-Aware Scheduling](https://arxiv.org/abs/2504.03775)
+* [Adaptive Orchestration for Inference of Large Foundation Models at the Edge](https://arxiv.org/abs/2504.03668)
+* [LLM & HPC:Benchmarking DeepSeek's Performance in High-Performance Computing Tasks](https://arxiv.org/abs/2504.03665)
+* [PIPO: Pipelined Offloading for Efficient Inference on Consumer Devices](https://arxiv.org/abs/2504.03664)
+
+
 ### 2025-04-07
 
 * [LLMSched: Uncertainty-Aware Workload Scheduling for Compound LLM Applications](https://arxiv.org/abs/2504.03444)
