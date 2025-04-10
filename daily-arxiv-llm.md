@@ -1,5 +1,11 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-04-09
+
+* [Nonuniform-Tensor-Parallelism: Mitigating GPU failure impact for Scaled-up LLM Training](https://arxiv.org/abs/2504.06095)
+* [HybriMoE: Hybrid CPU-GPU Scheduling and Cache Management for Efficient MoE Inference](https://arxiv.org/abs/2504.05897)
+
+
 ### 2025-04-08
 
 * [IntentContinuum: Using LLMs to Support Intent-Based Computing Across the Compute Continuum](https://arxiv.org/abs/2504.04429)
