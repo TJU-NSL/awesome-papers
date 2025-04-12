@@ -1,5 +1,10 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-04-11
+
+* [Token Level Routing Inference System for Edge Devices](https://arxiv.org/abs/2504.07878)
+
+
 ### 2025-04-09
 
 * [Nonuniform-Tensor-Parallelism: Mitigating GPU failure impact for Scaled-up LLM Training](https://arxiv.org/abs/2504.06095)
