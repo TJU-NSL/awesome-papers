@@ -28,6 +28,58 @@
 ---
 ## [EuroSys 2025 Spring](https://2025.eurosys.org/accepted-papers.html)
 
+### LLM and Diffusion Model Serving  
++ DiffServe: Efficiently Serving Text-to-Image Diffusion Models with Query-Aware Model Scaling
++ FastTree: Optimizing Attention Kernel and Runtime for Tree-Structured LLM Inference
++ FlashInfer: Efficient and Customizable Attention Engine for LLM Inference Serving
++ LeanAttention: Hardware-Aware Scalable Attention Mechanism for the Decode-Phase of Transformers
++ Rethinking Key-Value Cache Compression Techniques for Large Language Model Serving
++ FlexInfer: Flexible LLM Inference with CPU Computations
++ ScaleFusion: Scalable Inference of Spatial-Temporal Diffusion Transformers for High-Resolution Long Video Generation
++ Seesaw: High-throughput LLM Inference via Model Re-sharding
++ SOLA: Optimizing SLO Attainment for Large Language Model Serving with State-Aware Scheduling
++ TurboAttention: Efficient attention approximation for high throughputs llm
++ FlexAttention: A Programming Model for Generating Fused Attention Variants.
++ Marconi: Prefix Caching for the Era of Hybrid LLMs
++ NEO: Saving GPU Memory Crisis with CPU Offloading for Online LLM Inference
++ ThunderServe: High-performance and Cost-efficient LLM Serving in Cloud Environments
++ XGrammar: Flexible and Efficient Structured Generation Engine for Large Language Models
+
+### Parallel and Distributed Systems  
++ Context Parallelism for Scalable Million-Token Inference
++ PipeFill: Using GPUs During Bubbles in Pipeline-parallel LLM Training
++ Balancing Pipeline Parallelism with Vocabulary Parallelism
++ COMET: Fine-grained Computation-communication Overlapping for Mixture-of-Experts
++ On Distributed Larger-Than-Memory Subset Selection With Pairwise Submodular Functions
++ Scaling Deep Learning Training with MPMD Pipeline Parallelism
++ TileLink: Generating Efficient Compute-Communication Overlapping Kernels using Tile-Centric Primitives
+
+### Quantization and Sparsity  
++ Enabling Unstructured Sparse Acceleration on Structured Sparse Accelerators
++ MiLo: Efficient Quantized MoE Inference with Mixture of Low-Rank Compensators
++ QServe:W4A8KV4 Quantization and System Co-design for Efficient LLM Serving
++ Radius: Range-based Gradient Sparsity for Large Foundation Model Pre-training
++ Self-Data Distillation for Recovering Quality in Pruned Large Language Models
++ Efficient LLM Inference using Dynamic Input Pruning and Cache-Aware Masking
++ Lightweight Software Kernels and Hardware Extensions for Efficient Sparse Deep Neural Networks on Microcontrollers
++ LServe: Efficient Long-sequence LLM Serving with Unified Sparse Attention
++ SampleAttention: Near-Lossless Acceleration of Long Context LLM Inference with Adaptive Structured Sparse Attention
++ SparseTransX: Efficient Training of Translation-Based Knowledge Graph Embeddings Using Sparse Matrix Operations
+
+### LLM training and fine-tuning  
++ HyC-LoRA: Memory Efficient LoRA Fine-tuning with Hybrid Activation Compression
++ Lumos: Efficient Performance Modeling and Estimation for Large-scale LLM Training
++ ReaL: Efficient RLHF Training of Large Language Models with Parameter Reallocation
++ Training Ultra Long Context Language Model with Fully Pipelined Distributed Transformer
++ Youmu: Efficient Columnar Data Pipeline for LLM Training
+
+### Edge and Cloud Systems  
++ MEADOW: Memory-efficient Dataflow and Data Packing for Low Power Edge LLMs
+
+
+---
+## [EuroSys 2025 Spring](https://2025.eurosys.org/accepted-papers.html)
+
 + Flex: Fast, Accurate DNN Inference on Low-Cost Edges Using Heterogeneous Accelerator Execution
 + Fast State Restoration in LLM Serving with HCache
 + Multiplexing Dynamic Deep Learning Workloads with SLO-awareness in GPU Clusters
@@ -157,7 +209,7 @@
 ## [OSDI 2024](https://www.usenix.org/conference/osdi24)
 
 ### LLM Serving 
-* Taming Throughput-Latency Tradeoff in LLM Inference with Sarathi-Serve [link](https://arxiv.org/abs/2403.02310) []
+* Taming Throughput-Latency Tradeoff in LLM Inference with Sarathi-Serve [link](https://arxiv.org/abs/2403.02310)
 * DistServe: Disaggregating Prefill and Decoding for Goodput-optimized Large Language Model Serving [link](https://arxiv.org/pdf/2401.09670.pdf) [PKU]
 * Fairness in Serving Large Language Models [link](https://arxiv.org/abs/2401.00588)[Ion Stoica]
 * ServerlessLLM: Locality-Enhanced Serverless Inference for Large Language Models [link]([https://arxiv.org/abs/2401.00588](https://arxiv.org/abs/2401.14351))[Serveless]
