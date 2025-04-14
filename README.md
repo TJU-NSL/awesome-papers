@@ -26,7 +26,7 @@
 * See [daily-arxiv-llm.md](daily-arxiv-llm.md)
 
 ---
-## [EuroSys 2025 Spring](https://2025.eurosys.org/accepted-papers.html)
+## [MLSys 2025](https://mlsys.org/virtual/2025/papers.html?filter=titles&layout=mini)
 
 ### LLM and Diffusion Model Serving  
 + DiffServe: Efficiently Serving Text-to-Image Diffusion Models with Query-Aware Model Scaling
