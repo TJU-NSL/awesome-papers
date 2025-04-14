@@ -9,6 +9,8 @@
 * Find Related Papers
   * Connect Papers: [https://www.connectedpapers.com/](https://www.connectedpapers.com)
   * Sematic Scholar: [https://www.semanticscholar.org/](https://www.semanticscholar.org)
+* Other Websites
+  * [https://paper.lingyunyang.com/reading-notes/conference](https://paper.lingyunyang.com/reading-notes/conference)
 
 <!-- -------------------------------------------------------------------------- Template (DE NOT DELETE) -----------------------------------------------------------------------------
 [Template] * (conf/trans/arxiv) Paper title [link](http_source_link) [NOTE: key words / author / affiliation]
