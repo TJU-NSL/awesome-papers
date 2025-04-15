@@ -1,5 +1,10 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-04-14
+
+* [Jupiter: Fast and Resource-Efficient Collaborative Inference of Generative LLMs on Edge Devices](https://arxiv.org/abs/2504.08242)
+
+
 ### 2025-04-11
 
 * [Token Level Routing Inference System for Edge Devices](https://arxiv.org/abs/2504.07878)
