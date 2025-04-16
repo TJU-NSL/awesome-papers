@@ -1,5 +1,18 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-04-15
+
+* [Optimal Graph Stretching for Distributed Averaging](https://arxiv.org/abs/2504.10289)
+* [Training LLMs on HPC Systems: Best Practices from the OpenGPT-X Project](https://arxiv.org/abs/2504.10013)
+* [MoE-Lens: Towards the Hardware Limit of High-Throughput MoE LLM Serving Under Resource Constraints](https://arxiv.org/abs/2504.09345)
+* [Lumos: Efficient Performance Modeling and Estimation for Large-scale LLM Training](https://arxiv.org/abs/2504.09307)
+* [DynaServe: Unified and Elastic Tandem-Style Execution for Dynamic Disaggregated LLM Serving](https://arxiv.org/abs/2504.09285)
+* [SpecEE: Accelerating Large Language Model Inference with Speculative Early Exiting](https://arxiv.org/abs/2504.08850)
+* [DARIS: An Oversubscribed Spatio-Temporal Scheduler for Real-Time DNN Inference on GPUs](https://arxiv.org/abs/2504.08795)
+* [PRIMA.CPP: Speeding Up 70B-Scale LLM Inference on Low-Resource Everyday Home Clusters](https://arxiv.org/abs/2504.08791)
+* [SLOs-Serve: Optimized Serving of Multi-SLO LLMs](https://arxiv.org/abs/2504.08784)
+
+
 ### 2025-04-14
 
 * [Jupiter: Fast and Resource-Efficient Collaborative Inference of Generative LLMs on Edge Devices](https://arxiv.org/abs/2504.08242)
