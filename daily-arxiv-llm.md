@@ -1,5 +1,10 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-04-16
+
+* [Optimizing LLM Inference: Fluid-Guided Online Scheduling with Memory Constraints](https://arxiv.org/abs/2504.11320)
+
+
 ### 2025-04-15
 
 * [Optimal Graph Stretching for Distributed Averaging](https://arxiv.org/abs/2504.10289)
