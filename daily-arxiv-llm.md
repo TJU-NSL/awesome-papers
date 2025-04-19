@@ -1,5 +1,10 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-04-18
+
+* [You Don't Need All Attentions: Distributed Dynamic Fine-Tuning for Foundation Models](https://arxiv.org/abs/2504.12471)
+
+
 ### 2025-04-17
 
 * [Characterizing and Optimizing LLM Inference Workloads on CPU-GPU Coupled Architectures](https://arxiv.org/abs/2504.11750)
