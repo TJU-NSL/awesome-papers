@@ -1,5 +1,13 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-04-22
+
+* [SLO-Aware Scheduling for Large Language Model Inferences](https://arxiv.org/abs/2504.14966)
+* [gLLM: Global Balanced Pipeline Parallelism System for Distributed LLM Serving with Token Throttling](https://arxiv.org/abs/2504.14775)
+* [Joint Optimization of Offloading, Batching and DVFS for Multiuser Co-Inference](https://arxiv.org/abs/2504.14611)
+* [MoE Parallel Folding: Heterogeneous Parallelism Mappings for Efficient Large-Scale MoE Model Training with Megatron Core](https://arxiv.org/abs/2504.14960)
+
+
 ### 2025-04-18
 
 * [You Don't Need All Attentions: Distributed Dynamic Fine-Tuning for Foundation Models](https://arxiv.org/abs/2504.12471)
