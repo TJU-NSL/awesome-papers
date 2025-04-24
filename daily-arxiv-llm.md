@@ -1,5 +1,15 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-04-23
+
+* [SeaLLM: Service-Aware and Latency-Optimized Resource Sharing for Large Language Model Inference](https://arxiv.org/abs/2504.15720)
+* [High-Throughput LLM inference on Heterogeneous Clusters](https://arxiv.org/abs/2504.15303)
+* [RAGDoll: Efficient Offloading-based Online RAG System on a Single GPU](https://arxiv.org/abs/2504.15302)
+* [D$^{2}$MoE: Dual Routing and Dynamic Scheduling for Efficient On-Device MoE-based LLM Serving](https://arxiv.org/abs/2504.15299)
+* [Scalability Optimization in Cloud-Based AI Inference Services: Strategies for Real-Time Load Balancing and Automated Scaling](https://arxiv.org/abs/2504.15296)
+* [StreamRL: Scalable, Heterogeneous, and Elastic RL for LLMs with Disaggregated Stream Generation](https://arxiv.org/abs/2504.15930)
+
+
 ### 2025-04-22
 
 * [SLO-Aware Scheduling for Large Language Model Inferences](https://arxiv.org/abs/2504.14966)
