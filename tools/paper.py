@@ -33,7 +33,7 @@ def fetch_papers(date, accept_keywords, reject_keywords, subjects=["DC", "OS"]):
             return []
     
         soup = BeautifulSoup(response.content, 'html.parser')
-        paper.extend(soup.find_all('div', class_='panel paper'))
+        papers.extend(soup.find_all('div', class_='panel paper'))
 
     selected_papers = []
     for paper in papers:
