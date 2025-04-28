@@ -22,16 +22,18 @@ def get_paper_info(paper):
     return f"* [{title}]({abs_link})"
 
 
-def fetch_papers(date, accept_keywords, reject_keywords):
-    url = f"https://papers.cool/arxiv/cs.DC?date={date}"
-    print(url)
-    response = requests.get(url)
-    if response.status_code != 200:
-        print(f"Failed to fetch data for date: {date}")
-        return []
-
-    soup = BeautifulSoup(response.content, 'html.parser')
-    papers = soup.find_all('div', class_='panel paper')
+def fetch_papers(date, accept_keywords, reject_keywords, subjects=["DC", "OS"]):
+    papers = []
+    for subject in subjects:  
+        url = f"https://papers.cool/arxiv/cs.{subject}?date={date}"
+        print(url)
+        response = requests.get(url)
+        if response.status_code != 200:
+            print(f"Failed to fetch data for date: {date}")
+            return []
+    
+        soup = BeautifulSoup(response.content, 'html.parser')
+        paper.extend(soup.find_all('div', class_='panel paper'))
 
     selected_papers = []
     for paper in papers:
