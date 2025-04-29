@@ -1,5 +1,10 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-04-28
+
+* [EcoServe: Enabling Cost-effective LLM Serving with Proactive Intra- and Inter-Instance Orchestration](https://arxiv.org/abs/2504.18154)
+
+
 ### 2025-04-24
 
 * [Preemption Aware Task Scheduling for Priority and Deadline Constrained DNN Inference Task Offloading in Homogeneous Mobile-Edge Networks](https://arxiv.org/abs/2504.16792)
