@@ -1,5 +1,10 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-05-05
+
+* [CaGR-RAG: Context-aware Query Grouping for Disk-based Vector Search in RAG Systems](https://arxiv.org/abs/2505.01164)
+
+
 ### 2025-04-30
 
 * [Leveraging Neural Graph Compilers in Machine Learning Research for Edge-Cloud Systems](https://arxiv.org/abs/2504.20198)
