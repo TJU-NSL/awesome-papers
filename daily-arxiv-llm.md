@@ -1,5 +1,14 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-05-06
+
+* [Large Language Model Partitioning for Low-Latency Inference at the Edge](https://arxiv.org/abs/2505.02533)
+* [Opt-GPTQ: An Optimized GPTQ Combining Sparse Attention and Quantization Techniques](https://arxiv.org/abs/2505.02351)
+* [HAS-GPU: Efficient Hybrid Auto-scaling with Fine-grained GPU Allocation for SLO-aware Serverless Inferences](https://arxiv.org/abs/2505.01968)
+* [HSplitLoRA: A Heterogeneous Split Parameter-Efficient Fine-Tuning Framework for Large Language Models](https://arxiv.org/abs/2505.02795)
+* [Leveraging LLMs to Automate Energy-Aware Refactoring of Parallel Scientific Codes](https://arxiv.org/abs/2505.02184)
+
+
 ### 2025-05-05
 
 * [CaGR-RAG: Context-aware Query Grouping for Disk-based Vector Search in RAG Systems](https://arxiv.org/abs/2505.01164)
