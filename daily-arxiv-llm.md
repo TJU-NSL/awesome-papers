@@ -1,5 +1,14 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-05-08
+
+* [Prism: Unleashing GPU Sharing for Cost-Efficient Multi-LLM Serving](https://arxiv.org/abs/2505.04021)
+* [Can Large Language Models Predict Parallel Code Performance?](https://arxiv.org/abs/2505.03988)
+* [MARCO: A Multi-Agent System for Optimizing HPC Code Generation Using Large Language Models](https://arxiv.org/abs/2505.03906)
+* [Rollbaccine : Herd Immunity against Storage Rollback Attacks in TEEs [Technical Report]](https://arxiv.org/abs/2505.04014)
+* [Splitwiser: Efficient LM inference with constrained resources](https://arxiv.org/abs/2505.03763)
+
+
 ### 2025-05-06
 
 * [Large Language Model Partitioning for Low-Latency Inference at the Edge](https://arxiv.org/abs/2505.02533)
