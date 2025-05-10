@@ -1,5 +1,12 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-05-09
+
+* [Walrus: An Efficient Decentralized Storage Network](https://arxiv.org/abs/2505.05370)
+* [Exploring Influence Factors on LLM Suitability for No-Code Development of End User IoT Applications](https://arxiv.org/abs/2505.04710)
+* [HiPerRAG: High-Performance Retrieval Augmented Generation for Scientific Insights](https://arxiv.org/abs/2505.04846)
+
+
 ### 2025-05-08
 
 * [Prism: Unleashing GPU Sharing for Cost-Efficient Multi-LLM Serving](https://arxiv.org/abs/2505.04021)
