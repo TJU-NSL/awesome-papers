@@ -1,5 +1,10 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-05-12
+
+* [Understanding Stragglers in Large Model Training Using What-if Analysis](https://arxiv.org/abs/2505.05713)
+
+
 ### 2025-05-09
 
 * [Walrus: An Efficient Decentralized Storage Network](https://arxiv.org/abs/2505.05370)
