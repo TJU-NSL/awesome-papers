@@ -1,5 +1,15 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-05-13
+
+* [PrefillOnly: An Inference Engine for Prefill-only Workloads in Large Language Model Applications](https://arxiv.org/abs/2505.07203)
+* [SneakPeek: Data-Aware Model Selection and Scheduling for Inference Serving on the Edge](https://arxiv.org/abs/2505.06641)
+* [Challenging GPU Dominance: When CPUs Outperform for On-Device LLM Inference](https://arxiv.org/abs/2505.06461)
+* [SpecRouter: Adaptive Routing for Multi-Level Speculative Decoding in Large Language Models](https://arxiv.org/abs/2505.07680)
+* [QoS-Efficient Serving of Multiple Mixture-of-Expert LLMs Using Partial Runtime Reconfiguration](https://arxiv.org/abs/2505.06481)
+* [Towards Efficient LLM Storage Reduction via Tensor Deduplication and Delta Compression](https://arxiv.org/abs/2505.06252)
+
+
 ### 2025-05-12
 
 * [Understanding Stragglers in Large Model Training Using What-if Analysis](https://arxiv.org/abs/2505.05713)
