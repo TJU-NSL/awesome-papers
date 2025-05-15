@@ -1,5 +1,13 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-05-14
+
+* [Fused3S: Fast Sparse Attention on Tensor Cores](https://arxiv.org/abs/2505.08098)
+* [Patchwork: A Unified Framework for RAG Serving](https://arxiv.org/abs/2505.07833)
+* [Leveraging AI for Productive and Trustworthy HPC Software: Challenges and Research Directions](https://arxiv.org/abs/2505.08135)
+* [Patchwork: A Unified Framework for RAG Serving](https://arxiv.org/abs/2505.07833)
+
+
 ### 2025-05-13
 
 * [PrefillOnly: An Inference Engine for Prefill-only Workloads in Large Language Model Applications](https://arxiv.org/abs/2505.07203)
