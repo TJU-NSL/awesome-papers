@@ -1,5 +1,11 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-05-15
+
+* [ELIS: Efficient LLM Iterative Scheduling System with Response Length Predictor](https://arxiv.org/abs/2505.09142)
+* [ATLAHS: An Application-centric Network Simulator Toolchain for AI, HPC, and Distributed Storage](https://arxiv.org/abs/2505.08936)
+
+
 ### 2025-05-14
 
 * [Fused3S: Fast Sparse Attention on Tensor Cores](https://arxiv.org/abs/2505.08098)
