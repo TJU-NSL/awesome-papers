@@ -1,5 +1,12 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-05-21
+
+* [SkyMemory: A LEO Edge Cache for Transformer Inference Optimization and Scale Out](https://arxiv.org/abs/2505.14427)
+* [Paradigm Shift in Infrastructure Inspection Technology: Leveraging High-performance Imaging and Advanced AI Analytics to Inspect Road Infrastructure](https://arxiv.org/abs/2505.13955)
+* [ServerlessLoRA: Minimizing Latency and Cost in Serverless Inference for LoRA-Based LLMs](https://arxiv.org/abs/2505.14468)
+
+
 ### 2025-05-20
 
 * [HydraInfer: Hybrid Disaggregated Scheduling for Multimodal Large Language Model Serving](https://arxiv.org/abs/2505.12658)
