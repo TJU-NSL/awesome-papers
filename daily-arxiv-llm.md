@@ -1,5 +1,10 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-05-22
+
+* [Balanced and Elastic End-to-end Training of Dynamic LLMs](https://arxiv.org/abs/2505.14864)
+
+
 ### 2025-05-21
 
 * [SkyMemory: A LEO Edge Cache for Transformer Inference Optimization and Scale Out](https://arxiv.org/abs/2505.14427)
