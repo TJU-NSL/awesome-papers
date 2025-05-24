@@ -1,5 +1,11 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-05-23
+
+* [Edge-First Language Model Inference: Models, Metrics, and Tradeoffs](https://arxiv.org/abs/2505.16508)
+* [Recursive Offloading for LLM Serving in Multi-tier Networks](https://arxiv.org/abs/2505.16502)
+
+
 ### 2025-05-22
 
 * [Balanced and Elastic End-to-end Training of Dynamic LLMs](https://arxiv.org/abs/2505.14864)
