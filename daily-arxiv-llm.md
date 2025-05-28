@@ -1,5 +1,13 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-05-27
+
+* [TEE is not a Healer: Rollback-Resistant Reliable Storage](https://arxiv.org/abs/2505.18648)
+* [Differential Privacy Analysis of Decentralized Gossip Averaging under Varying Threat Models](https://arxiv.org/abs/2505.19969)
+* [DGRAG: Distributed Graph-based Retrieval-Augmented Generation in Edge-Cloud Systems](https://arxiv.org/abs/2505.19847)
+* [Win Fast or Lose Slow: Balancing Speed and Accuracy in Latency-Sensitive Decisions of LLMs](https://arxiv.org/abs/2505.19481)
+
+
 ### 2025-05-26
 
 * [H2:Towards Efficient Large-Scale LLM Training on Hyper-Heterogeneous Cluster over 1,000 Chips](https://arxiv.org/abs/2505.17548)
