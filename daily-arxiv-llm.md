@@ -1,5 +1,10 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-05-28
+
+* [Diagnosing and Resolving Cloud Platform Instability with Multi-modal RAG LLMs](https://arxiv.org/abs/2505.21419)
+
+
 ### 2025-05-27
 
 * [TEE is not a Healer: Rollback-Resistant Reliable Storage](https://arxiv.org/abs/2505.18648)
