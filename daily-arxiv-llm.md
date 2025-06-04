@@ -1,5 +1,11 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-06-03
+
+* [Adaptive, Efficient and Fair Resource Allocation in Cloud Datacenters leveraging Weighted A3C Deep Reinforcement Learning](https://arxiv.org/abs/2506.00929)
+* [Advancing AI-assisted Hardware Design with Hierarchical Decentralized Training and Personalized Inference-Time Optimization](https://arxiv.org/abs/2506.00002)
+
+
 ### 2025-06-02
 
 * [Distributed Intelligence in the Computing Continuum with Active Inference](https://arxiv.org/abs/2505.24618)
