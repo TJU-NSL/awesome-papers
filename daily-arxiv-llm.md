@@ -1,5 +1,16 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-06-04
+
+* [Adaptive Configuration Selection for Multi-Model Inference Pipelines in Edge Computing](https://arxiv.org/abs/2506.02814)
+* [Simplifying Root Cause Analysis in Kubernetes with StateGraph and LLM](https://arxiv.org/abs/2506.02490)
+* [D-Rex: Heterogeneity-Aware Reliability Framework and Adaptive Algorithms for Distributed Storage](https://arxiv.org/abs/2506.02026)
+* [Evaluating the Efficacy of LLM-Based Reasoning for Multiobjective HPC Job Scheduling](https://arxiv.org/abs/2506.02025)
+* [NestedFP: High-Performance, Memory-Efficient Dual-Precision Floating Point Support for LLMs](https://arxiv.org/abs/2506.02024)
+* [DistMLIP: A Distributed Inference Platform for Machine Learning Interatomic Potentials](https://arxiv.org/abs/2506.02023)
+* [Efficient and Workload-Aware LLM Serving via Runtime Layer Swapping and KV Cache Resizing](https://arxiv.org/abs/2506.02006)
+
+
 ### 2025-06-03
 
 * [Adaptive, Efficient and Fair Resource Allocation in Cloud Datacenters leveraging Weighted A3C Deep Reinforcement Learning](https://arxiv.org/abs/2506.00929)
