@@ -1,5 +1,12 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-06-05
+
+* [Cascadia: A Cascade Serving System for Large Language Models](https://arxiv.org/abs/2506.04203)
+* [Crowd-SFT: Crowdsourcing for LLM Alignment](https://arxiv.org/abs/2506.04063)
+* [Parallel CPU-GPU Execution for LLM Inference on Constrained GPUs](https://arxiv.org/abs/2506.03296)
+
+
 ### 2025-06-04
 
 * [Adaptive Configuration Selection for Multi-Model Inference Pipelines in Edge Computing](https://arxiv.org/abs/2506.02814)
