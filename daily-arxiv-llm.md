@@ -1,5 +1,13 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-06-06
+
+* [FlashDMoE: Fast Distributed MoE in a Single Kernel](https://arxiv.org/abs/2506.04667)
+* [SkimROOT: Accelerating LHC Data Filtering with Near-Storage Processing](https://arxiv.org/abs/2506.04507)
+* [Knowledge-Guided Attention-Inspired Learning for Task Offloading in Vehicle Edge Computing](https://arxiv.org/abs/2506.04456)
+* [Inference economics of language models](https://arxiv.org/abs/2506.04645)
+
+
 ### 2025-06-05
 
 * [Cascadia: A Cascade Serving System for Large Language Models](https://arxiv.org/abs/2506.04203)
