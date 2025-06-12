@@ -1,5 +1,10 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-06-11
+
+* [Recipes for Pre-training LLMs with MXFP8](https://arxiv.org/abs/2506.08027)
+
+
 ### 2025-06-10
 
 * [Addressing tokens dynamic generation, propagation, storage and renewal to secure the GlideinWMS pilot based jobs and system](https://arxiv.org/abs/2506.07379)
