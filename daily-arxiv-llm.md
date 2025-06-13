@@ -1,5 +1,13 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-06-12
+
+* [Understanding the Performance and Power of LLM Inferencing on Edge Accelerators](https://arxiv.org/abs/2506.09554)
+* [SLED: A Speculative LLM Decoding Framework for Efficient Edge Serving](https://arxiv.org/abs/2506.09397)
+* [ScalableHD: Scalable and High-Throughput Hyperdimensional Computing Inference on Multi-Core CPUs](https://arxiv.org/abs/2506.09282)
+* [EdgeProfiler: A Fast Profiling Framework for Lightweight LLMs on Edge Using Analytical Model](https://arxiv.org/abs/2506.09061)
+
+
 ### 2025-06-11
 
 * [Recipes for Pre-training LLMs with MXFP8](https://arxiv.org/abs/2506.08027)
