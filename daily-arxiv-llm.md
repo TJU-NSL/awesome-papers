@@ -1,5 +1,11 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-06-13
+
+* [TD-Pipe: Temporally-Disaggregated Pipeline Parallelism Architecture for High-Throughput LLM Inference](https://arxiv.org/abs/2506.10470)
+* [HPCTransCompile: An AI Compiler Generated Dataset for High-Performance CUDA Transpilation and LLM Preliminary Exploration](https://arxiv.org/abs/2506.10401)
+
+
 ### 2025-06-12
 
 * [Understanding the Performance and Power of LLM Inferencing on Edge Accelerators](https://arxiv.org/abs/2506.09554)
