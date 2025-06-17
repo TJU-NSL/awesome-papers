@@ -1,5 +1,11 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-06-16
+
+* [A retrospective on DISPEED -- Leveraging heterogeneity in a drone swarm for IDS execution](https://arxiv.org/abs/2506.11800)
+* [SwiftSpec: Ultra-Low Latency LLM Decoding by Scaling Asynchronous Speculative Decoding](https://arxiv.org/abs/2506.11309)
+
+
 ### 2025-06-13
 
 * [TD-Pipe: Temporally-Disaggregated Pipeline Parallelism Architecture for High-Throughput LLM Inference](https://arxiv.org/abs/2506.10470)
