@@ -1,5 +1,13 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-06-17
+
+* [Serving Large Language Models on Huawei CloudMatrix384](https://arxiv.org/abs/2506.12708)
+* [HarMoEny: Efficient Multi-GPU Inference of MoE Models](https://arxiv.org/abs/2506.12417)
+* [NaSh: Guardrails for an LLM-Powered Natural Language Shell](https://arxiv.org/abs/2506.13028)
+* [Semantic Scheduling for LLM Inference](https://arxiv.org/abs/2506.12204)
+
+
 ### 2025-06-16
 
 * [A retrospective on DISPEED -- Leveraging heterogeneity in a drone swarm for IDS execution](https://arxiv.org/abs/2506.11800)
