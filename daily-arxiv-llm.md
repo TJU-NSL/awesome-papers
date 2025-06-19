@@ -1,5 +1,10 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-06-18
+
+* [Keigo: Co-designing Log-Structured Merge Key-Value Stores with a Non-Volatile, Concurrency-aware Storage Hierarchy (Extended Version)](https://arxiv.org/abs/2506.14630)
+
+
 ### 2025-06-17
 
 * [Serving Large Language Models on Huawei CloudMatrix384](https://arxiv.org/abs/2506.12708)
