@@ -1,5 +1,10 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-06-23
+
+* [TrainVerify: Equivalence-Based Verification for Distributed LLM Training](https://arxiv.org/abs/2506.15961)
+
+
 ### 2025-06-19
 
 * [All is Not Lost: LLM Recovery without Checkpoints](https://arxiv.org/abs/2506.15461)
