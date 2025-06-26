@@ -1,5 +1,12 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-06-25
+
+* [Shelby: Decentralized Storage Designed to Serve](https://arxiv.org/abs/2506.19233)
+* [Vertex addition to a ball graph with application to reliability and area coverage in autonomous swarms](https://arxiv.org/abs/2506.19197)
+* [Binsparse: A Specification for Cross-Platform Storage of Sparse Matrices and Tensors](https://arxiv.org/abs/2506.19175)
+
+
 ### 2025-06-24
 
 * [Leveraging Cloud-Fog Automation for Autonomous Collision Detection and Classification in Intelligent Unmanned Surface Vehicles](https://arxiv.org/abs/2506.18024)
