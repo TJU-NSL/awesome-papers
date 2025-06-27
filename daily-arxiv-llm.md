@@ -1,5 +1,11 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-06-26
+
+* [Breaking the Boundaries of Long-Context LLM Inference: Adaptive KV Management on a Single Commodity GPU](https://arxiv.org/abs/2506.20187)
+* [MNN-AECS: Energy Optimization for LLM Decoding on Mobile Devices via Adaptive Core Selection](https://arxiv.org/abs/2506.19884)
+
+
 ### 2025-06-25
 
 * [Shelby: Decentralized Storage Designed to Serve](https://arxiv.org/abs/2506.19233)
