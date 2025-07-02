@@ -1,5 +1,12 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-07-01
+
+* [Agent.xpu: Efficient Scheduling of Agentic LLM Workloads on Heterogeneous SoC](https://arxiv.org/abs/2506.24045)
+* [QPART: Adaptive Model Quantization and Dynamic Workload Balancing for Accuracy-aware Edge Inference](https://arxiv.org/abs/2506.23934)
+* [Towards Building Private LLMs: Exploring Multi-Node Expert Parallelism on Apple Silicon for Mixture-of-Experts Large Language Model](https://arxiv.org/abs/2506.23635)
+
+
 ### 2025-06-30
 
 * [MPipeMoE: Memory Efficient MoE for Pre-trained Models with Adaptive Pipeline Parallelism](https://arxiv.org/abs/2506.22175)
