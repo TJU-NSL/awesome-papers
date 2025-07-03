@@ -1,5 +1,15 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-07-02
+
+* [Accelerating Loading WebGraphs in ParaGrapher](https://arxiv.org/abs/2507.00716)
+* [DynoStore: A wide-area distribution system for the management of data over heterogeneous storage](https://arxiv.org/abs/2507.00576)
+* [LLM-Mesh: Enabling Elastic Sharing for Serverless LLM Inference](https://arxiv.org/abs/2507.00507)
+* [Serving LLMs in HPC Clusters: A Comparative Study of Qualcomm Cloud AI 100 Ultra and High-Performance GPUs](https://arxiv.org/abs/2507.00418)
+* [Toward Edge General Intelligence with Multiple-Large Language Model (Multi-LLM): Architecture, Trust, and Orchestration](https://arxiv.org/abs/2507.00672)
+* [HelixPipe: Efficient Distributed Training of Long Sequence Transformers with Attention Parallel Pipeline Parallelism](https://arxiv.org/abs/2507.00394)
+
+
 ### 2025-07-01
 
 * [Agent.xpu: Efficient Scheduling of Agentic LLM Workloads on Heterogeneous SoC](https://arxiv.org/abs/2506.24045)
