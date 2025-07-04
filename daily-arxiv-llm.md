@@ -1,5 +1,11 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-07-03
+
+* [Deep Recommender Models Inference: Automatic Asymmetric Data Flow Optimization](https://arxiv.org/abs/2507.01676)
+* [EdgeLoRA: An Efficient Multi-Tenant LLM Serving System on Edge Devices](https://arxiv.org/abs/2507.01438)
+
+
 ### 2025-07-02
 
 * [Accelerating Loading WebGraphs in ParaGrapher](https://arxiv.org/abs/2507.00716)
