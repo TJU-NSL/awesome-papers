@@ -1,5 +1,11 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-07-04
+
+* [FlowSpec: Continuous Pipelined Speculative Decoding for Efficient Distributed LLM Inference](https://arxiv.org/abs/2507.02620)
+* [Dissecting the Impact of Mobile DVFS Governors on LLM Inference Performance and Energy Efficiency](https://arxiv.org/abs/2507.02135)
+
+
 ### 2025-07-03
 
 * [Deep Recommender Models Inference: Automatic Asymmetric Data Flow Optimization](https://arxiv.org/abs/2507.01676)
