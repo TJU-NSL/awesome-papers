@@ -1,5 +1,14 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-07-08
+
+* [On Fault Tolerance of Data Storage Systems: A Holistic Perspective](https://arxiv.org/abs/2507.03849)
+* [Analysis and Optimized CXL-Attached Memory Allocation for Long-Context LLM Fine-Tuning](https://arxiv.org/abs/2507.03305)
+* [Symbiosis: Multi-Adapter Inference and Fine-Tuning](https://arxiv.org/abs/2507.03220)
+* [ZettaLith: An Architectural Exploration of Extreme-Scale AI Inference Acceleration](https://arxiv.org/abs/2507.02871)
+* [Performance Evaluation of General Purpose Large Language Models for Basic Linear Algebra Subprograms Code Generation](https://arxiv.org/abs/2507.04697)
+
+
 ### 2025-07-04
 
 * [FlowSpec: Continuous Pipelined Speculative Decoding for Efficient Distributed LLM Inference](https://arxiv.org/abs/2507.02620)
