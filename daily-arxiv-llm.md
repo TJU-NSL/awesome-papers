@@ -1,5 +1,13 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-07-11
+
+* [KIS-S: A GPU-Aware Kubernetes Inference Simulator with RL-Based Auto-Scaling](https://arxiv.org/abs/2507.07932)
+* [KVFlow: Efficient Prefix Caching for Accelerating LLM-Based Multi-Agent Workflows](https://arxiv.org/abs/2507.07400)
+* [Helix Parallelism: Rethinking Sharding Strategies for Interactive Multi-Million-Token LLM Decoding](https://arxiv.org/abs/2507.07120)
+* [Analysing semantic data storage in Distributed Ledger Technologies for Data Spaces](https://arxiv.org/abs/2507.07116)
+
+
 ### 2025-07-10
 
 * [Nexus: Taming Throughput-Latency Tradeoff in LLM Serving via Efficient GPU Sharing](https://arxiv.org/abs/2507.06608)
