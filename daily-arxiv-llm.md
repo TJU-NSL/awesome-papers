@@ -1,5 +1,17 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-07-15
+
+* [Zorse: Optimizing LLM Training Efficiency on Heterogeneous GPU Clusters](https://arxiv.org/abs/2507.10392)
+* [Cross-Timeslot Optimization for Distributed GPU Inference Using Reinforcement Learning](https://arxiv.org/abs/2507.10259)
+* [Past-Future Scheduler for LLM Serving under SLA Guarantees](https://arxiv.org/abs/2507.10150)
+* [ElasticMM: Efficient Multimodal LLMs Serving with Elastic Multimodal Parallelism](https://arxiv.org/abs/2507.10069)
+* [EAT: QoS-Aware Edge-Collaborative AIGC Task Scheduling via Attention-Guided Diffusion Reinforcement Learning](https://arxiv.org/abs/2507.10026)
+* [Green-LLM: Optimal Workload Allocation for Environmentally-Aware Distributed Inference](https://arxiv.org/abs/2507.09942)
+* [SLIM: A Heterogeneous Accelerator for Edge Inference of Sparse Large Language Model via Adaptive Thresholding](https://arxiv.org/abs/2507.09201)
+* [On Evaluating Performance of LLM Inference Serving Systems](https://arxiv.org/abs/2507.09019)
+
+
 ### 2025-07-11
 
 * [KIS-S: A GPU-Aware Kubernetes Inference Simulator with RL-Based Auto-Scaling](https://arxiv.org/abs/2507.07932)
