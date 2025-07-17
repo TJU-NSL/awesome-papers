@@ -1,5 +1,11 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-07-16
+
+* [Quantifying the Energy Consumption and Carbon Emissions of LLM Inference via Simulations](https://arxiv.org/abs/2507.11417)
+* [MIRAGE: KV Cache Optimization through Parameter Remapping for Multi-tenant LLM Serving](https://arxiv.org/abs/2507.11507)
+
+
 ### 2025-07-15
 
 * [Zorse: Optimizing LLM Training Efficiency on Heterogeneous GPU Clusters](https://arxiv.org/abs/2507.10392)
