@@ -1,5 +1,10 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-07-18
+
+* [BootSeer: Analyzing and Mitigating Initialization Bottlenecks in Large-Scale LLM Training](https://arxiv.org/abs/2507.12619)
+
+
 ### 2025-07-17
 
 * [Toward Efficient SpMV in Sparse LLMs via Block Extraction and Compressed Storage](https://arxiv.org/abs/2507.12205)
