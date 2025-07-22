@@ -1,5 +1,12 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-07-21
+
+* [DistFlow: A Fully Distributed RL Framework for Scalable and Efficient LLM Post-Training](https://arxiv.org/abs/2507.13833)
+* [Leveraging Multi-Instance GPUs through moldable task scheduling](https://arxiv.org/abs/2507.13601)
+* [An End-to-End DNN Inference Framework for the SpiNNaker2 Neuromorphic MPSoC](https://arxiv.org/abs/2507.13736)
+
+
 ### 2025-07-18
 
 * [BootSeer: Analyzing and Mitigating Initialization Bottlenecks in Large-Scale LLM Training](https://arxiv.org/abs/2507.12619)
