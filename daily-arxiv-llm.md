@@ -1,5 +1,15 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-07-22
+
+* [Efficient Routing of Inference Requests across LLM Instances in Cloud-Edge Computing](https://arxiv.org/abs/2507.15553)
+* [GALE: Leveraging Heterogeneous Systems for Efficient Unstructured Mesh Data Analysis](https://arxiv.org/abs/2507.15230)
+* [Byzantine-Robust Decentralized Coordination of LLM Agents](https://arxiv.org/abs/2507.14928)
+* [Characterizing Communication Patterns in Distributed Large Language Model Inference](https://arxiv.org/abs/2507.14392)
+* [IDSS, a Novel P2P Relational Data Storage Service](https://arxiv.org/abs/2507.14682)
+* [A Sparsity Predicting Approach for Large Language Models via Activation Pattern Clustering](https://arxiv.org/abs/2507.14179)
+
+
 ### 2025-07-21
 
 * [DistFlow: A Fully Distributed RL Framework for Scalable and Efficient LLM Post-Training](https://arxiv.org/abs/2507.13833)
