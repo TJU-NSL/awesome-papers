@@ -1,5 +1,12 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-07-25
+
+* [Cloud Native System for LLM Inference Serving](https://arxiv.org/abs/2507.18007)
+* [Unlock the Potential of Fine-grained LLM Serving via Dynamic Module Scaling](https://arxiv.org/abs/2507.18006)
+* [Sandwich: Separating Prefill-Decode Compilation for Efficient CPU LLM Serving](https://arxiv.org/abs/2507.18454)
+
+
 ### 2025-07-24
 
 * [BrownoutServe: SLO-Aware Inference Serving under Bursty Workloads for MoE-based LLMs](https://arxiv.org/abs/2507.17133)
