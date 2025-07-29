@@ -1,5 +1,10 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-07-28
+
+* [RailX: A Flexible, Scalable, and Low-Cost Network Architecture for Hyper-Scale LLM Training Systems](https://arxiv.org/abs/2507.18889)
+
+
 ### 2025-07-25
 
 * [Cloud Native System for LLM Inference Serving](https://arxiv.org/abs/2507.18007)
