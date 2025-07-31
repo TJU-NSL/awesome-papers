@@ -1,5 +1,11 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-07-30
+
+* [LeMix: Unified Scheduling for LLM Training and Inference on Multi-GPU Systems](https://arxiv.org/abs/2507.21276)
+* [Advancing Compositional LLM Reasoning with Structured Task Relations in Interactive Multimodal Communications](https://arxiv.org/abs/2507.21199)
+
+
 ### 2025-07-29
 
 * [MegatronApp: Efficient and Comprehensive Management on Distributed LLM Training](https://arxiv.org/abs/2507.19845)
