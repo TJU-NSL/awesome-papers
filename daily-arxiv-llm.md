@@ -1,5 +1,11 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-08-05
+
+* [PUSHtap: PIM-based In-Memory HTAP with Unified Data Storage Format](https://arxiv.org/abs/2508.02309)
+* [Prefill-Decode Aggregation or Disaggregation? Unifying Both for Goodput-Optimized LLM Serving](https://arxiv.org/abs/2508.01989)
+
+
 ### 2025-08-04
 
 * [SwarnRaft: Leveraging Consensus for Robust Drone Swarm Coordination in GNSS-Degraded Environments](https://arxiv.org/abs/2508.00622)
