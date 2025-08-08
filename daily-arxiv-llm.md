@@ -1,5 +1,10 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-08-07
+
+* [S2M3: Split-and-Share Multi-Modal Models for Distributed Multi-Task Inference on the Edge](https://arxiv.org/abs/2508.04271)
+
+
 ### 2025-08-06
 
 * [Block: Balancing Load in LLM Serving with Context, Knowledge and Predictive Scheduling](https://arxiv.org/abs/2508.03611)
