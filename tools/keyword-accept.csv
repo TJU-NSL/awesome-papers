@@ -3,6 +3,13 @@ inference
 rag
 prefill
 decode
+preempt
+schedule
+predict
+AFD
+PDD
+PD
 attention
 moe
+
 large language model
