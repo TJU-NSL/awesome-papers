@@ -1,5 +1,17 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-08-11
+
+* [Performant Unified GPU Kernels for Portable Singular Value Computation Across Hardware and Precision](https://arxiv.org/abs/2508.06339)
+* [KV Cache Compression for Inference Efficiency in LLMs: A Review](https://arxiv.org/abs/2508.06297)
+* [EC2MoE: Adaptive End-Cloud Pipeline Collaboration Enabling Scalable Mixture-of-Experts Inference](https://arxiv.org/abs/2508.06024)
+* [KnapFormer: An Online Load Balancer for Efficient Diffusion Transformers Training](https://arxiv.org/abs/2508.06001)
+* [Snowpark: Performant, Secure, User-Friendly Data Engineering and AI/ML Next To Your Data](https://arxiv.org/abs/2508.05904)
+* [A Dynamic Approach to Load Balancing in Cloud Infrastructure: Enhancing Energy Efficiency and Resource Utilization](https://arxiv.org/abs/2508.05821)
+* [Accelerating Data Chunking in Deduplication Systems using Vector Instructions](https://arxiv.org/abs/2508.05797)
+* [Voting-Based Semi-Parallel Proof-of-Work Protocol](https://arxiv.org/abs/2508.06489)
+
+
 ### 2025-08-08
 
 * [Simulating LLM training workloads for heterogeneous compute and network infrastructure](https://arxiv.org/abs/2508.05370)
