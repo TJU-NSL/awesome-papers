@@ -1,5 +1,29 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-08-12
+
+* [On the Operational Resilience of CBDC: Threats and Prospects of Formal Validation for Offline Payments](https://arxiv.org/abs/2508.08064)
+* [Performance Evaluation of Brokerless Messaging Libraries](https://arxiv.org/abs/2508.07934)
+* [Towards Lock Modularization for Heterogeneous Environments](https://arxiv.org/abs/2508.07756)
+* [Over-the-Top Resource Broker System for Split Computing: An Approach to Distribute Cloud Computing Infrastructure](https://arxiv.org/abs/2508.07744)
+* [Perpetual exploration in anonymous synchronous networks with a Byzantine black hole](https://arxiv.org/abs/2508.07703)
+* [Taming Cold Starts: Proactive Serverless Scheduling with Model Predictive Control](https://arxiv.org/abs/2508.07640)
+* [Coordinated Power Management on Heterogeneous Systems](https://arxiv.org/abs/2508.07605)
+* [An Experimental Exploration of In-Memory Computing for Multi-Layer Perceptrons](https://arxiv.org/abs/2508.07317)
+* [FlashMP: Fast Discrete Transform-Based Solver for Preconditioning Maxwell's Equations on GPUs](https://arxiv.org/abs/2508.07193)
+* [The Fused Kernel Library: A C++ API to Develop Highly-Efficient GPU Libraries](https://arxiv.org/abs/2508.07071)
+* [Convergence Sans Synchronization](https://arxiv.org/abs/2508.06949)
+* [Kairos: Low-latency Multi-Agent Serving with Shared LLMs and Excessive Loads in the Public Cloud](https://arxiv.org/abs/2508.06948)
+* [PiKV: KV Cache Management System for Mixture of Experts](https://arxiv.org/abs/2508.06526)
+* [Fully-Fluctuating Participation in Sleepy Consensus](https://arxiv.org/abs/2508.08068)
+* [GPU-Accelerated Syndrome Decoding for Quantum LDPC Codes below the 63 $μ$s Latency Threshold](https://arxiv.org/abs/2508.07879)
+* [Enhancing Privacy in Decentralized Min-Max Optimization: A Differentially Private Approach](https://arxiv.org/abs/2508.07505)
+* [Real-Time Analysis of Unstructured Data with Machine Learning on Heterogeneous Architectures](https://arxiv.org/abs/2508.07423)
+* [DSperse: A Framework for Targeted Verification in Zero-Knowledge Machine Learning](https://arxiv.org/abs/2508.06972)
+* [A Portable Multi-GPU Solver for Collisional Plasmas with Coulombic Interactions](https://arxiv.org/abs/2508.06771)
+* [PANAMA: A Network-Aware MARL Framework for Multi-Agent Path Finding in Digital Twin Ecosystems](https://arxiv.org/abs/2508.06767)
+
+
 ### 2025-08-11
 
 * [Performant Unified GPU Kernels for Portable Singular Value Computation Across Hardware and Precision](https://arxiv.org/abs/2508.06339)
