@@ -1,5 +1,23 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-08-13
+
+* [P/D-Device: Disaggregated Large Language Model between Cloud and Devices](https://arxiv.org/abs/2508.09035)
+* [A Reinforcement Learning-Driven Task Scheduling Algorithm for Multi-Tenant Distributed Systems](https://arxiv.org/abs/2508.08525)
+* [Profiling Concurrent Vision Inference Workloads on NVIDIA Jetson -- Extended](https://arxiv.org/abs/2508.08430)
+* [Ultra Ethernet's Design Principles and Architectural Innovations](https://arxiv.org/abs/2508.08906)
+* [Scalable Graph Indexing using GPUs for Approximate Nearest Neighbor Search](https://arxiv.org/abs/2508.08744)
+* [Two for One, One for All: Deterministic LDC-based Robust Computation in Congested Clique](https://arxiv.org/abs/2508.08740)
+* [A Survey on Parallel Text Generation: From Parallel Decoding to Diffusion Language Models](https://arxiv.org/abs/2508.08712)
+* [Vector-Centric Machine Learning Systems: A Cross-Stack Approach](https://arxiv.org/abs/2508.08469)
+* [Towards Efficient and Practical GPU Multitasking in the Era of LLM](https://arxiv.org/abs/2508.08448)
+* [Extremely Scalable Distributed Computation of Contour Trees via Pre-Simplification](https://arxiv.org/abs/2508.08433)
+* [XDMA: A Distributed, Extensible DMA Architecture for Layout-Flexible Data Movements in Heterogeneous Multi-Accelerator SoCs](https://arxiv.org/abs/2508.08396)
+* [Towards Efficient and Practical GPU Multitasking in the Era of LLM](https://arxiv.org/abs/2508.08448)
+* [Ultra Ethernet's Design Principles and Architectural Innovations](https://arxiv.org/abs/2508.08906)
+* [Selective KV-Cache Sharing to Mitigate Timing Side-Channels in LLM Inference](https://arxiv.org/abs/2508.08438)
+
+
 ### 2025-08-12
 
 * [On the Operational Resilience of CBDC: Threats and Prospects of Formal Validation for Offline Payments](https://arxiv.org/abs/2508.08064)
