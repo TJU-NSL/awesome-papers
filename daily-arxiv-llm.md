@@ -1,5 +1,17 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-08-14
+
+* [Closing the HPC-Cloud Convergence Gap: Multi-Tenant Slingshot RDMA for Kubernetes](https://arxiv.org/abs/2508.09663)
+* [HierMoE: Accelerating MoE Training with Hierarchical Token Deduplication and Expert Swap](https://arxiv.org/abs/2508.09591)
+* [Verify Distributed Deep Learning Model Implementation Refinement with Iterative Relation Inference](https://arxiv.org/abs/2508.09505)
+* [Distributed Diamond Formation of Sliding Squares](https://arxiv.org/abs/2508.09638)
+* [Cluster Topology-Driven Placement of Experts Reduces Network Traffic in MoE Inference](https://arxiv.org/abs/2508.09229)
+* [Semantic-Aware LLM Orchestration for Proactive Resource Management in Predictive Digital Twin Vehicular Networks](https://arxiv.org/abs/2508.09149)
+* [Holistic Heterogeneous Scheduling for Autonomous Applications using Fine-grained, Multi-XPU Abstraction](https://arxiv.org/abs/2508.09503)
+* [A Limits Study of Memory-side Tiering Telemetry](https://arxiv.org/abs/2508.09351)
+
+
 ### 2025-08-13
 
 * [P/D-Device: Disaggregated Large Language Model between Cloud and Devices](https://arxiv.org/abs/2508.09035)
