@@ -1,5 +1,16 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-08-15
+
+* [Minimmit: Fast Finality with Even Faster Blocks](https://arxiv.org/abs/2508.10862)
+* [Introducing CQ: A C-like API for Quantum Accelerated HPC](https://arxiv.org/abs/2508.10854)
+* [Dalek: An Unconventional and Energy-Aware Heterogeneous Cluster](https://arxiv.org/abs/2508.10481)
+* [GPZ: GPU-Accelerated Lossy Compressor for Particle Data](https://arxiv.org/abs/2508.10305)
+* [Mixed-Precision Performance Portability of FFT-Based GPU-Accelerated Algorithms for Block-Triangular Toeplitz Matrices](https://arxiv.org/abs/2508.10202)
+* [Hard Shell, Reliable Core: Improving Resilience in Replicated Systems with Selective Hybridization](https://arxiv.org/abs/2508.10141)
+* [Leveraging OS-Level Primitives for Robotic Action Management](https://arxiv.org/abs/2508.10259)
+
+
 ### 2025-08-14
 
 * [Closing the HPC-Cloud Convergence Gap: Multi-Tenant Slingshot RDMA for Kubernetes](https://arxiv.org/abs/2508.09663)
