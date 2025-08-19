@@ -1,5 +1,16 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-08-18
+
+* [Efficient GPU-Centered Singular Value Decomposition Using the Divide-and-Conquer Method](https://arxiv.org/abs/2508.11467)
+* [Time, Fences and the Ordering of Events in TSO](https://arxiv.org/abs/2508.11415)
+* [Space-efficient population protocols for exact majority in general graphs](https://arxiv.org/abs/2508.11384)
+* [Inter-APU Communication on AMD MI300A Systems via Infinity Fabric: a Deep Dive](https://arxiv.org/abs/2508.11298)
+* [Element and Everything Tokens: Two-Tier Architecture for Mobilizing Alternative Assets](https://arxiv.org/abs/2508.11266)
+* [EMLIO: Minimizing I/O Latency and Energy Consumption for Large-Scale AI Training](https://arxiv.org/abs/2508.11035)
+* [OpenCXD: An Open Real-Device-Guided Hybrid Evaluation Framework for CXL-SSDs](https://arxiv.org/abs/2508.11477)
+
+
 ### 2025-08-15
 
 * [Minimmit: Fast Finality with Even Faster Blocks](https://arxiv.org/abs/2508.10862)
