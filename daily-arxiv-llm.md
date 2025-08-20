@@ -1,5 +1,19 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-08-19
+
+* [Team Formation and Applications](https://arxiv.org/abs/2508.13084)
+* [Congested Clique Counting for Local Gibbs Distributions](https://arxiv.org/abs/2508.13083)
+* [WANify: Gauging and Balancing Runtime WAN Bandwidth for Geo-distributed Data Analytics](https://arxiv.org/abs/2508.12961)
+* [Accelerating Edge Inference for Distributed MoE Models with Latency-Optimized Expert Placement](https://arxiv.org/abs/2508.12851)
+* [Dissecting CPU-GPU Unified Physical Memory on AMD MI300A APUs](https://arxiv.org/abs/2508.12743)
+* [DIT: Dimension Reduction View on Optimal NFT Rarity Meters](https://arxiv.org/abs/2508.12671)
+* [Proceedings 18th Interaction and Concurrency Experience](https://arxiv.org/abs/2508.12308)
+* [Data-driven Trust Bootstrapping for Mobile Edge Computing-based Industrial IoT Services](https://arxiv.org/abs/2508.12560)
+* [Attack Graph Generation on HPC Clusters](https://arxiv.org/abs/2508.12161)
+* [OS-R1: Agentic Operating System Kernel Tuning with Reinforcement Learning](https://arxiv.org/abs/2508.12551)
+
+
 ### 2025-08-18
 
 * [Efficient GPU-Centered Singular Value Decomposition Using the Divide-and-Conquer Method](https://arxiv.org/abs/2508.11467)
