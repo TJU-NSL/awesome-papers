@@ -1,5 +1,23 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-08-20
+
+* [Is RISC-V ready for High Performance Computing? An evaluation of the Sophon SG2044](https://arxiv.org/abs/2508.13840)
+* [Estimating CO$_2$ emissions of distributed applications and platforms with SimGrid/Batsim](https://arxiv.org/abs/2508.13693)
+* [LUNDIsim: model meshes for flow simulation and scientific data compression benchmarks](https://arxiv.org/abs/2508.13636)
+* [LAMMPS-KOKKOS: Performance Portable Molecular Dynamics Across Exascale Architectures](https://arxiv.org/abs/2508.13523)
+* [DDoS Attacks in Cloud Computing: Detection and Prevention](https://arxiv.org/abs/2508.13522)
+* [Optimizing Allreduce Operations for Heterogeneous Architectures with Multiple Processes per GPU](https://arxiv.org/abs/2508.13397)
+* [OrbitChain: Orchestrating In-orbit Real-time Analytics of Earth Observation Data](https://arxiv.org/abs/2508.13374)
+* [Persistent and Partitioned MPI for Stencil Communication](https://arxiv.org/abs/2508.13370)
+* [Harnessing the Full Potential of RRAMs through Scalable and Distributed In-Memory Computing with Integrated Error Correction](https://arxiv.org/abs/2508.13298)
+* [Analog computation with transcriptional networks](https://arxiv.org/abs/2508.14017)
+* [PennyLane-Lightning MPI: A massively scalable quantum circuit simulator based on distributed computing in CPU clusters](https://arxiv.org/abs/2508.13615)
+* [X-MoE: Enabling Scalable Training for Emerging Mixture-of-Experts Architectures on HPC Platforms](https://arxiv.org/abs/2508.13337)
+* [Sustainable AI Training via Hardware-Software Co-Design on NVIDIA, AMD, and Emerging GPU Architectures](https://arxiv.org/abs/2508.13163)
+* [Towards Timing Isolation for Mixed-Criticality Communication in Software-Defined Vehicles](https://arxiv.org/abs/2508.13652)
+
+
 ### 2025-08-19
 
 * [Team Formation and Applications](https://arxiv.org/abs/2508.13084)
