@@ -1,5 +1,23 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-08-21
+
+* [The Cost Advantage of Virtual Machine Migrations: Empirical Insights into Amazon's EC2 Marketspace](https://arxiv.org/abs/2508.14883)
+* [Leveraging Hardware-Aware Computation in Mixed-Precision Matrix Multiply: A Tile-Centric Approach](https://arxiv.org/abs/2508.14848)
+* [MOHAF: A Multi-Objective Hierarchical Auction Framework for Scalable and Fair Resource Allocation in IoT Ecosystems](https://arxiv.org/abs/2508.14830)
+* [DAG it off: Latency Prefers No Common Coins](https://arxiv.org/abs/2508.14716)
+* [A Systematic Evaluation of the Potential of Carbon-Aware Execution for Scientific Workflows](https://arxiv.org/abs/2508.14625)
+* [Boosting Payment Channel Network Liquidity with Topology Optimization and Transaction Selection](https://arxiv.org/abs/2508.14524)
+* [Auditable Shared Objects: From Registers to Synchronization Primitives](https://arxiv.org/abs/2508.14506)
+* [SSSP-Del: Fully Dynamic Distributed Algorithm for Single-Source Shortest Path](https://arxiv.org/abs/2508.14319)
+* [Pure Data Spaces](https://arxiv.org/abs/2508.14271)
+* [Time-optimal Asynchronous Minimal Vertex Covering by Myopic Robots](https://arxiv.org/abs/2508.14247)
+* [Cooperative SGD with Dynamic Mixing Matrices](https://arxiv.org/abs/2508.14565)
+* [Lagrangian Simulation Volume-Based Contour Tree Simplification](https://arxiv.org/abs/2508.14339)
+* [Power Stabilization for AI Training Datacenters](https://arxiv.org/abs/2508.14318)
+* [A High Performance GPU CountSketch Implementation and Its Application to Multisketching and Least Squares Problems](https://arxiv.org/abs/2508.14209)
+
+
 ### 2025-08-20
 
 * [Is RISC-V ready for High Performance Computing? An evaluation of the Sophon SG2044](https://arxiv.org/abs/2508.13840)
