@@ -1,5 +1,22 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-08-22
+
+* [CausalMesh: A Formally Verified Causal Cache for Stateful Serverless Computing](https://arxiv.org/abs/2508.15647)
+* [Efficient Mixed-Precision Large Language Model Inference with TurboMind](https://arxiv.org/abs/2508.15601)
+* [Lower Bounds for $k$-Set Agreement in Fault-Prone Networks](https://arxiv.org/abs/2508.15562)
+* [Universal Dancing by Luminous Robots under Sequential Schedulers](https://arxiv.org/abs/2508.15484)
+* [Databelt: A Continuous Data Path for Serverless Workflows in the 3D Compute Continuum](https://arxiv.org/abs/2508.15351)
+* [Declarative Data Pipeline for Large Scale ML Services](https://arxiv.org/abs/2508.15105)
+* [Mitigating context switching in densely packed Linux clusters with Latency-Aware Group Scheduling](https://arxiv.org/abs/2508.15703)
+* [On the Effectiveness of Graph Reordering for Accelerating Approximate Nearest Neighbor Search on GPU](https://arxiv.org/abs/2508.15436)
+* [Optimizing Compilation for Distributed Quantum Computing via Clustering and Annealing](https://arxiv.org/abs/2508.15267)
+* [Reliable Multi-view 3D Reconstruction for `Just-in-time' Edge Environments](https://arxiv.org/abs/2508.15158)
+* [TOAST: Fast and scalable auto-partitioning based on principled static analysis](https://arxiv.org/abs/2508.15010)
+* [Scalable FPGA Framework for Real-Time Denoising in High-Throughput Imaging: A DRAM-Optimized Pipeline using High-Level Synthesis](https://arxiv.org/abs/2508.14917)
+* [Mitigating context switching in densely packed Linux clusters with Latency-Aware Group Scheduling](https://arxiv.org/abs/2508.15703)
+
+
 ### 2025-08-21
 
 * [The Cost Advantage of Virtual Machine Migrations: Empirical Insights into Amazon's EC2 Marketspace](https://arxiv.org/abs/2508.14883)
