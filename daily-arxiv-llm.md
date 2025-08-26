@@ -1,5 +1,16 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-08-25
+
+* [Generalizing Brooks' theorem via Partial Coloring is Hard Classically and Locally](https://arxiv.org/abs/2508.16308)
+* [HyperFlexis: Joint Design of Algorithms and Systems for Multi-SLO Serving and Fast Scaling](https://arxiv.org/abs/2508.15919)
+* [On the Duality of Task and Actor Programming Models](https://arxiv.org/abs/2508.16522)
+* [Hybrid Classical-Quantum Supercomputing: A demonstration of a multi-user, multi-QPU and multi-GPU environment](https://arxiv.org/abs/2508.16297)
+* [Self-Healing Network of Interconnected Edge Devices Empowered by Infrastructure-as-Code and LoRa Communication](https://arxiv.org/abs/2508.16268)
+* [Towards Integrated Energy-Communication-Transportation Hub: A Base-Station-Centric Design in 5G and Beyond](https://arxiv.org/abs/2508.15833)
+* [CXLAimPod: CXL Memory is all you need in AI era](https://arxiv.org/abs/2508.15980)
+
+
 ### 2025-08-22
 
 * [CausalMesh: A Formally Verified Causal Cache for Stateful Serverless Computing](https://arxiv.org/abs/2508.15647)
