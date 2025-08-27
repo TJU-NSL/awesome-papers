@@ -1,5 +1,29 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-08-26
+
+* [Flash Sparse Attention: An Alternative Efficient Implementation of Native Sparse Attention Kernel](https://arxiv.org/abs/2508.18224)
+* [Practical GPU Choices for Earth Observation: ResNet-50 Training Throughput on Integrated, Laptop, and Cloud Accelerators](https://arxiv.org/abs/2508.18206)
+* [Wait-free Replicated Data Types and Fair Reconciliation](https://arxiv.org/abs/2508.18193)
+* [Scalable Engine and the Performance of Different LLM Models in a SLURM based HPC architecture](https://arxiv.org/abs/2508.17814)
+* [ExpertWeave: Efficiently Serving Expert-Specialized Fine-Tuned Adapters at Scale](https://arxiv.org/abs/2508.17624)
+* [Zen-Attention: A Compiler Framework for Dynamic Attention Folding on AMD NPUs](https://arxiv.org/abs/2508.17593)
+* [Easy Acceleration with Distributed Arrays](https://arxiv.org/abs/2508.17493)
+* [Bine Trees: Enhancing Collective Operations by Optimizing Communication Locality](https://arxiv.org/abs/2508.17311)
+* [TokenLake: A Unified Segment-level Prefix Cache Pool for Fine-grained Elastic Long-Context LLM Serving](https://arxiv.org/abs/2508.17219)
+* [PICO: Performance Insights for Collective Operations](https://arxiv.org/abs/2508.16809)
+* [Neuromorphic Simulation of Drosophila Melanogaster Brain Connectome on Loihi 2](https://arxiv.org/abs/2508.16792)
+* [Equinox: Holistic Fair Scheduling in Serving Large Language Models](https://arxiv.org/abs/2508.16646)
+* [GPU Acceleration for Faster Evolutionary Spatial Cyclic Game Systems](https://arxiv.org/abs/2508.16639)
+* [Performance measurements of modern Fortran MPI applications with Score-P](https://arxiv.org/abs/2508.16592)
+* [Views: A Hardware-friendly Graph Database Model For Storing Semantic Information](https://arxiv.org/abs/2508.18123)
+* [Systematic Characterization of LLM Quantization: A Performance, Energy, and Quality Perspective](https://arxiv.org/abs/2508.16712)
+* [GPT-OSS-20B: A Comprehensive Deployment-Centric Analysis of OpenAI's Open-Weight Mixture of Experts Model](https://arxiv.org/abs/2508.16700)
+* [Scalable Hybrid quantum Monte Carlo simulation of U(1) gauge field coupled to fermions on GPU](https://arxiv.org/abs/2508.16298)
+* [Iridescent: A Framework Enabling Online System Implementation Specialization](https://arxiv.org/abs/2508.16690)
+* [Puzzle: Scheduling Multiple Deep Learning Models on Mobile Device with Heterogeneous Processors](https://arxiv.org/abs/2508.17764)
+
+
 ### 2025-08-25
 
 * [Generalizing Brooks' theorem via Partial Coloring is Hard Classically and Locally](https://arxiv.org/abs/2508.16308)
