@@ -1,5 +1,21 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-08-27
+
+* [Ab-initio Quantum Transport with the GW Approximation, 42,240 Atoms, and Sustained Exascale Performance](https://arxiv.org/abs/2508.19138)
+* [CARMA: Collocation-Aware Resource Manager with GPU Memory Estimator](https://arxiv.org/abs/2508.19073)
+* [Deep Learning-Enabled Supercritical Flame Simulation at Detailed Chemistry and Real-Fluid Accuracy Towards Trillion-Cell Scale](https://arxiv.org/abs/2508.18969)
+* [SIREN: Software Identification and Recognition in HPC Systems](https://arxiv.org/abs/2508.18950)
+* [ClusterFusion: Expanding Operator Fusion Scope for LLM Inference via Cluster-Level Collective Primitive](https://arxiv.org/abs/2508.18850)
+* [Examining MPI and its Extensions for Asynchronous Multithreaded Communication](https://arxiv.org/abs/2508.18667)
+* [Strata: Hierarchical Context Caching for Long Context Language Model Serving](https://arxiv.org/abs/2508.18572)
+* [Managing Multi Instance GPUs for High Throughput and Energy Savings](https://arxiv.org/abs/2508.18556)
+* [Experiences with Model Context Protocol Servers for Science and High Performance Computing](https://arxiv.org/abs/2508.18489)
+* [Architecting Distributed Quantum Computers: Design Insights from Resource Estimation](https://arxiv.org/abs/2508.19160)
+* [History Rhymes: Accelerating LLM Reinforcement Learning with RhymeRL](https://arxiv.org/abs/2508.18588)
+* [DualSparse-MoE: Coordinating Tensor/Neuron-Level Sparsity with Expert Partition and Reconstruction](https://arxiv.org/abs/2508.18376)
+
+
 ### 2025-08-26
 
 * [Flash Sparse Attention: An Alternative Efficient Implementation of Native Sparse Attention Kernel](https://arxiv.org/abs/2508.18224)
