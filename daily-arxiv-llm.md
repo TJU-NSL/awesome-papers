@@ -1,5 +1,17 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-08-28
+
+* [HPC Digital Twins for Evaluating Scheduling Policies, Incentive Structures and their Impact on Power and Cooling](https://arxiv.org/abs/2508.20016)
+* [Separation of Three or More Autonomous Mobile Models under Hierarchical Schedulers](https://arxiv.org/abs/2508.19805)
+* [Beyond the Bermuda Triangle of Contention: IOMMU Interference in Mixed Criticality Systems](https://arxiv.org/abs/2508.19670)
+* [Taming the Chaos: Coordinated Autoscaling for Heterogeneous and Disaggregated LLM Inference](https://arxiv.org/abs/2508.19559)
+* [Formal Modeling and Verification of the Algorand Consensus Protocol in CADP](https://arxiv.org/abs/2508.19452)
+* [HAP: Hybrid Adaptive Parallelism for Efficient Mixture-of-Experts Inference](https://arxiv.org/abs/2508.19373)
+* [New Tools, Programming Models, and System Support for Processing-in-Memory Architectures](https://arxiv.org/abs/2508.19868)
+* [Aegis: Taxonomy and Optimizations for Overcoming Agent-Environment Failures in LLM Agents](https://arxiv.org/abs/2508.19504)
+
+
 ### 2025-08-27
 
 * [Ab-initio Quantum Transport with the GW Approximation, 42,240 Atoms, and Sustained Exascale Performance](https://arxiv.org/abs/2508.19138)
