@@ -1,5 +1,18 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-08-29
+
+* [Collaborative Evolution of Intelligent Agents in Large-Scale Microservice Systems](https://arxiv.org/abs/2508.20508)
+* [pdGRASS: A Fast Parallel Density-Aware Algorithm for Graph Spectral Sparsification](https://arxiv.org/abs/2508.20403)
+* [CoFormer: Collaborating with Heterogeneous Edge Devices for Scalable Transformer Inference](https://arxiv.org/abs/2508.20375)
+* [Predictable LLM Serving on GPU Clusters](https://arxiv.org/abs/2508.20274)
+* [SwizzlePerf: Hardware-Aware LLMs for GPU Kernel Performance Optimization](https://arxiv.org/abs/2508.20258)
+* [SpeedMalloc: Improving Multi-threaded Applications via a Lightweight Core for Memory Allocation](https://arxiv.org/abs/2508.20253)
+* [A Hybrid Stochastic Gradient Tracking Method for Distributed Online Optimization Over Time-Varying Directed Networks](https://arxiv.org/abs/2508.20645)
+* [High performance visualization for Astronomy and Cosmology: the VisIVO's pathway toward Exascale systems](https://arxiv.org/abs/2508.20603)
+* [Poison Once, Refuse Forever: Weaponizing Alignment for Injecting Bias in LLMs](https://arxiv.org/abs/2508.20333)
+
+
 ### 2025-08-28
 
 * [HPC Digital Twins for Evaluating Scheduling Policies, Incentive Structures and their Impact on Power and Cooling](https://arxiv.org/abs/2508.20016)
