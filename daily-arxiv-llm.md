@@ -1,5 +1,15 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-09-01
+
+* [Accelerating Mixture-of-Experts Inference by Hiding Offloading Latency with Speculative Decoding](https://arxiv.org/abs/2508.21706)
+* [Odyssey: Adaptive Policy Selection for Resilient Distributed Training](https://arxiv.org/abs/2508.21613)
+* [Unpacking Maximum Extractable Value on Polygon: A Study on Atomic Arbitrage](https://arxiv.org/abs/2508.21473)
+* [Addressing Reproducibility Challenges in HPC with Continuous Integration](https://arxiv.org/abs/2508.21289)
+* [Fast and Scalable Mixed Precision Euclidean Distance Calculations Using GPU Tensor Cores](https://arxiv.org/abs/2508.21230)
+* [An Optimistic Gradient Tracking Method for Distributed Minimax Optimization](https://arxiv.org/abs/2508.21431)
+
+
 ### 2025-08-29
 
 * [Collaborative Evolution of Intelligent Agents in Large-Scale Microservice Systems](https://arxiv.org/abs/2508.20508)
