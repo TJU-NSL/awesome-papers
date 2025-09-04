@@ -1,5 +1,32 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-09-03
+
+* [Energy-Efficient Split Learning for Resource-Constrained Environments: A Smart Farming Solution](https://arxiv.org/abs/2509.02549)
+* [MLP-Offload: Multi-Level, Multi-Path Offloading for LLM Pre-training to Break the GPU Memory Wall](https://arxiv.org/abs/2509.02480)
+* [Safe Memory Reclamation Techniques](https://arxiv.org/abs/2509.02457)
+* [KubeIntellect: A Modular LLM-Orchestrated Agent Framework for End-to-End Kubernetes Management](https://arxiv.org/abs/2509.02449)
+* [An Efficient and Adaptive Watermark Detection System with Tile-based Error Correction](https://arxiv.org/abs/2509.02447)
+* [Efficient Pyramidal Analysis of Gigapixel Images on a Decentralized Modest Computer Cluster](https://arxiv.org/abs/2509.02440)
+* [A Continuous Energy Ising Machine Leveraging Difference-of-Convex Programming](https://arxiv.org/abs/2509.01928)
+* [Optimal Parallel Scheduling under Concave Speedup Functions](https://arxiv.org/abs/2509.01811)
+* [STZ: A High Quality and High Speed Streaming Lossy Compression Framework for Scientific Data](https://arxiv.org/abs/2509.01626)
+* [HiCR, an Abstract Model for Distributed Heterogeneous Programming](https://arxiv.org/abs/2509.01425)
+* [LiquidGEMM: Hardware-Efficient W4A8 GEMM Kernel for High-Performance LLM Serving](https://arxiv.org/abs/2509.01229)
+* [LobRA: Multi-tenant Fine-tuning over Heterogeneous Data](https://arxiv.org/abs/2509.01193)
+* [DSDE: Dynamic Speculative Decoding with KLD Stability for Real-World Serving](https://arxiv.org/abs/2509.01083)
+* [Parallelizing Drug Discovery: HPC Pipelines for Alzheimer's Molecular Docking and Simulation](https://arxiv.org/abs/2509.00937)
+* [Accelerating Latency-Critical Applications with AI-Powered Semi-Automatic Fine-Grained Parallelization on SMT Processors](https://arxiv.org/abs/2509.00883)
+* [HADIS: Hybrid Adaptive Diffusion Model Serving for Efficient Text-to-Image Generation](https://arxiv.org/abs/2509.00642)
+* [KVComp: A High-Performance, LLM-Aware, Lossy Compression Framework for KV Cache](https://arxiv.org/abs/2509.00579)
+* [HydroGAT: Distributed Heterogeneous Graph Attention Transformer for Spatiotemporal Flood Prediction](https://arxiv.org/abs/2509.02481)
+* [Online Identification of IT Systems through Active Causal Learning](https://arxiv.org/abs/2509.02130)
+* [Batch Query Processing and Optimization for Agentic Workflows](https://arxiv.org/abs/2509.02121)
+* [OASIS: Object-based Analytics Storage for Intelligent SQL Query Offloading in Scientific Tabular Workloads](https://arxiv.org/abs/2509.01966)
+* [AdaptCache: KV Cache Native Storage Hierarchy for Low-Delay and High-Quality Language Model Serving](https://arxiv.org/abs/2509.00105)
+* [Towards Agentic OS: An LLM Agent Framework for Linux Schedulers](https://arxiv.org/abs/2509.01245)
+
+
 ### 2025-09-01
 
 * [Accelerating Mixture-of-Experts Inference by Hiding Offloading Latency with Speculative Decoding](https://arxiv.org/abs/2508.21706)
