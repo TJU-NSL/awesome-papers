@@ -1,5 +1,21 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-09-04
+
+* [CloudFormer: An Attention-based Performance Prediction for Public Clouds with Unknown Workload](https://arxiv.org/abs/2509.03394)
+* [Efficient and Secure Sleepy Model for BFT Consensus](https://arxiv.org/abs/2509.03145)
+* [The High Cost of Keeping Warm: Characterizing Overhead in Serverless Autoscaling Policies](https://arxiv.org/abs/2509.03104)
+* [FlashRecovery: Fast and Low-Cost Recovery from Failures for Large-Scale Training of LLMs](https://arxiv.org/abs/2509.03047)
+* [Mycroft: Tracing Dependencies in Collective Communication Towards Reliable LLM Training](https://arxiv.org/abs/2509.03018)
+* [A Novel IaaS Tax Model as Leverage Towards Green Cloud Computing](https://arxiv.org/abs/2509.02767)
+* [DPQuant: Efficient and Differentially-Private Model Training via Dynamic Quantization Scheduling](https://arxiv.org/abs/2509.03472)
+* [A description of the radio astronomy data processing tool DDF Pipeline](https://arxiv.org/abs/2509.03075)
+* [Treasure Hunt in Anonymous Graphs with Quantum Pebbles by Oblivious Agents](https://arxiv.org/abs/2509.02909)
+* [\textit{In Silico} Benchmarking of Detectable Byzantine Agreement in Noisy Quantum Networks](https://arxiv.org/abs/2509.02629)
+* [On the Optimization of Methods for Establishing Well-Connected Communities](https://arxiv.org/abs/2509.02590)
+* [Safe Sharing of Fast Kernel-Bypass I/O Among Nontrusting Applications](https://arxiv.org/abs/2509.02899)
+
+
 ### 2025-09-03
 
 * [Energy-Efficient Split Learning for Resource-Constrained Environments: A Smart Farming Solution](https://arxiv.org/abs/2509.02549)
