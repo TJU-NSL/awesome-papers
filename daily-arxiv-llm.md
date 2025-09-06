@@ -1,5 +1,20 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-09-05
+
+* [On the impact of unlimited computational power in OBLOT: consequences for synchronous robots on graphs](https://arxiv.org/abs/2509.04383)
+* [Trustworthy Second-hand Marketplace for Built Environment](https://arxiv.org/abs/2509.04085)
+* [LowDiff: Efficient Frequent Checkpointing via Low-Cost Differential for High-Performance Distributed Training Systems](https://arxiv.org/abs/2509.04084)
+* [Counterfactual simulations for large scale systems with burnout variables](https://arxiv.org/abs/2509.04038)
+* [Gathering of asynchronous robots on circle with limited visibility using finite communication](https://arxiv.org/abs/2509.04004)
+* [Distributed Download from an External Data Source in Asynchronous Faulty Settings](https://arxiv.org/abs/2509.03755)
+* [Combining Performance and Productivity: Accelerating the Network Sensing Graph Challenge with GPUs and Commodity Data Science Software](https://arxiv.org/abs/2509.03653)
+* [Massively-Parallel Implementation of Inextensible Elastic Rods Using Inter-block GPU Synchronization](https://arxiv.org/abs/2509.04277)
+* [Cloud-Assisted Remote Control for Aerial Robots: From Theory to Proof-of-Concept Implementation](https://arxiv.org/abs/2509.04095)
+* [Prob-GParareal: A Probabilistic Numerical Parallel-in-Time Solver for Differential Equations](https://arxiv.org/abs/2509.03945)
+* [Towards Deterministic Sub-0.5 us Response on Linux through Interrupt Isolation](https://arxiv.org/abs/2509.03855)
+
+
 ### 2025-09-04
 
 * [CloudFormer: An Attention-based Performance Prediction for Public Clouds with Unknown Workload](https://arxiv.org/abs/2509.03394)
