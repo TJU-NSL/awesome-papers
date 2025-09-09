@@ -1,5 +1,14 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-09-08
+
+* [Scaling Performance of Large Language Model Pretraining](https://arxiv.org/abs/2509.05258)
+* [Dynamic reconfiguration for malleable applications using RMA](https://arxiv.org/abs/2509.05248)
+* [Toward Distributed 3D Gaussian Splatting for High-Resolution Isosurface Visualization](https://arxiv.org/abs/2509.05216)
+* [VoltanaLLM: Feedback-Driven Frequency Control and State-Space Routing for Energy-Efficient LLM Serving](https://arxiv.org/abs/2509.04827)
+* [STADI: Fine-Grained Step-Patch Diffusion Parallelism for Heterogeneous GPUs](https://arxiv.org/abs/2509.04719)
+
+
 ### 2025-09-05
 
 * [On the impact of unlimited computational power in OBLOT: consequences for synchronous robots on graphs](https://arxiv.org/abs/2509.04383)
