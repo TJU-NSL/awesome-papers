@@ -1,5 +1,27 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-09-09
+
+* [IM-PIR: In-Memory Private Information Retrieval](https://arxiv.org/abs/2509.06514)
+* [MaaSO: SLO-aware Orchestration of Heterogeneous Model Instances for MaaS](https://arxiv.org/abs/2509.06362)
+* [FineServe: Precision-Aware KV Slab and Two-Level Scheduling for Heterogeneous Precision LLM Serving](https://arxiv.org/abs/2509.06261)
+* [20 Years in Life of a Smart Building: A retrospective](https://arxiv.org/abs/2509.06229)
+* [Gathering in Non-Vertex-Transitive Graphs Under Round Robin](https://arxiv.org/abs/2509.06064)
+* [DISTRIBUTEDANN: Efficient Scaling of a Single DISKANN Graph Across Thousands of Computers](https://arxiv.org/abs/2509.06046)
+* [A Simple and Robust Protocol for Distributed Counting](https://arxiv.org/abs/2509.05870)
+* [Multi-IaC-Eval: Benchmarking Cloud Infrastructure as Code Across Multiple Formats](https://arxiv.org/abs/2509.05303)
+* [Distributed Automatic Generation Control subject to Ramp-Rate-Limits: Anytime Feasibility and Uniform Network-Connectivity](https://arxiv.org/abs/2509.06588)
+* [Tackling Device Data Distribution Real-time Shift via Prototype-based Parameter Editing](https://arxiv.org/abs/2509.06552)
+* [Several Performance Bounds on Decentralized Online Optimization are Highly Conservative and Potentially Misleading](https://arxiv.org/abs/2509.06466)
+* [Social Dynamics of DAOs: Power, Onboarding, and Inclusivity](https://arxiv.org/abs/2509.06163)
+* [Introduction to Number Theoretic Transform](https://arxiv.org/abs/2509.05884)
+* [Tiga: Accelerating Geo-Distributed Transactions with Synchronized Clocks [Technical Report]](https://arxiv.org/abs/2509.05759)
+* [Distributed Deep Learning using Stochastic Gradient Staleness](https://arxiv.org/abs/2509.05679)
+* [Workflow for High-Fidelity Dynamic Analysis of Structures with Pile Foundation](https://arxiv.org/abs/2509.05675)
+* [Efficient Fault Localization in a Cloud Stack Using End-to-End Application Service Topology](https://arxiv.org/abs/2509.05511)
+* [MambaLite-Micro: Memory-Optimized Mamba Inference on MCUs](https://arxiv.org/abs/2509.05488)
+
+
 ### 2025-09-08
 
 * [Scaling Performance of Large Language Model Pretraining](https://arxiv.org/abs/2509.05258)
