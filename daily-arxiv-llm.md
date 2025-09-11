@@ -1,5 +1,23 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-09-10
+
+* [Scaling atomic ordering in shared memory](https://arxiv.org/abs/2509.07781)
+* [AgentX: Towards Orchestrating Robust Agentic Workflow Patterns with FaaS-hosted MCP Services](https://arxiv.org/abs/2509.07595)
+* [Navigating Energy Doldrums: Modeling the Impact of Energy Price Volatility on HPC Cost of Ownership](https://arxiv.org/abs/2509.07567)
+* [Astra: A Multi-Agent System for GPU Kernel Performance Optimization](https://arxiv.org/abs/2509.07506)
+* [DREAMS: Decentralized Resource Allocation and Service Management across the Compute Continuum Using Service Affinity](https://arxiv.org/abs/2509.07497)
+* [Dependency-Aware Execution Mechanism in Hyperledger Fabric Architecture](https://arxiv.org/abs/2509.07425)
+* [DuoServe-MoE: Dual-Phase Expert Prefetch and Cache Scheduling for Efficient MoE LLM Inference](https://arxiv.org/abs/2509.07379)
+* [Optimizing Task Scheduling in Fog Computing with Deadline Awareness](https://arxiv.org/abs/2509.07378)
+* [A Study on Messaging Trade-offs in Data Streaming for Scientific Workflows](https://arxiv.org/abs/2509.07199)
+* [Bodega: Serving Linearizable Reads Locally from Anywhere at Anytime via Roster Leases](https://arxiv.org/abs/2509.07158)
+* [Crossword: Adaptive Consensus for Dynamic Data-Heavy Workloads](https://arxiv.org/abs/2509.07157)
+* [MoE-Compression: How the Compression Error of Experts Affects the Inference Accuracy of MoE Model?](https://arxiv.org/abs/2509.07727)
+* [HYLU: Hybrid Parallel Sparse LU Factorization](https://arxiv.org/abs/2509.07690)
+* [veScale: Consistent and Efficient Tensor Programming with Eager-Mode SPMD](https://arxiv.org/abs/2509.07003)
+
+
 ### 2025-09-09
 
 * [IM-PIR: In-Memory Private Information Retrieval](https://arxiv.org/abs/2509.06514)
