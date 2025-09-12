@@ -1,5 +1,16 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-09-11
+
+* [Reconfigurable Holographic Surfaces and Near Field Communication for Non-Terrestrial Networks: Potential and Challenges](https://arxiv.org/abs/2509.08770)
+* [A 410GFLOP/s, 64 RISC-V Cores, 204.8GBps Shared-Memory Cluster in 12nm FinFET with Systolic Execution Support for Efficient B5G/6G AI-Enhanced O-RAN](https://arxiv.org/abs/2509.08608)
+* [An HPC Benchmark Survey and Taxonomy for Characterization](https://arxiv.org/abs/2509.08347)
+* [Hetis: Serving LLMs in Heterogeneous GPU Clusters with Fine-grained and Dynamic Parallelism](https://arxiv.org/abs/2509.08309)
+* [Design and Implementation of Code Completion System Based on LLM and CodeBERT Hybrid Subsystem](https://arxiv.org/abs/2509.08215)
+* [Aurora: Architecting Argonne's First Exascale Supercomputer for Accelerated Scientific Discovery](https://arxiv.org/abs/2509.08207)
+* [Towards Scalable Proteomics: Opportunistic SMC Samplers on HTCondor](https://arxiv.org/abs/2509.08020)
+
+
 ### 2025-09-10
 
 * [Scaling atomic ordering in shared memory](https://arxiv.org/abs/2509.07781)
