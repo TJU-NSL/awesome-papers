@@ -1,5 +1,20 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-09-12
+
+* [TrEnv: Transparently Share Serverless Execution Environments Across Different Functions and Nodes](https://arxiv.org/abs/2509.09525)
+* [Weaker Assumptions for Asymmetric Trust](https://arxiv.org/abs/2509.09493)
+* [Barycentric Coded Distributed Computing with Flexible Recovery Threshold for Collaborative Mobile Edge Computing](https://arxiv.org/abs/2509.09435)
+* [WebAssembly and Unikernels: A Comparative Study for Serverless at the Edge](https://arxiv.org/abs/2509.09400)
+* [Coherence-Aware Task Graph Modeling for Realistic Application](https://arxiv.org/abs/2509.09094)
+* [Optimizing the Variant Calling Pipeline Execution on Human Genomes Using GPU-Enabled Machines](https://arxiv.org/abs/2509.09058)
+* [A Comparative Analysis of Identifier Schemes: UUIDv4, UUIDv7, and ULID for Distributed Systems](https://arxiv.org/abs/2509.08969)
+* [Towards A High-Performance Quantum Data Center Network Architecture](https://arxiv.org/abs/2509.09653)
+* [HARD: A Performance Portable Radiation Hydrodynamics Code based on FleCSI Framework](https://arxiv.org/abs/2509.08971)
+* [μFork: Supporting POSIX fork Within a Single-Address-Space OS](https://arxiv.org/abs/2509.09439)
+* [TrEnv: Transparently Share Serverless Execution Environments Across Different Functions and Nodes](https://arxiv.org/abs/2509.09525)
+
+
 ### 2025-09-11
 
 * [Reconfigurable Holographic Surfaces and Near Field Communication for Non-Terrestrial Networks: Potential and Challenges](https://arxiv.org/abs/2509.08770)
