@@ -1,5 +1,15 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-09-15
+
+* [Characterizing the Efficiency of Distributed Training: A Power, Performance, and Thermal Perspective](https://arxiv.org/abs/2509.10371)
+* [Ordered Consensus with Equal Opportunity](https://arxiv.org/abs/2509.09868)
+* [The (R)evolution of Scientific Workflows in the Agentic AI Era: Towards Autonomous Science](https://arxiv.org/abs/2509.09915)
+* [DBOS Network Sensing: A Web Services Approach to Collaborative Awareness](https://arxiv.org/abs/2509.09898)
+* [XBOF: A Cost-Efficient CXL JBOF with Inter-SSD Compute Resource Sharing](https://arxiv.org/abs/2509.10251)
+* [DBOS Network Sensing: A Web Services Approach to Collaborative Awareness](https://arxiv.org/abs/2509.09898)
+
+
 ### 2025-09-12
 
 * [TrEnv: Transparently Share Serverless Execution Environments Across Different Functions and Nodes](https://arxiv.org/abs/2509.09525)
