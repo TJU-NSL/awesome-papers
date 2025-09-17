@@ -1,5 +1,28 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-09-16
+
+* [Distributed 3D Gaussian Splatting for High-Resolution Isosurface Visualization](https://arxiv.org/abs/2509.12138)
+* [UniPar: A Unified LLM-Based Framework for Parallel and Accelerated Code Translation in HPC](https://arxiv.org/abs/2509.12136)
+* [LASLiN: A Learning-Augmented Peer-to-Peer Network](https://arxiv.org/abs/2509.11904)
+* [A Uniqueness Theorem for Distributed Computation under Physical Constraint](https://arxiv.org/abs/2509.11754)
+* [Towards the Distributed Large-scale k-NN Graph Construction by Graph Merge](https://arxiv.org/abs/2509.11697)
+* [Machine Learning-Driven Predictive Resource Management in Complex Science Workflows](https://arxiv.org/abs/2509.11512)
+* [Parallel/Distributed Tabu Search for Scheduling Microprocessor Tasks in Hybrid Flowshop](https://arxiv.org/abs/2509.11396)
+* [Energy-Efficient Joint Offloading and Resource Allocation for Deadline-Constrained Tasks in Multi-Access Edge Computing](https://arxiv.org/abs/2509.11162)
+* [Adaptive K-PackCache: Cost-Centric Data Caching in Cloud](https://arxiv.org/abs/2509.11156)
+* [Linear Complexity $\mathcal{H}^2$ Direct Solver for Fine-Grained Parallel Architectures](https://arxiv.org/abs/2509.11152)
+* [GFS: A Preemption-aware Scheduling Framework for GPU Clusters with Predictive Spot Instance Management](https://arxiv.org/abs/2509.11134)
+* [Chameleon: Taming Dynamic Operator Sequences for Memory-Intensive LLM Training](https://arxiv.org/abs/2509.11076)
+* [Enhancing Type Safety in MPI with Rust: A Statically Verified Approach for RSMPI](https://arxiv.org/abs/2509.10803)
+* [Coordinated Reinforcement Learning Prefetching Architecture for Multicore Systems](https://arxiv.org/abs/2509.10719)
+* [MinatoLoader: Accelerating Machine Learning Training Through Efficient Data Preprocessing](https://arxiv.org/abs/2509.10712)
+* [Asynchronous Gathering of Opaque Robots with Mobility Faults](https://arxiv.org/abs/2509.10711)
+* [From Paradigm Shift to Audit Rift: Exploring Vulnerabilities and Audit Tips for TON Smart Contracts](https://arxiv.org/abs/2509.10823)
+* [FastTrack: GPU-Accelerated Tracking for Visual SLAM](https://arxiv.org/abs/2509.10757)
+* [Exploring Busy Period for Worst-Case Deadline Failure Probability Analysis](https://arxiv.org/abs/2509.10479)
+
+
 ### 2025-09-15
 
 * [Characterizing the Efficiency of Distributed Training: A Power, Performance, and Thermal Perspective](https://arxiv.org/abs/2509.10371)
