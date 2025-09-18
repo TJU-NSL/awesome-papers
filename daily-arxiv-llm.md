@@ -1,5 +1,26 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-09-17
+
+* [Scaling Up Throughput-oriented LLM Inference Applications on Heterogeneous Opportunistic GPU Clusters with Pervasive Context Management](https://arxiv.org/abs/2509.13201)
+* [Space-Time Trade-off in Bounded Iterated Memory](https://arxiv.org/abs/2509.13157)
+* [Asymmetric Grid Quorum Systems for Heterogeneous Processes](https://arxiv.org/abs/2509.12942)
+* [AI Factories: It's time to rethink the Cloud-HPC divide](https://arxiv.org/abs/2509.12849)
+* [Exploring Distributed Vector Databases Performance on HPC Platforms: A Study with Qdrant](https://arxiv.org/abs/2509.12384)
+* [An End to End Edge to Cloud Data and Analytics Strategy](https://arxiv.org/abs/2509.12296)
+* [The Entropy of Parallel Systems](https://arxiv.org/abs/2509.12256)
+* [SynergAI: Edge-to-Cloud Synergy for Architecture-Driven High-Performance Orchestration for AI Inference](https://arxiv.org/abs/2509.12252)
+* [Towards High-Performance and Portable Molecular Docking on CPUs through Vectorization](https://arxiv.org/abs/2509.12232)
+* [Research on fault diagnosis and root cause analysis based on full stack observability](https://arxiv.org/abs/2509.12231)
+* [TinyServe: Query-Aware Cache Selection for Efficient LLM Serving](https://arxiv.org/abs/2509.12211)
+* [A Proposal for High-Level Architectural Model Capable of Expressing Various Data Collaboration Platform and Data Space Concepts](https://arxiv.org/abs/2509.12210)
+* [IsoSched: Preemptive Tile Cascaded Scheduling of Multi-DNN via Subgraph Isomorphism](https://arxiv.org/abs/2509.12208)
+* [Emergent complexity and rhythms in evoked and spontaneous dynamics of human whole-brain models after tuning through analysis tools](https://arxiv.org/abs/2509.12873)
+* [Ratio1 -- AI meta-OS](https://arxiv.org/abs/2509.12223)
+* [Ratio1 -- AI meta-OS](https://arxiv.org/abs/2509.12223)
+* [UrgenGo: Urgency-Aware Transparent GPU Kernel Launching for Autonomous Driving](https://arxiv.org/abs/2509.12207)
+
+
 ### 2025-09-16
 
 * [Distributed 3D Gaussian Splatting for High-Resolution Isosurface Visualization](https://arxiv.org/abs/2509.12138)
