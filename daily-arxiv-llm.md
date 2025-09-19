@@ -1,5 +1,21 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-09-18
+
+* [LLM Agents for Interactive Workflow Provenance: Reference Architecture and Evaluation Methodology](https://arxiv.org/abs/2509.13978)
+* [GPU Programming for AI Workflow Development on AWS SageMaker: An Instructional Approach](https://arxiv.org/abs/2509.13703)
+* [Modeling the Carbon Footprint of HPC: The Top 500 and EasyC](https://arxiv.org/abs/2509.13583)
+* [Testing and benchmarking emerging supercomputers via the MFC flow solver](https://arxiv.org/abs/2509.13575)
+* [A User-centric Kubernetes-based Architecture for Green Cloud Computing](https://arxiv.org/abs/2509.13325)
+* [Julia GraphBLAS with Nonblocking Execution](https://arxiv.org/abs/2509.14211)
+* [A Closeness Centrality-based Circuit Partitioner for Quantum Simulations](https://arxiv.org/abs/2509.14098)
+* [Graph-Regularized Learning of Gaussian Mixture Models](https://arxiv.org/abs/2509.13855)
+* [Secure, Scalable and Privacy Aware Data Strategy in Cloud](https://arxiv.org/abs/2509.13627)
+* [AERIS: Argonne Earth Systems Model for Reliable and Skillful Predictions](https://arxiv.org/abs/2509.13523)
+* [A Task Equalization Allocation Algorithm Incorporating Blocking Estimation and Resource Similarity Analysis for Vehicle Control Real-Time Systems](https://arxiv.org/abs/2509.14086)
+* [A TRRIP Down Memory Lane: Temperature-Based Re-Reference Interval Prediction For Instruction Caching](https://arxiv.org/abs/2509.14041)
+
+
 ### 2025-09-17
 
 * [Scaling Up Throughput-oriented LLM Inference Applications on Heterogeneous Opportunistic GPU Clusters with Pervasive Context Management](https://arxiv.org/abs/2509.13201)
