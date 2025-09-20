@@ -1,5 +1,15 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-09-19
+
+* [Channel Prediction under Network Distribution Shift Using Continual Learning-based Loss Regularization](https://arxiv.org/abs/2509.15192)
+* [Conditional Prior-based Non-stationary Channel Estimation Using Accelerated Diffusion Models](https://arxiv.org/abs/2509.15182)
+* [Cost-Performance Analysis: A Comparative Study of CPU-Based Serverless and GPU-Based Training Architectures](https://arxiv.org/abs/2509.14920)
+* [Scaling Hybrid Quantum-HPC Applications with the Quantum Framework](https://arxiv.org/abs/2509.14470)
+* [Taming Serverless Cold Starts Through OS Co-Design](https://arxiv.org/abs/2509.14292)
+* [Taming Serverless Cold Starts Through OS Co-Design](https://arxiv.org/abs/2509.14292)
+
+
 ### 2025-09-18
 
 * [LLM Agents for Interactive Workflow Provenance: Reference Architecture and Evaluation Methodology](https://arxiv.org/abs/2509.13978)
