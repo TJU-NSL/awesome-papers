@@ -1,5 +1,15 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-09-22
+
+* [Efficient Pre-Training of LLMs via Topology-Aware Communication Alignment on More Than 9600 GPUs](https://arxiv.org/abs/2509.15940)
+* [Angelfish: Consensus with Optimal Throughput and Latency Across the Leader-DAG Spectrum](https://arxiv.org/abs/2509.15847)
+* [PCCL: Photonic circuit-switched collective communication for distributed ML](https://arxiv.org/abs/2509.15450)
+* [How Exclusive are Ethereum Transactions? Evidence from non-winning blocks](https://arxiv.org/abs/2509.16052)
+* [RLinf: Flexible and Efficient Large-scale Reinforcement Learning via Macro-to-Micro Flow Transformation](https://arxiv.org/abs/2509.15965)
+* [Inference Offloading for Cost-Sensitive Binary Classification at the Edge](https://arxiv.org/abs/2509.15674)
+
+
 ### 2025-09-19
 
 * [Channel Prediction under Network Distribution Shift Using Continual Learning-based Loss Regularization](https://arxiv.org/abs/2509.15192)
