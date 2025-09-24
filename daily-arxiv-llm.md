@@ -1,5 +1,29 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-09-23
+
+* [XaaS Containers: Performance-Portable Representation With Source and IR Containers](https://arxiv.org/abs/2509.17914)
+* [Expert-as-a-Service: Towards Efficient, Scalable, and Robust Large-scale MoE Serving](https://arxiv.org/abs/2509.17863)
+* [A Lightweight Approach for State Machine Replication](https://arxiv.org/abs/2509.17771)
+* [Disaggregated Prefill and Decoding Inference System for Large Language Model Serving on Multi-Vendor GPUs](https://arxiv.org/abs/2509.17542)
+* [pBeeGees: A Prudent Approach to Certificate-Decoupled BFT Consensus](https://arxiv.org/abs/2509.17496)
+* [Prefetching in Deep Memory Hierarchies with NVRAM as Main Memory](https://arxiv.org/abs/2509.17388)
+* [Asteria: Semantic-Aware Cross-Region Caching for Agentic LLM Tool Access](https://arxiv.org/abs/2509.17360)
+* [Cronus: Efficient LLM inference on Heterogeneous GPU Clusters via Partially Disaggregated Prefill](https://arxiv.org/abs/2509.17357)
+* [Institutional Research Computing Capabilities in Australia: 2024](https://arxiv.org/abs/2509.17351)
+* [MoA-Off: Adaptive Heterogeneous Modality-Aware Offloading with Edge-Cloud Collaboration for Efficient Multimodal LLM Inference](https://arxiv.org/abs/2509.16995)
+* [ShadowServe: Interference-Free KV Cache Fetching for Distributed Prefix Caching](https://arxiv.org/abs/2509.16857)
+* [Trace Replay Simulation of MIT SuperCloud for Studying Optimal Sustainability Policies](https://arxiv.org/abs/2509.16513)
+* [Shift Parallelism: Low-Latency, High-Throughput LLM Inference for Dynamic Workloads](https://arxiv.org/abs/2509.16495)
+* [WarpSpeed: A High-Performance Library for Concurrent GPU Hash Tables](https://arxiv.org/abs/2509.16407)
+* [A Comparison of Low and high-Order Methods for the Simulation of Supersonic Jet Flows](https://arxiv.org/abs/2509.17725)
+* [Cluster Workload Allocation: A Predictive Approach Leveraging Machine Learning Efficiency](https://arxiv.org/abs/2509.17695)
+* [B5GRoam: A Zero Trust Framework for Secure and Efficient On-Chain B5G Roaming](https://arxiv.org/abs/2509.16390)
+* [Robust LLM Training Infrastructure at ByteDance](https://arxiv.org/abs/2509.16293)
+* [Discovering Software Parallelization Points Using Deep Neural Networks](https://arxiv.org/abs/2509.16215)
+* [To Unpack or Not to Unpack: Living with Packers to Enable Dynamic Analysis of Android Apps](https://arxiv.org/abs/2509.16340)
+
+
 ### 2025-09-22
 
 * [Efficient Pre-Training of LLMs via Topology-Aware Communication Alignment on More Than 9600 GPUs](https://arxiv.org/abs/2509.15940)
