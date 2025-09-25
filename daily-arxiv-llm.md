@@ -1,5 +1,19 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-09-24
+
+* [Accelerating Gravitational $N$-Body Simulations Using the RISC-V-Based Tenstorrent Wormhole](https://arxiv.org/abs/2509.19294)
+* [Non-Uniform Content-Oblivious Leader Election on Oriented Asynchronous Rings](https://arxiv.org/abs/2509.19187)
+* [In-Transit Data Transport Strategies for Coupled AI-Simulation Workflow Patterns](https://arxiv.org/abs/2509.19150)
+* [Scheduler-Driven Job Atomization](https://arxiv.org/abs/2509.19086)
+* [TD3-Sched: Learning to Orchestrate Container-based Cloud-Edge Resources via Distributed Reinforcement Learning](https://arxiv.org/abs/2509.18957)
+* [On The Reproducibility Limitations of RAG Systems](https://arxiv.org/abs/2509.18869)
+* [6G Twin: Hybrid Gaussian Radio Fields for Channel Estimation and Non-Linear Precoder Design for Radio Access Networks](https://arxiv.org/abs/2509.18735)
+* [Bridging Simulation and Silicon: A Study of RISC-V Hardware and FireSim Simulation](https://arxiv.org/abs/2509.18472)
+* [Whack-a-Mole: Deterministic Packet Spraying Across Multiple Network Paths](https://arxiv.org/abs/2509.18519)
+* [Pareto-optimal Tradeoffs Between Communication and Computation with Flexible Gradient Tracking](https://arxiv.org/abs/2509.18129)
+
+
 ### 2025-09-23
 
 * [XaaS Containers: Performance-Portable Representation With Source and IR Containers](https://arxiv.org/abs/2509.17914)
