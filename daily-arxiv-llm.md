@@ -1,5 +1,20 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-09-25
+
+* [Fulcrum: Optimizing Concurrent DNN Training and Inferencing on Edge Accelerators](https://arxiv.org/abs/2509.20205)
+* [Pagoda: An Energy and Time Roofline Study for DNN Workloads on Edge Accelerators](https://arxiv.org/abs/2509.20189)
+* [Characterizing the Performance of Accelerated Jetson Edge Devices for Training Deep Learning Models](https://arxiv.org/abs/2509.20160)
+* [BurstEngine: an Efficient Distributed Framework for Training Transformers on Extremely Long Sequences of over 1M Tokens](https://arxiv.org/abs/2509.19836)
+* [Gyges: Dynamic Cross-Instance Parallelism Transformation for Efficient LLM Inference](https://arxiv.org/abs/2509.19729)
+* [Characterizing Adaptive Mesh Refinement on Heterogeneous Platforms with Parthenon-VIBE](https://arxiv.org/abs/2509.19701)
+* [A Survey of Recent Advancements in Secure Peer-to-Peer Networks](https://arxiv.org/abs/2509.19539)
+* [To Stream or Not to Stream: Towards A Quantitative Model for Remote HPC Processing Decisions](https://arxiv.org/abs/2509.19532)
+* [Investigating Sharding Advancements, Methodologies, and Adoption Potential in Hedera](https://arxiv.org/abs/2509.19478)
+* [Energy Use of AI Inference: Efficiency Pathways and Test-Time Compute](https://arxiv.org/abs/2509.20241)
+* [Supercomputing for High-speed Avoidance and Reactive Planning in Robots](https://arxiv.org/abs/2509.19486)
+
+
 ### 2025-09-24
 
 * [Accelerating Gravitational $N$-Body Simulations Using the RISC-V-Based Tenstorrent Wormhole](https://arxiv.org/abs/2509.19294)
