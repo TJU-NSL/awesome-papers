@@ -1,5 +1,28 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-09-26
+
+* [Data-Centric Elastic Pipeline Parallelism for Efficient Long-Context LLM Training](https://arxiv.org/abs/2509.21275)
+* [From GPUs to RRAMs: Distributed In-Memory Primal-Dual Hybrid Gradient Method for Solving Large-Scale Linear Optimization Problem](https://arxiv.org/abs/2509.21137)
+* [Mojo: MLIR-Based Performance-Portable HPC Science Kernels on GPUs for the Python Ecosystem](https://arxiv.org/abs/2509.21039)
+* [Utilizing Sparsity in the GPU-accelerated Assembly of Schur Complement Matrices in Domain Decomposition Methods](https://arxiv.org/abs/2509.21037)
+* [RollPacker: Mitigating Long-Tail Rollouts for Fast, Synchronous RL Post-Training](https://arxiv.org/abs/2509.21009)
+* [Integrating and Characterizing HPC Task Runtime Systems for hybrid AI-HPC workloads](https://arxiv.org/abs/2509.20819)
+* [Distributed-memory Algorithms for Sparse Matrix Permutation, Extraction, and Assignment](https://arxiv.org/abs/2509.20776)
+* [Experience Deploying Containerized GenAI Services at an HPC Center](https://arxiv.org/abs/2509.20603)
+* [FZModules: A Heterogeneous Computing Framework for Customizable Scientific Data Compression Pipelines](https://arxiv.org/abs/2509.20563)
+* [SuperOffload: Unleashing the Power of Large-Scale LLM Training on Superchips](https://arxiv.org/abs/2509.21271)
+* [Go With The Flow: Churn-Tolerant Decentralized Training of Large Language Models](https://arxiv.org/abs/2509.21221)
+* [Communication Bias in Large Language Models: A Regulatory Perspective](https://arxiv.org/abs/2509.21075)
+* [RecIS: Sparse to Dense, A Unified Training Framework for Recommendation Models](https://arxiv.org/abs/2509.20883)
+* [Guiding Application Users via Estimation of Computational Resources for Massively Parallel Chemistry Computations](https://arxiv.org/abs/2509.20667)
+* [Adaptive Approach to Enhance Machine Learning Scheduling Algorithms During Runtime Using Reinforcement Learning in Metascheduling Applications](https://arxiv.org/abs/2509.20520)
+* [Reconstruction-Based Adaptive Scheduling Using AI Inferences in Safety-Critical Systems](https://arxiv.org/abs/2509.20513)
+* [A Theory of Multi-Agent Generative Flow Networks](https://arxiv.org/abs/2509.20408)
+* [Nova: Real-Time Agentic Vision-Language Model Serving with Adaptive Cross-Stage Parallelization](https://arxiv.org/abs/2509.21301)
+* [Exploiting Page Faults for Covert Communication](https://arxiv.org/abs/2509.20398)
+
+
 ### 2025-09-25
 
 * [Fulcrum: Optimizing Concurrent DNN Training and Inferencing on Edge Accelerators](https://arxiv.org/abs/2509.20205)
