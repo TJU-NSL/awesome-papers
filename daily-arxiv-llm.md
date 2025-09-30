@@ -1,5 +1,16 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-09-29
+
+* [Orientation does not help with 3-coloring a grid in online-LOCAL](https://arxiv.org/abs/2509.22233)
+* [The AI_INFN Platform: Artificial Intelligence Development in the Cloud](https://arxiv.org/abs/2509.22117)
+* [Code once, Run Green: Automated Green Code Translation in Serverless Computing](https://arxiv.org/abs/2509.22068)
+* [Zeppelin: Balancing Variable-length Workloads in Data Parallel Large Model Training](https://arxiv.org/abs/2509.21841)
+* [Redesigning GROMACS Halo Exchange: Improving Strong Scaling with GPU-initiated NVSHMEM](https://arxiv.org/abs/2509.21527)
+* [Secure and Efficient Access Control for Computer-Use Agents via Context Space](https://arxiv.org/abs/2509.22256)
+* [A Target-Agnostic Protocol-Independent Interface for the Transport Layer](https://arxiv.org/abs/2509.21550)
+
+
 ### 2025-09-26
 
 * [Data-Centric Elastic Pipeline Parallelism for Efficient Long-Context LLM Training](https://arxiv.org/abs/2509.21275)
