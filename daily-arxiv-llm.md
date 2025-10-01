@@ -1,5 +1,32 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-09-30
+
+* [Context-Driven Performance Modeling for Causal Inference Operators on Neural Processing Units](https://arxiv.org/abs/2509.25155)
+* [GRACE-MoE: Grouping and Replication with Locality-Aware Routing for Efficient Distributed MoE Inference](https://arxiv.org/abs/2509.25041)
+* [HAPT: Heterogeneity-Aware Automated Parallel Training on Heterogeneous Clusters](https://arxiv.org/abs/2509.24859)
+* [SparseServe: Unlocking Parallelism for Dynamic Sparse Attention in Long-Context LLM Serving](https://arxiv.org/abs/2509.24626)
+* [RServe: Overlapping Encoding and Prefill for Efficient LMM Inference](https://arxiv.org/abs/2509.24381)
+* [TeraAgent: A Distributed Agent-Based Simulation Engine for Simulating Half a Trillion Agents](https://arxiv.org/abs/2509.24063)
+* [From Edge to HPC: Investigating Cross-Facility Data Streaming Architectures](https://arxiv.org/abs/2509.24030)
+* [AdaPtis: Reducing Pipeline Bubbles with Adaptive Pipeline Parallelism on Heterogeneous Models](https://arxiv.org/abs/2509.23722)
+* [Parallel Algorithms for the One Sided Crossing Minimization Problem](https://arxiv.org/abs/2509.23706)
+* [Lyte Quorum: Off-Chain Ready Smart Contract Hosted with Choice](https://arxiv.org/abs/2509.23448)
+* [Enhancing Communication Efficiency in FL with Adaptive Gradient Quantization and Communication Frequency Optimization](https://arxiv.org/abs/2509.23419)
+* [A Predictive and Synergistic Two-Layer Scheduling Framework for LLM Serving](https://arxiv.org/abs/2509.23384)
+* [Scaling LLM Test-Time Compute with Mobile NPU on Smartphones](https://arxiv.org/abs/2509.23324)
+* [Memory Efficient and Staleness Free Pipeline Parallel DNN Training Framework with Improved Convergence Speed](https://arxiv.org/abs/2509.23241)
+* [Characterizing FaaS Workflows on Public Clouds: The Good, the Bad and the Ugly](https://arxiv.org/abs/2509.23013)
+* [Efficient Fine-Grained GPU Performance Modeling for Distributed Deep Learning of LLM](https://arxiv.org/abs/2509.22832)
+* [Metadata-Guided Adaptable Frequency Scaling across Heterogeneous Applications and Devices](https://arxiv.org/abs/2509.22707)
+* [Intelligent Load Balancing in Cloud Computer Systems](https://arxiv.org/abs/2509.22704)
+* [Enhancing Cluster Scheduling in HPC: A Continuous Transfer Learning for Real-Time Optimization](https://arxiv.org/abs/2509.22701)
+* [ZKProphet: Understanding Performance of Zero-Knowledge Proofs on GPUs](https://arxiv.org/abs/2509.22684)
+* [FLAME: A Serving System Optimized for Large-Scale Generative Recommendation with Efficiency](https://arxiv.org/abs/2509.22681)
+* [Analysis of the carbon footprint of HPC](https://arxiv.org/abs/2509.22679)
+* [ASIC-based Compression Accelerators for Storage Systems: Design, Placement, and Profiling Insights](https://arxiv.org/abs/2509.23693)
+
+
 ### 2025-09-29
 
 * [Orientation does not help with 3-coloring a grid in online-LOCAL](https://arxiv.org/abs/2509.22233)
