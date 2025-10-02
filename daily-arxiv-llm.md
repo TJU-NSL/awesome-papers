@@ -1,5 +1,25 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-10-01
+
+* [CSnake: Detecting Self-Sustaining Cascading Failure via Causal Stitching of Fault Propagations](https://arxiv.org/abs/2509.26529)
+* [Efficient Construction of Large Search Spaces for Auto-Tuning](https://arxiv.org/abs/2509.26253)
+* [I Like To Move It - Computation Instead of Data in the Brain](https://arxiv.org/abs/2509.26193)
+* [Parallax: Efficient LLM Inference Service over Decentralized Environment](https://arxiv.org/abs/2509.26182)
+* [AGOCS -- Accurate Google Cloud Simulator Framework](https://arxiv.org/abs/2509.26120)
+* [Efficient Distributed Training via Dual Batch Sizes and Cyclic Progressive Learning](https://arxiv.org/abs/2509.26092)
+* [Enabling Time-Aware Priority Traffic Management over Distributed FPGA Nodes](https://arxiv.org/abs/2509.26043)
+* [Accelerating LLM Inference with Precomputed Query Storage](https://arxiv.org/abs/2509.25919)
+* [PAST: Pilot and Adaptive Orchestration for Timely and Resilient Service Delivery in Edge-Assisted UAV Networks under Spatio-Temporal Dynamics](https://arxiv.org/abs/2509.25700)
+* [LAPIS: A Performance Portable, High Productivity Compiler Framework](https://arxiv.org/abs/2509.25605)
+* [Permuting Transactions in Ethereum Blocks: An Empirical Study](https://arxiv.org/abs/2509.25415)
+* [TASP: Topology-aware Sequence Parallelism](https://arxiv.org/abs/2509.26541)
+* [Rearchitecting Datacenter Lifecycle for AI: A TCO-Driven Framework](https://arxiv.org/abs/2509.26534)
+* [Tuning the Tuner: Introducing Hyperparameter Optimization for Auto-Tuning](https://arxiv.org/abs/2509.26300)
+* [ActorDB: A Unified Database Model Integrating Single-Writer Actors, Incremental View Maintenance, and Zero-Trust Messaging](https://arxiv.org/abs/2509.25285)
+* [RL in the Wild: Characterizing RLVR Training in LLM Deployment](https://arxiv.org/abs/2509.25279)
+
+
 ### 2025-09-30
 
 * [Context-Driven Performance Modeling for Causal Inference Operators on Neural Processing Units](https://arxiv.org/abs/2509.25155)
