@@ -1,5 +1,22 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-10-02
+
+* [An Efficient, Reliable and Observable Collective Communication Library in Large-scale GPU Training Clusters](https://arxiv.org/abs/2510.00991)
+* [Data Management System Analysis for Distributed Computing Workloads](https://arxiv.org/abs/2510.00828)
+* [CGSim: A Simulation Framework for Large Scale Distributed Computing Environment](https://arxiv.org/abs/2510.00822)
+* [Decentralized and Self-adaptive Core Maintenance on Temporal Graphs](https://arxiv.org/abs/2510.00758)
+* [Net-Zero 6G from Earth to Orbit: Sustainable Design of Integrated Terrestrial and Non-Terrestrial Networks](https://arxiv.org/abs/2510.00678)
+* [ElasWave: An Elastic-Native System for Scalable Hybrid-Parallel Training](https://arxiv.org/abs/2510.00606)
+* [Towards Efficient VM Placement: A Two-Stage ACO-PSO Approach for Green Cloud Infrastructure](https://arxiv.org/abs/2510.00541)
+* [ThirstyFLOPS: Water Footprint Modeling and Analysis Toward Sustainable HPC Systems](https://arxiv.org/abs/2510.00471)
+* [FlowMoE: A Scalable Pipeline Scheduling Framework for Distributed Mixture-of-Experts Training](https://arxiv.org/abs/2510.00207)
+* [Lattica: A Decentralized Cross-NAT Communication Framework for Scalable AI Inference and Training](https://arxiv.org/abs/2510.00183)
+* [LoRAFusion: Efficient LoRA Fine-Tuning for LLMs](https://arxiv.org/abs/2510.00206)
+* [Adaptive and Resource-efficient Agentic AI Systems for Mobile and Embedded Devices: A Survey](https://arxiv.org/abs/2510.00078)
+* [VibeCodeHPC: An Agent-Based Iterative Prompting Auto-Tuner for HPC Code Generation Using LLMs](https://arxiv.org/abs/2510.00031)
+
+
 ### 2025-10-01
 
 * [CSnake: Detecting Self-Sustaining Cascading Failure via Causal Stitching of Fault Propagations](https://arxiv.org/abs/2509.26529)
