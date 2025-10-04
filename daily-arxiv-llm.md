@@ -1,5 +1,18 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-10-03
+
+* [Programming RISC-V accelerators via Fortran](https://arxiv.org/abs/2510.02170)
+* [Accuracy vs Performance: An abstraction model for deadline constrained offloading at the mobile-edge](https://arxiv.org/abs/2510.01885)
+* [QScale: Probabilistic Chained Consensus for Moderate-Scale Systems](https://arxiv.org/abs/2510.01536)
+* [IoT-MCP: Bridging LLMs and IoT Systems Through Model Context Protocol](https://arxiv.org/abs/2510.01260)
+* [Kant: An Efficient Unified Scheduling System for Large-Scale AI Clusters](https://arxiv.org/abs/2510.01256)
+* [Odontoceti: Ultra-Fast DAG Consensus with Two Round Commitment](https://arxiv.org/abs/2510.01216)
+* [Exponential Quantum Advantage for Message Complexity in Distributed Algorithms](https://arxiv.org/abs/2510.01657)
+* [TetriServe: Efficient DiT Serving for Heterogeneous Image Generation](https://arxiv.org/abs/2510.01565)
+* [Exponential convergence of a distributed divide-and-conquer algorithm for constrained convex optimization on networks](https://arxiv.org/abs/2510.01511)
+
+
 ### 2025-10-02
 
 * [An Efficient, Reliable and Observable Collective Communication Library in Large-scale GPU Training Clusters](https://arxiv.org/abs/2510.00991)
