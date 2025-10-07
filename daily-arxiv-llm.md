@@ -1,5 +1,18 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-10-06
+
+* [iDDS: Intelligent Distributed Dispatch and Scheduling for Workflow Orchestration](https://arxiv.org/abs/2510.02930)
+* [PyRadiomics-cuda: a GPU-accelerated 3D features extraction from medical images within PyRadiomics](https://arxiv.org/abs/2510.02894)
+* [On the energy efficiency of sparse matrix computations on multi-GPU clusters](https://arxiv.org/abs/2510.02878)
+* [TridentServe: A Stage-level Serving System for Diffusion Pipelines](https://arxiv.org/abs/2510.02838)
+* [GRNND: A GPU-Parallel Relative NN-Descent Algorithm for Efficient Approximate Nearest Neighbor Graph Construction](https://arxiv.org/abs/2510.02774)
+* [ElasticMoE: An Efficient Auto Scaling Method for Mixture-of-Experts Models](https://arxiv.org/abs/2510.02613)
+* [Sensors in viticulture: functions, benefits, and data-driven insights](https://arxiv.org/abs/2510.03000)
+* [Breaking the MoE LLM Trilemma: Dynamic Expert Clustering with Structured Compression](https://arxiv.org/abs/2510.02345)
+* [NetCAS: Dynamic Cache and Backend Device Management in Networked Environments](https://arxiv.org/abs/2510.02323)
+
+
 ### 2025-10-03
 
 * [Programming RISC-V accelerators via Fortran](https://arxiv.org/abs/2510.02170)
