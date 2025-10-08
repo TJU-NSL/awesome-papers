@@ -1,5 +1,32 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-10-07
+
+* [The R(1)W(1) Communication Model for Self-Stabilizing Distributed Algorithms](https://arxiv.org/abs/2510.04644)
+* [Next-Generation Event-Driven Architectures: Performance, Scalability, and Intelligent Orchestration Across Messaging Frameworks](https://arxiv.org/abs/2510.04404)
+* [Beyond Canonical Rounds: Communication Abstractions for Optimal Byzantine Resilience](https://arxiv.org/abs/2510.04310)
+* [From Patchwork to Network: A Comprehensive Framework for Demand Analysis and Fleet Optimization of Urban Air Mobility](https://arxiv.org/abs/2510.04186)
+* [Toward Co-adapting Machine Learning Job Shape and Cluster Topology](https://arxiv.org/abs/2510.03891)
+* [Datacenter Energy Optimized Power Profiles](https://arxiv.org/abs/2510.03872)
+* [Cosmological Hydrodynamics at Exascale: A Trillion-Particle Leap in Capability](https://arxiv.org/abs/2510.03557)
+* [Multi-Agent Distributed Optimization With Feasible Set Privacy](https://arxiv.org/abs/2510.05068)
+* [Safe and Compliant Cross-Market Trade Execution via Constrained RL and Zero-Knowledge Audits](https://arxiv.org/abs/2510.04952)
+* [Interactive High-Performance Visualization for Astronomy and Cosmology](https://arxiv.org/abs/2510.04665)
+* [Overlapping Schwarz Scheme for Linear-Quadratic Programs in Continuous Time](https://arxiv.org/abs/2510.04478)
+* [Speculative Actions: A Lossless Framework for Faster Agentic Systems](https://arxiv.org/abs/2510.04371)
+* [HydroFusion-LMF: Semi-Supervised Multi-Network Fusion with Large-Model Adaptation for Long-Term Daily Runoff Forecasting](https://arxiv.org/abs/2510.03744)
+* [On the Limits of Consensus under Dynamic Availability and Reconfiguration](https://arxiv.org/abs/2510.03625)
+* [MECKD: Deep Learning-Based Fall Detection in Multilayer Mobile Edge Computing With Knowledge Distillation](https://arxiv.org/abs/2510.03601)
+* [Short-circuiting Rings for Low-Latency AllReduce](https://arxiv.org/abs/2510.03491)
+* [Paris: A Decentralized Trained Open-Weight Diffusion Model](https://arxiv.org/abs/2510.03434)
+* [Distributed Low-Communication Training with Decoupled Momentum Optimization](https://arxiv.org/abs/2510.03371)
+* [Semantic-Aware Scheduling for GPU Clusters with Large Language Models](https://arxiv.org/abs/2510.03334)
+* [From Score Distributions to Balance: Plug-and-Play Mixture-of-Experts Routing](https://arxiv.org/abs/2510.03293)
+* [LogAction: Consistent Cross-system Anomaly Detection through Logs via Active Domain](https://arxiv.org/abs/2510.03288)
+* [A Case for Declarative LLM-friendly Interfaces for Improved Efficiency of Computer-Use Agents](https://arxiv.org/abs/2510.04607)
+* [An Early Exploration of Deep-Learning-Driven Prefetching for Far Memory](https://arxiv.org/abs/2510.04360)
+
+
 ### 2025-10-06
 
 * [iDDS: Intelligent Distributed Dispatch and Scheduling for Workflow Orchestration](https://arxiv.org/abs/2510.02930)
