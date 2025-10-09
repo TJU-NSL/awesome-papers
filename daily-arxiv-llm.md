@@ -1,5 +1,29 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-10-08
+
+* [EARL: Efficient Agentic Reinforcement Learning Systems for Large Language Models](https://arxiv.org/abs/2510.05943)
+* [Intertemporal Pricing of Time-Bound Stablecoins: Measuring and Controlling the Liquidity-of-Time Premium](https://arxiv.org/abs/2510.05711)
+* [Decoupling Correctness from Policy: A Deterministic Causal Structure for Multi-Agent Systems](https://arxiv.org/abs/2510.05621)
+* [Toward Systems Foundations for Agentic Exploration](https://arxiv.org/abs/2510.05556)
+* [Orders in Chaos: Enhancing Large-Scale MoE LLM Serving with Data Movement Forecasting](https://arxiv.org/abs/2510.05497)
+* [cMPI: Using CXL Memory Sharing for MPI One-Sided and Two-Sided Inter-Node Communications](https://arxiv.org/abs/2510.05476)
+* [Performance of a high-order MPI-Kokkos accelerated fluid solver](https://arxiv.org/abs/2510.05254)
+* [OptPipe: Memory- and Scheduling-Optimized Pipeline Parallelism for LLM Training](https://arxiv.org/abs/2510.05186)
+* [SATER: A Self-Aware and Token-Efficient Approach to Routing and Cascading](https://arxiv.org/abs/2510.05164)
+* [Percepta: High Performance Stream Processing at the Edge](https://arxiv.org/abs/2510.05149)
+* [FlashResearch: Real-time Agent Orchestration for Efficient Deep Research](https://arxiv.org/abs/2510.05145)
+* [Lumos: Performance Characterization of WebAssembly as a Serverless Runtime in the Edge-Cloud Continuum](https://arxiv.org/abs/2510.05118)
+* [A Flexible Programmable Pipeline Parallelism Framework for Efficient DNN Training](https://arxiv.org/abs/2510.05112)
+* [Agora: Bridging the GPU Cloud Resource-Price Disconnect](https://arxiv.org/abs/2510.05111)
+* [Tiny but Mighty: A Software-Hardware Co-Design Approach for Efficient Multimodal Inference on Battery-Powered Small Devices](https://arxiv.org/abs/2510.05109)
+* [Optimal Good-Case Latency for Sleepy Consensus](https://arxiv.org/abs/2510.06023)
+* [How many more is different?](https://arxiv.org/abs/2510.06011)
+* [When Does Global Attention Help? A Unified Empirical Study on Atomistic Graph Learning](https://arxiv.org/abs/2510.05583)
+* [Exploring and Evaluating Real-world CXL: Use Cases and System Adoption](https://arxiv.org/abs/2405.14209)
+* [Toward Systems Foundations for Agentic Exploration](https://arxiv.org/abs/2510.05556)
+
+
 ### 2025-10-07
 
 * [The R(1)W(1) Communication Model for Self-Stabilizing Distributed Algorithms](https://arxiv.org/abs/2510.04644)
