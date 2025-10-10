@@ -17,7 +17,7 @@
 ------------------------------------------------------------------------------- Template (DE NOT DELETE) ----------------------------------------------------------------------------- -->
 
 ---
-## Conference list
+## conference list
 * Most Relevant (system): **NSDI**; **OSDI**; **SOSP**; **EuroSys**; **ASPLOS**; **~~ATC~~**; (CCF-none) **MLSys**
 * Other (networking, storage, architectures): **SIGCOMM**; **SC**; **ISCA**; **HPCA**; **MICRO**; **PPoPP**; **FAST**; **VLDB**
 * Other (AI): **NeruIPS**; **ICML**; **ICLR**
