@@ -1,5 +1,19 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-10-09
+
+* [Evaluating Rapid Makespan Predictions for Heterogeneous Systems with Programmable Logic](https://arxiv.org/abs/2510.06998)
+* [GROMACS Unplugged: How Power Capping and Frequency Shapes Performance on GPUs](https://arxiv.org/abs/2510.06902)
+* [Multi-Dimensional Autoscaling of Stream Processing Services on Edge Devices](https://arxiv.org/abs/2510.06882)
+* [REACH: Reinforcement Learning for Adaptive Microservice Rescheduling in the Cloud-Edge Continuum](https://arxiv.org/abs/2510.06675)
+* [MuFASA -- Asynchronous Checkpoint for Weakly Consistent Fully Replicated Databases](https://arxiv.org/abs/2510.06404)
+* [Adaptive Protein Design Protocols and Middleware](https://arxiv.org/abs/2510.06396)
+* [DiLi: A Lock-Free Asynchronously Distributable Linked List](https://arxiv.org/abs/2510.06387)
+* [Vectorized FlashAttention with Low-cost Exponential Computation in RISC-V Vector Processors](https://arxiv.org/abs/2510.06834)
+* [On-Package Memory with Universal Chiplet Interconnect Express (UCIe): A Low Power, High Bandwidth, Low Latency and Low Cost Approach](https://arxiv.org/abs/2510.06513)
+* [Context-Aware Inference via Performance Forecasting in Decentralized Learning Networks](https://arxiv.org/abs/2510.06444)
+
+
 ### 2025-10-08
 
 * [EARL: Efficient Agentic Reinforcement Learning Systems for Large Language Models](https://arxiv.org/abs/2510.05943)
