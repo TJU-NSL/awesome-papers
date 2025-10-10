@@ -1,14 +1,16 @@
 # awesome-papers
 
+## arxiv papers (update daily) -> [daily-arxiv-llm](daily-arxiv-llm.md)
+
 ## useful website
-* Papes.cool:
-  * [https://papers.cool/arxiv/cs.LG](https://papers.cool/arxiv/cs.LG): Machine Learning
-  * [https://papers.cool/arxiv/cs.DC](https://papers.cool/arxiv/cs.DC): Distributed, Parallel, and Cluster Computing
 * Find Related Papers
   * Connect Papers: [https://www.connectedpapers.com/](https://www.connectedpapers.com)
   * Sematic Scholar: [https://www.semanticscholar.org/](https://www.semanticscholar.org)
   * Arxiv-CS-RAG: [https://huggingface.co/spaces/bishmoy/Arxiv-CS-RAG](https://huggingface.co/spaces/bishmoy/Arxiv-CS-RAG)
   * Conference List with Link [https://paper.lingyunyang.com/reading-notes/conference](https://paper.lingyunyang.com/reading-notes/conference)
+* Papes.cool:
+  * [https://papers.cool/arxiv/cs.LG](https://papers.cool/arxiv/cs.LG): Machine Learning
+  * [https://papers.cool/arxiv/cs.DC](https://papers.cool/arxiv/cs.DC): Distributed, Parallel, and Cluster Computing
 
 <!-- -------------------------------------------------------------------------- Template (DE NOT DELETE) -----------------------------------------------------------------------------
 [Template] * (conf/trans/arxiv) Paper title [link](http_source_link) [NOTE: key words / author / affiliation]
@@ -16,14 +18,10 @@
 [Examples] * (Arxiv'24) Optimal Block-Level Draft Verification for Accelerating Speculative Decoding [link](https://arxiv.org/abs/2403.10444) [Speculative Decoding | Google]
 ------------------------------------------------------------------------------- Template (DE NOT DELETE) ----------------------------------------------------------------------------- -->
 
----
 ## conference list
 * Most Relevant (system): **NSDI**; **OSDI**; **SOSP**; **EuroSys**; **ASPLOS**; **~~ATC~~**; (CCF-none) **MLSys**
 * Other (networking, storage, architectures): **SIGCOMM**; **SC**; **ISCA**; **HPCA**; **MICRO**; **PPoPP**; **FAST**; **VLDB**
 * Other (AI): **NeruIPS**; **ICML**; (CCF-none) **ICLR**
-
----
-## arxiv papers (update daily) --> [daily-arxiv-llm](daily-arxiv-llm.md)
 
 ---
 ## [MLSys 2025](https://mlsys.org/virtual/2025/papers.html?filter=titles&layout=mini)
