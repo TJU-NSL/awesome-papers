@@ -20,9 +20,7 @@
 ## conference list
 * Most Relevant (system): **NSDI**; **OSDI**; **SOSP**; **EuroSys**; **ASPLOS**; **~~ATC~~**; (CCF-none) **MLSys**
 * Other (networking, storage, architectures): **SIGCOMM**; **SC**; **ISCA**; **HPCA**; **MICRO**; **PPoPP**; **FAST**; **VLDB**
-* Other (AI): **NeruIPS**; **ICML**; **ICLR**
-* [SIGCOMM'25](https://conferences.sigcomm.org/sigcomm/2025/cfp/) Review results’ notification	Tuesday April 29, 2025
-* [OSDI'25](https://www.usenix.org/conference/osdi25/call-for-papers) Notification to authors: Tuesday, March 25, 2025
+* Other (AI): **NeruIPS**; **ICML**; (CCF-none) **ICLR**
 
 ---
 ## arxiv papers (update daily) --> [daily-arxiv-llm](daily-arxiv-llm.md)
