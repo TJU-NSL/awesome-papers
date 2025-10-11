@@ -3,7 +3,7 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-691-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/total_papers-693-blue?logo=gitbook)
 
 `Fetch from arxiv` → `LLM Filter` → `GitHub workflow update`
 
@@ -13,15 +13,14 @@
 
 **🙋WANT**: keyword subscription (email notification) and more feature.
 
-
-<details>
-<summary>ALL KEYWORDS</summary>
-
-`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking`
-
-</details>
+**🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking`
 
 ---
+### 2025-10-10
+* `serving` `hardware` [SPAD: Specialized Prefill and Decode Hardware for Disaggregated LLM Inference](http://arxiv.org/abs/2510.08544v1)
+  > **TL;DR**: Designs specialized hardware chips for prefill and decode phases of LLM inference to address underutilization in GPUs. SPAD uses cost-effective prefill chips and low-TDP decode chips, reducing hardware cost by 19%-41% and TDP by 2%-17% while maintaining performance.
+* `serving` `MoE` `offloading` [From Tokens to Layers: Redefining Stall-Free Scheduling for LLM Serving with Layered Prefill](http://arxiv.org/abs/2510.08055v1)
+  > **TL;DR**: How to reduce MoE expert weight reload overhead in LLM serving? Proposes layered prefill, a layer-group-based scheduling method that eliminates token-chunk-induced redundant expert loads, cutting TTFT by up to 70% and energy per token by 22% while maintaining stall-free decoding.
 
 ### 2025-10-08
 * `kernel` [Vectorized FlashAttention with Low-cost Exponential Computation in RISC-V Vector Processors](http://arxiv.org/abs/2510.06834v1)
