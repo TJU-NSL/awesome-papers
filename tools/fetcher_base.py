@@ -44,7 +44,7 @@ def fetch_papers(date, accept_keywords, reject_keywords, subjects=["DC", "OS"]):
         abstract_tag = paper.find('span', class_='abstract')
         abstract = abstract_tag.text.strip() if abstract_tag else ""
 
-        print(title)
+        print(title, link, abs_link, abstract_tag, abstract)
 
         # keyword filter
         if any(keyword in title.lower() or keyword in abstract.lower() for keyword in accept_keywords):

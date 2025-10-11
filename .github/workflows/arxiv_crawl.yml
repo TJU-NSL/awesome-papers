@@ -21,10 +21,10 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install requests beautifulsoup4 pytz
-      - name: Run crawler and update arxiv.md
+          pip install requests beautifulsoup4 pytz arxiv openai
+      - name: Run crawler and update daily arxiv
         run: |
-          python tools/paper.py
+          python tools/fetcher_llm.py
       - name: Commit changes
         run: |
           git config --local user.name "zhixin612"
@@ -33,3 +33,4 @@ jobs:
           git push
         env: 
          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+         API_KEY: ${{ secrets.SILICONFLOW_API_KEY }}
