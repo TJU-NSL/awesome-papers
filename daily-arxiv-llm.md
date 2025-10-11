@@ -6,13 +6,19 @@
 ![Static Badge](https://img.shields.io/badge/total_papers-692-blue?logo=gitbook)
 
 `Fetch from arxiv` → `LLM Filter` → `GitHub workflow update`
-
 </div>
 
 **⚠️NOTE**: The paper list will be updated automatically, please do not edit.
 
 **🙋WANT**: keyword subscription (email notification) and more feature.
 
+<details>
+<summary>ALL KEYWORDS (click)</summary>
+
+`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking`
+</details>
+
+---
 
 ### 2025-10-09
 * `serving` `MoE` `offloading` [From Tokens to Layers: Redefining Stall-Free Scheduling for LLM Serving with Layered Prefill](http://arxiv.org/abs/2510.08055v1)

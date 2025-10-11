@@ -42,18 +42,18 @@ Abstract: {abstract}
 """
 
 TAGS = {  # tags that relate to LLM systems
+    "serving":          "targeted at LLM serving or online inference",
+    "training":         "designed for training LLMs",
+    "offline":          "targeted at offline LLM inference or batch processing",
+    "thinking":         "designed for reasoning or thinking LLMs",
+    "RL":               "designed for reinforcement learning or post training",
+    "MoE":              "designed for mixture-of-experts models",
     "RAG":              "designed for retrieval-augmented generation",
     "video":            "designed for video generation models",
     "multi-modal":      "designed for multi-modal models",
-    "training":         "designed for training LLMs",
-    "RL":               "designed for reinforcement learning or post training",
     "sparse":           "leverage or introduce new sparsity techniques",
     "quantization":     "leverage or introduce new quantization techniques",
     # "parallelism":      "leverage or introduce new parallelism techniques",
-    "MoE":              "designed for mixture-of-experts models",
-    "thinking":         "designed for reasoning or thinking LLMs",
-    "serving":          "targeted at LLM serving or online inference",
-    "offline":          "targeted at offline LLM inference or batch processing",
     "offloading":       "leverage or introduce new KV cache or model weight offloading techniques",
     "hardware":         "targeted at LLM hardware or accelerators",
     "storage":          "leverage or introduce new storage techniques",
@@ -79,6 +79,11 @@ README_HEADER = """
 </div>\n
 **⚠️NOTE**: The paper list will be updated automatically, please do not edit.\n
 **🙋WANT**: keyword subscription (email notification) and more feature.\n\n
+<details>
+<summary>ALL KEYWORDS</summary>\n
+`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking`\n
+</details>\n
+---
 """
 
 
