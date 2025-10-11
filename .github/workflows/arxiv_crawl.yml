@@ -2,7 +2,7 @@ name: Arxiv Paper Crawler
 
 on:
   schedule:
-    - cron: '0 12 */1 * *'  # Runs at UTC 12:00, every 2 days. --> UTC+8 20:00
+    - cron: '0 0 */1 * *'  # Runs at UTC 00:00, every day. --> UTC+8 08:00
   workflow_dispatch:
     
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
