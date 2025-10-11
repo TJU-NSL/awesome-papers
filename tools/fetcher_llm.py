@@ -78,11 +78,8 @@ README_HEADER = """
 `Fetch from arxiv` → `LLM Filter` → `GitHub workflow update`\n
 </div>\n
 **⚠️NOTE**: The paper list will be updated automatically, please do not edit.\n
-**🙋WANT**: keyword subscription (email notification) and more feature.\n\n
-<details>
-<summary>ALL KEYWORDS</summary>\n
-`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking`\n
-</details>\n
+**🙋WANT**: keyword subscription (email notification) and more feature.\n
+**🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking`\n
 ---
 """
 
