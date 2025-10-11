@@ -1,5 +1,21 @@
 The paper list will be updated automatically, please do not edit.
 
+### 2025-10-10
+
+* [Investigating Matrix Repartitioning to Address the Over- and Undersubscription Challenge for a GPU-based CFD Solver](https://arxiv.org/abs/2510.08536)
+* [Energy-Efficient Maximal Independent Sets in Radio Networks](https://arxiv.org/abs/2510.08244)
+* [Distributed Resource Selection for Self-Organising Cloud-Edge Systems](https://arxiv.org/abs/2510.08228)
+* [Towards Energy-Efficient Serverless Computing with Hardware Isolation](https://arxiv.org/abs/2510.08180)
+* [A Multi-Simulation Bridge for IoT Digital Twins](https://arxiv.org/abs/2510.08164)
+* [Adaptive Execution Scheduler for DataDios SmartDiff](https://arxiv.org/abs/2510.07811)
+* [SPAD: Specialized Prefill and Decode Hardware for Disaggregated LLM Inference](https://arxiv.org/abs/2510.08544)
+* [DYNAMIX: RL-based Adaptive Batch Size Optimization in Distributed Machine Learning Systems](https://arxiv.org/abs/2510.08522)
+* [pyGinkgo: A Sparse Linear Algebra Operator Framework for Python](https://arxiv.org/abs/2510.08230)
+* [When Light Bends to the Collective Will: A Theory and Vision for Adaptive Photonic Scale-up Domains](https://arxiv.org/abs/2510.08072)
+* [From Tokens to Layers: Redefining Stall-Free Scheduling for LLM Serving with Layered Prefill](https://arxiv.org/abs/2510.08055)
+* [Rethinking Provenance Completeness with a Learning-Based Linux Scheduler](https://arxiv.org/abs/2510.08479)
+
+
 ### 2025-10-09
 
 * [Evaluating Rapid Makespan Predictions for Heterogeneous Systems with Programmable Logic](https://arxiv.org/abs/2510.06998)
