@@ -136,7 +136,7 @@ def update_daily_arxiv(papers: List[dict], date: str):
         else:
             new_section.append(f"* [{p['title']}]({p['link']})\n")
         if p.get("tldr", ""):
-            new_section.append(f"  > {p['tldr']}\n")
+            new_section.append(f"  > **TL;DR**: {p['tldr']}\n")
     content = new_section + ["\n"] + content
 
     # step-3: count papers
