@@ -2,11 +2,14 @@ import os
 import json
 import time
 import arxiv
+import logging
 import datetime as dt
 from openai import OpenAI, RateLimitError
 from typing import List
 from pprint import pprint
 from datetime import datetime, timedelta
+
+logging.basicConfig(level=logging.DEBUG)
 
 API_KEY = os.environ['API_KEY']
 MODEL = "Qwen/Qwen3-Next-80B-A3B-Instruct"
@@ -265,9 +268,7 @@ if __name__ == "__main__":
     papers = fetch_arxiv_papers(categories=["cs.DC", "cs.OS"], start_date=start_date, end_date=end_date)
     print(f"[INFO] fetched {len(papers)} papers from arxiv from {start_date} to {end_date}")
 
-    if len(papers) == 0:
-        print("[INFO] no new papers, exit")
-        exit(0)
+    print("[INFO] no new papers")
 
     results = llm_filter(papers)
     update_daily_arxiv(papers=results, date=end_date)

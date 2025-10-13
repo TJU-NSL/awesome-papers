@@ -16,6 +16,14 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking`
 
 ---
+### 2025-10-10
+* `serving` `hardware` [SPAD: Specialized Prefill and Decode Hardware for Disaggregated LLM Inference](http://arxiv.org/abs/2510.08544v1)
+  > Designs specialized hardware chips for disaggregated LLM inference, tailoring prefill (compute-heavy) and decode (memory-heavy) stages to their distinct workloads. SPAD achieves 19%-41% lower hardware cost and 2%-17% lower TDP than GPU-based systems while maintaining performance.
+
+### 2025-10-09
+* `serving` `MoE` `offloading` [From Tokens to Layers: Redefining Stall-Free Scheduling for LLM Serving with Layered Prefill](http://arxiv.org/abs/2510.08055v1)
+  > Addresses high energy and latency in MoE LLM serving due to redundant expert weight loads during chunked prefill. Proposes layered prefill, which schedules by layer groups instead of tokens to eliminate reloads. Reduces TTFT by up to 70% and per-token energy by 22% while maintaining stall-free decoding.
+
 
 ### 2025-10-08
 * `kernel` [Vectorized FlashAttention with Low-cost Exponential Computation in RISC-V Vector Processors](http://arxiv.org/abs/2510.06834v1)
