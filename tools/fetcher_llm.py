@@ -144,7 +144,7 @@ def update_daily_arxiv(papers: List[dict], date: str):
     number_papers = sum(1 for line in content if line.startswith("* "))
 
     # step-4: update headers
-    content = [README_HEADER.format(papers=number_papers, update=date)] + content
+    content = [README_HEADER.format(papers=number_papers, update=date.replace('-', '.'))] + content
 
     # step-5: write back to file
     with open(README_FILE, 'w', encoding='utf-8') as f:
