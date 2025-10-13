@@ -70,7 +70,7 @@ TAGS = {  # tags that relate to LLM systems
 #     "zhixin@abc.com": ["video-generation", "RL", "parallelism", "thinking", "serving", "offloading", "kernel", "hardware", "storage"],
 # }
 
-README_FILE = '../daily-arxiv-llm.md'
+README_FILE = 'daily-arxiv-llm.md'
 README_HEADER = """
 <div align="center">\n
 # Daily Arxiv Papers (LMSys)\n
