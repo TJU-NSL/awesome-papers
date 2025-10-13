@@ -5,7 +5,7 @@
 
 ![Static Badge](https://img.shields.io/badge/total_papers-693-blue?logo=gitbook)
 
-![Static Badge](https://img.shields.io/badge/update-2025-10-12-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/update-2025.10.12-red?logo=fireship)
 
 `Fetch from arxiv` → `LLM Filter` → `GitHub workflow update`
 
@@ -18,6 +18,7 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking`
 
 ---
+### 2025-10-12
 
 ### 2025-10-10
 * `serving` `hardware` [SPAD: Specialized Prefill and Decode Hardware for Disaggregated LLM Inference](http://arxiv.org/abs/2510.08544v1)
