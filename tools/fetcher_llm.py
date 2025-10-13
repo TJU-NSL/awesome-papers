@@ -70,14 +70,15 @@ TAGS = {  # tags that relate to LLM systems
 #     "zhixin@abc.com": ["video-generation", "RL", "parallelism", "thinking", "serving", "offloading", "kernel", "hardware", "storage"],
 # }
 
-README_FILE = 'daily-arxiv-llm.md'
+README_FILE = '../daily-arxiv-llm.md'
 README_HEADER = """
 <div align="center">\n
 # Daily Arxiv Papers (LMSys)\n
-![Static Badge](https://img.shields.io/badge/total_papers-{}-blue?logo=gitbook)\n
+![Static Badge](https://img.shields.io/badge/total_papers-{papers}-blue?logo=gitbook)\n
+![Static Badge](https://img.shields.io/badge/update-{update}-red?logo=fireship)\n
 `Fetch from arxiv` → `LLM Filter` → `GitHub workflow update`\n
 </div>\n
-**⚠️NOTE**: The paper list will be updated automatically, please do not edit.\n
+**⚠️NOTE**: Update papers up to last day every morning (8:00 UTC+8) automatically.\n
 **🙋WANT**: keyword subscription (email notification) and more feature.\n
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking`\n
 ---
@@ -140,7 +141,7 @@ def update_daily_arxiv(papers: List[dict], date: str):
     number_papers = sum(1 for line in content if line.startswith("* "))
 
     # step-4: update headers
-    content = [README_HEADER.format(number_papers)] + content
+    content = [README_HEADER.format(papers=number_papers, update=date)] + content
 
     # step-5: write back to file
     with open(README_FILE, 'w', encoding='utf-8') as f:
@@ -203,7 +204,9 @@ def fetch_arxiv_papers(categories: str or List, start_date: str, end_date: str =
             sort_order=arxiv.SortOrder.Descending,
             max_results=5000,
         )
+        print('[INFO] search function: ', search)
         for paper in client.results(search):
+            print('[INFO] searched paper:', paper.title)
             papers.append({
                 "title": paper.title,
                 "link": paper.entry_id,
