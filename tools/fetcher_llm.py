@@ -77,7 +77,7 @@ README_FILE = 'daily-arxiv-llm.md'
 README_HEADER = """
 <div align="center">\n
 # Daily Arxiv Papers (LMSys)\n
-![Static Badge](https://img.shields.io/badge/total_papers-{papers}-blue?logo=gitbook)\n
+![Static Badge](https://img.shields.io/badge/total_papers-{papers}-blue?logo=gitbook)
 ![Static Badge](https://img.shields.io/badge/update-{update}-red?logo=fireship)\n
 `Fetch from arxiv` → `LLM Filter` → `GitHub workflow update`\n
 </div>\n
