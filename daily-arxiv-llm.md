@@ -3,8 +3,11 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-693-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/total_papers-695-blue?logo=gitbook)
 ![Static Badge](https://img.shields.io/badge/update-2025.10.13-red?logo=fireship)
+[![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.LG/recent)
+[![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.LG/recent)
+[![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
 
 `Fetch from arxiv` → `LLM Filter` → `GitHub workflow update`
 
@@ -12,14 +15,18 @@
 
 **⚠️NOTE**: Update papers up to last day every morning (8:00 UTC+8) automatically.
 
-**🙋WANT**: keyword subscription (email notification) and more feature.
+**🙋WANT**: Keyword subscription (email); Functional web page.
 
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking`
 
 ---
-### 2025-10-13
-
 ### 2025-10-12
+* `training` `sparse` `offloading` [DCP: Addressing Input Dynamism In Long-Context Training via Dynamic Context Parallelism](http://arxiv.org/abs/2510.10620v1)
+  > **TL;DR**: Addresses dynamic sequence length and attention pattern variability in long-context LLM training. Proposes DCP, a fine-grained dynamic context parallelism framework that adapts data and computation blocks to device resources, achieving up to 1.46x end-to-end training speed-up over static methods.
+
+### 2025-10-11
+* `serving` `offloading` `MoE` [SP-MoE: Speculative Decoding and Prefetching for Accelerating MoE-based Model Inference](http://arxiv.org/abs/2510.10302v1)
+  > **TL;DR**: Proposes SP-MoE, an SD-aware offloading framework for MoE-based LLM inference that prefetches experts using draft-target model correspondence and pipelines I/O to reduce latency. Achieves 1.07–3.5× speedup in tokens-per-token (TPOT) over state-of-the-art methods.
 
 ### 2025-10-10
 * `serving` `hardware` [SPAD: Specialized Prefill and Decode Hardware for Disaggregated LLM Inference](http://arxiv.org/abs/2510.08544v1)
@@ -28,7 +35,6 @@
 ### 2025-10-09
 * `serving` `MoE` `offloading` [From Tokens to Layers: Redefining Stall-Free Scheduling for LLM Serving with Layered Prefill](http://arxiv.org/abs/2510.08055v1)
   > Addresses high energy and latency in MoE LLM serving due to redundant expert weight loads during chunked prefill. Proposes layered prefill, which schedules by layer groups instead of tokens to eliminate reloads. Reduces TTFT by up to 70% and per-token energy by 22% while maintaining stall-free decoding.
-
 
 ### 2025-10-08
 * `kernel` [Vectorized FlashAttention with Low-cost Exponential Computation in RISC-V Vector Processors](http://arxiv.org/abs/2510.06834v1)
