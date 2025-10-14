@@ -3,8 +3,8 @@ README_HEADER = """
 # Daily Arxiv Papers (LMSys)\n
 ![Static Badge](https://img.shields.io/badge/total_papers-{papers}-blue?logo=gitbook)
 ![Static Badge](https://img.shields.io/badge/update-{update}-red?logo=fireship)
-[![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.LG/recent)
-[![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.LG/recent)
+[![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
+[![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)\n
 `Fetch from arxiv` → `LLM Filter` → `GitHub workflow update`\n
 </div>\n
