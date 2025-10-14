@@ -3,10 +3,10 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-695-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/total_papers-696-blue?logo=gitbook)
 ![Static Badge](https://img.shields.io/badge/update-2025.10.13-red?logo=fireship)
-[![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.LG/recent)
-[![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.LG/recent)
+[![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
+[![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
 
 `Fetch from arxiv` → `LLM Filter` → `GitHub workflow update`
@@ -20,6 +20,10 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking`
 
 ---
+### 2025-10-13
+* `training` `serving` `offloading` [An Explorative Study on Distributed Computing Techniques in Training and Inference of Large Language Models](http://arxiv.org/abs/2510.11211v1)
+  > **TL;DR**: Explores distributed computing techniques for training and serving LLMs, including system modifications to enable consumer-grade deployment and a comparative analysis of three serving frameworks. Implements a metaheuristic-based offloading method that reduces memory usage by up to 40% on consumer hardware.
+
 ### 2025-10-12
 * `training` `sparse` `offloading` [DCP: Addressing Input Dynamism In Long-Context Training via Dynamic Context Parallelism](http://arxiv.org/abs/2510.10620v1)
   > **TL;DR**: Addresses dynamic sequence length and attention pattern variability in long-context LLM training. Proposes DCP, a fine-grained dynamic context parallelism framework that adapts data and computation blocks to device resources, achieving up to 1.46x end-to-end training speed-up over static methods.
