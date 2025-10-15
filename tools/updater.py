@@ -27,7 +27,7 @@ def get_date_range() -> tuple[str | None, str | None]:
                 break
 
     if start > end:
-        logger.error(f"start_date ({start}) is later than end_date ({end}); skip update")
+        logger.warning(f"start_date ({start}) is later than end_date ({end}); skip update")
         return None, None
 
     return start, end
