@@ -1,3 +1,5 @@
+# Static strings and sample data used by the fetcher
+
 README_HEADER = """
 <div align="center">\n
 # Daily Arxiv Papers (LMSys)\n

@@ -66,17 +66,17 @@ def update_daily_arxiv(papers: List[dict], date: str):
     """
     if len(papers) > 0:  # do not add empty section to prevent fetch failure (then the next day could fetch again)
         new_section = [f"### {date}\n"]
-    for p in papers:
-        if not p.get("relevant", False):
-            continue
-        pprint(p)
-        if p.get("tags", []):
-            new_section.append(f"* " + " ".join([f"`{tag}`" for tag in p.get("tags", [])]) + f" [{p['title']}]({p['link']})\n")
-        else:
-            new_section.append(f"* [{p['title']}]({p['link']})\n")
-        if p.get("tldr", ""):
-            new_section.append(f"  > **TL;DR**: {p['tldr']}\n")
-    content = new_section + ["\n"] + content
+        for p in papers:
+            if not p.get("relevant", False):
+                continue
+            pprint(p)
+            if p.get("tags", []):
+                new_section.append(f"* " + " ".join([f"`{tag}`" for tag in p.get("tags", [])]) + f" [{p['title']}]({p['link']})\n")
+            else:
+                new_section.append(f"* [{p['title']}]({p['link']})\n")
+            if p.get("tldr", ""):
+                new_section.append(f"  > **TL;DR**: {p['tldr']}\n")
+        content = new_section + ["\n"] + content
 
     # step-3: count papers
     number_papers = sum(1 for line in content if line.startswith("* "))
@@ -128,7 +128,7 @@ def llm_filter(papers: List[dict]) -> List[dict]:
     return papers
 
 
-def fetch_arxiv_papers(categories: str or List, start_date: str, end_date: str = None):
+def fetch_arxiv_papers(categories: str | List, start_date: str, end_date: str = None):
     # categories example: ["cs.DC", "cs.OS"] or "cs.DC"
     # start_date and end_date format: "YYYYMMDD"
 
