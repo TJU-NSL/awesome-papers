@@ -3,7 +3,7 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-698-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/total_papers-697-blue?logo=gitbook)
 ![Static Badge](https://img.shields.io/badge/update-2025.10.14-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
@@ -20,6 +20,10 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking`
 
 ---
+### 2025-10-14
+* `RL` `training` `offloading` [Laminar: A Scalable Asynchronous RL Post-Training Framework](http://arxiv.org/abs/2510.12633v1)
+  > **TL;DR**: Addresses scalability bottlenecks in RL post-training of LLMs caused by trajectory latency skew. Proposes Laminar, a fully decoupled architecture with tiered relay workers for asynchronous parameter updates and dynamic trajectory repackaging. Achieves up to 5.48× training throughput speedup on a 1024-GPU cluster.
+
 ### 2025-10-13
 * `training` `serving` `offloading` [An Explorative Study on Distributed Computing Techniques in Training and Inference of Large Language Models](http://arxiv.org/abs/2510.11211v1)
   > **TL;DR**: Explores distributed computing techniques for training and serving LLMs, including system modifications to enable consumer-grade deployment and a comparative analysis of three serving frameworks. Implements a metaheuristic-based offloading method that reduces memory usage by up to 40% on consumer hardware.
