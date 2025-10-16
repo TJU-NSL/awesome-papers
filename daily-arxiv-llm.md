@@ -3,7 +3,7 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-697-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/total_papers-701-blue?logo=gitbook)
 ![Static Badge](https://img.shields.io/badge/update-2025.10.15-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
@@ -20,6 +20,16 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking`
 
 ---
+### 2025-10-15
+* `serving` `offloading` `networking` [FIRST: Federated Inference Resource Scheduling Toolkit for Scientific AI Model Access](http://arxiv.org/abs/2510.13724v1)
+  > **TL;DR**: FIRST enables federated LLM inference across distributed HPC clusters using a cloud-like API, auto-scaling resources and maintaining hot nodes for low-latency serving. It achieves scalable, on-premises generation of billions of tokens daily without commercial cloud reliance.
+* `serving` `offloading` `thinking` [Adaptive Rescheduling in Prefill-Decode Disaggregated LLM Inference](http://arxiv.org/abs/2510.13668v1)
+  > **TL;DR**: Addresses workload imbalance in disaggregated LLM inference due to unpredictable decode lengths. Proposes ARES, a system using LLM-internal state to predict output length and dynamically reschedule decode tasks, reducing P99 TPOT by 74.77% and improving goodput by 2.24×.
+* `quantization` `hardware` `edge` [F-BFQ: Flexible Block Floating-Point Quantization Accelerator for LLMs](http://arxiv.org/abs/2510.13401v1)
+  > **TL;DR**: Designs a hardware accelerator (F-BFQ) to efficiently execute mixed block-floating-point quantized LLMs on edge devices, dynamically switching between BFP variants without reconfiguration. Achieves 1.4x faster inference than Arm NEON CPU and 5.2 tokens/s on AMD Kria.
+* `serving` `offloading` `RAG` [BanaServe: Unified KV Cache and Dynamic Module Migration for Balancing Disaggregated LLM Serving in AI Infrastructure](http://arxiv.org/abs/2510.13223v1)
+  > **TL;DR**: Addresses load imbalance in disaggregated LLM serving by dynamically migrating KV cache and model layers between prefill and decode nodes. Enables cache-agnostic scheduling with overlapped transmission, achieving 1.2x-3.9x higher throughput and up to 78.4% lower latency than vLLM.
+
 ### 2025-10-14
 * `RL` `training` `offloading` [Laminar: A Scalable Asynchronous RL Post-Training Framework](http://arxiv.org/abs/2510.12633v1)
   > **TL;DR**: Addresses scalability bottlenecks in RL post-training of LLMs caused by trajectory latency skew. Proposes Laminar, a fully decoupled architecture with tiered relay workers for asynchronous parameter updates and dynamic trajectory repackaging. Achieves up to 5.48× training throughput speedup on a 1024-GPU cluster.
