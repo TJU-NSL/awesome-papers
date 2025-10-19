@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-701-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2025.10.16-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-704-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2025.10.18-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,14 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking`
 
 ---
+### 2025-10-16
+* `serving` `multi-modal` `offloading` [xLLM Technical Report](http://arxiv.org/abs/2510.14686v1)
+  > **TL;DR**: Designs xLLM, a high-performance LLM serving framework with decoupled service-engine architecture for multimodal inference, featuring dynamic PD/EPD disaggregation and global KV cache management. Achieves up to 2.2x higher throughput than vLLM-Ascend under identical TPOT constraints on Qwen models.
+* `training` `offloading` `hardware` [ScalePool: Hybrid XLink-CXL Fabric for Composable Resource Disaggregation in Unified Scale-up Domains](http://arxiv.org/abs/2510.14580v1)
+  > **TL;DR**: Proposes ScalePool, a hybrid XLink-CXL fabric for disaggregated memory and accelerator interconnection in LLM training clusters. Achieves 1.22x average speedup and 4.5x lower latency for memory-intensive workloads by enabling coherent, tiered memory pooling beyond RDMA.
+* `serving` `offline` [FairBatching: Fairness-Aware Batch Formation for LLM Inference](http://arxiv.org/abs/2510.14392v1)
+  > **TL;DR**: Addresses computational unfairness in LLM inference batching by redesigning batch formation to balance prefill and decode tasks. Introduces adaptive budgeting and dynamic scheduling to reduce TTFT tail latency by up to 2.29x while improving single-node and cluster capacity by 20.0% and 54.3%, respectively.
+
 ### 2025-10-15
 * `serving` `offloading` `networking` [FIRST: Federated Inference Resource Scheduling Toolkit for Scientific AI Model Access](http://arxiv.org/abs/2510.13724v1)
   > **TL;DR**: FIRST enables federated LLM inference across distributed HPC clusters using a cloud-like API, auto-scaling resources and maintaining hot nodes for low-latency serving. It achieves scalable, on-premises generation of billions of tokens daily without commercial cloud reliance.
