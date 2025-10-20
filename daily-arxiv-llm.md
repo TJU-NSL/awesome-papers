@@ -3,7 +3,7 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-704-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/total_papers-707-blue?logo=gitbook)
 ![Static Badge](https://img.shields.io/badge/update-2025.10.19-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
@@ -20,6 +20,14 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking`
 
 ---
+### 2025-10-17
+* `training` `serving` `hardware` [GOGH: Correlation-Guided Orchestration of GPUs in Heterogeneous Clusters](http://arxiv.org/abs/2510.15652v1)
+  > **TL;DR**: Proposes GOGH, a learning-based system for adaptive GPU resource orchestration in heterogeneous clusters to minimize energy and meet performance targets. Uses two neural networks to predict model-hardware compatibility and co-location effects, improving allocation over time. Reduces energy consumption by up to 27% while maintaining SLOs.
+* `training` `kernel` `sparse` [PRISM: Probabilistic Runtime Insights and Scalable Performance Modeling for Large-Scale Distributed Training](http://arxiv.org/abs/2510.15596v1)
+  > **TL;DR**: PRISM models stochastic performance variability in large-scale distributed training, offering probabilistic guarantees on training time. It identifies communication kernels (e.g., AllGather, ReduceScatter) as primary variability sources and enables 1.26x performance gains via placement-aware optimization, with 20.8% KS distance in prediction accuracy.
+* `serving` `thinking` [BeLLMan: Controlling LLM Congestion](http://arxiv.org/abs/2510.15330v1)
+  > **TL;DR**: Addresses LLM inference congestion due to uncontrolled autoregressive token generation. Proposes beLLMan, a feedback controller that dynamically adjusts output length based on system load, reducing end-to-end latency by up to 8× and energy use by 25% while increasing request throughput by 19%.
+
 ### 2025-10-16
 * `serving` `multi-modal` `offloading` [xLLM Technical Report](http://arxiv.org/abs/2510.14686v1)
   > **TL;DR**: Designs xLLM, a high-performance LLM serving framework with decoupled service-engine architecture for multimodal inference, featuring dynamic PD/EPD disaggregation and global KV cache management. Achieves up to 2.2x higher throughput than vLLM-Ascend under identical TPOT constraints on Qwen models.
