@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-707-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2025.10.20-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-711-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2025.10.21-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,18 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking`
 
 ---
+### 2025-10-19
+* `serving` `offloading` `thinking` [Justitia: Fair and Efficient Scheduling for LLM Applications](http://arxiv.org/abs/2510.17015v1)
+  > **TL;DR**: Addresses unfair and inefficient scheduling of LLM applications in shared GPU environments. Proposes Justitia, a memory-centric scheduler using neural demand prediction and virtual-time fair queuing to balance efficiency and worst-case guarantees, reducing completion time by up to 3.2× while ensuring fairness compared to vLLM.
+
+### 2025-10-18
+* `networking` `training` [Reimagining RDMA Through the Lens of ML](http://arxiv.org/abs/2510.16606v1)
+  > **TL;DR**: Celeris redesigns RDMA transport for distributed ML training by eliminating strict reliability and in-order delivery, leveraging ML's fault tolerance to reduce tail latency. By removing retransmissions and using software-level recovery (e.g., Hadamard Transform), it cuts 99th-percentile latency by 2.3x and reduces BRAM usage by 67%.
+* `serving` `offloading` `quantization` [FourierCompress: Layer-Aware Spectral Activation Compression for Efficient and Accurate Collaborative LLM Inference](http://arxiv.org/abs/2510.16418v1)
+  > **TL;DR**: Addresses communication bottlenecks in collaborative LLM inference by compressing intermediate activations across edge-client and server boundaries. Proposes FourierCompress, a layer-aware FFT-based method retaining low-frequency coefficients, achieving 7.6x compression with <0.3% accuracy loss and 32x faster compression than Top-k.
+* `training` `offloading` `sparse` [MeCeFO: Enhancing LLM Training Robustness via Fault-Tolerant Optimization](http://arxiv.org/abs/2510.16415v1)
+  > **TL;DR**: Proposes MeCeFO, a fault-tolerant LLM training system that transfers failed node workloads to neighbors with minimal overhead using skip-connections, recomputation, and low-rank gradient approximation. Achieves 5.0–6.7× higher resilience than SOTA with only 4.18% throughput drop under failures.
+
 ### 2025-10-17
 * `training` `serving` `hardware` [GOGH: Correlation-Guided Orchestration of GPUs in Heterogeneous Clusters](http://arxiv.org/abs/2510.15652v1)
   > **TL;DR**: Proposes GOGH, a learning-based system for adaptive GPU resource orchestration in heterogeneous clusters to minimize energy and meet performance targets. Uses two neural networks to predict model-hardware compatibility and co-location effects, improving allocation over time. Reduces energy consumption by up to 27% while maintaining SLOs.
