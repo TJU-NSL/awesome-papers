@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-711-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2025.10.21-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-715-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2025.10.22-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,18 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking`
 
 ---
+### 2025-10-21
+* `training` `sparse` `distributed` [MTraining: Distributed Dynamic Sparse Attention for Efficient Ultra-Long Context Training](http://arxiv.org/abs/2510.18830v1)
+  > **TL;DR**: Addresses inefficient training of LLMs with ultra-long contexts due to computational imbalance. Proposes MTraining, a distributed method with dynamic sparse attention and balanced ring attention, achieving 6× higher training throughput while scaling context from 32K to 512K tokens on 32 A100 GPUs.
+* `serving` `offloading` [Tokencake: A KV-Cache-centric Serving Framework for LLM-based Multi-Agent Applications](http://arxiv.org/abs/2510.18586v1)
+  > **TL;DR**: Addresses KV-cache inefficiencies in LLM-based multi-agent serving due to memory contention and idle stalls. Tokencake introduces agent-aware space and time schedulers with proactive KV-cache offloading and predictive upload, reducing end-to-end latency by 47.06% and boosting GPU memory utilization by 16.9% over vLLM.
+* `serving` `edge` `thinking` [SLICE: SLO-Driven Scheduling for LLM Inference on Edge Computing Devices](http://arxiv.org/abs/2510.18544v1)
+  > **TL;DR**: Addresses SLO-aware LLM inference scheduling on edge devices by optimizing TTFT, TPOT, and end-to-end latency. Proposes SLICE, a utility-driven scheduler with dynamic generation rate control, achieving up to 35× higher SLO attainment than Orca and FastServe.
+
+### 2025-10-20
+* `training` `kernel` `sparse` [Efficient Long-context Language Model Training by Core Attention Disaggregation](http://arxiv.org/abs/2510.18121v1)
+  > **TL;DR**: Proposes Core Attention Disaggregation (CAD) to eliminate load imbalance in long-context LLM training by offloading attention computation to dedicated devices. Leverages stateless, composable attention kernels with dynamic rebatching, achieving up to 1.35x training throughput on 512k context lengths.
+
 ### 2025-10-19
 * `serving` `offloading` `thinking` [Justitia: Fair and Efficient Scheduling for LLM Applications](http://arxiv.org/abs/2510.17015v1)
   > **TL;DR**: Addresses unfair and inefficient scheduling of LLM applications in shared GPU environments. Proposes Justitia, a memory-centric scheduler using neural demand prediction and virtual-time fair queuing to balance efficiency and worst-case guarantees, reducing completion time by up to 3.2× while ensuring fairness compared to vLLM.
