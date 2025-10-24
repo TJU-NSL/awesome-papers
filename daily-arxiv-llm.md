@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-715-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2025.10.22-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-718-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2025.10.23-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,14 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking`
 
 ---
+### 2025-10-22
+* `MoE` `training` `networking` [HybridEP: Scaling Expert Parallelism to Cross-Datacenter Scenario via Hybrid Expert/Data Transmission](http://arxiv.org/abs/2510.19470v1)
+  > **TL;DR**: Addresses scalability limits of MoE training across datacenters due to low cross-DC bandwidth. Proposes HybridEP, a framework that dynamically optimizes expert and data communication patterns via modeling-guided hybrid transmission, achieving up to 5.6x speedup under constrained bandwidth.
+* `training` `MoE` `networking` [RailS: Load Balancing for All-to-All Communication in Distributed Mixture-of-Experts Training](http://arxiv.org/abs/2510.19262v2)
+  > **TL;DR**: Addresses all-to-all communication bottlenecks in distributed MoE training by leveraging Rail topology symmetry to enable local, topology-aware load balancing. RailS uses multipath spraying and LPT scheduling to reduce iteration time by up to 40% and boost bus bandwidth by up to 78%.
+* `RL` `serving` `offloading` [RLBoost: Harvesting Preemptible Resources for Cost-Efficient Reinforcement Learning on LLMs](http://arxiv.org/abs/2510.19225v1)
+  > **TL;DR**: RLBoost improves cost-efficiency of LLM reinforcement learning by harvesting preemptible GPUs for rollout stages, using adaptive offloading, pull-based weight transfer, and token-level response migration. It achieves 1.51x–1.97x higher throughput and 28%–49% better cost efficiency than on-demand-only setups.
+
 ### 2025-10-21
 * `training` `sparse` `distributed` [MTraining: Distributed Dynamic Sparse Attention for Efficient Ultra-Long Context Training](http://arxiv.org/abs/2510.18830v1)
   > **TL;DR**: Addresses inefficient training of LLMs with ultra-long contexts due to computational imbalance. Proposes MTraining, a distributed method with dynamic sparse attention and balanced ring attention, achieving 6× higher training throughput while scaling context from 32K to 512K tokens on 32 A100 GPUs.
