@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-720-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2025.10.27-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-722-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2025.10.28-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,12 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking`
 
 ---
+### 2025-10-27
+* `edge` `offloading` `serving` [Bayes-Split-Edge: Bayesian Optimization for Constrained Collaborative Inference in Wireless Edge Systems](http://arxiv.org/abs/2510.23503v1)
+  > **TL;DR**: Proposes Bayes-Split-Edge, a Bayesian optimization framework for jointly optimizing neural network split points and transmission power in edge-served inference to meet energy and latency constraints. Achieves 2.4x reduction in evaluation cost and near-linear convergence with as few as 20 function evaluations.
+* `offloading` `edge` `serving` [Rethinking Inference Placement for Deep Learning across Edge and Cloud Platforms: A Multi-Objective Optimization Perspective and Future Directions](http://arxiv.org/abs/2510.22909v1)
+  > **TL;DR**: Addresses optimal placement of DL model inference across edge and cloud to balance latency, cost, and privacy. Proposes a multi-objective optimization framework for partitioning and offloading, enabling tailored deployment for latency-sensitive applications like chatbots.
+
 ### 2025-10-23
 * `training` `networking` `hardware` [Collective Communication for 100k+ GPUs](http://arxiv.org/abs/2510.20171v1)
   > **TL;DR**: Addresses communication bottlenecks in training LLMs at 100k+ GPU scales. Proposes NCCLX, a collective communication framework optimizing all-reduce and all-gather for ultra-scale clusters, achieving significant throughput and latency improvements over standard NCCL on Llama4 training.
