@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-722-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2025.10.29-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-723-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2025.10.30-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,10 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking`
 
 ---
+### 2025-10-29
+* `MoE` `serving` `networking` [MoEntwine: Unleashing the Potential of Wafer-scale Chips for Large-scale Expert Parallel Inference](http://arxiv.org/abs/2510.25258v1)
+  > **TL;DR**: Proposes ER-Mapping and NI-Balancer to optimize MoE inference on wafer-scale chips by co-designing expert and attention layer mappings and overlapping expert migration with idle network links, achieving 62% communication reduction and 39% higher per-device performance than NVL72.
+
 ### 2025-10-27
 * `edge` `offloading` `serving` [Bayes-Split-Edge: Bayesian Optimization for Constrained Collaborative Inference in Wireless Edge Systems](http://arxiv.org/abs/2510.23503v1)
   > **TL;DR**: Proposes Bayes-Split-Edge, a Bayesian optimization framework for jointly optimizing neural network split points and transmission power in edge-served inference to meet energy and latency constraints. Achieves 2.4x reduction in evaluation cost and near-linear convergence with as few as 20 function evaluations.
