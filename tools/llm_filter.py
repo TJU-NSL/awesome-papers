@@ -4,7 +4,7 @@ import json
 import time
 from typing import List
 
-from openai import OpenAI, RateLimitError
+from openai import OpenAI, RateLimitError, APIConnectionError
 
 from config import API_KEY, BASE_URL, MODEL, logger
 from utils import SYSTEM_PROMPT, USER_PROMPT, TAGS
@@ -37,6 +37,9 @@ def llm_filter(papers: List[dict]) -> List[dict]:
             except RateLimitError as e:
                 logger.warning(f"RateLimitError; retrying in 10s: {e}")
                 time.sleep(10)
+            except APIConnectionError as e:
+                logger.warning(f"APIConnectionError; retrying in 5s: {e}")
+                time.sleep(5)
 
         raw = resp.choices[0].message.content
         logger.debug(f"[LLM] title={p.get('title')} | output={raw}")

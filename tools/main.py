@@ -29,3 +29,13 @@ def run() -> None:
 
 if __name__ == "__main__":
     run()
+
+    # TODO-list
+    """
+    1. add an entrypoint for chatgpt and kimi chat
+        1.1 https://chatgpt.com/?model=gpt-5&q=XXXXX
+        1.2 http://kimi.com/_prefill_chat?prefill_prompt=XXXXX&send_immediately=true&force_search=false&enable_reasoning=false
+    2. convert TLDR to chinese
+    3. add email sending function
+    4. implement a web UI for better visualization
+    """
