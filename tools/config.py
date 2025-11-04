@@ -20,7 +20,8 @@ DEFAULT_START_DATE = "20250101"  # YYYYMMDD
 # Use SiliconFlow by default; keep names consistent with original script
 API_KEY = os.environ["API_KEY"]  # required
 BASE_URL = "https://api.siliconflow.cn/v1"
-MODEL = "Qwen/Qwen3-Next-80B-A3B-Instruct"
+# MODEL = "Qwen/Qwen3-Next-80B-A3B-Instruct"
+MODEL = "deepseek-ai/DeepSeek-V3.1-Terminus"
 
 # TODO: Subscribers (e-mail) ---------------------------------------------------
 SUBSCRIBER: Final[dict[str, list[str]]] = {

@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-723-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2025.10.30-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-731-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2025.11.03-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,26 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking`
 
 ---
+### 2025-10-31
+* `networking` `serving` `RL` [RDMA Point-to-Point Communication for LLM Systems](http://arxiv.org/abs/2510.27656v1)
+  > **TL;DR**: Addresses the need for flexible point-to-point communication in LLM systems using diverse NICs. Proposes TransferEngine, a uniform interface that exposes one-sided WriteImm operations with completion primitives. Achieves 400 Gbps throughput and enables 1.3-second RL weight updates for trillion-parameter models.
+* `training` `multi-modal` [Synergistic Tensor and Pipeline Parallelism](http://arxiv.org/abs/2510.27257v1)
+  > **TL;DR**: Proposes a synergistic schedule for tensor and pipeline parallelism to reduce communication and synchronization bubbles during LLM/MLLM training. Decouples forward/backward passes into fine-grained units and braids them into a composite sequence. Improves training throughput by up to 16% over baselines.
+* `serving` `offloading` [SERFLOW: A Cross-Service Cost Optimization Framework for SLO-Aware Dynamic ML Inference](http://arxiv.org/abs/2510.27182v1)
+  > **TL;DR**: Addresses cost-efficient, SLO-aware serving for dynamic ML inference where requests may exit early. Proposes SERFLOW, a framework that offloads model stages between IaaS VMs and FaaS functions using stage-specific provisioning and adaptive load balancing. Reduces cloud costs by over 23%.
+* `serving` `RL` [Glia: A Human-Inspired AI for Automated Systems Design and Optimization](http://arxiv.org/abs/2510.27176v1)
+  > **TL;DR**: Presents Glia, an automated AI system for designing computer systems using a multi-agent LLM workflow with reasoning and experimentation. Applied to distributed GPU clusters for LLM inference, it generates novel algorithms for routing and scheduling, achieving human-expert level performance in less time.
+
+### 2025-10-30
+* `training` `agentic` `RL` [FlowMesh: A Service Fabric for Composable LLM Workflows](http://arxiv.org/abs/2510.26913v1)
+  > **TL;DR**: Proposes FlowMesh, a service fabric for fine-grained execution of composite LLM workflows (e.g., RLHF, agent workflows). It decomposes workflows into operators for cross-user deduplication, batching, and global scheduling. Achieves up to 3.8x cost reduction compared to baseline pipelines.
+* `serving` `MoE` `offloading` [ExpertFlow: Adaptive Expert Scheduling and Memory Coordination for Efficient MoE Inference](http://arxiv.org/abs/2510.26730v1)
+  > **TL;DR**: Proposes ExpertFlow, a runtime system for MoE inference that uses adaptive expert prefetching and cache-aware routing to reduce latency from parameter transfers. It dynamically predicts expert needs to minimize cache misses, reducing model stall time to <0.1% of the baseline.
+* `training` `sparse` `networking` [An All-Reduce Compatible Top-K Compressor for Communication-Efficient Distributed Learning](http://arxiv.org/abs/2510.26709v2)
+  > **TL;DR**: Proposes ARC-Top-K, an All-Reduce-compatible gradient compressor for distributed training. It aligns sparsity patterns via a lightweight sketch to enable index-free communication. Achieves up to 60.7% reduction in wall-clock training time while matching Top-K accuracy.
+* `RL` `training` `serving` [ReSpec: Towards Optimizing Speculative Decoding in Reinforcement Learning Systems](http://arxiv.org/abs/2510.26475v1)
+  > **TL;DR**: Adapts speculative decoding to accelerate generation in RL training systems. Proposes ReSpec with dynamic SD tuning, drafter distillation, and reward-weighted updates to mitigate staleness and policy drift. Achieves up to 4.5x speedup on Qwen models (3B-14B) while preserving reward convergence.
+
 ### 2025-10-29
 * `MoE` `serving` `networking` [MoEntwine: Unleashing the Potential of Wafer-scale Chips for Large-scale Expert Parallel Inference](http://arxiv.org/abs/2510.25258v1)
   > **TL;DR**: Proposes ER-Mapping and NI-Balancer to optimize MoE inference on wafer-scale chips by co-designing expert and attention layer mappings and overlapping expert migration with idle network links, achieving 62% communication reduction and 39% higher per-device performance than NVL72.

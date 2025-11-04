@@ -32,6 +32,7 @@ def llm_filter(papers: List[dict]) -> List[dict]:
                     messages=message,
                     response_format={"type": "json_object"},
                     max_tokens=300,
+                    timeout=180,
                 )
                 break
             except RateLimitError as e:
