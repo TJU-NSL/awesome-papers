@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-731-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2025.11.04-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-739-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2025.11.05-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,30 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking`
 
 ---
+### 2025-11-04
+* `serving` `edge` `networking` [Federated Attention: A Distributed Paradigm for Collaborative LLM Inference over Edge Networks](http://arxiv.org/abs/2511.02647v1)
+  > **TL;DR**: Proposes Federated Attention (FedAttn), a distributed LLM inference framework for edge networks that performs local self-attention and periodic KV matrix aggregation to preserve privacy and reduce communication. Achieves a 3.2x reduction in communication cost while maintaining response quality.
+* `serving` `kernel` [From Models to Operators: Rethinking Autoscaling Granularity for Large Generative Models](http://arxiv.org/abs/2511.02248v1)
+  > **TL;DR**: Proposes operator-level autoscaling for large generative models to replace inefficient model-level scaling. The framework profiles individual model operators and independently scales resources for each. Achieves up to 40% fewer GPUs while preserving SLOs, or 1.6x higher throughput under fixed resources.
+* `training` `kernel` `networking` [Eliminating Multi-GPU Performance Taxes: A Systems Approach to Efficient Distributed LLMs](http://arxiv.org/abs/2511.02168v1)
+  > **TL;DR**: Addresses performance inefficiencies in distributed LLM execution across multiple GPUs due to the Bulk Synchronous Parallel (BSP) model. Proposes fine-grained programming patterns using in-kernel communication primitives to replace global barriers with dataflow synchronization. Achieves a 10-20% speedup in end-to-end latency.
+* `serving` `offloading` `agentic` [Continuum: Efficient and Robust Multi-Turn LLM Agent Scheduling with KV Cache Time-to-Live](http://arxiv.org/abs/2511.02230v1)
+  > **TL;DR**: Proposes Continuum, a serving system optimizing multi-turn LLM agent job completion time by predicting tool call durations to set KV cache time-to-live and enable program-level scheduling. Reduces average job completion time and prevents scheduling bubbles for real-world agent workloads.
+
+### 2025-11-03
+* `kernel` `training` `serving` [Optimizing Attention on GPUs by Exploiting GPU Architectural NUMA Effects](http://arxiv.org/abs/2511.02132v1)
+  > **TL;DR**: Addresses performance degradation of attention kernels on disaggregated GPUs due to NUMA effects. Proposes Swizzled Head-first Mapping, a scheduling strategy aligning attention heads with NUMA domains for cache reuse. Achieves 50% higher performance on AMD MI300X with L2 cache hit rates of 80-97%.
+
+### 2025-11-02
+* `serving` `networking` [FREESH: Fair, Resource- and Energy-Efficient Scheduling for LLM Serving on Heterogeneous GPUs](http://arxiv.org/abs/2511.00807v1)
+  > **TL;DR**: Explores fair, energy/carbon-efficient LLM serving on distributed, heterogeneous GPUs. Proposes FREESH, a joint routing and scheduling system that optimizes query placement and GPU frequency based on spatiotemporal power/carbon variability. Achieves 45.45% emissions reduction and 28.6% energy saving while improving SLO attainment.
+* `RL` `training` [AReaL-Hex: Accommodating Asynchronous RL Training over Heterogeneous GPUs](http://arxiv.org/abs/2511.00796v1)
+  > **TL;DR**: Introduces AReaL-Hex, a heterogeneity-aware system for asynchronous RL training on heterogeneous GPUs. It uses a two-phase scheduler (MILP-based planning and graph partitioning) to assign stages optimally. On reasoning tasks, it achieves 1.50x higher throughput or 1.46x cost reduction versus homogeneous deployments.
+
+### 2025-11-01
+* `serving` `edge` `multi-modal` [EPARA: Parallelizing Categorized AI Inference in Edge Clouds](http://arxiv.org/abs/2511.00603v1)
+  > **TL;DR**: Proposes EPARA, an end-to-end parallel inference framework for edge clouds that categorizes AI tasks by latency sensitivity and GPU needs. It uses a task allocator, distributed handler, and state-aware scheduler to improve resource allocation. Achieves up to 2.1x higher goodput compared to prior frameworks.
+
 ### 2025-10-31
 * `networking` `serving` `RL` [RDMA Point-to-Point Communication for LLM Systems](http://arxiv.org/abs/2510.27656v1)
   > **TL;DR**: Addresses the need for flexible point-to-point communication in LLM systems using diverse NICs. Proposes TransferEngine, a uniform interface that exposes one-sided WriteImm operations with completion primitives. Achieves 400 Gbps throughput and enables 1.3-second RL weight updates for trillion-parameter models.
