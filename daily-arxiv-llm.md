@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-739-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2025.11.05-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-741-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2025.11.06-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,12 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking`
 
 ---
+### 2025-11-05
+* `edge` `serving` `kernel` [UMDAM: A Unified Data Layout and DRAM Address Mapping for Heterogenous NPU-PIM](http://arxiv.org/abs/2511.03293v1)
+  > **TL;DR**: Proposes UMDAM, a unified data layout and DRAM mapping scheme for NPU-PIM co-execution to optimize LLM inference on edge devices. Uses a column-major, tile-based layout to eliminate bandwidth loss and redundant storage. Reduces TTFT by up to 3.0x and TTLT by 2.18x.
+* `serving` `offloading` [SnapStream: Efficient Long Sequence Decoding on Dataflow Accelerators](http://arxiv.org/abs/2511.03092v1)
+  > **TL;DR**: Proposes SnapStream, a KV cache compression method for efficient long-sequence LLM inference with continuous batching. It integrates sparsification into static-graph dataflow accelerators. Achieves 4× improved on-chip memory usage while maintaining throughput of 1832 tokens/sec for DeepSeek-671B at 128k context length.
+
 ### 2025-11-04
 * `serving` `edge` `networking` [Federated Attention: A Distributed Paradigm for Collaborative LLM Inference over Edge Networks](http://arxiv.org/abs/2511.02647v1)
   > **TL;DR**: Proposes Federated Attention (FedAttn), a distributed LLM inference framework for edge networks that performs local self-attention and periodic KV matrix aggregation to preserve privacy and reduce communication. Achieves a 3.2x reduction in communication cost while maintaining response quality.
