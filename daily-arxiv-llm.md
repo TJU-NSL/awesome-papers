@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-742-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2025.11.11-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-743-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2025.11.12-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,10 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking`
 
 ---
+### 2025-11-11
+* `kernel` `sparse` [\uline{LO}w-c\uline{O}st yet High-\uline{P}erformant \uline{S}parse Matrix-Matrix Multiplication on Arm SME Architectures](http://arxiv.org/abs/2511.08158v1)
+  > **TL;DR**: Proposes LOOPS, a hybrid framework for efficient SpMM on Arm SME architectures. Combines row-wise and vector-wise layouts to co-utilize NEON and SME units via an adaptive parallelization scheme. Achieves up to 14.4x (FP64) speedup over the baseline TACO on CPU.
+
 ### 2025-11-06
 * `quantization` `sparse` `edge` [Enabling Dynamic Sparsity in Quantized LLM Inference](http://arxiv.org/abs/2511.04477v1)
   > **TL;DR**: Proposes techniques to enable dynamic sparsity in quantized LLM inference for edge devices. Key designs include a zigzag-patterned quantization layout and a specialized GEMV kernel for commodity GPUs. Achieves up to 1.55x faster decoding throughput while maintaining accuracy.
