@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-743-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2025.11.13-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-751-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2025.11.14-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,26 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking`
 
 ---
+### 2025-11-13
+* `training` `kernel` [Scalable Synthesis of distributed LLM workloads through Symbolic Tensor Graphs](http://arxiv.org/abs/2511.10480v1)
+  > **TL;DR**: Presents STAGE, a framework to synthesize high-fidelity execution traces for modeling distributed LLM training workloads using symbolic tensor graphs. It enables systematic exploration of parallelization strategies and scales to model configurations spanning over 32K GPUs with tensor-level accuracy.
+* `training` `hardware` [Lit Silicon: A Case Where Thermal Imbalance Couples Concurrent Execution in Multiple GPUs](http://arxiv.org/abs/2511.09861v1)
+  > **TL;DR**: Identifies Lit Silicon, a thermal imbalance causing straggler GPUs in multi-GPU LLM training systems. Proposes detection/mitigation techniques and power management models, including GPU/CPU power optimization. Achieves up to 6% performance and 4% power improvements on two LLM training frameworks.
+* `training` [MoFa: A Unified Performance Modeling Framework for LLM Pretraining](http://arxiv.org/abs/2511.09837v1)
+  > **TL;DR**: Presents MoFa, a performance modeling framework for distributed LLM pretraining that integrates optimization features and fault tolerance overhead. It uses an enhanced cost model and fault tolerance analysis to guide system tuning. Achieves high prediction accuracy across various scenarios.
+* `hardware` `offloading` [Taiji: A DPU Memory Elasticity Solution for In-production Cloud Environments](http://arxiv.org/abs/2511.09936v1)
+  > **TL;DR**: Proposes Taiji, a resource-elasticity architecture for Data Processing Units (DPUs) using hybrid virtualization and parallel memory swapping to enable memory overcommitment. Achieves over 50% memory expansion with ~5% virtualization overhead and 90% of swap-ins under 10 microseconds.
+
+### 2025-11-12
+* `training` `networking` [TawPipe: Topology-Aware Weight Pipeline Parallelism for Accelerating Long-Context Large Models Training](http://arxiv.org/abs/2511.09741v1)
+  > **TL;DR**: Proposes TawPipe, a topology-aware weight pipeline parallelism method for LLM training that optimizes communication hierarchy to reduce cross-node traffic. Groups devices by topology, assigns fixed weight shards, and overlaps communication. Achieves 1.56x higher throughput than WeiPipe on 24 GPUs with long sequences.
+* `serving` `networking` [LLM Inference Beyond a Single Node: From Bottlenecks to Mitigations with Fast All-Reduce Communication](http://arxiv.org/abs/2511.09557v2)
+  > **TL;DR**: Analyzes bottlenecks in multi-node LLM inference. Proposes NVRAR, a low-latency hierarchical all-reduce algorithm using NVSHMEM and recursive doubling. Reduces communication latency by up to 3.6x and end-to-end batch latency by 1.72x for large models like Llama 3.1 405B.
+* `training` `kernel` [No Cords Attached: Coordination-Free Concurrent Lock-Free Queues](http://arxiv.org/abs/2511.09410v1)
+  > **TL;DR**: Addresses high coordination overhead in concurrent queues for massively parallel AI workloads. Proposes Cyclic Memory Protection (CMP), a coordination-free lock-free queue using bounded protection windows. Outperforms state-of-the-art queues by 1.72-4x under high contention with hundreds of threads.
+* `hardware` `serving` [Flex-MIG: Enabling Distributed Execution on MIG](http://arxiv.org/abs/2511.09143v2)
+  > **TL;DR**: Addresses GPU underutilization from rigid NVIDIA MIG partitioning. Proposes Flex-MIG, a software framework enabling one-to-many allocation and shared-memory collectives for distributed execution across MIG instances. Improves cluster makespan by up to 17% on diverse traces.
+
 ### 2025-11-11
 * `kernel` `sparse` [\uline{LO}w-c\uline{O}st yet High-\uline{P}erformant \uline{S}parse Matrix-Matrix Multiplication on Arm SME Architectures](http://arxiv.org/abs/2511.08158v1)
   > **TL;DR**: Proposes LOOPS, a hybrid framework for efficient SpMM on Arm SME architectures. Combines row-wise and vector-wise layouts to co-utilize NEON and SME units via an adaptive parallelization scheme. Achieves up to 14.4x (FP64) speedup over the baseline TACO on CPU.
