@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-751-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2025.11.16-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-753-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2025.11.17-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,12 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking`
 
 ---
+### 2025-11-14
+* `agentic` `edge` `serving` [UFO$^3$: Weaving the Digital Agent Galaxy](http://arxiv.org/abs/2511.11332v1)
+  > **TL;DR**: Presents UFO3, a system for orchestrating LLM-powered agents across heterogeneous devices. Models user requests as mutable distributed DAGs with asynchronous execution and dynamic optimization. Achieves 31% lower end-to-end latency compared to a sequential baseline.
+* `edge` `offloading` `networking` [SemanticNN: Compressive and Error-Resilient Semantic Offloading for Extremely Weak Devices](http://arxiv.org/abs/2511.11038v1)
+  > **TL;DR**: Addresses how to perform accurate AI inference offloading for resource-constrained IoT devices over unreliable networks. Proposes SemanticNN, a semantic codec with a BER-aware decoder and soft quantization, that is resilient to bit errors. Reduces feature transmission volume by 56.82-344.83x while maintaining accuracy.
+
 ### 2025-11-13
 * `training` `kernel` [Scalable Synthesis of distributed LLM workloads through Symbolic Tensor Graphs](http://arxiv.org/abs/2511.10480v1)
   > **TL;DR**: Presents STAGE, a framework to synthesize high-fidelity execution traces for modeling distributed LLM training workloads using symbolic tensor graphs. It enables systematic exploration of parallelization strategies and scales to model configurations spanning over 32K GPUs with tensor-level accuracy.
