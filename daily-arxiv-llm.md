@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-753-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2025.11.17-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-757-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2025.11.18-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,20 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking`
 
 ---
+### 2025-11-17
+* `kernel` `inference` `sparse` [MACKO: Sparse Matrix-Vector Multiplication for Low Sparsity](http://arxiv.org/abs/2511.13061v1)
+  > **TL;DR**: Proposes MACKO-SpMV, a GPU-optimized kernel and storage format for efficient sparse matrix-vector multiplication at low (30-90%) sparsity levels common in pruned LLMs. Applied to Llama2-7B, it achieves 1.5x memory reduction and 1.5x faster inference at 50% sparsity compared to a dense baseline.
+
+### 2025-11-16
+* `kernel` `training` [Iris: First-Class Multi-GPU Programming Experience in Triton](http://arxiv.org/abs/2511.12500v1)
+  > **TL;DR**: Presents Iris, a multi-GPU communication library implemented in Python/Triton to simplify and optimize compute-communication overlap. Introduces tile-based symmetric memory abstractions for single-source kernels. Achieves up to 1.79x speedup over PyTorch and RCCL in GEMM+All-Scatter workloads.
+
+### 2025-11-15
+* `video` `serving` [PipeDiT: Accelerating Diffusion Transformers in Video Generation with Task Pipelining and Model Decoupling](http://arxiv.org/abs/2511.12056v1)
+  > **TL;DR**: Proposes PipeDiT, a pipelining framework to reduce inference latency and memory consumption for DiT-based video generation. Key innovations include pipeline sequence parallelism, decoupling diffusion/VAE modules, and attention co-processing. Achieves 1.06x-4.02x speedups over baseline frameworks.
+* `serving` `kernel` `offloading` [Striking the Right Balance between Compute and Copy: Improving LLM Inferencing Under Speculative Decoding](http://arxiv.org/abs/2511.12031v1)
+  > **TL;DR**: Proposes BMC, a KV cache allocation method balancing memory copies and compute redundancy for LLM inference. It pre-allocates tensors with extra rows for in-place updates, repurposing redundancy for speculative decoding. Achieves up to 3.2x throughput acceleration over baseline HuggingFace.
+
 ### 2025-11-14
 * `agentic` `edge` `serving` [UFO$^3$: Weaving the Digital Agent Galaxy](http://arxiv.org/abs/2511.11332v1)
   > **TL;DR**: Presents UFO3, a system for orchestrating LLM-powered agents across heterogeneous devices. Models user requests as mutable distributed DAGs with asynchronous execution and dynamic optimization. Achieves 31% lower end-to-end latency compared to a sequential baseline.
