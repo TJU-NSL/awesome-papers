@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-757-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2025.11.18-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-762-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2025.11.19-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,18 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking`
 
 ---
+### 2025-11-18
+* `RL` `serving` [Seer: Online Context Learning for Fast Synchronous LLM Reinforcement Learning](http://arxiv.org/abs/2511.14617v1)
+  > **TL;DR**: Addresses performance bottlenecks in synchronous LLM reinforcement learning. Proposes Seer, a system using online context learning with dynamic load balancing and grouped speculative decoding to exploit prompt similarities. Achieves up to 97% higher rollout throughput and 93% lower long-tail latency.
+* `serving` `edge` `networking` [Hyperion: Hierarchical Scheduling for Parallel LLM Acceleration in Multi-tier Networks](http://arxiv.org/abs/2511.14450v1)
+  > **TL;DR**: This paper tackles minimizing end-to-end latency for LLM inference in multi-tier networks. Hyperion uses a two-stage framework that jointly optimizes offline model partitioning and online request scheduling. It reduces latency by up to 52.1% compared to GPipe while increasing GPU utilization.
+* `training` `offloading` `storage` [10Cache: Heterogeneous Resource-Aware Tensor Caching and Migration for LLM Training](http://arxiv.org/abs/2511.14124v1)
+  > **TL;DR**: Addresses memory bottlenecks and tensor migration latency in LLM training. Proposes 10Cache, a system for intelligent tensor caching/migration across GPU, CPU, and NVMe tiers using prefetching and buffer reuse. Achieves up to 2x training speedup and an 86.6x higher GPU cache hit rate.
+* `serving` `networking` [FailSafe: High-performance Resilient Serving](http://arxiv.org/abs/2511.14116v1)
+  > **TL;DR**: Addresses how to sustain LLM serving performance under GPU failures in tensor-parallel settings. Proposes FailSafe with cyclic KVCache placement, hybrid attention, and dynamic routing, plus proactive backup and recovery. Achieves 2x higher throughput and 100x lower recovery latency vs. standard fault handling.
+* `MoE` `offloading` `serving` [MoE-SpeQ: Speculative Quantized Decoding with Proactive Expert Prefetching and Offloading for Mixture-of-Experts](http://arxiv.org/abs/2511.14102v1)
+  > **TL;DR**: Addresses the I/O bottleneck of expert offloading in MoE model inference. Proposes MoE-SpeQ, a system that uses a draft model for speculative expert prefetching and an adaptive governor to overlap I/O with computation. Achieves a 2.34x speedup over the state-of-the-art offloading framework.
+
 ### 2025-11-17
 * `kernel` `inference` `sparse` [MACKO: Sparse Matrix-Vector Multiplication for Low Sparsity](http://arxiv.org/abs/2511.13061v1)
   > **TL;DR**: Proposes MACKO-SpMV, a GPU-optimized kernel and storage format for efficient sparse matrix-vector multiplication at low (30-90%) sparsity levels common in pruned LLMs. Applied to Llama2-7B, it achieves 1.5x memory reduction and 1.5x faster inference at 50% sparsity compared to a dense baseline.
