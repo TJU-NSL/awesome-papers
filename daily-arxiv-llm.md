@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-762-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2025.11.19-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-764-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2025.11.20-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,12 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking`
 
 ---
+### 2025-11-19
+* `kernel` `hardware` `serving` [A Tensor Compiler for Processing-In-Memory Architectures](http://arxiv.org/abs/2511.15503v1)
+  > **TL;DR**: Proposes DCC, a data-centric compiler optimizing data layouts and compute code jointly for ML kernels on PIM architectures. It uses a unified tuning process with performance prediction. Achieves up to 7.71x speedup for LLM inference over GPU-only execution.
+* `networking` `MoE` `training` [GPU-Initiated Networking for NCCL](http://arxiv.org/abs/2511.15076v1)
+  > **TL;DR**: Investigates how to reduce GPU communication latency for AI workloads like MoE models. Proposes GPU-Initiated Networking (GIN), an NCCL extension enabling direct, CPU-bypass GPU-to-GPU communication via RDMA. Achieves lower latency device-initiated operations within NCCL's collective runtime.
+
 ### 2025-11-18
 * `RL` `serving` [Seer: Online Context Learning for Fast Synchronous LLM Reinforcement Learning](http://arxiv.org/abs/2511.14617v1)
   > **TL;DR**: Addresses performance bottlenecks in synchronous LLM reinforcement learning. Proposes Seer, a system using online context learning with dynamic load balancing and grouped speculative decoding to exploit prompt similarities. Achieves up to 97% higher rollout throughput and 93% lower long-tail latency.
