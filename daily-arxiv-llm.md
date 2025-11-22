@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-764-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2025.11.20-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-768-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2025.11.21-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,16 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking`
 
 ---
+### 2025-11-20
+* `training` `RL` `kernel` [Taming the Long-Tail: Efficient Reasoning RL Training with Adaptive Drafter](http://arxiv.org/abs/2511.16665v1)
+  > **TL;DR**: Proposes TLT, a system to accelerate reasoning RL training by using adaptive speculative decoding to overcome the bottleneck of long-tail response generation. Achieves over 1.7x end-to-end training speedup while preserving model accuracy.
+* `RL` `serving` [Fast LLM Post-training via Decoupled and Best-of-N Speculation](http://arxiv.org/abs/2511.16193v1)
+  > **TL;DR**: Addresses the slow rollout phase in LLM post-training (e.g., RLHF). Introduces SpecActor, which uses dynamic decoupled speculation and Best-of-N drafting to maximize GPU efficiency and draft accuracy. Achieves 1.3–1.7× speedup over common post-training baselines.
+* `kernel` `hardware` [Can Asymmetric Tile Buffering Be Beneficial?](http://arxiv.org/abs/2511.16041v1)
+  > **TL;DR**: Proposes Asymmetric Tile Buffering (ATB) to decouple input and output operand tile dimensions in GEMM, increasing arithmetic intensity. A performance model balances ATB benefits against kernel switching overhead. On AMD XDNA2 AI Engine, achieves 4.54x speedup (4.8 to 24.6 TFLOPS) for BFP16-BF16 GEMM.
+* `hardware` `serving` `offloading` [A Scalable NorthPole System with End-to-End Vertical Integration for Low-Latency and Energy-Efficient LLM Inference](http://arxiv.org/abs/2511.15950v1)
+  > **TL;DR**: Presents a vertically integrated system with NorthPole accelerators for scalable, low-latency LLM inference. Combines custom hardware, a runtime stack, and containerized pipeline. Delivers 2.8 ms per-user inter-token latency for an 8B model while consuming only 30 kW.
+
 ### 2025-11-19
 * `kernel` `hardware` `serving` [A Tensor Compiler for Processing-In-Memory Architectures](http://arxiv.org/abs/2511.15503v1)
   > **TL;DR**: Proposes DCC, a data-centric compiler optimizing data layouts and compute code jointly for ML kernels on PIM architectures. It uses a unified tuning process with performance prediction. Achieves up to 7.71x speedup for LLM inference over GPU-only execution.
