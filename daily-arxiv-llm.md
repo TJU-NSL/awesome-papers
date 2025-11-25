@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-768-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2025.11.23-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-771-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2025.11.24-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,14 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking`
 
 ---
+### 2025-11-21
+* `training` `MoE` `hardware` [Training Foundation Models on a Full-Stack AMD Platform: Compute, Networking, and System Design](http://arxiv.org/abs/2511.17127v1)
+  > **TL;DR**: Presents a full-stack system design for training MoE foundation models on AMD MI300X GPUs with Pollara interconnect. Characterizes cluster networking, memory bandwidth, and introduces hardware-aware transformer sizing rules. Achieves competitive model performance with optimized throughput on pure AMD hardware.
+* `kernel` `serving` [Optimizing PyTorch Inference with LLM-Based Multi-Agent Systems](http://arxiv.org/abs/2511.16964v1)
+  > **TL;DR**: Investigates multi-agent LLM systems for optimizing PyTorch inference. Proposes a framework to compare different agent strategies, finding exploit-heavy strategies with error-fixing agents work best. Achieves an average 2.88x speedup on an H100 GPU across the KernelBench suite.
+* `training` `MoE` [MicroMoE: Fine-Grained Load Balancing for Mixture-of-Experts with Token Scheduling](http://arxiv.org/abs/2511.16947v1)
+  > **TL;DR**: Addresses load imbalance in MoE model training. Proposes MicroMoE, a distributed system with MicroEP, a fine-grained parallelization strategy using token scheduling for load balancing. Improves end-to-end training throughput by up to 47.6%.
+
 ### 2025-11-20
 * `training` `RL` `kernel` [Taming the Long-Tail: Efficient Reasoning RL Training with Adaptive Drafter](http://arxiv.org/abs/2511.16665v1)
   > **TL;DR**: Proposes TLT, a system to accelerate reasoning RL training by using adaptive speculative decoding to overcome the bottleneck of long-tail response generation. Achieves over 1.7x end-to-end training speedup while preserving model accuracy.
