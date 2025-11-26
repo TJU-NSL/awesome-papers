@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-771-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2025.11.24-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-775-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2025.11.25-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,18 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking`
 
 ---
+### 2025-11-24
+* `edge` `storage` `RAG` [AME: An Efficient Heterogeneous Agentic Memory Engine for Smartphones](http://arxiv.org/abs/2511.19192v1)
+  > **TL;DR**: Proposes AME, a hardware-aware vector database engine for on-device agents on smartphones. It co-designs an efficient matrix pipeline and workload scheduler with mobile SoC constraints. Achieves 1.4x higher query throughput and 7x faster index construction.
+* `kernel` [Low-Rank GEMM: Efficient Matrix Multiplication via Low-Rank Approximation with FP8 Acceleration](http://arxiv.org/abs/2511.18674v1)
+  > **TL;DR**: Proposes Low-Rank GEMM, a matrix multiplication method using low-rank approximations and FP8 precision to reduce complexity and improve hardware efficiency. Achieves a 7.8x speedup and 75% memory savings over PyTorch FP32 on large matrices.
+
+### 2025-11-22
+* `edge` `multi-modal` `offloading` [AVERY: Adaptive VLM Split Computing through Embodied Self-Awareness for Efficient Disaster Response Systems](http://arxiv.org/abs/2511.18151v1)
+  > **TL;DR**: Presents AVERY, an adaptive split-computing framework for Vision-Language Models on UAVs. It uses a dual-stream split (context/insight) and a self-aware controller to dynamically offload processing. Outperforms baselines with 93.98% lower energy consumption versus full-edge execution.
+* `training` `networking` [Pier: Efficient Large Language Model pretraining with Relaxed Global Communication](http://arxiv.org/abs/2511.17849v1)
+  > **TL;DR**: Addresses the high cost of global communication (e.g., all-reduce) in LLM pretraining. Proposes Pier, an optimizer with relaxed communication via momentum warmup/decay. Achieves a 2.7x-3.7x speedup in GPT-2 XL training on 256 A100s without performance loss.
+
 ### 2025-11-21
 * `training` `MoE` `hardware` [Training Foundation Models on a Full-Stack AMD Platform: Compute, Networking, and System Design](http://arxiv.org/abs/2511.17127v1)
   > **TL;DR**: Presents a full-stack system design for training MoE foundation models on AMD MI300X GPUs with Pollara interconnect. Characterizes cluster networking, memory bandwidth, and introduces hardware-aware transformer sizing rules. Achieves competitive model performance with optimized throughput on pure AMD hardware.
