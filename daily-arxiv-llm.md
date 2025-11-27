@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-775-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2025.11.25-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-779-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2025.11.26-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,16 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking`
 
 ---
+### 2025-11-25
+* `serving` `offloading` `hardware` [Beluga: A CXL-Based Memory Architecture for Scalable and Efficient LLM KVCache Management](http://arxiv.org/abs/2511.20172v1)
+  > **TL;DR**: Introduces Beluga, a CXL-based memory architecture for efficient KVCache management in LLM serving. It enables GPUs to natively access a shared memory pool via CXL switches, reducing access latency. Achieves 89.6% lower TTFT and 7.35x higher throughput vs. RDMA-based solutions.
+* `training` `kernel` [QiMeng-Kernel: Macro-Thinking Micro-Coding Paradigm for LLM-Based High-Performance GPU Kernel Generation](http://arxiv.org/abs/2511.20100v1)
+  > **TL;DR**: Proposes Macro Thinking Micro Coding (MTMC), a hierarchical LLM framework for generating high-performance GPU kernels. Decouples optimization strategy (reinforcement learning) from implementation (LLM coding). Achieves up to 7.3x speedup over LLMs and 2.2x over expert-optimized PyTorch kernels.
+* `training` `networking` `sparse` [ParaBlock: Communication-Computation Parallel Block Coordinate Federated Learning for Large Language Models](http://arxiv.org/abs/2511.19959v1)
+  > **TL;DR**: Addresses high communication latency in federated fine-tuning of large LLM blocks. Proposes ParaBlock, a scheme with parallel communication and computation threads to overlap these phases. Reduces communication costs by up to 42% while maintaining model convergence and performance.
+* `diffusion` `edge` [Batch Denoising for AIGC Service Provisioning in Wireless Edge Networks](http://arxiv.org/abs/2511.19847v1)
+  > **TL;DR**: Optimizes image generation service quality in wireless edge networks under latency constraints. Proposes STACKING, an algorithm for batch denoising that exploits step importance for parallelism. Achieves lower per-step delay and higher service quality compared to baseline methods.
+
 ### 2025-11-24
 * `edge` `storage` `RAG` [AME: An Efficient Heterogeneous Agentic Memory Engine for Smartphones](http://arxiv.org/abs/2511.19192v1)
   > **TL;DR**: Proposes AME, a hardware-aware vector database engine for on-device agents on smartphones. It co-designs an efficient matrix pipeline and workload scheduler with mobile SoC constraints. Achieves 1.4x higher query throughput and 7x faster index construction.
