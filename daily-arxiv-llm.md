@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-779-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2025.11.26-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-784-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2025.11.27-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,18 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking`
 
 ---
+### 2025-11-26
+* `serving` `edge` `offloading` [DSD: A Distributed Speculative Decoding Solution for Edge-Cloud Agile Large Model Serving](http://arxiv.org/abs/2511.21669v1)
+  > **TL;DR**: Addresses the challenge of speculative decoding for LLM inference in distributed edge-cloud environments. Introduces DSD, a framework for coordinated draft-target execution across devices, evaluated via a custom simulator and adaptive window control. Achieves up to 1.1x speedup and 9.7% higher throughput.
+* `training` `MoE` `offloading` [MemFine: Memory-Aware Fine-Grained Scheduling for MoE Training](http://arxiv.org/abs/2511.21431v1)
+  > **TL;DR**: Proposes MemFine, a memory-aware scheduling framework to solve the memory bottleneck in MoE training caused by dynamic token routing. It uses chunk-level decomposition and optimized recomputation guided by a memory model. Reduces activation memory by 48.03% and increases throughput by 4.42% versus full recomputation.
+* `serving` `edge` [Automated Dynamic AI Inference Scaling on HPC-Infrastructure: Integrating Kubernetes, Slurm and vLLM](http://arxiv.org/abs/2511.21413v1)
+  > **TL;DR**: Proposes a system to dynamically scale LLM inference on HPC infrastructure by integrating vLLM, Slurm, and Kubernetes to handle synchronous user-facing workloads. Achieves efficient scaling for up to 1000 concurrent requests with only ~500 ms end-to-end latency overhead.
+* `serving` [A Dynamic PD-Disaggregation Architecture for Maximizing Goodput in LLM Inference Serving](http://arxiv.org/abs/2511.20982v1)
+  > **TL;DR**: Proposes DOPD, a dynamic LLM inference system that adjusts prefill-to-decoding instance allocations based on real-time load to resolve workload imbalance. Achieves up to 1.5x higher goodput and reduces P90 TTFT by 67.5% compared to vLLM and DistServe.
+* `serving` `agentic` `offline` [Aragog: Just-in-Time Model Routing for Scalable Serving of Agentic Workflows](http://arxiv.org/abs/2511.20975v1)
+  > **TL;DR**: Proposes Aragog, a system for cost-aware LLM serving of agentic workflows using just-in-time model routing. It decouples configuration into an offline accuracy-preserving step and an online per-stage scheduler. At peak load, achieves 50-217% higher throughput and 32.5-78.9% lower median latency.
+
 ### 2025-11-25
 * `serving` `offloading` `hardware` [Beluga: A CXL-Based Memory Architecture for Scalable and Efficient LLM KVCache Management](http://arxiv.org/abs/2511.20172v1)
   > **TL;DR**: Introduces Beluga, a CXL-based memory architecture for efficient KVCache management in LLM serving. It enables GPUs to natively access a shared memory pool via CXL switches, reducing access latency. Achieves 89.6% lower TTFT and 7.35x higher throughput vs. RDMA-based solutions.
