@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-784-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2025.11.30-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-789-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2025.12.01-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,20 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking`
 
 ---
+### 2025-11-28
+* `training` `offloading` `edge` [Communication-Computation Pipeline Parallel Split Learning over Wireless Edge Networks](http://arxiv.org/abs/2511.23167v1)
+  > **TL;DR**: Proposes a pipeline-parallel split learning method to overlap communication and computation in distributed training over wireless edge networks. Uses micro-batching and jointly optimizes task split and resource allocation. Reduces total training time by over 38% while maintaining accuracy.
+* `serving` `RL` `networking` [Serving Heterogeneous LoRA Adapters in Distributed LLM Inference Systems](http://arxiv.org/abs/2511.22880v1)
+  > **TL;DR**: Addresses performance skew from serving heterogeneous LoRA adapters. Proposes LoRAServe, a dynamic adapter placement and routing framework that rebalances adapters across GPUs using RDMA for remote access. Achieves up to 2× higher throughput and 50% fewer GPUs under SLOs compared to SOTA.
+
+### 2025-11-27
+* `serving` `edge` `networking` [DisCEdge: Distributed Context Management for Large Language Models at the Edge](http://arxiv.org/abs/2511.22599v1)
+  > **TL;DR**: Proposes DisCEdge, a distributed context management system for edge LLM serving. It stores/replicates user context as token sequences instead of raw text to reduce synchronization overhead. Improves median response time by 14.46% and reduces client request size by 90%.
+* `serving` `MoE` `sparse` [OmniInfer: System-Wide Acceleration Techniques for Optimizing LLM Serving Throughput and Latency](http://arxiv.org/abs/2511.22481v1)
+  > **TL;DR**: Proposes OmniInfer, a unified LLM serving system that optimizes throughput and latency via Mixture-of-Experts scheduling and sparse attention acceleration. Built on vLLM, it reduces TPOT by 36% and TTFT by 38% in cluster evaluations.
+* `kernel` `serving` [PAT: Accelerating LLM Decoding via Prefix-Aware Attention with Resource Efficient Multi-Tile Kernel](http://arxiv.org/abs/2511.22333v1)
+  > **TL;DR**: Proposes PAT, a prefix-aware attention kernel for LLM decoding that packs queries by shared prefix and uses a multi-tile design to minimize KV cache memory accesses. Achieves 67.4% average attention latency reduction over state-of-the-art kernels.
+
 ### 2025-11-26
 * `serving` `edge` `offloading` [DSD: A Distributed Speculative Decoding Solution for Edge-Cloud Agile Large Model Serving](http://arxiv.org/abs/2511.21669v1)
   > **TL;DR**: Addresses the challenge of speculative decoding for LLM inference in distributed edge-cloud environments. Introduces DSD, a framework for coordinated draft-target execution across devices, evaluated via a custom simulator and adaptive window control. Achieves up to 1.1x speedup and 9.7% higher throughput.
