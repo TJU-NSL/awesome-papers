@@ -3,7 +3,7 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-789-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/total_papers-791-blue?logo=gitbook)
 ![Static Badge](https://img.shields.io/badge/update-2025.12.01-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
@@ -20,6 +20,14 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking`
 
 ---
+### 2025-12-01
+* `serving` `offloading` [Tangram: Accelerating Serverless LLM Loading through GPU Memory Reuse and Affinity](http://arxiv.org/abs/2512.01357v1)
+  > **TL;DR**: Addresses the cold-start latency bottleneck in serverless LLM serving due to model loading. Proposes Tangram, a system with a unified GPU memory pool for tensor reuse, on-demand KV cache allocation, and affinity-aware scheduling. Achieves up to 6.2x faster model loading.
+
+### 2025-11-29
+* `serving` `edge` `offloading` [IslandRun: Privacy-Aware Multi-Objective Orchestration for Distributed AI Inference](http://arxiv.org/abs/2512.00595v1)
+  > **TL;DR**: Addresses the challenge of orchestrating LLM inference across heterogeneous devices (edge, cloud) with conflicting goals of performance, privacy, and cost. Proposes IslandRun, a system using agent-based routing and reversible anonymization to route compute to data. Achieves improved privacy and multi-objective optimization.
+
 ### 2025-11-28
 * `training` `offloading` `edge` [Communication-Computation Pipeline Parallel Split Learning over Wireless Edge Networks](http://arxiv.org/abs/2511.23167v1)
   > **TL;DR**: Proposes a pipeline-parallel split learning method to overlap communication and computation in distributed training over wireless edge networks. Uses micro-batching and jointly optimizes task split and resource allocation. Reduces total training time by over 38% while maintaining accuracy.
