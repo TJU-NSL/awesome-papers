@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-791-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2025.12.02-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-793-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2025.12.03-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,12 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking`
 
 ---
+### 2025-12-02
+* `serving` `kernel` [TokenPowerBench: Benchmarking the Power Consumption of LLM Inference](http://arxiv.org/abs/2512.03024v1)
+  > **TL;DR**: Addresses the lack of tools for measuring LLM inference power consumption. Presents TokenPowerBench, a benchmark with declarative configuration, power measurement, and phase-aligned metrics attribution. Shows how varying batch size and quantization affects joules per token for models up to 405B parameters.
+* `offloading` `storage` `training` [Offloading Artificial Intelligence Workloads across the Computing Continuum by means of Active Storage Systems](http://arxiv.org/abs/2512.02646v1)
+  > **TL;DR**: Proposes an architecture using active storage systems to offload AI workloads across heterogeneous devices. Embeds computation in storage to minimize data movement, implemented with dataClay. Achieves significant reductions in memory consumption and training times while maintaining accuracy.
+
 ### 2025-12-01
 * `serving` `offloading` [Tangram: Accelerating Serverless LLM Loading through GPU Memory Reuse and Affinity](http://arxiv.org/abs/2512.01357v1)
   > **TL;DR**: Addresses the cold-start latency bottleneck in serverless LLM serving due to model loading. Proposes Tangram, a system with a unified GPU memory pool for tensor reuse, on-demand KV cache allocation, and affinity-aware scheduling. Achieves up to 6.2x faster model loading.
