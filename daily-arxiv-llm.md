@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-796-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2025.12.04-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-797-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2025.12.05-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,10 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking`
 
 ---
+### 2025-12-04
+* `kernel` `thinking` [Counting Without Running: Evaluating LLMs' Reasoning About Code Complexity](http://arxiv.org/abs/2512.04355v1)
+  > **TL;DR**: Introduces gpuFLOPBench, a benchmark to evaluate if LLMs can predict FLOP counts for CUDA kernels without running them. Tests models' ability to reason about code complexity and hidden performance characteristics. Analysis shows newer models achieve perfect accuracy on straightforward kernels but large errors on cases with implicit FLOPs from intrinsics or compiler behavior.
+
 ### 2025-12-03
 * `MoE` `serving` `edge` [OD-MoE: On-Demand Expert Loading for Cacheless Edge-Distributed MoE Inference](http://arxiv.org/abs/2512.03927v1)
   > **TL;DR**: Presents OD-MoE, a distributed MoE inference framework that eliminates the need for expert caching via on-demand loading and a predictive pre-fetcher. Enables inference on edge nodes with <1GB GPU memory, achieving 75% of the decoding speed of a fully cached deployment while using only 1/3 of the GPU memory.
