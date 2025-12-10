@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-798-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2025.12.08-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-805-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2025.12.09-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,26 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking`
 
 ---
+### 2025-12-08
+* `video` `serving` `networking` [Communication-Efficient Serving for Video Diffusion Models with Latent Parallelism](http://arxiv.org/abs/2512.07350v1)
+  > **TL;DR**: Addresses the communication bottleneck in parallel serving of Video Diffusion Models (VDMs). Proposes Latent Parallelism, which rotates partitioning dimensions in latent space to exploit local dependencies. Reduces communication overhead by up to 97% while maintaining generation quality.
+* `edge` `RAG` `multi-modal` [Venus: An Efficient Edge Memory-and-Retrieval System for VLM-based Online Video Understanding](http://arxiv.org/abs/2512.07344v1)
+  > **TL;DR**: Addresses high system overhead for VLM-based online video understanding deployments. Proposes Venus, an edge-cloud architecture with on-device keyframe memory construction and a progressive sampling algorithm for retrieval. Achieves a 15x-131x speedup in total response latency.
+* `hardware` `kernel` `serving` [DCO: Dynamic Cache Orchestration for LLM Accelerators through Predictive Management](http://arxiv.org/abs/2512.07312v1)
+  > **TL;DR**: Proposes DCO, a predictive cache management system for multi-core AI accelerators running LLMs. It uses dataflow-aware replacement policies, dead-block prediction, and thrashing mitigation. Achieves up to 1.80x speedup over conventional cache architectures in cycle-accurate simulation.
+
+### 2025-12-07
+* `video` `serving` `offline` [Optimizing video analytics inference pipelines: a case study](http://arxiv.org/abs/2512.07009v1)
+  > **TL;DR**: Investigates how to optimize the computational cost of a video analytics pipeline for livestock monitoring. Proposes system-level optimizations including GPU acceleration, multi-level parallelization, and vectorized clustering. Achieves a 2x speedup on real-world farm video footage.
+* `MoE` `edge` `training` [Stable-MoE: Lyapunov-based Token Routing for Distributed Mixture-of-Experts Training over Edge Networks](http://arxiv.org/abs/2512.06784v1)
+  > **TL;DR**: Presents Stable-MoE, a Lyapunov-based framework for stable token routing and resource allocation in distributed MoE training over heterogeneous edge networks. Achieves up to 40% higher system throughput and 5% better accuracy on SVHN/CIFAR-100.
+
+### 2025-12-06
+* `training` `RL` [A-3PO: Accelerating Asynchronous LLM Training with Staleness-aware Proximal Policy Approximation](http://arxiv.org/abs/2512.06547v1)
+  > **TL;DR**: Addresses training overhead of decoupled loss algorithms like GRPO for asynchronous RLHF. Proposes A-3PO, which approximates the proximal policy via interpolation instead of an extra forward pass. Reduces training time by 18% while maintaining performance.
+* `kernel` `quantization` `edge` [Vec-LUT: Vector Table Lookup for Parallel Ultra-Low-Bit LLM Inference on Edge Devices](http://arxiv.org/abs/2512.06443v1)
+  > **TL;DR**: Addresses low memory bandwidth utilization in parallel, ultra-low-bit LLM inference on edge devices. Proposes Vec-LUT, a vectorized lookup paradigm with a new tensor layout and cache-aware streaming. Achieves up to 4.2x speedup over state-of-the-art baselines.
+
 ### 2025-12-05
 * `kernel` `quantization` `offloading` [Compiler-supported reduced precision and AoS-SoA transformations for heterogeneous hardware](http://arxiv.org/abs/2512.05516v1)
   > **TL;DR**: Investigates data layout (AoS-to-SoA) and precision transformations for GPU kernels on heterogeneous hardware. Proposes compiler annotations to orchestrate CPU/GPU data conversions and offloading strategies. Achieves a 2.6x speedup on Nvidia G200 platforms for particle simulation kernels.
