@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-805-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2025.12.09-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-807-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2025.12.10-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,12 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking`
 
 ---
+### 2025-12-09
+* `serving` `training` [Magneton: Optimizing Energy Efficiency of ML Systems via Differential Energy Debugging](http://arxiv.org/abs/2512.08365v1)
+  > **TL;DR**: Presents Magneton, a differential energy debugging tool for ML systems. It profiles operator-level energy consumption across similar systems to pinpoint wasteful code/configurations. Applied to LLM inference systems, it detected 8 new energy inefficiency cases.
+* `training` `kernel` `hardware` [Chopper: A Multi-Level GPU Characterization Tool & Derived Insights Into LLM Training Inefficiency](http://arxiv.org/abs/2512.08242v1)
+  > **TL;DR**: Presents Chopper, a multi-level GPU profiling tool, to characterize inefficiencies in distributed LLM training. Analyzes hardware counters and kernel traces on AMD MI300X, revealing frequency overhead (DVFS) as the largest performance gap contributor, exceeding MFMA underutilization.
+
 ### 2025-12-08
 * `video` `serving` `networking` [Communication-Efficient Serving for Video Diffusion Models with Latent Parallelism](http://arxiv.org/abs/2512.07350v1)
   > **TL;DR**: Addresses the communication bottleneck in parallel serving of Video Diffusion Models (VDMs). Proposes Latent Parallelism, which rotates partitioning dimensions in latent space to exploit local dependencies. Reduces communication overhead by up to 97% while maintaining generation quality.
