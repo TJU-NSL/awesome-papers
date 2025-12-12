@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-807-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2025.12.10-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-811-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2025.12.11-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,16 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking`
 
 ---
+### 2025-12-10
+* `training` `networking` [Straggler Tolerant and Resilient DL Training on Homogeneous GPUs](http://arxiv.org/abs/2512.09685v1)
+  > **TL;DR**: Proposes STAR, a straggler-tolerant training system for homogeneous GPUs. Introduces new synchronization modes with heuristic/ML-based selection and proactive resource management to minimize Time-To-Accuracy. Reduces TTA by 48-84% in PS and 51-70% in all-reduce architectures compared to state-of-the-art.
+* `serving` `offloading` [WarmServe: Enabling One-for-Many GPU Prewarming for Multi-LLM Serving](http://arxiv.org/abs/2512.09472v1)
+  > **TL;DR**: Proposes WarmServe, a multi-LLM serving system that uses workload prediction to prewarm universal GPU workers, employing evict-aware placement and zero-overhead memory switching. Improves time-to-first-token by up to 50.8x compared to autoscaling systems.
+* `RAG` `storage` `networking` [Passing the Baton: High Throughput Distributed Disk-Based Vector Search with BatANN](http://arxiv.org/abs/2512.09331v1)
+  > **TL;DR**: Addresses the challenge of high-throughput vector search for billion-scale datasets. Proposes BatANN, a distributed disk-based ANN system that passes full query state to remote machines for locality. Achieves 2.5-6.49x higher throughput than baselines while maintaining sub-6ms mean latency.
+* `serving` `MoE` `kernel` [Efficient MoE Serving in the Memory-Bound Regime: Balance Activated Experts, Not Tokens](http://arxiv.org/abs/2512.09277v1)
+  > **TL;DR**: Identifies that token-balancing token-routing harms MoE serving performance under memory constraints. Proposes METRO, an algorithm that balances activated experts per GPU using a novel allGather scheme. Reduces decode latency by 11-22% and improves throughput up to 4.11x over baselines.
+
 ### 2025-12-09
 * `serving` `training` [Magneton: Optimizing Energy Efficiency of ML Systems via Differential Energy Debugging](http://arxiv.org/abs/2512.08365v1)
   > **TL;DR**: Presents Magneton, a differential energy debugging tool for ML systems. It profiles operator-level energy consumption across similar systems to pinpoint wasteful code/configurations. Applied to LLM inference systems, it detected 8 new energy inefficiency cases.
