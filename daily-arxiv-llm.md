@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-811-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2025.12.11-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-813-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2025.12.12-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,12 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking`
 
 ---
+### 2025-12-11
+* `serving` `offloading` [ESS: An Offload-Centric Latent-Cache Management Architecture for DeepSeek-V3.2-Exp](http://arxiv.org/abs/2512.10576v1)
+  > **TL;DR**: Addresses the GPU memory bottleneck from Latent-Cache growth in DeepSeek-V3.2-Exp inference. Proposes ESS, a system that offloads Latent-Cache to CPU memory to decouple batch size from GPU limits. Achieves up to 123% throughput improvement at 128K context length.
+* `training` `kernel` `networking` [Design Space Exploration of DMA based Finer-Grain Compute Communication Overlap](http://arxiv.org/abs/2512.10236v1)
+  > **TL;DR**: Proposes FiCCO, a method for finer-grain compute-communication overlap in distributed ML training. It explores execution schedules using GPU DMA engines and designs heuristics to minimize operation inefficiencies. Achieves up to 1.6x speedup over coarse-grain approaches.
+
 ### 2025-12-10
 * `training` `networking` [Straggler Tolerant and Resilient DL Training on Homogeneous GPUs](http://arxiv.org/abs/2512.09685v1)
   > **TL;DR**: Proposes STAR, a straggler-tolerant training system for homogeneous GPUs. Introduces new synchronization modes with heuristic/ML-based selection and proactive resource management to minimize Time-To-Accuracy. Reduces TTA by 48-84% in PS and 51-70% in all-reduce architectures compared to state-of-the-art.
