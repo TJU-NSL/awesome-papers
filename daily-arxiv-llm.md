@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-813-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2025.12.14-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-814-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2025.12.15-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,10 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking`
 
 ---
+### 2025-12-12
+* `training` `RL` [RollMux: Phase-Level Multiplexing for Disaggregated RL Post-Training](http://arxiv.org/abs/2512.11306v1)
+  > **TL;DR**: Addresses the dependency bubble and low hardware utilization in disaggregated RL post-training. Proposes RollMux, a cluster scheduling framework that multiplexes rollout and training phases of different jobs using co-execution groups. Achieves a 1.84x improvement in cost efficiency over standard disaggregation.
+
 ### 2025-12-11
 * `serving` `offloading` [ESS: An Offload-Centric Latent-Cache Management Architecture for DeepSeek-V3.2-Exp](http://arxiv.org/abs/2512.10576v1)
   > **TL;DR**: Addresses the GPU memory bottleneck from Latent-Cache growth in DeepSeek-V3.2-Exp inference. Proposes ESS, a system that offloads Latent-Cache to CPU memory to decouple batch size from GPU limits. Achieves up to 123% throughput improvement at 128K context length.
