@@ -12,7 +12,7 @@ README_HEADER = """
 </div>\n
 **⚠️NOTE**: Update papers up to last day every morning (8:00 UTC+8) automatically.\n
 **🙋WANT**: Keyword subscription (email); Functional web page.\n
-**🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking`\n
+**🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking``Agent` `GUI`\n
 ---
 """
 
@@ -127,6 +127,8 @@ TAGS = {  # tags that relate to LLM systems
     "agentic":          "designed for agentic models",
     "edge":             "designed for LLM inference on edge or mobile devices",
     "networking":       "leverage or introduce new networking or transfer techniques",
+    "agent":            "designed for LLM-based agents, including tool use, planning, and multi-step decision making",
+    "GUI":              "designed for graphical user interfaces or visual interaction systems built on top of LLMs",
     # "others":           "other LLM system topics not covered above",
 }
 
