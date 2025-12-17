@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-814-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2025.12.15-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-823-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2025.12.16-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,30 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking`
 
 ---
+### 2025-12-15
+* `kernel` `hardware` `training` [Design in Tiles: Automating GEMM Deployment on Tile-Based Many-PE Accelerators](http://arxiv.org/abs/2512.13638v1)
+  > **TL;DR**: Proposes an automated framework for deploying GEMM on tile-based accelerators by connecting a deployment toolchain with a configurable model. Achieves 1.2-2.0x speedup over expert-tuned libraries on a GH200-scale configuration via higher PE utilization.
+* `serving` `MoE` `offloading` [Janus: Disaggregating Attention and Experts for Scalable MoE Inference](http://arxiv.org/abs/2512.13525v1)
+  > **TL;DR**: Addresses scalable Mixture-of-Experts (MoE) inference by disaggregating attention and expert modules onto separate GPU clusters. Proposes Janus, which uses an adaptive two-phase communication scheme and a lightweight GPU-kernel scheduler for expert balancing. Achieves up to 3.9x higher per-GPU throughput.
+* `training` `MoE` `hardware` [SIGMA: An AI-Empowered Training Stack on Early-Life Hardware](http://arxiv.org/abs/2512.13488v1)
+  > **TL;DR**: Presents SIGMA, a training stack for improving reliability and efficiency on early-life AI accelerators. Uses the LUCIA platform for cluster management and a framework for distributed MoE model training. Achieved 94.45% accelerator utilization and 21.08% MFU when training a 200B MoE model.
+* `kernel` `training` [FlashFuser: Expanding the Scale of Kernel Fusion for Compute-Intensive Operators via Inter-Core Connection](http://arxiv.org/abs/2512.12949v1)
+  > **TL;DR**: Presents FlashFuser, a compiler that exploits GPU inter-core connection (DSM) for kernel fusion beyond local scratchpad limits. It uses a DSM communication abstraction, dataflow analyzer, and search engine to optimize execution plans. Achieves 3.3x kernel speedup and reduces memory access by 58%.
+* `serving` [PROSERVE: Unified Multi-Priority Request Scheduling for LLM Serving](http://arxiv.org/abs/2512.12928v1)
+  > **TL;DR**: Addresses the challenge of LLM serving with diverse client priorities. Proposes PROSERVE, a two-tier scheduler with SlideBatching for adaptive engine-level batching and GoRouting for service-level dispatching. Increases SLO attainment by up to 52% and system gain by 35% over baselines.
+
+### 2025-12-14
+* `serving` `kernel` [Fine-Grained Energy Prediction For Parallellized LLM Inference With PIE-P](http://arxiv.org/abs/2512.12801v1)
+  > **TL;DR**: Proposes PIE-P, a framework for fine-grained energy prediction of parallelized LLM inference across multiple GPUs. It uses precise sampling and models inter-GPU communication to account for parallelism overheads. Outperforms baselines in prediction accuracy, demonstrating significant improvement in energy estimation.
+* `training` `kernel` [gpu_ext: Extensible OS Policies for GPUs via eBPF](http://arxiv.org/abs/2512.12615v1)
+  > **TL;DR**: Presents gpu_ext, an eBPF-based runtime for programmable GPU resource management policies. Extends GPU drivers with safe hooks and a device-side eBPF runtime within GPU kernels. Evaluated on inference/training workloads, achieves up to 4.8x throughput improvement.
+
+### 2025-12-13
+* `RL` `training` [HetRL: Efficient Reinforcement Learning for LLMs in Heterogeneous Environments](http://arxiv.org/abs/2512.12476v1)
+  > **TL;DR**: Presents HetRL, a distributed system for efficient LLM reinforcement learning training in infrastructures with heterogeneous GPUs. It formulates scheduling as a constrained optimization problem solved with a multi-level search algorithm. Achieves up to 9.17x higher throughput versus state-of-the-art systems.
+* `training` `sparse` [BOOST: BOttleneck-Optimized Scalable Training Framework for Low-Rank Large Language Models](http://arxiv.org/abs/2512.12131v1)
+  > **TL;DR**: Addresses poor scalability of low-rank bottleneck LLMs under standard tensor parallelism. Proposes BOOST, a framework with bottleneck-aware tensor parallelism and kernel/memory optimizations. Achieves 1.46-1.91x training speedup over full-rank baselines.
+
 ### 2025-12-12
 * `training` `RL` [RollMux: Phase-Level Multiplexing for Disaggregated RL Post-Training](http://arxiv.org/abs/2512.11306v1)
   > **TL;DR**: Addresses the dependency bubble and low hardware utilization in disaggregated RL post-training. Proposes RollMux, a cluster scheduling framework that multiplexes rollout and training phases of different jobs using co-execution groups. Achieves a 1.84x improvement in cost efficiency over standard disaggregation.
