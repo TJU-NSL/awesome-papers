@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-823-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2025.12.16-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-824-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2025.12.17-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -17,9 +17,13 @@
 
 **🙋WANT**: Keyword subscription (email); Functional web page.
 
-**🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking`
+**🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking``Agent` `GUI`
 
 ---
+### 2025-12-16
+* `serving` `multi-modal` [Cornserve: Efficiently Serving Any-to-Any Multimodal Models](http://arxiv.org/abs/2512.14098v1)
+  > **TL;DR**: Presents Cornserve, a serving system for any-to-any multimodal models with heterogeneous components. The system uses a planner to generate optimized deployment plans and a distributed runtime to execute them. Achieves up to 3.81x throughput improvement over baselines.
+
 ### 2025-12-15
 * `kernel` `hardware` `training` [Design in Tiles: Automating GEMM Deployment on Tile-Based Many-PE Accelerators](http://arxiv.org/abs/2512.13638v1)
   > **TL;DR**: Proposes an automated framework for deploying GEMM on tile-based accelerators by connecting a deployment toolchain with a configurable model. Achieves 1.2-2.0x speedup over expert-tuned libraries on a GH200-scale configuration via higher PE utilization.
