@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-824-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2025.12.17-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-826-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2025.12.18-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -17,9 +17,15 @@
 
 **🙋WANT**: Keyword subscription (email); Functional web page.
 
-**🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking``Agent` `GUI`
+**🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2025-12-17
+* `serving` `kernel` [Dynamic Rebatching for Efficient Early-Exit Inference with DREX](http://arxiv.org/abs/2512.15705v1)
+  > **TL;DR**: Addresses inefficiency in batching for Early-Exit LLM inference. Proposes DREX, a system using dynamic rebatching with a copy-free buffer and an SLA-aware scheduler. Achieves 2-12% higher throughput while eliminating involuntary exits to preserve quality.
+* `training` `quantization` `offloading` [LLMQ: Efficient Lower-Precision Pretraining for Consumer GPUs](http://arxiv.org/abs/2512.15306v1)
+  > **TL;DR**: Presents LLMQ, a system for efficient medium-sized LLM training on consumer GPUs. Uses 8-bit quantization, activation checkpointing, and copy-engine based collectives to overcome memory/cpu bottlenecks. Achieves 50% FLOP utilization training a 7B model on a single 16GB GPU.
+
 ### 2025-12-16
 * `serving` `multi-modal` [Cornserve: Efficiently Serving Any-to-Any Multimodal Models](http://arxiv.org/abs/2512.14098v1)
   > **TL;DR**: Presents Cornserve, a serving system for any-to-any multimodal models with heterogeneous components. The system uses a planner to generate optimized deployment plans and a distributed runtime to execute them. Achieves up to 3.81x throughput improvement over baselines.
