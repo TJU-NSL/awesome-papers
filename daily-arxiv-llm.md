@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-826-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2025.12.18-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-832-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2025.12.19-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,20 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2025-12-18
+* `MoE` `offloading` `serving` [Efficient CPU-GPU Collaborative Inference for MoE-based LLMs on Memory-Limited Systems](http://arxiv.org/abs/2512.16473v1)
+  > **TL;DR**: Proposes a CPU-GPU collaborative inference framework for MoE-based LLMs on memory-limited systems using GPU expert caching and CPU offloading for cache misses. Achieves up to 5.4x higher throughput compared to state-of-the-art offloading methods.
+* `kernel` `serving` [Kascade: A Practical Sparse Attention Method for Long-Context LLM Inference](http://arxiv.org/abs/2512.16391v1)
+  > **TL;DR**: Addresses attention latency for long-context LLM inference. Proposes Kascade, a training-free sparse attention method that reuses Top-k indices across layers selected via dynamic programming. Achieves up to 4.1x decode attention speedup over FlashAttention-3 while matching dense accuracy.
+* `serving` `scheduling` [Staggered Batch Scheduling: Co-optimizing Time-to-First-Token and Throughput for High-Efficiency LLM Inference](http://arxiv.org/abs/2512.16134v1)
+  > **TL;DR**: Addresses the scheduling challenge in DP+EP LLM serving architectures where immediate dispatching causes queuing bubbles and degrades TTFT. Proposes Staggered Batch Scheduling (SBS) to buffer requests for optimal batching and a load-aware allocation strategy. Reduces TTFT by 30-40% and improves throughput by 15-20% compared to baselines.
+* `serving` `kernel` [An Online Fragmentation-Aware Scheduler for Managing GPU-Sharing Workloads on Multi-Instance GPUs](http://arxiv.org/abs/2512.16099v1)
+  > **TL;DR**: Proposes an online scheduler for Multi-Instance GPUs (MIG) to mitigate resource contention and fragmentation. The framework integrates load balancing, dynamic partitioning, and job migration for GPU-sharing workloads. Achieves up to a 35% improvement in makespan.
+* `serving` `offloading` `networking` [MultiPath Transfer Engine: Breaking GPU and Host-Memory Bandwidth Bottlenecks in LLM Services](http://arxiv.org/abs/2512.16056v1)
+  > **TL;DR**: Addresses PCIe bandwidth bottlenecks for LLM serving tasks like prefetching and model switching. Proposes MMA, a multipath data transfer scheme between GPU and host memory via dynamic library injection. Achieves a peak bandwidth of 245 GB/s, a 4.62x speedup, reducing TTFT by up to 2.38x.
+* `serving` `RAG` [Trustworthy and Controllable Professional Knowledge Utilization in Large Language Models with TEE-GPU Execution](http://arxiv.org/abs/2512.16238v1)
+  > **TL;DR**: Presents PKUS, a system for trustworthy LLM serving that isolates proprietary knowledge adapters in TEEs while keeping the backbone model on GPU. Combines split-execution scheduling with adapter pruning to preserve utility while achieving 8.1-11.9x lower latency than baseline TEE inference.
+
 ### 2025-12-17
 * `serving` `kernel` [Dynamic Rebatching for Efficient Early-Exit Inference with DREX](http://arxiv.org/abs/2512.15705v1)
   > **TL;DR**: Addresses inefficiency in batching for Early-Exit LLM inference. Proposes DREX, a system using dynamic rebatching with a copy-free buffer and an SLA-aware scheduler. Achieves 2-12% higher throughput while eliminating involuntary exits to preserve quality.
