@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-832-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2025.12.21-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-834-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2025.12.22-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,12 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2025-12-19
+* `serving` `multi-modal` [Enabling Disaggregated Multi-Stage MLLM Inference via GPU-Internal Scheduling and Resource Sharing](http://arxiv.org/abs/2512.17574v1)
+  > **TL;DR**: Proposes FlashCodec and UnifiedServe to optimize end-to-end Multi-modal LLM serving, addressing bottlenecks in video preprocessing/encoding and LLM inference. Uses multi-GPU decoding and logical/physical resource sharing to eliminate inter-stage blocking. Achieves up to 4.4× higher throughput vs. state-of-the-art.
+* `storage` `serving` `RAG` [Scalable Distributed Vector Search via Accuracy Preserving Index Construction](http://arxiv.org/abs/2512.17264v1)
+  > **TL;DR**: Investigates how to scale approximate nearest neighbor search for billion-scale vectors in distributed settings. Proposes SPIRE, an index with balanced partition granularity and an accuracy-preserving recursive construction method. Achieves up to 9.64x higher throughput than state-of-the-art systems on 8 billion vectors.
+
 ### 2025-12-18
 * `MoE` `offloading` `serving` [Efficient CPU-GPU Collaborative Inference for MoE-based LLMs on Memory-Limited Systems](http://arxiv.org/abs/2512.16473v1)
   > **TL;DR**: Proposes a CPU-GPU collaborative inference framework for MoE-based LLMs on memory-limited systems using GPU expert caching and CPU offloading for cache misses. Achieves up to 5.4x higher throughput compared to state-of-the-art offloading methods.
