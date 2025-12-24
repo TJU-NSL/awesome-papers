@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-834-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2025.12.22-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-840-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2025.12.23-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,24 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2025-12-22
+* `training` `serving` `networking` [RAPID-LLM: Resilience-Aware Performance analysis of Infrastructure for Distributed LLM Training and Inference](http://arxiv.org/abs/2512.19606v1)
+  > **TL;DR**: Presents RAPID-LLM, a performance modeling framework for LLM training/inference on GPU clusters. It combines a hardware-aware trace generator with an extended network simulator. Predicts latency and training times within 10.4% of real measurements on A100 clusters.
+* `serving` `networking` [L4: Low-Latency and Load-Balanced LLM Serving via Length-Aware Scheduling](http://arxiv.org/abs/2512.19179v1)
+  > **TL;DR**: Addresses performance degradation in multi-instance LLM serving due to request-length heterogeneity. Proposes L4, a runtime system that partitions instances into length-specialized groups for dynamic load balancing. Reduces end-to-end latency by up to 67% and improves throughput by 2.89x.
+
+### 2025-12-21
+* `edge` `serving` [QoS-Aware Load Balancing in the Computing Continuum via Multi-Player Bandits](http://arxiv.org/abs/2512.18915v1)
+  > **TL;DR**: Proposes QEdgeProxy, a decentralized load balancer for edge-AI workloads that formulates instance selection as a Multi-Player Bandit problem to maximize per-client QoS. It uses Kernel Density Estimation for QoS probability estimation and adaptive exploration. Achieves significantly higher QoS satisfaction than baseline methods under dynamic conditions.
+* `serving` `MoE` `offloading` [Remoe: Towards Efficient and Low-Cost MoE Inference in Serverless Computing](http://arxiv.org/abs/2512.18674v1)
+  > **TL;DR**: Proposes Remoe, a serverless MoE inference system that assigns expert modules to CPUs and offloads infrequently used experts to reduce memory overhead. Employs activation prediction and optimization algorithms to reduce inference cost by up to 57% and cold start latency by 47% versus baselines.
+
+### 2025-12-20
+* `video` `serving` `kernel` [Asynchronous Pipeline Parallelism for Real-Time Multilingual Lip Synchronization in Video Communication Systems](http://arxiv.org/abs/2512.18318v1)
+  > **TL;DR**: Proposes an asynchronous pipeline-parallel Transformer framework for real-time multilingual lip sync in video conferencing. Integrates modules via message queues and optimizes inference with graph compilation, quantization, and kernel fusion. Reduces end-to-end latency by 3.1x versus sequential pipelines.
+* `serving` `offloading` `networking` [TraCT: Disaggregated LLM Serving with CXL Shared Memory KV Cache at Rack-Scale](http://arxiv.org/abs/2512.18194v1)
+  > **TL;DR**: Presents TraCT, a rack-scale LLM serving system that uses CXL shared memory for KV cache transfer and storage instead of RDMA. This eliminates the NIC hop, addressing the KV transfer bottleneck. Achieves up to 9.8x lower time-to-first-token and 1.6x higher throughput.
+
 ### 2025-12-19
 * `serving` `multi-modal` [Enabling Disaggregated Multi-Stage MLLM Inference via GPU-Internal Scheduling and Resource Sharing](http://arxiv.org/abs/2512.17574v1)
   > **TL;DR**: Proposes FlashCodec and UnifiedServe to optimize end-to-end Multi-modal LLM serving, addressing bottlenecks in video preprocessing/encoding and LLM inference. Uses multi-GPU decoding and logical/physical resource sharing to eliminate inter-stage blocking. Achieves up to 4.4× higher throughput vs. state-of-the-art.
