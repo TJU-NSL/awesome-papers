@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-840-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2025.12.23-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-843-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2025.12.24-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,14 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2025-12-23
+* `serving` `kernel` [Fail Fast, Win Big: Rethinking the Drafting Strategy in Speculative Decoding via Diffusion LLMs](http://arxiv.org/abs/2512.20573v1)
+  > **TL;DR**: Proposes FailFast, a speculative decoding framework using Diffusion LLMs as drafters. Dynamically adapts speculation length to 'fail fast' in hard regions and 'win big' in easy ones. Achieves up to 4.9x speedup over vanilla decoding.
+* `serving` `offloading` [Predictive-LoRA: A Proactive and Fragmentation-Aware Serverless Inference System for LLMs](http://arxiv.org/abs/2512.20210v1)
+  > **TL;DR**: Addresses high latency and memory fragmentation in serverless LoRA inference. Proposes Predictive-LoRA with a traffic predictor for proactive adapter prefetching and a page-based memory manager. Reduces cold start latency by 68% and improves throughput by 1.52x compared to S-LoRA.
+* `agentic` `serving` [Reaching Agreement Among Reasoning LLM Agents](http://arxiv.org/abs/2512.20184v1)
+  > **TL;DR**: Proposes a formal distributed consensus model and protocol (Aegean) for multi-agent reasoning LLM systems to replace static workflows. Aegean-Serve enables incremental quorum detection for early termination, reducing latency by 1.2-20x while maintaining answer quality within 2.5%.
+
 ### 2025-12-22
 * `training` `serving` `networking` [RAPID-LLM: Resilience-Aware Performance analysis of Infrastructure for Distributed LLM Training and Inference](http://arxiv.org/abs/2512.19606v1)
   > **TL;DR**: Presents RAPID-LLM, a performance modeling framework for LLM training/inference on GPU clusters. It combines a hardware-aware trace generator with an extended network simulator. Predicts latency and training times within 10.4% of real measurements on A100 clusters.
