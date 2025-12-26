@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-843-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2025.12.24-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-846-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2025.12.25-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,14 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2025-12-24
+* `training` `kernel` `multi-modal` [Mesh-Attention: A New Communication-Efficient Distributed Attention with Improved Data Locality](http://arxiv.org/abs/2512.20968v1)
+  > **TL;DR**: Proposes Mesh-Attention, a distributed attention algorithm using 2D tiling to reduce communication overhead during LLM training. Achieves up to 3.4x speedup and reduces communication volume by 85.4% on 256 GPUs compared to Ring-Attention.
+* `training` `offloading` [Deadline-Aware Online Scheduling for LLM Fine-Tuning with Spot Market Predictions](http://arxiv.org/abs/2512.20967v1)
+  > **TL;DR**: Addresses cost-efficient scheduling of LLM fine-tuning jobs using volatile spot instances. Proposes an online framework mixing spot/on-demand instances with prediction and policy selection algorithms. Achieves up to 54.8% utility improvement over baselines.
+* `training` `networking` [Diving into 3D Parallelism with Heterogeneous Spot Instance GPUs: Design and Implications](http://arxiv.org/abs/2512.20953v1)
+  > **TL;DR**: Presents AutoHet, a system for automatic parallelism plan generation to optimize distributed LLM training on heterogeneous GPU spot instances. Solves an optimization problem for device grouping and load balancing, achieving up to a 1.79x training throughput speedup.
+
 ### 2025-12-23
 * `serving` `kernel` [Fail Fast, Win Big: Rethinking the Drafting Strategy in Speculative Decoding via Diffusion LLMs](http://arxiv.org/abs/2512.20573v1)
   > **TL;DR**: Proposes FailFast, a speculative decoding framework using Diffusion LLMs as drafters. Dynamically adapts speculation length to 'fail fast' in hard regions and 'win big' in easy ones. Achieves up to 4.9x speedup over vanilla decoding.
