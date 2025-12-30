@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-846-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2025.12.28-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-853-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2025.12.29-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,24 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2025-12-26
+* `agent` `RAG` [Agentic Structured Graph Traversal for Root Cause Analysis of Code-related Incidents in Cloud Applications](http://arxiv.org/abs/2512.22113v1)
+  > **TL;DR**: Presents PRAXIS, an orchestrator for root cause analysis (RCA) of cloud incidents using an LLM-driven agentic workflow that traverses service and code dependency graphs. The system improves RCA accuracy by up to 3.1× and reduces token consumption by 3.8× compared to ReAct baselines.
+* `MoE` `training` `networking` [FUSCO: High-Performance Distributed Data Shuffling via Transformation-Communication Fusion](http://arxiv.org/abs/2512.22036v1)
+  > **TL;DR**: Addresses the overhead of distributed data shuffling for Mixture-of-Experts (MoE) model training. Proposes FUSCO, a library that fuses data transformation and communication via fine-grained layout interpretation and pipelining. Achieves up to 3.84x speedup over NCCL in shuffling benchmarks.
+* `serving` `networking` [Optimizing Resource Allocation for Geographically-Distributed Inference by Large Language Models](http://arxiv.org/abs/2512.21884v1)
+  > **TL;DR**: Studies optimal resource allocation for distributed LLM inference across servers. Formulates block placement and request routing as a MILP problem with an efficient online algorithm. Achieves substantially reduced inference time vs. PETALS in geo-distributed setups.
+* `edge` `serving` `offloading` [LIME:Accelerating Collaborative Lossless LLM Inference on Memory-Constrained Edge Devices](http://arxiv.org/abs/2512.21835v1)
+  > **TL;DR**: Proposes LIME, a system for lossless LLM inference on memory-constrained edge devices using interleaved pipeline parallelism and model offloading. It features fine-grained scheduling and online memory adaptation. Achieves up to 3.7x speedup over baselines.
+
+### 2025-12-25
+* `multi-modal` `offloading` [Hyperion: Low-Latency Ultra-HD Video Analytics via Collaborative Vision Transformer Inference](http://arxiv.org/abs/2512.21730v1)
+  > **TL;DR**: Addresses high computational/transmission overhead for Ultra-HD video analytics with vision transformers. Proposes Hyperion, a collaborative cloud-device framework with importance scoring and dynamic scheduling of patches. Increases frame processing rate by up to 1.61x while improving accuracy by 20.2%.
+* `kernel` `storage` `quantization` [nncase: An End-to-End Compiler for Efficient LLM Deployment on Heterogeneous Storage Architectures](http://arxiv.org/abs/2512.21571v1)
+  > **TL;DR**: Presents nncase, an end-to-end compiler framework for efficient LLM deployment on heterogeneous storage architectures. Uses an e-graph-based term rewriting engine for global optimization and integrates modules for vectorization, distribution, and scheduling. Achieves comparable performance to hand-optimized llama.cpp on CPUs.
+* `serving` `MoE` `kernel` [Efficient MoE Inference with Fine-Grained Scheduling of Disaggregated Expert Parallelism](http://arxiv.org/abs/2512.21487v1)
+  > **TL;DR**: Addresses low throughput in Mixture-of-Experts inference caused by inefficient scheduling in disaggregated expert parallelism. Proposes FinDEP, a fine-grained task scheduling algorithm that optimizes computation/communication overlap through partitioning and ordering. Achieves up to 1.61x higher throughput over prior methods.
+
 ### 2025-12-24
 * `training` `kernel` `multi-modal` [Mesh-Attention: A New Communication-Efficient Distributed Attention with Improved Data Locality](http://arxiv.org/abs/2512.20968v1)
   > **TL;DR**: Proposes Mesh-Attention, a distributed attention algorithm using 2D tiling to reduce communication overhead during LLM training. Achieves up to 3.4x speedup and reduces communication volume by 85.4% on 256 GPUs compared to Ring-Attention.
