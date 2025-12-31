@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-853-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2025.12.29-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-861-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2025.12.30-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,28 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2025-12-29
+* `edge` `serving` `kernel` [Splitwise: Collaborative Edge-Cloud Inference for LLMs via Lyapunov-Assisted DRL](http://arxiv.org/abs/2512.23310v1)
+  > **TL;DR**: Proposes Splitwise, a DRL framework for adaptive partitioning of transformer layers between edge and cloud to optimize LLM inference. Minimizes latency and energy under fluctuating bandwidth by splitting attention heads and feed-forward blocks. Achieves 1.4x-2.8x lower latency and 41% energy reduction vs. baselines.
+
+### 2025-12-28
+* `serving` `MoE` `quantization` [Viability and Performance of a Private LLM Server for SMBs: A Benchmark Analysis of Qwen3-30B on Consumer-Grade Hardware](http://arxiv.org/abs/2512.23029v1)
+  > **TL;DR**: Assesses if private LLM serving for SMBs is viable using consumer hardware. Benchmarks a quantized Qwen3-30B MoE model, measuring latency, throughput, and scalability under load. Achieves performance comparable to cloud services with a significant reduction in cost.
+* `serving` `edge` `offloading` [Argus: Token Aware Distributed LLM Inference Optimization](http://arxiv.org/abs/2512.22925v1)
+  > **TL;DR**: Presents Argus, a token-aware distributed LLM inference framework for edge-cloud systems. It predicts output token lengths for precise cost estimation and uses Lyapunov optimization for dynamic task offloading. In evaluations, it improves inference throughput by up to 2.7x under dynamic workloads.
+* `networking` `training` [OptiNIC: A Resilient and Tail-Optimal RDMA NIC for Distributed ML Workloads](http://arxiv.org/abs/2512.22743v1)
+  > **TL;DR**: Addresses tail latency in collective communication for distributed ML workloads. Proposes OptiNIC, an RDMA transport that removes retransmissions and in-order delivery, shifting loss recovery to the ML pipeline. Reduces 99th-percentile latency by 3.5x and improves time-to-accuracy by 2x.
+
+### 2025-12-27
+* `serving` `multi-modal` `kernel` [Modality Inflation: Energy Characterization and Optimization Opportunities for MLLM Inference](http://arxiv.org/abs/2512.22695v1)
+  > **TL;DR**: Characterizes energy inefficiency in multimodal LLM inference, identifying modality inflation bottlenecks via stage-level analysis. Demonstrates that stage-wise DVFS optimization saves energy with modest performance loss, achieving up to 94% energy reduction overhead compared to text-only models.
+* `RL` `training` `MoE` [RollArt: Scaling Agentic RL Training via Disaggregated Infrastructure](http://arxiv.org/abs/2512.22560v1)
+  > **TL;DR**: Proposes RollArc, a distributed system to improve throughput for multi-task agentic RL training on disaggregated infrastructure via hardware-affinity mapping and fine-grained asynchrony. Achieves 1.35-2.05x end-to-end training time reduction.
+* `RL` `training` [Role-Based Fault Tolerance System for LLM RL Post-Training](http://arxiv.org/abs/2512.22492v1)
+  > **TL;DR**: Presents RobustRL, a fault tolerance system for RL post-training of LLMs that uses role-based isolation for trainer, rollout, and management components. It enables non-disruptive recovery via role-aware monitoring, warm standbys, and dynamic communication, achieving over 80% Effective Training Time Ratio (vs. 60% baseline) on a 256-GPU cluster.
+* `serving` `kernel` [Nightjar: Dynamic Adaptive Speculative Decoding for Large Language Models Serving](http://arxiv.org/abs/2512.22420v1)
+  > **TL;DR**: Addresses the performance trade-off of static speculative decoding length under varying server load. Introduces Nightjar, a learning-based algorithm that dynamically adapts the speculative length. Achieves up to 14.8% higher throughput and 20.2% lower latency.
+
 ### 2025-12-26
 * `agent` `RAG` [Agentic Structured Graph Traversal for Root Cause Analysis of Code-related Incidents in Cloud Applications](http://arxiv.org/abs/2512.22113v1)
   > **TL;DR**: Presents PRAXIS, an orchestrator for root cause analysis (RCA) of cloud incidents using an LLM-driven agentic workflow that traverses service and code dependency graphs. The system improves RCA accuracy by up to 3.1× and reduces token consumption by 3.8× compared to ReAct baselines.
