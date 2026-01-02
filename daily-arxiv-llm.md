@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-861-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2025.12.31-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-863-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.01.01-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,12 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2025-12-30
+* `training` `storage` [Understanding LLM Checkpoint/Restore I/O Strategies and Patterns](http://arxiv.org/abs/2512.24511v1)
+  > **TL;DR**: Investigates I/O bottlenecks in checkpointing large-scale LLM training workloads. Designs a checkpointing engine using file system-aware aggregation and coalescing strategies with 	exttt{liburing}. Achieves up to 7.6x higher write throughput than TorchSnapshot.
+* `serving` `offloading` `kernel` [PackKV: Reducing KV Cache Memory Footprint through LLM-Aware Lossy Compression](http://arxiv.org/abs/2512.24449v1)
+  > **TL;DR**: Addresses the large memory footprint of the KV cache during LLM inference. Proposes PackKV, a framework using LLM-aware lossy compression algorithms for the KV cache. Achieves 75.7% higher throughput for K and 171.7% for V compared to cuBLAS kernels.
+
 ### 2025-12-29
 * `edge` `serving` `kernel` [Splitwise: Collaborative Edge-Cloud Inference for LLMs via Lyapunov-Assisted DRL](http://arxiv.org/abs/2512.23310v1)
   > **TL;DR**: Proposes Splitwise, a DRL framework for adaptive partitioning of transformer layers between edge and cloud to optimize LLM inference. Minimizes latency and energy under fluctuating bandwidth by splitting attention heads and feed-forward blocks. Achieves 1.4x-2.8x lower latency and 41% energy reduction vs. baselines.
