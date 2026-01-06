@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-863-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.01.04-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-865-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.01.05-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,14 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-01-02
+* `serving` `edge` [FlexSpec: Frozen Drafts Meet Evolving Targets in Edge-Cloud Collaborative LLM Speculative Decoding](http://arxiv.org/abs/2601.00644v1)
+  > **TL;DR**: Explores efficient LLM serving in edge-cloud systems with evolving target models. Introduces FlexSpec, using a shared-backbone draft model compatible with multiple cloud-side targets and channel-aware adaptive speculation. Reduces end-to-end latency versus conventional speculative decoding.
+
+### 2026-01-01
+* `serving` `kernel` [Revati: Transparent GPU-Free Time-Warp Emulation for LLM Serving](http://arxiv.org/abs/2601.00397v1)
+  > **TL;DR**: Presents Revati, a GPU-free time-warp emulator for rapid LLM serving performance evaluation. It virtualizes GPUs by intercepting CUDA calls and replacing kernel execution with predicted time jumps, enabling direct use of real serving code. Achieves <5% prediction error and runs 5-17x faster than real execution.
+
 ### 2025-12-30
 * `training` `storage` [Understanding LLM Checkpoint/Restore I/O Strategies and Patterns](http://arxiv.org/abs/2512.24511v1)
   > **TL;DR**: Investigates I/O bottlenecks in checkpointing large-scale LLM training workloads. Designs a checkpointing engine using file system-aware aggregation and coalescing strategies with 	exttt{liburing}. Achieves up to 7.6x higher write throughput than TorchSnapshot.
