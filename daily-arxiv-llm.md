@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-865-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.01.05-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-871-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.01.06-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,24 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-01-05
+* `training` [Placement Semantics for Distributed Deep Learning: A Systematic Framework for Analyzing Parallelism Strategies](http://arxiv.org/abs/2601.02311v1)
+  > **TL;DR**: Presents a systematic framework called placement semantics to analyze parallelism strategies for distributed DNN training. Derives memory consumption and communication volume from abstract placement specifications. Predictions exactly match published results, such as ZeRO-3 using 8x less memory than data parallelism.
+* `serving` `offloading` [RelayGR: Scaling Long-Sequence Generative Recommendation via Cross-Stage Relay-Race Inference](http://arxiv.org/abs/2601.01712v1)
+  > **TL;DR**: Addresses how to scale generative recommendation models with long sequences under tight latency SLOs. Proposes RelayGR, a system for cross-stage relay-race inference that selectively pre-infers and caches user behavior KV states. Under a fixed P99 SLO, it supports 1.5x longer sequences and improves SLO-compliant throughput by 3.6x.
+
+### 2026-01-04
+* `training` `diffusion` `kernel` [DiT-HC: Enabling Efficient Training of Visual Generation Model DiT on HPC-oriented CPU Cluster](http://arxiv.org/abs/2601.01500v1)
+  > **TL;DR**: Develops DiT-HC, a system for training Diffusion Transformer models on HPC CPU clusters. Combines communication-free tensor parallelism, optimized operator kernels (HCOps), and a custom MPI backend. Achieves up to 87.7x speedup over baseline CPU libraries.
+* `serving` `MoE` [Making MoE based LLM inference resilient with Tarragon](http://arxiv.org/abs/2601.01310v1)
+  > **TL;DR**: Presents Tarragon, an MoE inference framework resilient to worker failures. It introduces a reconfigurable datapath to reroute requests and self-healing mechanisms for attention/expert workers. Reduces failure-induced stalls by 160-213x compared to MegaScale-Infer.
+
+### 2026-01-03
+* `agent` `offloading` `serving` [Warp-Cortex: An Asynchronous, Memory-Efficient Architecture for Million-Agent Cognitive Scaling on Consumer Hardware](http://arxiv.org/abs/2601.01298v1)
+  > **TL;DR**: Addresses the linear memory scaling problem of multi-agent LLM systems. Proposes Warp-Cortex, an asynchronous architecture with Singleton Weight Sharing and topological sparsification of KV-cache. Achieves 100 concurrent agents on a single RTX 4090 using only 2.2 GB VRAM.
+* `RL` `training` `networking` [OrchestrRL: Dynamic Compute and Network Orchestration for Disaggregated RL](http://arxiv.org/abs/2601.01209v1)
+  > **TL;DR**: Addresses bottlenecks in disaggregated RL pipelines due to compute imbalance and dynamic network traffic. Introduces OrchestrRL with an adaptive compute scheduler and RFabric, a reconfigurable optical-electrical network fabric. Achieves up to 1.40x throughput improvement on a 48-GPU testbed.
+
 ### 2026-01-02
 * `serving` `edge` [FlexSpec: Frozen Drafts Meet Evolving Targets in Edge-Cloud Collaborative LLM Speculative Decoding](http://arxiv.org/abs/2601.00644v1)
   > **TL;DR**: Explores efficient LLM serving in edge-cloud systems with evolving target models. Introduces FlexSpec, using a shared-backbone draft model compatible with multiple cloud-side targets and channel-aware adaptive speculation. Reduces end-to-end latency versus conventional speculative decoding.
