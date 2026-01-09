@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-871-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.01.07-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-875-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.01.08-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,18 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-01-07
+* `serving` `kernel` [Hummingbird: SLO-Oriented GPU Preemption at Microsecond-scale](http://arxiv.org/abs/2601.04071v1)
+  > **TL;DR**: Addresses how to ensure SLO adherence when sharing GPUs for inference tasks. Proposes Hummingbird, a system enabling microsecond-scale preemption on closed-source GPUs to harvest idle GPU cycles. Improves SLO attainment for high-priority tasks by 9.7x compared to spatial sharing.
+* `MoE` `edge` `serving` [A Scheduling Framework for Efficient MoE Inference on Edge GPU-NDP Systems](http://arxiv.org/abs/2601.03992v1)
+  > **TL;DR**: Proposes a scheduling framework for efficient Mixture-of-Experts inference on edge GPU-NDP systems, addressing load imbalance via tensor parallelism and a load-balancing-aware scheduler. Achieves up to 2.56x lower end-to-end latency compared to SOTA.
+
+### 2026-01-06
+* `agentic` `serving` [Software-Defined Agentic Serving](http://arxiv.org/abs/2601.03197v1)
+  > **TL;DR**: Proposes a software-defined networking-inspired framework for adaptive serving of complex multi-agent LLM pipelines. Enables dynamic control of agent communication based on runtime state to improve efficiency and responsiveness.
+* `training` `kernel` `quantization` [Chronicals: A High-Performance Framework for LLM Fine-Tuning with 3.51x Speedup over Unsloth](http://arxiv.org/abs/2601.02609v1)
+  > **TL;DR**: Addresses memory bottlenecks in LLM fine-tuning. Proposes Chronicals, a framework using fused kernels, online softmax (Cut Cross-Entropy), LoRA+, and sequence packing. Achieves 3.51x speedup (41,184 vs. 11,736 tokens/second) over Unsloth on Qwen2.5-0.5B.
+
 ### 2026-01-05
 * `training` [Placement Semantics for Distributed Deep Learning: A Systematic Framework for Analyzing Parallelism Strategies](http://arxiv.org/abs/2601.02311v1)
   > **TL;DR**: Presents a systematic framework called placement semantics to analyze parallelism strategies for distributed DNN training. Derives memory consumption and communication volume from abstract placement specifications. Predictions exactly match published results, such as ZeRO-3 using 8x less memory than data parallelism.
