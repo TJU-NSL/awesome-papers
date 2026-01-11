@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-875-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.01.09-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-876-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.01.10-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,10 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-01-08
+* `agentic` `serving` [Nalar: An agent serving framework](http://arxiv.org/abs/2601.05109v1)
+  > **TL;DR**: Presents Nalar, a framework for efficient serving of LLM-driven agentic applications. Uses futures for dependencies, a managed state layer, and a two-level control architecture for adaptive scheduling. Achieves 34-74% tail latency reduction and scales to 130K futures.
+
 ### 2026-01-07
 * `serving` `kernel` [Hummingbird: SLO-Oriented GPU Preemption at Microsecond-scale](http://arxiv.org/abs/2601.04071v1)
   > **TL;DR**: Addresses how to ensure SLO adherence when sharing GPUs for inference tasks. Proposes Hummingbird, a system enabling microsecond-scale preemption on closed-source GPUs to harvest idle GPU cycles. Improves SLO attainment for high-priority tasks by 9.7x compared to spatial sharing.
