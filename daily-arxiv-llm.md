@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-876-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.01.12-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-884-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.01.13-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,28 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-01-12
+* `edge` `serving` [Peformance Isolation for Inference Processes in Edge GPU Systems](http://arxiv.org/abs/2601.07600v1)
+  > **TL;DR**: Analyzes GPU isolation mechanisms (MPS, MIG, Green Contexts) for predictable DL inference latency on edge devices. Evaluates temporal isolation on NVIDIA A100 and Jetson Orin. MIG provides high isolation, while Green Contexts enable fine-grained SM allocation with low overhead.
+* `agent` `training` [MegaFlow: Large-Scale Distributed Orchestration System for the Agentic Era](http://arxiv.org/abs/2601.07526v1)
+  > **TL;DR**: Presents MegaFlow, a distributed orchestration system for large-scale training of AI agents. It abstracts infrastructure into three services (Model, Agent, Environment) for independent scaling. The system orchestrates tens of thousands of concurrent agent tasks with high stability and resource utilization.
+* `RL` `training` `agent` [OpenTinker: Separating Concerns in Agentic Reinforcement Learning](http://arxiv.org/abs/2601.07376v1)
+  > **TL;DR**: Presents OpenTinker, an infrastructure for RL-based training of LLM agents that decomposes learning systems into composable components. It features a centralized scheduler for managing workloads like LoRA-based RL and SFT on shared resources. Enables efficient scaling for practical agent training.
+* `serving` `edge` `kernel` [Peformance Isolation for Inference Processes in Edge GPU Systems](http://arxiv.org/abs/2601.07600v1)
+  > **TL;DR**: Analyzes performance isolation mechanisms (MPS, MIG, Green Contexts) for predictable deep learning inference on shared edge GPUs. Evaluates temporal isolation and resource partitioning overhead on A100 and Jetson Orin. Finds MIG provides high isolation while Green Contexts enable fine-grained SM allocation with low overhead.
+
+### 2026-01-10
+* `training` `offline` [SkyNomad: On Using Multi-Region Spot Instances to Minimize AI Batch Job Cost](http://arxiv.org/abs/2601.06520v1)
+  > **TL;DR**: Minimizes cost for AI batch jobs like training/inference with deadlines. Designs SkyNomad, a multi-region scheduler using lightweight probing and a cost model to exploit spot instance heterogeneity. Achieves cost savings of 1.25-3.96x over baselines while meeting deadlines.
+
+### 2026-01-09
+* `networking` `serving` [Rethinking Inter-Process Communication with Memory Operation Offloading](http://arxiv.org/abs/2601.06331v1)
+  > **TL;DR**: Systematically reduces IPC overhead for data-intensive AI services exchanging large payloads. Proposes a unified runtime integrating hardware/software memory offloading with asynchronous pipelining and selective cache injection. Achieves up to 72% latency reduction and 2.1x throughput improvement.
+* `serving` `MoE` [AIConfigurator: Lightning-Fast Configuration Optimization for Multi-Framework LLM Serving](http://arxiv.org/abs/2601.06288v1)
+  > **TL;DR**: Presents AIConfigurator, a unified performance-modeling system for rapid, GPU-profiling-free configuration search in LLM serving. It decomposes inference into modelable primitives and uses a calibrated kernel database. Achieves up to 40-50% performance improvement for dense and MoE models.
+* `networking` `kernel` `multi-modal` [Rethinking Inter-Process Communication with Memory Operation Offloading](http://arxiv.org/abs/2601.06331v1)
+  > **TL;DR**: Addresses CPU overhead from memory copies in IPC for data-intensive AI services. Proposes a unified runtime that integrates hardware/software memory offloading into shared-memory communication via asynchronous pipelining and cache injection. Achieves up to 72% latency reduction and 2.1x throughput improvement.
+
 ### 2026-01-08
 * `agentic` `serving` [Nalar: An agent serving framework](http://arxiv.org/abs/2601.05109v1)
   > **TL;DR**: Presents Nalar, a framework for efficient serving of LLM-driven agentic applications. Uses futures for dependencies, a managed state layer, and a two-level control architecture for adaptive scheduling. Achieves 34-74% tail latency reduction and scales to 130K futures.
