@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-884-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.01.13-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-887-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.01.14-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,14 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-01-13
+* `serving` `MoE` `networking` [MixServe: An Automatic Distributed Serving System for MoE Models with Hybrid Parallelism Based on Fused Communication Algorithm](http://arxiv.org/abs/2601.08800v1)
+  > **TL;DR**: Presents MixServe, a distributed serving system for MoE LLMs that uses a novel fused communication algorithm to overlap TP and EP. It automatically selects hybrid parallelism strategies, achieving up to 3.8x lower TTFT and 50.3% higher throughput.
+* `edge` `serving` `offloading` [Hierarchical Online-Scheduling for Energy-Efficient Split Inference with Progressive Transmission](http://arxiv.org/abs/2601.08135v1)
+  > **TL;DR**: Proposes ENACHI, a hierarchical online scheduler for DNN split inference aiming to maximize accuracy under energy and delay constraints. Uses task-level partitioning and packet-level power control with progressive transmission. Achieves a 43.12% accuracy gain with a 62.13% energy reduction.
+* `serving` `hardware` [Coordinated Cooling and Compute Management for AI Datacenters](http://arxiv.org/abs/2601.08113v1)
+  > **TL;DR**: Proposes a joint optimization of computing and cooling for LLM serving datacenters. Develops a hierarchical controller that adjusts GPU parallelism, frequency (DVFS), and cooling controls based on workload and thermal models. Reduces total datacenter energy consumption while meeting latency SLOs.
+
 ### 2026-01-12
 * `edge` `serving` [Peformance Isolation for Inference Processes in Edge GPU Systems](http://arxiv.org/abs/2601.07600v1)
   > **TL;DR**: Analyzes GPU isolation mechanisms (MPS, MIG, Green Contexts) for predictable DL inference latency on edge devices. Evaluates temporal isolation on NVIDIA A100 and Jetson Orin. MIG provides high isolation, while Green Contexts enable fine-grained SM allocation with low overhead.
