@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-887-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.01.14-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-891-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.01.15-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,16 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-01-14
+* `agentic` `serving` [AI-NativeBench: An Open-Source White-Box Agentic Benchmark Suite for AI-Native Systems](http://arxiv.org/abs/2601.09393v1)
+  > **TL;DR**: Proposes AI-NativeBench, a white-box benchmark suite for evaluating AI-native agentic systems using distributed tracing. Analyzes system-level execution dynamics like protocol overhead and failure patterns across 21 system variants.
+* `serving` `networking` [Cluster Workload Allocation: Semantic Soft Affinity Using Natural Language Processing](http://arxiv.org/abs/2601.09282v1)
+  > **TL;DR**: Investigates using LLMs to simplify cluster workload scheduling configurations. Proposes a semantic scheduler that interprets natural language affinity hints via a Kubernetes extender, integrated with AWS Bedrock. Evaluations show >95% parsing accuracy and superior placement quality compared to standard configurations.
+* `serving` `offloading` [LatencyPrism: Online Non-intrusive Latency Sculpting for SLO-Guaranteed LLM Inference](http://arxiv.org/abs/2601.09258v1)
+  > **TL;DR**: Addresses the challenge of guaranteeing SLOs in heterogeneous LLM inference environments plagued by intrusive profiling. LatencyPrism provides zero-intrusion, multi-platform latency monitoring and anomaly detection without code changes. Achieves anomaly detection with an F1-score of 0.98.
+* `serving` [LatencyPrism: Online Non-intrusive Latency Sculpting for SLO-Guaranteed LLM Inference](http://arxiv.org/abs/2601.09258v1)
+  > **TL;DR**: Presents LatencyPrism, a zero-intrusion system for online LLM inference latency monitoring and SLO adherence. It breaks down latency across the pipeline and alerts on anomalies without code changes. Achieves an F1-score of 0.98 for distinguishing workload-driven variations from anomalies.
+
 ### 2026-01-13
 * `serving` `MoE` `networking` [MixServe: An Automatic Distributed Serving System for MoE Models with Hybrid Parallelism Based on Fused Communication Algorithm](http://arxiv.org/abs/2601.08800v1)
   > **TL;DR**: Presents MixServe, a distributed serving system for MoE LLMs that uses a novel fused communication algorithm to overlap TP and EP. It automatically selects hybrid parallelism strategies, achieving up to 3.8x lower TTFT and 50.3% higher throughput.
