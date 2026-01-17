@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-891-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.01.15-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-892-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.01.16-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,10 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-01-15
+* `edge` [Mitigating GIL Bottlenecks in Edge AI Systems](http://arxiv.org/abs/2601.10582v1)
+  > **TL;DR**: Investigates how to mitigate Python's GIL bottleneck in edge AI systems. Proposes an adaptive runtime system using a Blocking Ratio metric to profile I/O wait vs. GIL contention and optimize thread scaling. Achieves 96.5% of optimal performance across edge AI workloads.
+
 ### 2026-01-14
 * `agentic` `serving` [AI-NativeBench: An Open-Source White-Box Agentic Benchmark Suite for AI-Native Systems](http://arxiv.org/abs/2601.09393v1)
   > **TL;DR**: Proposes AI-NativeBench, a white-box benchmark suite for evaluating AI-native agentic systems using distributed tracing. Analyzes system-level execution dynamics like protocol overhead and failure patterns across 21 system variants.
