@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-892-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.01.20-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-903-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.01.21-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,36 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-01-20
+* `serving` `offloading` [ContiguousKV: Accelerating LLM Prefill with Granularity-Aligned KV Cache Management](http://arxiv.org/abs/2601.13631v1)
+  > **TL;DR**: Addresses I/O bottlenecks when offloading prefix KV cache for LLM serving. Proposes ContiguousKV, a system with granularity-aligned cache management and asynchronous prefetching. Achieves a 3.85x speedup in the Re-Prefill phase over IMPRESS.
+* `serving` `offloading` `storage` [ContiguousKV: Accelerating LLM Prefill with Granularity-Aligned KV Cache Management](http://arxiv.org/abs/2601.13631v1)
+  > **TL;DR**: Proposes ContiguousKV, a KV cache management system that bridges semantic pruning granularity with I/O blocks to accelerate LLM prefill with offloaded cache. Uses ContiguousChunk granularity and async prefetching to eliminate read amplification and idle bubbles. Achieves 3.85x speedup over IMPRESS.
+
+### 2026-01-19
+* `agent` `serving` [Sutradhara: An Intelligent Orchestrator-Engine Co-design for Tool-based Agentic Inference](http://arxiv.org/abs/2601.12967v1)
+  > **TL;DR**: Investigates high latency in tool-based LLM agents caused by sequential orchestration. Proposes Sutradhara, a co-designed system integrating orchestration with LLM serving for overlapping tool/LLM execution and semantic caching. Reduces median first token latency by 15% on A100 GPUs.
+* `edge` `RL` `training` [CooperLLM: Cloud-Edge-End Cooperative Federated Fine-tuning for LLMs via ZOO-based Gradient Correction](http://arxiv.org/abs/2601.12917v1)
+  > **TL;DR**: Proposes CooperLLM, a cloud-edge federated fine-tuning framework using zeroth-order optimization on devices with cloud-based gradient correction. Uses pipeline scheduling and adaptive compression to overlap computation. Reduces on-device memory by 86.4% and accelerates convergence 8.8x.
+* `RL` `training` [Unleashing Efficient Asynchronous RL Post-Training via Staleness-Constrained Rollout Coordination](http://arxiv.org/abs/2601.12784v1)
+  > **TL;DR**: Addresses data staleness and skewness in asynchronous RL post-training systems. Proposes StaleFlow with a global consistency protocol and flexible rollout coordination via data servers. Achieves 1.42-2.68x higher throughput than state-of-the-art systems while maintaining convergence.
+
+### 2026-01-18
+* `serving` `offloading` [Power Aware Dynamic Reallocation For Inference](http://arxiv.org/abs/2601.12241v1)
+  > **TL;DR**: Proposes RAPID, a power-aware disaggregated LLM inference framework that jointly manages GPU roles and power budgets under strict power caps. Uses static/dynamic power reallocation and GPU reallocation to optimize performance. Achieves up to 2x improvement in SLO attainment at peak load.
+
+### 2026-01-16
+* `serving` `kernel` [RAPID-Serve: Resource-efficient and Accelerated P/D Intra-GPU Disaggregation](http://arxiv.org/abs/2601.11822v1)
+  > **TL;DR**: Proposes RAPID-Serve for concurrent prefill and decode execution on GPUs to overcome SLO and utilization limitations of hybrid/disaggregated serving. Uses adaptive resource management and CU masking for fine-grained partitioning. Achieves average 1.7x unconstrained and 4.9x SLO-constrained throughput improvement.
+* `RAG` `storage` `kernel` [GPU-Resident Inverted File Index for Streaming Vector Databases](http://arxiv.org/abs/2601.11808v1)
+  > **TL;DR**: Addresses the latency of updating GPU-resident vector indices for streaming data ingestion/deletion in RAG systems. Proposes SIVF with slab-based memory allocation, a validity bitmap, and an address translation table for O(1) in-place updates in VRAM. Achieves up to 13,300× lower deletion latency (0.89 ms vs 11.8 s) and 266× speedup in end-to-end scenarios.
+* `serving` `offloading` [Nixie: Efficient, Transparent Temporal Multiplexing for Consumer GPUs](http://arxiv.org/abs/2601.11743v1)
+  > **TL;DR**: Investigates efficient GPU sharing for interactive ML workloads on consumer hardware. Designs Nixie, a system service coordinating GPU memory and kernels for temporal multiplexing. Improves interactive task latency by 3.8x and reduces CPU pinned memory usage by 66.8%.
+* `serving` `edge` `networking` [HALO: Semantic-Aware Distributed LLM Inference in Lossy Edge Network](http://arxiv.org/abs/2601.11676v1)
+  > **TL;DR**: Addresses distributed LLM inference bottlenecks in unreliable edge networks. Proposes HALO, a framework using semantic-aware neuron group allocation and relaxed synchronization to tolerate network delays. Achieves a 3.41x end-to-end speedup on a Raspberry Pi cluster.
+* `serving` `edge` `offloading` [Nixie: Efficient, Transparent Temporal Multiplexing for Consumer GPUs](http://arxiv.org/abs/2601.11743v1)
+  > **TL;DR**: Addresses inefficient GPU sharing for ML workloads on consumer machines where models fill GPU memory. Proposes Nixie, a system service for transparent temporal multiplexing with MLFQ-inspired scheduling. Improves interactive task latency by up to 3.8× and reduces CPU pinned memory usage by 66.8%.
+
 ### 2026-01-15
 * `edge` [Mitigating GIL Bottlenecks in Edge AI Systems](http://arxiv.org/abs/2601.10582v1)
   > **TL;DR**: Investigates how to mitigate Python's GIL bottleneck in edge AI systems. Proposes an adaptive runtime system using a Blocking Ratio metric to profile I/O wait vs. GIL contention and optimize thread scaling. Achieves 96.5% of optimal performance across edge AI workloads.
