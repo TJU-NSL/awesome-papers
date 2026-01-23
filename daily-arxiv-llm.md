@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-903-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.01.21-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-905-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.01.22-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,12 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-01-21
+* `serving` `offline` [RadixMLP -- Intra-batch Deduplication for Causal Transformers](http://arxiv.org/abs/2601.15013v1)
+  > **TL;DR**: Proposes RadixMLP to eliminate redundant computations in causal transformer inference caused by shared prefixes in batched sequences. Dynamically maps batches to a prefix trie for compressed computation of shared segments. Achieves 1.44-1.59x speedup on reranking workloads.
+* `agent` `serving` [Optimizing FaaS Platforms for MCP-enabled Agentic Workflows](http://arxiv.org/abs/2601.14735v1)
+  > **TL;DR**: Presents FAME, a serverless FaaS architecture for orchestrating MCP-enabled LLM agentic workflows. Decomposes workflows into composable functions with automated state persistence and caching. Achieves a 13x latency reduction and 66% cost savings.
+
 ### 2026-01-20
 * `serving` `offloading` [ContiguousKV: Accelerating LLM Prefill with Granularity-Aligned KV Cache Management](http://arxiv.org/abs/2601.13631v1)
   > **TL;DR**: Addresses I/O bottlenecks when offloading prefix KV cache for LLM serving. Proposes ContiguousKV, a system with granularity-aligned cache management and asynchronous prefetching. Achieves a 3.85x speedup in the Re-Prefill phase over IMPRESS.
