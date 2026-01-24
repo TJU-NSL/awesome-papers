@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-905-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.01.22-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-906-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.01.23-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,10 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-01-22
+* `kernel` `training` [Sawtooth Wavefront Reordering: Enhanced CuTile FlashAttention on NVIDIA GB10](http://arxiv.org/abs/2601.16032v1)
+  > **TL;DR**: Analyzes L2 cache miss patterns in CuTile-based FlashAttention kernels. Proposes Sawtooth Wavefront Reordering, a programming technique that alters the compute order to enhance cache locality. Reduces L2 misses by 50% and increases throughput by up to 60% on NVIDIA GB10.
+
 ### 2026-01-21
 * `serving` `offline` [RadixMLP -- Intra-batch Deduplication for Causal Transformers](http://arxiv.org/abs/2601.15013v1)
   > **TL;DR**: Proposes RadixMLP to eliminate redundant computations in causal transformer inference caused by shared prefixes in batched sequences. Dynamically maps batches to a prefix trie for compressed computation of shared segments. Achieves 1.44-1.59x speedup on reranking workloads.
