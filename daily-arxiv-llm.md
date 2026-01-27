@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-906-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.01.25-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-908-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.01.26-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,12 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-01-23
+* `training` `storage` [DataStates-LLM: Scalable Checkpointing for Transformer Models Using Composable State Providers](http://arxiv.org/abs/2601.16956v1)
+  > **TL;DR**: Proposes DataStates-LLM, a scalable checkpointing system for distributed LLM training, using composable state providers for lazy, asynchronous snapshots. It achieves up to 4x higher checkpoint throughput and reduces training time by 2.2x compared to state-of-the-art.
+* `kernel` `quantization` [W4A16 Mixed-Precision Matrix Multiplication on Decoupled Architecture: Kernel Design and Memory Bottleneck Analysis for Ascend NPUs](http://arxiv.org/abs/2601.16536v1)
+  > **TL;DR**: Presents a W4A16 matrix multiplication kernel for Huawei Ascend NPUs to enable efficient quantized LLM inference. Uses vector cores for dequantization, cube cores for GEMM, and Split-K parallelization, achieving up to 1.74x speedup over data-parallel baselines.
+
 ### 2026-01-22
 * `kernel` `training` [Sawtooth Wavefront Reordering: Enhanced CuTile FlashAttention on NVIDIA GB10](http://arxiv.org/abs/2601.16032v1)
   > **TL;DR**: Analyzes L2 cache miss patterns in CuTile-based FlashAttention kernels. Proposes Sawtooth Wavefront Reordering, a programming technique that alters the compute order to enhance cache locality. Reduces L2 misses by 50% and increases throughput by up to 60% on NVIDIA GB10.
