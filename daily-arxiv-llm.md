@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-908-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.01.26-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-913-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.01.27-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,20 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-01-25
+* `serving` [A Universal Load Balancing Principle and Its Application to Large Language Model Serving](http://arxiv.org/abs/2601.17855v1)
+  > **TL;DR**: Addresses barrier-synchronized load imbalance causing idle time in LLM serving. Proposes a finite-horizon integer-optimization formulation for work allocation that adapts to heterogeneous workloads. Reduces long-run imbalance by a factor growing with batch size and improves throughput.
+* `serving` `kernel` [LLM-42: Enabling Determinism in LLM Inference with Verified Speculation](http://arxiv.org/abs/2601.17768v1)
+  > **TL;DR**: Addresses non-determinism in LLM inference caused by dynamic batching and GPU kernels. Proposes LLM-42, a scheduler using a verify-rollback loop with speculation to enforce determinism. Achieves throughput close to non-deterministic batching while ensuring deterministic outputs.
+* `training` `kernel` [Kareus: Joint Reduction of Dynamic and Static Energy in Large Model Training](http://arxiv.org/abs/2601.17654v1)
+  > **TL;DR**: Addresses high energy consumption in large model training by optimizing both dynamic and static energy. Kareus decomposes the joint optimization problem and uses multi-pass scheduling with frequency scaling. Reduces energy by up to 28.3% at iso-time or time by 27.5% at iso-energy.
+
+### 2026-01-24
+* `storage` `hardware` [Conduit: Programmer-Transparent Near-Data Processing Using Multiple Compute-Capable Resources in Solid State Drives](http://arxiv.org/abs/2601.17633v1)
+  > **TL;DR**: Proposes Conduit, a programmer-transparent near-data processing framework for SSDs that leverages multiple internal compute resources. It uses a custom LLVM compiler pass for code vectorization and a runtime cost model for instruction-granularity offloading. Achieves 1.8x speedup and 46% energy reduction over prior policies.
+* `networking` `training` [Scaling All-to-all Operations Across Emerging Many-Core Supercomputers](http://arxiv.org/abs/2601.17606v1)
+  > **TL;DR**: Proposes new MPI all-to-all algorithms to improve collective communication performance on many-core supercomputers. Achieves up to 3x speedup over system MPI on Sapphire Rapids systems, benefiting distributed machine learning and FFT applications.
+
 ### 2026-01-23
 * `training` `storage` [DataStates-LLM: Scalable Checkpointing for Transformer Models Using Composable State Providers](http://arxiv.org/abs/2601.16956v1)
   > **TL;DR**: Proposes DataStates-LLM, a scalable checkpointing system for distributed LLM training, using composable state providers for lazy, asynchronous snapshots. It achieves up to 4x higher checkpoint throughput and reduces training time by 2.2x compared to state-of-the-art.
