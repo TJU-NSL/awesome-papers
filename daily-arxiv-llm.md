@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-913-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.01.27-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-925-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.01.28-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,34 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-01-28
+* `serving` `hardware` `diffusion` [Beyond GEMM-Centric NPUs: Enabling Efficient Diffusion LLM Sampling](http://arxiv.org/abs/2601.20706v1)
+  > **TL;DR**: Addresses the inefficiency of NPUs for sampling in diffusion LLMs. Proposes NPU optimizations with non-GEMM vector primitives, in-place memory reuse, and a decoupled memory hierarchy. Achieves a 2.53x speedup over an NVIDIA RTX A6000 GPU.
+* `serving` `networking` `video` [OnePiece: A Large-Scale Distributed Inference System with RDMA for Complex AI-Generated Content (AIGC) Workflows](http://arxiv.org/abs/2601.20655v1)
+  > **TL;DR**: Addresses high latency and low throughput in multi-stage AIGC inference workflows. Proposes OnePiece, a distributed system with RDMA-based communication and a double-ring buffer for deadlock-free data transfer. Achieves a 16x reduction in GPU resource consumption for image-to-video generation.
+* `training` `kernel` [AutoOverlap: Enabling Fine-Grained Overlap of Computation and Communication with Chunk-Based Scheduling](http://arxiv.org/abs/2601.20595v1)
+  > **TL;DR**: Addresses communication bottlenecks in distributed GPU training by enabling fine-grained overlap within a single kernel. Proposes AutoOverlap, a source-to-source Triton compiler that schedules computation aligned with communication chunks. Achieves average end-to-end speedup of 1.3x.
+* `serving` `kernel` [Rethinking Thread Scheduling under Oversubscription: A User-Space Framework for Coordinating Multi-runtime and Multi-process Workloads](http://arxiv.org/abs/2601.20435v1)
+  > **TL;DR**: Addresses performance degradation from OS scheduler interference in oversubscribed, multi-runtime AI/HPC workloads. Proposes USF, a user-space cooperative scheduler that switches threads only upon blocking. Achieves up to 2.4x speedup in multi-process PyTorch inference scenarios.
+* `serving` `quantization` [Meeting SLOs, Slashing Hours: Automated Enterprise LLM Optimization with OptiKIT](http://arxiv.org/abs/2601.20408v1)
+  > **TL;DR**: Addresses the challenge of automated model optimization for enterprise LLM deployment. Presents OptiKIT, a framework automating compression and tuning workflows with dynamic resource allocation. Achieves more than 2x GPU throughput improvement in production.
+* `serving` `offloading` [SuperInfer: SLO-Aware Rotary Scheduling and Memory Management for LLM Inference on Superchips](http://arxiv.org/abs/2601.20309v1)
+  > **TL;DR**: Proposes SuperInfer, an LLM inference system for superchips that addresses KV cache-induced blocking. Introduces RotaSched, an SLO-aware rotary scheduler, and DuplexKV for full-duplex transfer over NVLink-C2C. Improves TTFT SLO attainment by up to 74.7% compared to state-of-the-art systems.
+* `diffusion` `serving` [StreamFusion: Scalable Sequence Parallelism for Distributed Inference of Diffusion Transformers on GPUs](http://arxiv.org/abs/2601.20273v1)
+  > **TL;DR**: Presents StreamFusion, a system optimizing distributed inference for Diffusion Transformers via topology-aware sequence parallelism and overlapping communication with computation. Improves throughput by 1.35x on average versus state-of-the-art methods.
+* `serving` `kernel` [Rethinking Thread Scheduling under Oversubscription: A User-Space Framework for Coordinating Multi-runtime and Multi-process Workloads](http://arxiv.org/abs/2601.20435v1)
+  > **TL;DR**: Addresses performance degradation from OS thread scheduling interference during oversubscription. Proposes USF, a user-space cooperative scheduler built into GNU C library, that switches threads only upon blocking. Achieves up to 2.4x speedup for multi-process PyTorch inference workloads.
+
+### 2026-01-27
+* `edge` `serving` `networking` [Modular Foundation Model Inference at the Edge: Network-Aware Microservice Optimization](http://arxiv.org/abs/2601.19563v1)
+  > **TL;DR**: Investigates how to deploy foundation model inference reliably at the edge under resource constraints. Proposes a two-tier microservice framework with static core service placement and dynamic light service orchestration. Achieves over 84% average on-time task completion under scaling system loads.
+* `networking` `training` `hardware` [NET4EXA: Pioneering the Future of Interconnects for Supercomputing and AI](http://arxiv.org/abs/2601.19413v1)
+  > **TL;DR**: Proposes NET4EXA, a next-generation high-performance interconnect (BXIv3) for large-scale AI and HPC systems. Uses a hybrid design combining commercial switches with custom FPGA-based NICs. Aims to meet the demanding networking requirements for training large models like LLMs.
+* `training` `RL` [Revisiting Parameter Server in LLM Post-Training](http://arxiv.org/abs/2601.19362v1)
+  > **TL;DR**: Proposes On-Demand Communication (ODC), adapting parameter servers into FSDP training with point-to-point communication to handle workload imbalance in LLM post-training. Reduces synchronization barriers and improves load balancing. Achieves up to 36% throughput speedup over FSDP.
+* `serving` `multi-modal` `kernel` [Native LLM and MLLM Inference at Scale on Apple Silicon](http://arxiv.org/abs/2601.19139v1)
+  > **TL;DR**: Presents vllm-mlx, a framework for native LLM and MLLM inference on Apple Silicon. Introduces content-based prefix caching for vision encoders to eliminate redundant processing. Achieves up to 28x speedup on repeated image queries and 525 tokens/second throughput.
+
 ### 2026-01-25
 * `serving` [A Universal Load Balancing Principle and Its Application to Large Language Model Serving](http://arxiv.org/abs/2601.17855v1)
   > **TL;DR**: Addresses barrier-synchronized load imbalance causing idle time in LLM serving. Proposes a finite-horizon integer-optimization formulation for work allocation that adapts to heterogeneous workloads. Reduces long-run imbalance by a factor growing with batch size and improves throughput.
