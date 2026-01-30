@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-925-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.01.28-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-928-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.01.29-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,14 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-01-29
+* `serving` [EWSJF: An Adaptive Scheduler with Hybrid Partitioning for Mixed-Workload LLM Inference](http://arxiv.org/abs/2601.21758v1)
+  > **TL;DR**: Proposes EWSJF, an adaptive request-level scheduler for mixed LLM workloads. It learns workload structure online via unsupervised partitioning and density-weighted scoring. Achieves over 30% higher throughput and up to 4x lower Time-To-First-Token for short requests versus FCFS.
+* `serving` `agent` `offloading` [ScaleSim: Serving Large-Scale Multi-Agent Simulation with Invocation Distance-Based Memory Management](http://arxiv.org/abs/2601.21473v1)
+  > **TL;DR**: Addresses GPU memory exhaustion in large-scale LLM-based multi-agent simulations. Proposes ScaleSim, a serving system that uses invocation distance estimation for proactive prefetching and priority-based eviction of agent states. Achieves up to 1.74x speedup over SGLang.
+* `MoE` `edge` `serving` [ZipMoE: Efficient On-Device MoE Serving via Lossless Compression and Cache-Affinity Scheduling](http://arxiv.org/abs/2601.21198v1)
+  > **TL;DR**: Investigates how to deploy Mixture-of-Experts models efficiently on edge devices. Proposes ZipMoE, a system combining lossless model compression with a cache-aware scheduling co-design to shift inference from I/O-bound to compute-centric. Achieves up to 72.77% latency reduction.
+
 ### 2026-01-28
 * `serving` `hardware` `diffusion` [Beyond GEMM-Centric NPUs: Enabling Efficient Diffusion LLM Sampling](http://arxiv.org/abs/2601.20706v1)
   > **TL;DR**: Addresses the inefficiency of NPUs for sampling in diffusion LLMs. Proposes NPU optimizations with non-GEMM vector primitives, in-place memory reuse, and a decoupled memory hierarchy. Achieves a 2.53x speedup over an NVIDIA RTX A6000 GPU.
