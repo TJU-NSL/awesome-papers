@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-928-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.01.31-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-933-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.02.01-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,18 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-01-30
+* `serving` `offline` [SQUAD: Scalable Quorum Adaptive Decisions via ensemble of early exit neural networks](http://arxiv.org/abs/2601.22711v1)
+  > **TL;DR**: Proposes SQUAD, a distributed inference scheme combining early-exit networks with ensemble learning. Uses a quorum-based stopping criterion and QUEST architecture search for hierarchical diversity. Reduces inference latency by up to 70.6% compared to static ensembles while maintaining accuracy.
+* `agent` `serving` `offloading` [CONCUR: High-Throughput Agentic Batch Inference of LLM via Congestion-Based Concurrency Control](http://arxiv.org/abs/2601.22705v1)
+  > **TL;DR**: Addresses throughput degradation in agentic LLM batch inference caused by KV cache thrashing. Proposes CONCUR, a congestion-control-inspired admission controller regulating agent concurrency based on runtime cache pressure. Achieves up to 4.09x higher throughput on Qwen3-32B.
+* `training` `networking` [HetCCL: Accelerating LLM Training with Heterogeneous GPUs](http://arxiv.org/abs/2601.22585v1)
+  > **TL;DR**: Proposes HetCCL, a collective communication library for LLM training on clusters with mixed NVIDIA/AMD GPUs. It unifies vendor backends with RDMA-based communication and requires no driver changes. Matches homogeneous performance while enabling efficient scaling in heterogeneous setups.
+* `training` `networking` [AsyncMesh: Fully Asynchronous Optimization for Data and Pipeline Parallelism](http://arxiv.org/abs/2601.22442v1)
+  > **TL;DR**: Investigates how to reduce communication bottlenecks in distributed LLM training. Proposes AsyncMesh, combining asynchronous pipeline and data parallelism with look-ahead weights and sparse averaging. Reduces communication overhead while matching synchronous baseline performance on models up to 1B parameters.
+* `serving` `networking` [Towards Resiliency in Large Language Model Serving with KevlarFlow](http://arxiv.org/abs/2601.22438v1)
+  > **TL;DR**: Addresses fragility of LLM serving during hardware faults. Presents KevlarFlow, using decoupled initialization, traffic rerouting, and KV cache replication for fast recovery. Reduces mean-time-to-recovery by 20x and p99 TTFT by 574.6x compared to state-of-the-art.
+
 ### 2026-01-29
 * `serving` [EWSJF: An Adaptive Scheduler with Hybrid Partitioning for Mixed-Workload LLM Inference](http://arxiv.org/abs/2601.21758v1)
   > **TL;DR**: Proposes EWSJF, an adaptive request-level scheduler for mixed LLM workloads. It learns workload structure online via unsupervised partitioning and density-weighted scoring. Achieves over 30% higher throughput and up to 4x lower Time-To-First-Token for short requests versus FCFS.
