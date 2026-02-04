@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-933-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.02.02-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-939-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.02.03-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,24 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-02-03
+* `serving` `MoE` `offloading` [DALI: A Workload-Aware Offloading Framework for Efficient MoE Inference on Local PCs](http://arxiv.org/abs/2602.03495v1)
+  > **TL;DR**: Addresses inefficiencies in offloading MoE LLMs to local PCs due to dynamic expert workloads. Proposes DALI, a framework with dynamic CPU/GPU assignment, residual-based prefetching, and workload-aware caching. Achieves significant speedups in prefill and decoding phases over SOTA offloading frameworks.
+* `serving` [Large-Scale LLM Inference with Heterogeneous Workloads: Prefill-Decode Contention and Asymptotically Optimal Control](http://arxiv.org/abs/2602.02987v1)
+  > **TL;DR**: Addresses the challenge of GPU resource contention between prefill and decode phases when serving heterogeneous LLM workloads. Proposes an asymptotically optimal stochastic control framework for admission and routing across large clusters. Reduces average job completion time by up to 1.5× compared to standard scheduling heuristics.
+
+### 2026-02-02
+* `serving` `multi-modal` [vLLM-Omni: Fully Disaggregated Serving for Any-to-Any Multimodal Models](http://arxiv.org/abs/2602.02204v1)
+  > **TL;DR**: Addresses inefficient serving pipelines for any-to-any multimodal models containing interconnected components. Proposes vLLM-Omni, a disaggregated system using a stage-graph abstraction and independent engines for LLMs/diffusion models. Achieves up to 91.4% reduction in job completion time.
+* `RL` `serving` `networking` [ECHO-2: A Large-Scale Distributed Rollout Framework for Cost-Efficient Reinforcement Learning](http://arxiv.org/abs/2602.02192v2)
+  > **TL;DR**: Presents ECHO-2, a distributed RL framework for LLM post-training that overlaps policy dissemination with rollout generation. Uses peer-assisted pipelined broadcast to mitigate wide-area bottlenecks. Under realistic bandwidth, achieves comparable reward with significantly improved cost efficiency vs. baselines.
+* `edge` `hardware` `networking` [TriCloudEdge: A multi-layer Cloud Continuum](http://arxiv.org/abs/2602.02121v1)
+  > **TL;DR**: Proposes TriCloudEdge, a scalable three-tier cloud continuum integrating far-edge, edge, and cloud tiers to distribute computational load and address latency. Evaluates protocols like Zenoh versus WebSocket/MQTT/HTTP for data transfer efficiency and resource utilization across tiers.
+
+### 2026-02-01
+* `training` [BOA Constrictor: Squeezing Performance out of GPUs in the Cloud via Budget-Optimal Allocation](http://arxiv.org/abs/2602.01404v1)
+  > **TL;DR**: Develops BOA Constrictor, a budget-optimal scheduler for ML training jobs in the cloud that minimizes average job completion time under a fixed budget constraint by allocating GPUs efficiently. Reduces average JCT by up to 2x compared to heuristic schedulers.
+
 ### 2026-01-30
 * `serving` `offline` [SQUAD: Scalable Quorum Adaptive Decisions via ensemble of early exit neural networks](http://arxiv.org/abs/2601.22711v1)
   > **TL;DR**: Proposes SQUAD, a distributed inference scheme combining early-exit networks with ensemble learning. Uses a quorum-based stopping criterion and QUEST architecture search for hierarchical diversity. Reduces inference latency by up to 70.6% compared to static ensembles while maintaining accuracy.
