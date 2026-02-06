@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-939-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.02.04-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-942-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.02.05-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,16 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-02-05
+* `training` `sparse` [TimelyFreeze: Adaptive Parameter Freezing Mechanism for Pipeline Parallelism](http://arxiv.org/abs/2602.05754v1)
+  > **TL;DR**: Mitigates pipeline bubble overhead in model training by adaptively skipping backward computation. Proposes TimelyFreeze, which models the pipeline as a DAG and uses linear programming to find optimal parameter freeze ratios. Achieves up to 40% higher throughput on LLaMA-8B with comparable accuracy.
+
+### 2026-02-04
+* `training` `offloading` [Horizon-LM: A RAM-Centric Architecture for LLM Training](http://arxiv.org/abs/2602.04816v2)
+  > **TL;DR**: Presents Horizon-LM, a CPU-master/GPU-worker system that treats host RAM as the primary parameter store to decouple model scale from GPU memory. It eliminates persistent GPU state and uses explicit recomputation. Achieves 12.2x higher throughput vs. DeepSpeed ZeRO-3 on a single A100.
+* `training` `offloading` [Horizon-LM: A RAM-Centric Architecture for LLM Training](http://arxiv.org/abs/2602.04816v2)
+  > **TL;DR**: Proposes Horizon-LM, a CPU-master, GPU-worker training system that treats host RAM as the primary parameter store to decouple model scale from GPU count. Achieves 12.2x higher training throughput than DeepSpeed ZeRO-3 on a single A100 machine.
+
 ### 2026-02-03
 * `serving` `MoE` `offloading` [DALI: A Workload-Aware Offloading Framework for Efficient MoE Inference on Local PCs](http://arxiv.org/abs/2602.03495v1)
   > **TL;DR**: Addresses inefficiencies in offloading MoE LLMs to local PCs due to dynamic expert workloads. Proposes DALI, a framework with dynamic CPU/GPU assignment, residual-based prefetching, and workload-aware caching. Achieves significant speedups in prefill and decoding phases over SOTA offloading frameworks.
