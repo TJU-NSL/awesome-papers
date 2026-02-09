@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-942-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.02.07-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-945-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.02.08-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,14 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-02-06
+* `serving` `RL` `offloading` [Reinforcement Learning-Based Dynamic Management of Structured Parallel Farm Skeletons on Serverless Platforms](http://arxiv.org/abs/2602.06555v1)
+  > **TL;DR**: Presents an RL-based autoscaling framework for serverless 'Farm' pattern processing. It uses Gymnasium monitoring to control worker pool parallelism based on QoS metrics. Achieves improved QoS and stable scaling compared to reactive baselines.
+* `serving` `offloading` [DualMap: Enabling Both Cache Affinity and Load Balancing for Distributed LLM Serving](http://arxiv.org/abs/2602.06502v1)
+  > **TL;DR**: Addresses the conflict between cache-affinity scheduling and load balancing in distributed LLM serving. Proposes DualMap, a dual-mapping scheduler with candidate selection and hotspot mitigation. Improves effective request capacity by up to 2.25x under TTFT SLO constraints.
+* `training` `storage` `offloading` [FCDP: Fully Cached Data Parallel for Communication-Avoiding Large-Scale Training](http://arxiv.org/abs/2602.06499v1)
+  > **TL;DR**: Proposes FCDP, a training system that caches forward-pass parameters in host memory to avoid redundant inter-node communication during backward pass. On bandwidth-limited clusters, it reduces inter-node all-gather by 50% and achieves up to 100x higher throughput than ZeRO-3.
+
 ### 2026-02-05
 * `training` `sparse` [TimelyFreeze: Adaptive Parameter Freezing Mechanism for Pipeline Parallelism](http://arxiv.org/abs/2602.05754v1)
   > **TL;DR**: Mitigates pipeline bubble overhead in model training by adaptively skipping backward computation. Proposes TimelyFreeze, which models the pipeline as a DAG and uses linear programming to find optimal parameter freeze ratios. Achieves up to 40% higher throughput on LLaMA-8B with comparable accuracy.
