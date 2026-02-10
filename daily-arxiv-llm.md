@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-945-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.02.08-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-946-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.02.09-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,10 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-02-07
+* `serving` `kernel` `networking` [Parallel Track Transformers: Enabling Fast GPU Inference with Reduced Synchronization](http://arxiv.org/abs/2602.07306v1)
+  > **TL;DR**: Addresses the communication bottleneck in multi-GPU LLM inference from tensor parallelism. Proposes the Parallel Track Transformer, a novel architecture that restructures computation to minimize inter-GPU synchronization. Achieves up to a 16x reduction in sync operations and 31.90% increased throughput.
+
 ### 2026-02-06
 * `serving` `RL` `offloading` [Reinforcement Learning-Based Dynamic Management of Structured Parallel Farm Skeletons on Serverless Platforms](http://arxiv.org/abs/2602.06555v1)
   > **TL;DR**: Presents an RL-based autoscaling framework for serverless 'Farm' pattern processing. It uses Gymnasium monitoring to control worker pool parallelism based on QoS metrics. Achieves improved QoS and stable scaling compared to reactive baselines.
