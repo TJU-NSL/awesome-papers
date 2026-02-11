@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-946-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.02.09-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-957-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.02.10-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,34 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-02-10
+* `serving` `offloading` `kernel` [Efficient Remote Prefix Fetching with GPU-native Media ASICs](http://arxiv.org/abs/2602.09725v1)
+  > **TL;DR**: Addresses the performance degradation of remote KV cache reuse in bandwidth-limited networks. Proposes KVFetcher, a system using GPU-native video codecs for compressed KV cache transmission and a pipelined fetcher. Reduces time-to-first-token (TTFT) by up to 3.51x while maintaining lossless accuracy.
+* `MoE` `training` [Revealing the Challenges of Attention-FFN Disaggregation for Modern MoE Models and Hardware Systems](http://arxiv.org/abs/2602.09721v1)
+  > **TL;DR**: Systematically analyzes the performance boundaries of Attention-FFN Disaggregation (AFD) for MoE models versus Expert Parallelism (EP). Extends the roofline model to the communication level, revealing AFD's 'dead zone' where FFN scaling is bandwidth-capped. Shows AFD underperforms EP on standard clusters but becomes promising with high-bandwidth Superpod-class hardware.
+* `serving` `quantization` `kernel` [LLM-CoOpt: A Co-Design and Optimization Framework for Efficient LLM Inference on Heterogeneous Platforms](http://arxiv.org/abs/2602.09323v1)
+  > **TL;DR**: Proposes LLM-CoOpt, an algorithm-hardware co-design framework for efficient LLM inference. It integrates KV cache optimization with FP8 quantization, grouped-query attention, and paged attention. Achieves up to 13.43% higher throughput and 16.79% lower latency on LLaMA-13B.
+* `agentic` `kernel` [AgentCgroup: Understanding and Controlling OS Resources of AI Agents](http://arxiv.org/abs/2602.09345v1)
+  > **TL;DR**: Addresses unpredictable OS resource demands in AI agents executing tools. Designs AgentCgroup, an eBPF-based kernel controller with hierarchical cgroups and adaptive policies for fine-grained tool-call resource management. Preliminary results show improved multi-tenant isolation.
+
+### 2026-02-09
+* `training` `serving` [Distributed Hybrid Parallelism for Large Language Models: Comparative Study and System Design Guide](http://arxiv.org/abs/2602.09109v1)
+  > **TL;DR**: Examines how to design optimal distributed computing systems for LLM training and inference. Analyzes hybrid parallelization strategies, communication-computation overlap, and automated strategy search using cost models. Provides case studies to guide efficient parallelism selection and system design.
+* `training` `networking` `quantization` [DynamiQ: Accelerating Gradient Synchronization using Compressed Multi-hop All-reduce](http://arxiv.org/abs/2602.08923v1)
+  > **TL;DR**: Presents DynamiQ, a quantization framework for accelerating gradient synchronization in multi-hop all-reduce. Co-designs techniques for partial sums with a fused kernel for fast aggregation. Achieves up to 34.2% faster training over SOTA methods while maintaining 99.9% baseline accuracy.
+* `serving` `offline` [PARD: Enhancing Goodput for Inference Pipeline via Proactive Request Dropping](http://arxiv.org/abs/2602.08747v1)
+  > **TL;DR**: Proposes proactive request dropping to improve goodput in DNN inference pipelines. Designs PARD, which uses runtime pipeline information for timely dropping and an adaptive priority mechanism to select requests. Achieves 16%-176% higher goodput versus state-of-the-art systems.
+* `training` [Modalities, a PyTorch-native Framework For Large-scale LLM Training and Research](http://arxiv.org/abs/2602.08387v1)
+  > **TL;DR**: Presents Modalities, a PyTorch-native framework for efficient and reproducible large-scale LLM training and research. It integrates SOTA parallelization for efficient pretraining and uses modular, declarative configuration for systematic ablation studies at billion-parameter scale.
+* `agent` [Fork, Explore, Commit: OS Primitives for Agentic Exploration](http://arxiv.org/abs/2602.08199v1)
+  > **TL;DR**: Proposes OS primitives to support agentic exploration, where AI agents try multiple solution paths in parallel. Introduces branch contexts, providing isolated copy-on-write workspaces and processes for atomic commit/rollback. BranchFS shows sub-350 μs branch creation time, independent of base filesystem size.
+* `serving` `hardware` [Equilibria: Fair Multi-Tenant CXL Memory Tiering At Scale](http://arxiv.org/abs/2602.08800v1)
+  > **TL;DR**: Presents Equilibria, an OS framework for fair multi-tenant memory tiering with CXL. It provides per-container controls to enforce fairness policies and suppress thrashing. Improves performance by up to 52% for production workloads over the Linux TPP solution.
+
+### 2026-02-08
+* `edge` `offloading` [Accuracy-Delay Trade-Off in LLM Offloading via Token-Level Uncertainty](http://arxiv.org/abs/2602.07958v1)
+  > **TL;DR**: Proposes an uncertainty-aware framework for LLM inference offloading in mobile edge computing. It dynamically decides to process tokens locally or on an edge server using a greedy algorithm based on token-level uncertainty. Achieves up to 30% lower latency than baselines while maintaining accuracy.
+
 ### 2026-02-07
 * `serving` `kernel` `networking` [Parallel Track Transformers: Enabling Fast GPU Inference with Reduced Synchronization](http://arxiv.org/abs/2602.07306v1)
   > **TL;DR**: Addresses the communication bottleneck in multi-GPU LLM inference from tensor parallelism. Proposes the Parallel Track Transformer, a novel architecture that restructures computation to minimize inter-GPU synchronization. Achieves up to a 16x reduction in sync operations and 31.90% increased throughput.
