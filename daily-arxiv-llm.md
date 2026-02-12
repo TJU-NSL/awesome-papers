@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-957-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.02.10-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-960-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.02.11-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,14 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-02-11
+* `RL` `kernel` `agent` [Fine-Tuning GPT-5 for GPU Kernel Generation](http://arxiv.org/abs/2602.11000v1)
+  > **TL;DR**: Presents a reinforcement learning framework (Makora) for fine-tuning frontier LLMs to generate optimized GPU kernels (e.g., Triton). The fine-tuned GPT-5 model achieves a 33.3 percentage point increase in single-attempt kernel correctness (43.7% to 77.0%) and a 2.12x geometric mean speedup.
+* `serving` `quantization` [BOute: Cost-Efficient LLM Serving with Heterogeneous LLMs and GPUs via Multi-Objective Bayesian Optimization](http://arxiv.org/abs/2602.10729v1)
+  > **TL;DR**: Presents BOute, a scheduling system co-optimizing query routing and model deployment across heterogeneous models/GPUs using multi-objective Bayesian optimization. Maximizes cost-efficiency while guaranteeing response quality, reducing serving costs by 15%-61% (38% avg) while maintaining performance targets.
+* `agent` `RL` [Authenticated Workflows: A Systems Approach to Protecting Agentic AI](http://arxiv.org/abs/2602.10465v1)
+  > **TL;DR**: Proposes authenticated workflows and MAPL policy language for deterministic security in agentic AI systems. Combines cryptographic proofs and runtime policy enforcement at prompt, tool, data, and context boundaries. Achieves 100% recall with zero false positives across 174 test cases.
+
 ### 2026-02-10
 * `serving` `offloading` `kernel` [Efficient Remote Prefix Fetching with GPU-native Media ASICs](http://arxiv.org/abs/2602.09725v1)
   > **TL;DR**: Addresses the performance degradation of remote KV cache reuse in bandwidth-limited networks. Proposes KVFetcher, a system using GPU-native video codecs for compressed KV cache transmission and a pipelined fetcher. Reduces time-to-first-token (TTFT) by up to 3.51x while maintaining lossless accuracy.
