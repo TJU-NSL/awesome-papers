@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-960-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.02.11-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-965-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.02.12-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,18 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-02-12
+* `serving` `offloading` `kernel` [PrefillShare: A Shared Prefill Module for KV Reuse in Multi-LLM Disaggregated Serving](http://arxiv.org/abs/2602.12029v1)
+  > **TL;DR**: Addresses redundancy in KV cache computation for multi-LLM agent workloads sharing prompt prefixes. Proposes PrefillShare, a method that factorizes and freezes a shared prefill module, amortizing its cost across models. Achieves 4.5x lower p95 latency.
+* `serving` `networking` `offloading` [GORGO: Maximizing KV-Cache Reuse While Minimizing Network Latency in Cross-Region LLM Load Balancing](http://arxiv.org/abs/2602.11688v1)
+  > **TL;DR**: Addresses how to minimize Time-to-First-Token in cross-region LLM serving by balancing KV-cache reuse and network latency. Proposes GORGO, a centralized routing policy that optimizes total serving cost. Achieves 2.5x faster median TTFT.
+* `training` `MoE` [LAER-MoE: Load-Adaptive Expert Re-layout for Efficient Mixture-of-Experts Training](http://arxiv.org/abs/2602.11686v1)
+  > **TL;DR**: Proposes LAER-MoE, a training framework using Fully Sharded Expert Parallel (FSEP) to dynamically re-layout experts for load balancing in MoE models. Achieves up to 1.69x acceleration compared to state-of-the-art systems.
+* `serving` `offloading` `kernel` [PAM: Processing Across Memory Hierarchy for Efficient KV-centric LLM Serving System](http://arxiv.org/abs/2602.11521v1)
+  > **TL;DR**: Addresses KV cache memory bottlenecks in LLM serving. Designs PAM, a hierarchical PIM-based system distributing KV tokens and using a novel attention algorithm for parallel computation across memory devices. Achieves higher serving efficiency by balancing bandwidth and capacity demands.
+* `RL` `networking` `training` [RL over Commodity Networks: Overcoming the Bandwidth Barrier with Lossless Sparse Deltas](http://arxiv.org/abs/2602.11456v1)
+  > **TL;DR**: Addresses the bandwidth barrier for RL post-training of LLMs over commodity networks. Designs SparrowRL, a system exploiting sparse parameter updates with lossless delta compression and pipelined transmission. Reduces transfer payload by 79x and improves throughput by 2.4-9.5x compared to full-weight broadcasts.
+
 ### 2026-02-11
 * `RL` `kernel` `agent` [Fine-Tuning GPT-5 for GPU Kernel Generation](http://arxiv.org/abs/2602.11000v1)
   > **TL;DR**: Presents a reinforcement learning framework (Makora) for fine-tuning frontier LLMs to generate optimized GPU kernels (e.g., Triton). The fine-tuned GPT-5 model achieves a 33.3 percentage point increase in single-attempt kernel correctness (43.7% to 77.0%) and a 2.12x geometric mean speedup.
