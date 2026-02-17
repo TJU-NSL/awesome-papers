@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-965-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.02.15-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-969-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.02.16-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,20 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-02-15
+* `multi-modal` `edge` `training` [ML-ECS: A Collaborative Multimodal Learning Framework for Edge-Cloud Synergies](http://arxiv.org/abs/2602.14107v1)
+  > **TL;DR**: Investigates collaborative multimodal training for edge-cloud systems challenged by modality/model heterogeneity. Proposes ML-ECS, a framework with cross-modal alignment, adaptive tuning, and robust aggregation. Achieves communication efficiency with only 0.65% of total parameter volume transmitted.
+
+### 2026-02-14
+* `training` [TEG: Exascale Cluster Governance via Non-Equilibrium Thermodynamics and Langevin Dynamics](http://arxiv.org/abs/2602.13789v1)
+  > **TL;DR**: Proposes TEG, a decentralized cluster governance system modeling resource contention via thermodynamics and Langevin dynamics. Replaces global schedulers with Brownian agents on a potential field to avoid O(N) scaling. Achieves O(1) decision complexity for exascale AI workloads.
+* `agent` `serving` [ThunderAgent: A Simple, Fast and Program-Aware Agentic Inference System](http://arxiv.org/abs/2602.13692v1)
+  > **TL;DR**: Proposes ThunderAgent, a program-aware system for scheduling multi-turn agentic workflows end-to-end. Introduces LLM Programs abstraction and a unified scheduler for KV cache management and asynchronous tool preparation. Achieves 1.5-3.6x throughput improvement over state-of-the-art systems.
+
+### 2026-02-13
+* `training` `RL` [Preventing Rank Collapse in Federated Low-Rank Adaptation with Client Heterogeneity](http://arxiv.org/abs/2602.13486v1)
+  > **TL;DR**: Addresses performance degradation (rank collapse) in heterogeneous federated LoRA fine-tuning. Proposes raFLoRA, a method that partitions and aggregates client updates by rank, weighted by their contributions. Improves average accuracy by up to 12% versus standard FedLoRA baselines.
+
 ### 2026-02-12
 * `serving` `offloading` `kernel` [PrefillShare: A Shared Prefill Module for KV Reuse in Multi-LLM Disaggregated Serving](http://arxiv.org/abs/2602.12029v1)
   > **TL;DR**: Addresses redundancy in KV cache computation for multi-LLM agent workloads sharing prompt prefixes. Proposes PrefillShare, a method that factorizes and freezes a shared prefill module, amortizing its cost across models. Achieves 4.5x lower p95 latency.
