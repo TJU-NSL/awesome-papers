@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-969-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.02.16-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-972-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.02.17-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,16 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-02-17
+* `edge` `kernel` `offloading` [FlashMem: Supporting Modern DNN Workloads on Mobile with GPU Memory Hierarchy Optimizations](http://arxiv.org/abs/2602.15379v1)
+  > **TL;DR**: Proposes FlashMem, a memory streaming framework for mobile GPUs that minimizes memory use during DNN inference by statically scheduling and dynamically streaming weights via 2.5D texture memory. Achieves up to 8.4x memory reduction and 75x speedup.
+
+### 2026-02-16
+* `agent` `serving` [Atomix: Timely, Transactional Tool Use for Reliable Agentic Workflows](http://arxiv.org/abs/2602.14849v1)
+  > **TL;DR**: Addresses how to provide transactional semantics for LLM agent tool calls to prevent side effects from failed or speculative branches. Proposes Atomix, a runtime that uses epochs and progress predicates to gate commits and provide compensation. Achieves improved task success and isolation under fault injection.
+* `serving` `networking` [Efficient Multi-round LLM Inference over Disaggregated Serving](http://arxiv.org/abs/2602.14516v1)
+  > **TL;DR**: Addresses inefficiency in serving multi-round LLM workflows within disaggregated prefill-decode systems. Proposes AMPD, a framework that adaptively schedules incremental prefill workloads across resources using a custom planning algorithm. Achieves substantially higher SLO attainment compared to baselines.
+
 ### 2026-02-15
 * `multi-modal` `edge` `training` [ML-ECS: A Collaborative Multimodal Learning Framework for Edge-Cloud Synergies](http://arxiv.org/abs/2602.14107v1)
   > **TL;DR**: Investigates collaborative multimodal training for edge-cloud systems challenged by modality/model heterogeneity. Proposes ML-ECS, a framework with cross-modal alignment, adaptive tuning, and robust aggregation. Achieves communication efficiency with only 0.65% of total parameter volume transmitted.
