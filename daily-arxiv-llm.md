@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-974-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.02.18-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-975-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.02.19-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,10 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-02-19
+* `training` `networking` [Trivance: Latency-Optimal AllReduce by Shortcutting Multiport Networks](http://arxiv.org/abs/2602.17254v1)
+  > **TL;DR**: Presents Trivance, a latency-optimal AllReduce algorithm that completes in log3(n) steps while reducing congestion by exploiting bidirectional ring ports. It improves performance by 5-30% for message sizes up to 128MiB compared to state-of-the-art approaches.
+
 ### 2026-02-18
 * `serving` `kernel` [FlowPrefill: Decoupling Preemption from Prefill Scheduling Granularity to Mitigate Head-of-Line Blocking in LLM Serving](http://arxiv.org/abs/2602.16603v1)
   > **TL;DR**: Addresses head-of-line blocking in LLM serving prefills. Proposes FlowPrefill, which decouples preemption granularity from scheduling via operator-level preemption and event-driven scheduling. Improves maximum goodput by up to 5.6x while meeting SLOs.
