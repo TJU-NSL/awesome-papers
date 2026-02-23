@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-975-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.02.21-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-977-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.02.22-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,12 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-02-20
+* `training` `networking` [Joint Training on AMD and NVIDIA GPUs](http://arxiv.org/abs/2602.18007v1)
+  > **TL;DR**: Addresses the problem of training LLMs efficiently on heterogeneous AMD-NVIDIA GPU clusters. Proposes a Device-Direct Communication approach using a CPU-offloading P2P mechanism for direct cross-vendor GPU transfers. Achieves up to 98% of the throughput of a homogeneous NVIDIA system.
+* `RL` `serving` [TempoNet: Slack-Quantized Transformer-Guided Reinforcement Scheduler for Adaptive Deadline-Centric Real-Time Dispatchs](http://arxiv.org/abs/2602.18109v1)
+  > **TL;DR**: Proposes TempoNet, a reinforcement learning scheduler using a Transformer for real-time task dispatch with deadline constraints. Key design includes slack quantization and sparse attention for efficient global reasoning. Outperforms baselines in deadline fulfillment on industrial traces.
+
 ### 2026-02-19
 * `training` `networking` [Trivance: Latency-Optimal AllReduce by Shortcutting Multiport Networks](http://arxiv.org/abs/2602.17254v1)
   > **TL;DR**: Presents Trivance, a latency-optimal AllReduce algorithm that completes in log3(n) steps while reducing congestion by exploiting bidirectional ring ports. It improves performance by 5-30% for message sizes up to 128MiB compared to state-of-the-art approaches.
