@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-977-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.02.22-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-979-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.02.23-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,12 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-02-21
+* `serving` `offloading` [WANSpec: Leveraging Global Compute Capacity for LLM Inference](http://arxiv.org/abs/2602.18931v1)
+  > **TL;DR**: Addresses unbalanced LLM inference load across global data centers. Proposes WANSpec, a system that offloads draft model execution for speculative decoding to under-utilized sites via wide-area networks. Reduces draft model forward passes in high-demand data centers by over 50% without increasing latency.
+* `serving` `agentic` [BiScale: Energy-Efficient Disaggregated LLM Serving via Phase-Aware Placement and DVFS](http://arxiv.org/abs/2602.18755v1)
+  > **TL;DR**: Investigates energy-efficient LLM serving under strict SLOs. Proposes BiScale, a two-tier framework that jointly optimizes placement and DVFS using predictive models and stage-specific control. Reduces energy by up to 39% (prefill) and 48% (decode) compared to DistServe.
+
 ### 2026-02-20
 * `training` `networking` [Joint Training on AMD and NVIDIA GPUs](http://arxiv.org/abs/2602.18007v1)
   > **TL;DR**: Addresses the problem of training LLMs efficiently on heterogeneous AMD-NVIDIA GPU clusters. Proposes a Device-Direct Communication approach using a CPU-offloading P2P mechanism for direct cross-vendor GPU transfers. Achieves up to 98% of the throughput of a homogeneous NVIDIA system.
