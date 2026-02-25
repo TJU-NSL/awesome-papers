@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-979-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.02.23-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-980-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.02.24-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,10 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-02-24
+* `training` `networking` [Lagom: Unleashing the Power of Communication and Computation Overlapping for Distributed LLM Training](http://arxiv.org/abs/2602.20656v1)
+  > **TL;DR**: How to optimize communication-computation overlap when computation becomes the bottleneck in distributed LLM training? Lagom co-tunes communication parameters using a unified cost model and priority-based search, reducing optimization complexity from exponential to linear. Achieves up to 1.33x speedup over NCCL.
+
 ### 2026-02-21
 * `serving` `offloading` [WANSpec: Leveraging Global Compute Capacity for LLM Inference](http://arxiv.org/abs/2602.18931v1)
   > **TL;DR**: Addresses unbalanced LLM inference load across global data centers. Proposes WANSpec, a system that offloads draft model execution for speculative decoding to under-utilized sites via wide-area networks. Reduces draft model forward passes in high-demand data centers by over 50% without increasing latency.
