@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-980-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.02.24-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-984-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.02.25-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,16 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-02-25
+* `kernel` `hardware` [A task-based data-flow methodology for programming heterogeneous systems with multiple accelerator APIs](http://arxiv.org/abs/2602.21897v1)
+  > **TL;DR**: Proposes a task-based data-flow methodology for programming heterogeneous systems with multiple accelerator APIs. Introduces Task-Aware APIs and unifies thread management with nOS-V to transparently integrate kernels from CUDA, SYCL, etc. Achieves efficient execution without oversubscription on multi-accelerator nodes.
+* `training` `multi-modal` [DHP: Efficient Scaling of MLLM Training with Dynamic Hybrid Parallelism](http://arxiv.org/abs/2602.21788v1)
+  > **TL;DR**: Addresses load imbalance in MLLM training on heterogeneous data caused by static parallelism. Proposes Dynamic Hybrid Parallelism (DHP), which adaptively reconfigures communication groups per batch with a polynomial-time algorithm. Achieves up to 1.36× training throughput speedup over Megatron-LM/DeepSpeed.
+* `serving` `MoE` `kernel` [Multi-Layer Scheduling for MoE-Based LLM Reasoning](http://arxiv.org/abs/2602.21626v1)
+  > **TL;DR**: Proposes a multi-layer scheduler for MoE LLM serving targeting request, engine, and expert levels to improve resource utilization and routing efficiency. Designs load-aware dispatching and expert placement strategies. Achieves up to 17.8% and 13.3% reductions in TTFT and TPOT latency vs. vLLM.
+* `serving` `storage` `agent` [DualPath: Breaking the Storage Bandwidth Bottleneck in Agentic LLM Inference](http://arxiv.org/abs/2602.21548v1)
+  > **TL;DR**: Addresses the KV-Cache storage I/O bottleneck in multi-turn agentic LLM inference disaggregated architectures. Introduces DualPath, a dual-path KV-Cache loading system using RDMA transfer from storage-to-decode engines. Improves online serving throughput by an average of 1.96x without SLO violations.
+
 ### 2026-02-24
 * `training` `networking` [Lagom: Unleashing the Power of Communication and Computation Overlapping for Distributed LLM Training](http://arxiv.org/abs/2602.20656v1)
   > **TL;DR**: How to optimize communication-computation overlap when computation becomes the bottleneck in distributed LLM training? Lagom co-tunes communication parameters using a unified cost model and priority-based search, reducing optimization complexity from exponential to linear. Achieves up to 1.33x speedup over NCCL.
