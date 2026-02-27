@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-984-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.02.25-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-990-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.02.26-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,20 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-02-26
+* `serving` `hardware` `offloading` [LLMServingSim 2.0: A Unified Simulator for Heterogeneous and Disaggregated LLM Serving Infrastructure](http://arxiv.org/abs/2602.23036v1)
+  > **TL;DR**: Designs a unified simulator, LLMServingSim 2.0, for analyzing runtime interactions in heterogeneous and disaggregated LLM serving infrastructures. Embeds serving decisions and hardware behavior into a single runtime loop for co-design evaluation. Achieves an average modeling error of 0.97% against real deployments.
+* `serving` `edge` `offloading` [Accelerating Local LLMs on Resource-Constrained Edge Devices via Distributed Prompt Caching](http://arxiv.org/abs/2602.22812v1)
+  > **TL;DR**: Proposes distributed prompt caching to accelerate local LLM inference on edge devices by cooperatively sharing intermediate states. Uses Bloom-filter-based catalogs to suppress communication overhead for partial prompt matching. Reduces TTFT by 93.12% and TTLT by 50.07% on Raspberry Pi.
+* `training` `networking` [Distributed LLM Pretraining During Renewable Curtailment Windows: A Feasibility Study](http://arxiv.org/abs/2602.22760v1)
+  > **TL;DR**: Studies the feasibility of distributed LLM pretraining during renewable energy curtailment windows to reduce emissions. Designs a system that elastically switches between local training and federated synchronization across geo-distributed clusters. Preliminary training reduces operational emissions to 5-12% of single-site baselines.
+* `training` `networking` [Dynamic Hierarchical Birkhoff-von Neumann Decomposition for All-to-All GPU Communication](http://arxiv.org/abs/2602.22756v1)
+  > **TL;DR**: Addresses the bottleneck of all-to-all GPU communication in training clusters. Proposes a dynamic hierarchical Birkhoff-von Neumann decomposition for two-tier GPU fabrics to mitigate traffic skew. Simulations show substantial reductions in mean frame length under hotspot traffic.
+* `RL` `training` [RLHFless: Serverless Computing for Efficient RLHF](http://arxiv.org/abs/2602.22718v1)
+  > **TL;DR**: Solves inefficiency from dynamic resource demands and idle time in synchronous RLHF training. Designs RLHFless, a serverless framework with prefix caching, cost-aware actor scaling, and optimized workload assignment. Achieves up to 1.35x speedup and 44.8% cost reduction.
+* `serving` `networking` [FLYING SERVING: On-the-Fly Parallelism Switching for Large Language Model Serving](http://arxiv.org/abs/2602.22593v1)
+  > **TL;DR**: Presents Flying Serving, a system enabling online switching between data and tensor parallelism for LLM inference. It introduces a zero-copy model weights manager, KV cache adaptor, and deadlock-free scheduler for seamless transitions. Achieves up to 4.79x performance improvement under high load.
+
 ### 2026-02-25
 * `kernel` `hardware` [A task-based data-flow methodology for programming heterogeneous systems with multiple accelerator APIs](http://arxiv.org/abs/2602.21897v1)
   > **TL;DR**: Proposes a task-based data-flow methodology for programming heterogeneous systems with multiple accelerator APIs. Introduces Task-Aware APIs and unifies thread management with nOS-V to transparently integrate kernels from CUDA, SYCL, etc. Achieves efficient execution without oversubscription on multi-accelerator nodes.
