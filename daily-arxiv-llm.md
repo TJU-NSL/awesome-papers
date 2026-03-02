@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-990-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.02.28-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-991-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.03.01-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,10 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-02-27
+* `serving` `training` `quantization` [Data Driven Optimization of GPU efficiency for Distributed LLM Adapter Serving](http://arxiv.org/abs/2602.24044v1)
+  > **TL;DR**: Optimizes GPU efficiency for distributed LLM adapter serving by maximizing throughput. Proposes a data-driven pipeline with a Digital Twin and ML model for performance prediction, and a greedy placement algorithm. Reduces the number of required GPUs by up to 40% for target workloads.
+
 ### 2026-02-26
 * `serving` `hardware` `offloading` [LLMServingSim 2.0: A Unified Simulator for Heterogeneous and Disaggregated LLM Serving Infrastructure](http://arxiv.org/abs/2602.23036v1)
   > **TL;DR**: Designs a unified simulator, LLMServingSim 2.0, for analyzing runtime interactions in heterogeneous and disaggregated LLM serving infrastructures. Embeds serving decisions and hardware behavior into a single runtime loop for co-design evaluation. Achieves an average modeling error of 0.97% against real deployments.
