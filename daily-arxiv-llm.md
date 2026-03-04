@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-991-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.03.02-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-997-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.03.03-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,22 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-03-02
+* `training` `kernel` `networking` [CUCo: An Agentic Framework for Compute and Communication Co-design](http://arxiv.org/abs/2603.02376v1)
+  > **TL;DR**: Investigates how to automate co-designed compute/communication CUDA kernels for LLM training/inference. Proposes CUCo, an agent-driven workflow for generating kernels that jointly orchestrate compute and communication. Achieves up to 1.57x lower end-to-end latency.
+* `multi-modal` `kernel` `storage` [Trident: Adaptive Scheduling for Heterogeneous Multimodal Data Pipelines](http://arxiv.org/abs/2603.02075v1)
+  > **TL;DR**: Addresses inefficiency in multimodal data pipelines due to non-stationary workloads. Proposes Trident, a scheduler with layered throughput estimation, OOM-safe configuration search, and MILP-based operator placement. Achieves up to 2.01x higher throughput over static baselines.
+* `serving` [Beyond Microservices: Testing Web-Scale RCA Methods on GPU-Driven LLM Workloads](http://arxiv.org/abs/2603.02057v1)
+  > **TL;DR**: Evaluates root cause analysis methods for LLM inference serving deployments under failure injections. Compares 24 metric, trace, and multi-source approaches on a best-practice deployment benchmark. Finds multi-source methods achieve highest accuracy while trace-based methods largely fail.
+* `agentic` `RAG` `edge` [HeRo: Adaptive Orchestration of Agentic RAG on Heterogeneous Mobile SoC](http://arxiv.org/abs/2603.01661v1)
+  > **TL;DR**: Addresses high latency of multi-stage agentic RAG on resource-constrained mobile SoCs. Designs HeRo, a scheduler using performance models for shape-aware partitioning, criticality-based mapping, and bandwidth control. Achieves up to 10.94x lower end-to-end latency versus baseline strategies.
+* `serving` `quantization` [Quasar: Quantized Self-Speculative Acceleration for Rapid Inference via Memory-Efficient Verification](http://arxiv.org/abs/2603.01399v1)
+  > **TL;DR**: Addresses the memory bottleneck in speculative decoding verification. Proposes Quasar, a training-free framework that uses low-bit quantization for the verification forward pass to reduce memory bandwidth. Achieves a 1.28x end-to-end throughput improvement.
+
+### 2026-03-01
+* `MoE` `serving` `offloading` [TriMoE: Augmenting GPU with AMX-Enabled CPU and DIMM-NDP for High-Throughput MoE Inference via Offloading](http://arxiv.org/abs/2603.01058v1)
+  > **TL;DR**: Proposes TriMoE, a heterogeneous GPU-CPU-NDP architecture for efficient MoE inference by optimally offloading experts based on their compute/memory characteristics. Uses bottleneck-aware scheduling and dynamic rebalancing. Achieves up to 2.83x speedup over state-of-the-art solutions.
+
 ### 2026-02-27
 * `serving` `training` `quantization` [Data Driven Optimization of GPU efficiency for Distributed LLM Adapter Serving](http://arxiv.org/abs/2602.24044v1)
   > **TL;DR**: Optimizes GPU efficiency for distributed LLM adapter serving by maximizing throughput. Proposes a data-driven pipeline with a Digital Twin and ML model for performance prediction, and a greedy placement algorithm. Reduces the number of required GPUs by up to 40% for target workloads.
