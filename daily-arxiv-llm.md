@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-997-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.03.03-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1004-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.03.04-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,24 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-03-04
+* `networking` `training` [The Ghost in the Datacenter: Link Flapping, Topology Knowledge Failures, and the FITO Category Mistake](http://arxiv.org/abs/2603.03736v1)
+  > **TL;DR**: Analyzes 'ghost' network failures that corrupt topology knowledge during large-scale AI training. Proposes Open Atomic Ethernet with transactionally consistent failure detection and recovery mechanisms. Addresses issues causing training interruptions, such as 419 in 54 days for LLaMA 3.
+* `training` `hardware` `kernel` [HyperParallel: A Supernode-Affinity AI Framework](http://arxiv.org/abs/2603.03731v1)
+  > **TL;DR**: Proposes HyperParallel, a framework exploiting supernode architectures with unified memory. Integrates hierarchical memory management (HyperOffload) and MPMD parallelism (HyperMPMD) for hardware-aware orchestration. Achieves significant improvements in training and inference efficiency.
+
+### 2026-03-03
+* `training` `networking` [SENTINEL: Stagewise Integrity Verification for Pipeline Parallel Decentralized Training](http://arxiv.org/abs/2603.03592v1)
+  > **TL;DR**: Addresses security risks in pipeline-parallel decentralized LLM training across untrusted nodes. Proposes SENTINEL, a lightweight momentum-based monitoring mechanism to detect corrupted inter-stage communication without computation duplication. Successfully trains 4B-parameter LLMs across 176 workers while maintaining convergence.
+* `training` `multi-tenant` [MuxTune: Efficient Multi-Task LLM Fine-Tuning in Multi-Tenant Datacenters via Spatial-Temporal Backbone Multiplexing](http://arxiv.org/abs/2603.02885v1)
+  > **TL;DR**: Addresses resource inefficiency from deploying separate PEFT tasks. Proposes MuxTune, a system that multiplexes an LLM backbone spatially and temporally across tasks with hierarchical co-scheduling. Achieves up to 2.33x higher throughput compared to baselines.
+* `serving` `kernel` [Accelerating OpenPangu Inference on NPU via Speculative Decoding](http://arxiv.org/abs/2603.03383v1)
+  > **TL;DR**: Accelerates LLM inference on NPUs by adapting speculative decoding for OpenPangu-7B. Proposes an end-to-end optimization scheme targeting hardware-native implementation to overcome memory bottlenecks.
+* `training` [Why Atomicity Matters to AI/ML Infrastructure: Snapshots, Firmware Updates, and the Cost of the Forward-In-Time-Only Category Mistake](http://arxiv.org/abs/2603.02603v1)
+  > **TL;DR**: Examines the flawed assumption of atomic checkpoints in large-scale AI training systems. Proves atomic snapshots are unattainable under asynchronous failures and models checkpoint inconsistency on an epoch lattice. Shows probability of atomicity decays exponentially with persistence domains.
+* `serving` `kernel` [GPUTOK: GPU Accelerated Byte Level BPE Tokenization](http://arxiv.org/abs/2603.02597v1)
+  > **TL;DR**: Addresses CPU-bound BPE tokenization becoming a bottleneck in LLM inference pipelines. Proposes GPUTOK, a GPU-accelerated tokenizer using optimized CUDA kernels with cuCollections and CUB reductions. Achieves up to 7.6x speedup over CPU tokenizers for long sequences.
+
 ### 2026-03-02
 * `training` `kernel` `networking` [CUCo: An Agentic Framework for Compute and Communication Co-design](http://arxiv.org/abs/2603.02376v1)
   > **TL;DR**: Investigates how to automate co-designed compute/communication CUDA kernels for LLM training/inference. Proposes CUCo, an agent-driven workflow for generating kernels that jointly orchestrate compute and communication. Achieves up to 1.57x lower end-to-end latency.
