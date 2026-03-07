@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1004-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.03.05-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1007-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.03.06-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,14 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-03-05
+* `edge` `video` `multi-modal` [Scaling Real-Time Traffic Analytics on Edge-Cloud Fabrics for City-Scale Camera Networks](http://arxiv.org/abs/2603.05217v1)
+  > **TL;DR**: Investigates how to scale real-time traffic analytics across edge-cloud fabrics for city-scale camera networks. Proposes AIITS with a DNN pipeline and ST-GNN forecasting, using capacity-aware scheduling and edge accelerators. Achieves stable ingestion up to 2000 FPS on Jetson Orins for 1000+ streams.
+* `serving` `RL` [PromptTuner: SLO-Aware Elastic System for LLM Prompt Tuning](http://arxiv.org/abs/2603.05087v1)
+  > **TL;DR**: Addresses how to meet SLOs and reduce costs for Prompt-Tuning-as-a-Service workloads. Proposes PromptTuner, an elastic system with a Prompt Bank for faster convergence and a Workload Scheduler for dynamic resource allocation. Achieves 4.0x-7.9x lower SLO violations and 1.6x-4.5x cost reduction compared to baselines.
+* `serving` [SLO-Aware Compute Resource Allocation for Prefill-Decode Disaggregated LLM Inference](http://arxiv.org/abs/2603.04716v1)
+  > **TL;DR**: Proposes a method for optimal prefill-decode resource allocation in LLM inference. Combines M/M/1 queuing theory for prefill modeling with empirical benchmarking for decoding to meet SLOs. Achieves accurate prediction of optimal resource counts given throughput and request characteristics.
+
 ### 2026-03-04
 * `networking` `training` [The Ghost in the Datacenter: Link Flapping, Topology Knowledge Failures, and the FITO Category Mistake](http://arxiv.org/abs/2603.03736v1)
   > **TL;DR**: Analyzes 'ghost' network failures that corrupt topology knowledge during large-scale AI training. Proposes Open Atomic Ethernet with transactionally consistent failure detection and recovery mechanisms. Addresses issues causing training interruptions, such as 419 in 54 days for LLaMA 3.
