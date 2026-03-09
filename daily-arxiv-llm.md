@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1007-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.03.07-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1011-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.03.08-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,16 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-03-06
+* `serving` `MoE` `offloading` [MoEless: Efficient MoE LLM Serving via Serverless Computing](http://arxiv.org/abs/2603.06350v1)
+  > **TL;DR**: Investigates MoE LLM serving inefficiency due to expert load imbalance. Proposes MoEless, a serverless framework that predicts expert load and dynamically scales/places serverless functions for better GPU locality. Reduces inference latency by 43% and cost by 84% over SOTA.
+* `training` `multi-modal` [Domain-Adaptive Model Merging across Disconnected Modes](http://arxiv.org/abs/2603.05957v1)
+  > **TL;DR**: Addresses data-free merging of highly divergent domain-specific models. Proposes DMM, a framework that first merges similar models and then refines the result via distillation using pseudo-data synthesized from normalization statistics. Improves performance by 3-5% over baselines on multimodal benchmarks.
+* `agent` `edge` `RL` [Knowledge-driven Reasoning for Mobile Agentic AI: Concepts, Approaches, and Directions](http://arxiv.org/abs/2603.05831v1)
+  > **TL;DR**: Proposes a knowledge-driven reasoning framework for mobile agents under SWAP-C constraints to reduce latency and energy. It extracts reusable structures from past executions for on-device reasoning, enabling a 3B model to achieve perfect mission reliability with lower cost.
+* `multi-modal` `serving` [StreamWise: Serving Multi-Modal Generation in Real-Time at Scale](http://arxiv.org/abs/2603.05800v1)
+  > **TL;DR**: Presents StreamWise, a system for real-time multi-modal generation serving. It dynamically manages quality, parallelism, and scheduling across heterogeneous models/hardware under strict latency SLOs. Achieves a 10-minute podcast video generation with sub-second startup delay under $45 cost.
+
 ### 2026-03-05
 * `edge` `video` `multi-modal` [Scaling Real-Time Traffic Analytics on Edge-Cloud Fabrics for City-Scale Camera Networks](http://arxiv.org/abs/2603.05217v1)
   > **TL;DR**: Investigates how to scale real-time traffic analytics across edge-cloud fabrics for city-scale camera networks. Proposes AIITS with a DNN pipeline and ST-GNN forecasting, using capacity-aware scheduling and edge accelerators. Achieves stable ingestion up to 2000 FPS on Jetson Orins for 1000+ streams.
