@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1011-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.03.08-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1016-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.03.09-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,20 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-03-09
+* `training` `networking` [Covenant-72B: Pre-Training a 72B LLM with Trustless Peers Over-the-Internet](http://arxiv.org/abs/2603.08163v1)
+  > **TL;DR**: Explores large-scale LLM pre-training with open, trustless participation over the internet. Uses the SparseLoCo optimizer to support dynamic peer joins/leaves and a blockchain protocol for coordination. Pre-trains a competitive 72B parameter model on 1.1T tokens.
+* `edge` `multi-modal` `serving` [RAPID: Redundancy-Aware and Compatibility-Optimal Edge-Cloud Partitioned Inference for Diverse VLA models](http://arxiv.org/abs/2603.07949v1)
+  > **TL;DR**: Addresses high inference costs for Vision-Language-Action models in embodied intelligence. Proposes RAPID, a redundancy-aware edge-cloud partitioned inference framework considering visual noise and motion continuity. Achieves up to 1.73x speedup with 5%-7% overhead.
+* `serving` [SageSched: Efficient LLM Scheduling Confronting Demand Uncertainty and Hybridity](http://arxiv.org/abs/2603.07917v1)
+  > **TL;DR**: Addresses LLM inference scheduling under demand uncertainty and compute-memory hybridity. Proposes SageSched, which predicts output-length distribution and models service cost to make uncertainty-aware decisions. Achieves over 28.7% efficiency improvement in testbed experiments.
+
+### 2026-03-08
+* `serving` `kernel` [ArcLight: A Lightweight LLM Inference Architecture for Many-Core CPUs](http://arxiv.org/abs/2603.07770v1)
+  > **TL;DR**: Proposes ArcLight, a lightweight LLM inference architecture for many-core CPUs. It optimizes memory management and thread scheduling with fine-grained tensor parallelism to mitigate cross-NUMA access overhead. Achieves up to 46% higher throughput than mainstream frameworks.
+* `MoE` `training` `kernel` [Scalable Training of Mixture-of-Experts Models with Megatron Core](http://arxiv.org/abs/2603.07685v1)
+  > **TL;DR**: Addresses systems challenges in scaling MoE model training. Proposes Megatron Core with optimizations for memory (recomputation), communication (dispatchers), and computation (Grouped GEMM). Achieves 1,233 TFLOPS/GPU training DeepSeek-V3-685B on NVIDIA GB300.
+
 ### 2026-03-06
 * `serving` `MoE` `offloading` [MoEless: Efficient MoE LLM Serving via Serverless Computing](http://arxiv.org/abs/2603.06350v1)
   > **TL;DR**: Investigates MoE LLM serving inefficiency due to expert load imbalance. Proposes MoEless, a serverless framework that predicts expert load and dynamically scales/places serverless functions for better GPU locality. Reduces inference latency by 43% and cost by 84% over SOTA.
