@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1016-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.03.09-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1020-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.03.10-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,16 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-03-10
+* `edge` `serving` `sparse` [Multi-DNN Inference of Sparse Models on Edge SoCs](http://arxiv.org/abs/2603.09642v1)
+  > **TL;DR**: Investigates how to improve multi-DNN inference efficiency on heterogeneous edge SoCs. Proposes SparseLoom, a system using 'model stitching' to create sparse model variants by recombining subgraphs without retraining. Reduces Service Level Objective violation rates by up to 74%.
+* `kernel` `inference` `offline` [Compiler-First State Space Duality and Portable $O(1)$ Autoregressive Caching for Inference](http://arxiv.org/abs/2603.09555v1)
+  > **TL;DR**: Investigates how to run Mamba-2 state-space models efficiently without hardware-specific custom kernels. Proposes an XLA-based compiler approach that uses standard primitives for autoregressive inference. Achieves up to 64% bandwidth utilization on TPU v6e decode.
+* `edge` `serving` `kernel` [PIM-SHERPA: Software Method for On-device LLM Inference by Resolving PIM Memory Attribute and Layout Inconsistencies](http://arxiv.org/abs/2603.09216v1)
+  > **TL;DR**: Addresses memory attribute and layout inconsistencies between prefill and decode phases for LLM inference on PIM-enabled edge devices. Proposes PIM-SHERPA, a software method using DRAM double buffering and online weight rearrangement. Achieves 47.8-49.7% memory capacity savings while maintaining performance.
+* `edge` `serving` `hardware` [FlexServe: A Fast and Secure LLM Serving System for Mobile Devices with Flexible Resource Isolation](http://arxiv.org/abs/2603.09046v1)
+  > **TL;DR**: Investigates how to reduce security overheads for LLM inference on mobile devices. Proposes FlexServe, which uses flexible resource isolation (memory/NPU) within ARM TrustZone for efficient secure inference. Achieves a 10.05x speedup in Time to First Token versus baseline.
+
 ### 2026-03-09
 * `training` `networking` [Covenant-72B: Pre-Training a 72B LLM with Trustless Peers Over-the-Internet](http://arxiv.org/abs/2603.08163v1)
   > **TL;DR**: Explores large-scale LLM pre-training with open, trustless participation over the internet. Uses the SparseLoCo optimizer to support dynamic peer joins/leaves and a blockchain protocol for coordination. Pre-trains a competitive 72B parameter model on 1.1T tokens.
