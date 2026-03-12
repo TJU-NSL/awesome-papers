@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1020-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.03.10-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1024-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.03.11-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,16 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-03-11
+* `serving` [CacheSolidarity: Preventing Prefix Caching Side Channels in Multi-tenant LLM Serving Systems](http://arxiv.org/abs/2603.10726v1)
+  > **TL;DR**: Addresses timing side-channel attacks enabled by prefix caching in multi-tenant LLM serving. Proposes CacheSolidarity, which monitors cache reuse and selectively isolates prefixes only when suspicious sharing is detected. Achieves up to 70% higher cache reuse compared to user-isolation defenses.
+* `edge` `multi-modal` `RL` [COHORT: Hybrid RL for Collaborative Large DNN Inference on Multi-Robot Systems Under Real-Time Constraints](http://arxiv.org/abs/2603.10436v1)
+  > **TL;DR**: Presents COHORT, a framework using hybrid offline/online RL to schedule DNN module execution across robots for collaborative inference under constraints. Reduces battery consumption by 15.4% while meeting deadlines 2.55x more often.
+* `serving` `kernel` `sparse` [S-HPLB: Efficient LLM Attention Serving via Sparsity-Aware Head Parallelism Load Balance](http://arxiv.org/abs/2603.10353v1)
+  > **TL;DR**: Addresses performance bottleneck of attention computation in LLM serving with heterogeneous head sparsity. Proposes S-HPLB, a sparsity-aware head-parallel load balancing deployment strategy. Achieves 2.88x improvement in average attention computation latency.
+* `serving` `agent` [AgentServe: Algorithm-System Co-Design for Efficient Agentic AI Serving on a Consumer-Grade GPU](http://arxiv.org/abs/2603.10342v1)
+  > **TL;DR**: Proposes AgentServe, a system for efficient serving of multiple AI agents on a consumer-grade GPU. It isolates prefill from decode phases and uses dynamic budgeting with CUDA Green Context slots for resource allocation. Achieves up to 2.8x TTFT and 2.7x TPOT improvement over baselines.
+
 ### 2026-03-10
 * `edge` `serving` `sparse` [Multi-DNN Inference of Sparse Models on Edge SoCs](http://arxiv.org/abs/2603.09642v1)
   > **TL;DR**: Investigates how to improve multi-DNN inference efficiency on heterogeneous edge SoCs. Proposes SparseLoom, a system using 'model stitching' to create sparse model variants by recombining subgraphs without retraining. Reduces Service Level Objective violation rates by up to 74%.
