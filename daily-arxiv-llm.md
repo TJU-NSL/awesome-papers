@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1024-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.03.11-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1027-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.03.12-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,14 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-03-12
+* `serving` `multi-modal` [Cornserve: A Distributed Serving System for Any-to-Any Multimodal Models](http://arxiv.org/abs/2603.12118v1)
+  > **TL;DR**: Presents Cornserve, a distributed serving system for Any-to-Any multimodal models. It uses a flexible task abstraction for computation graphs and a record-and-replay execution model for efficient data dependency tracking. Achieves up to 3.81x higher throughput and 5.79x lower tail latency.
+* `training` `networking` `kernel` [NCCLbpf: Verified, Composable Policy Execution for GPU Collective Communication](http://arxiv.org/abs/2603.11438v1)
+  > **TL;DR**: Addresses the safety risks of unverified NCCL plugins in distributed training. Proposes NCCLbpf, an eBPF-based extension framework enabling verifiable, composable policies. Adds only 80-130 ns overhead per decision and improves AllReduce throughput by up to 27%.
+* `training` `networking` [NCCLbpf: Verified, Composable Policy Execution for GPU Collective Communication](http://arxiv.org/abs/2603.11438v1)
+  > **TL;DR**: Presents NCCLbpf, a verified eBPF framework for safe and composable GPU collective communication plugins in distributed training. Provides load-time verification and hot-reloads to prevent crashes and state corruption. Adds only 80-130 ns overhead per decision and improves AllReduce throughput by up to 27%.
+
 ### 2026-03-11
 * `serving` [CacheSolidarity: Preventing Prefix Caching Side Channels in Multi-tenant LLM Serving Systems](http://arxiv.org/abs/2603.10726v1)
   > **TL;DR**: Addresses timing side-channel attacks enabled by prefix caching in multi-tenant LLM serving. Proposes CacheSolidarity, which monitors cache reuse and selectively isolates prefixes only when suspicious sharing is detected. Achieves up to 70% higher cache reuse compared to user-isolation defenses.
