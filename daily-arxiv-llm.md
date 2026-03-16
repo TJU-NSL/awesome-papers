@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1027-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.03.14-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1031-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.03.15-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,16 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-03-13
+* `agent` `RL` `training` [ARL-Tangram: Unleash the Resource Efficiency in Agentic Reinforcement Learning](http://arxiv.org/abs/2603.13019v1)
+  > **TL;DR**: Addresses resource inefficiency in Agentic RL workloads requiring external compute. Proposes ARL-Tangram, a system with action-level orchestration and elastic scheduling for fine-grained resource sharing. Improves average action completion time by 4.3x and reduces external resource usage by 71.2%.
+* `serving` `offloading` [Serving Hybrid LLM Loads with SLO Guarantees Using CPU-GPU Attention Piggybacking](http://arxiv.org/abs/2603.12831v1)
+  > **TL;DR**: Proposes OmniServe, a system using CPU-GPU Attention Piggybacking to dynamically offload Best-Effort requests' attention to CPUs, mitigating interference with Latency-Sensitive services. Achieves 1.48x higher SLO attainment and 9.85x higher BE throughput.
+* `multi-modal` `serving` [Cost-Efficient Multimodal LLM Inference via Cross-Tier GPU Heterogeneity](http://arxiv.org/abs/2603.12707v1)
+  > **TL;DR**: Proposes HeteroServe, a system for cost-efficient multimodal LLM inference by exploiting the modality boundary for partitioning. Enables deployment on heterogeneous GPU tiers (PCIe) instead of high-bandwidth links. Achieves 37% higher Tokens/$ and 54% higher throughput versus vLLM.
+* `serving` `agent` [AgentRM: An OS-Inspired Resource Manager for LLM Agent Systems](http://arxiv.org/abs/2603.13110v1)
+  > **TL;DR**: Proposes AgentRM, an OS-inspired resource manager for LLM agents to address scheduling failures and context degradation. Uses a Multi-Level Feedback Queue scheduler and a three-tier Context Lifecycle Manager. Achieves an 86% reduction in P95 latency and eliminates zombie agents.
+
 ### 2026-03-12
 * `serving` `multi-modal` [Cornserve: A Distributed Serving System for Any-to-Any Multimodal Models](http://arxiv.org/abs/2603.12118v1)
   > **TL;DR**: Presents Cornserve, a distributed serving system for Any-to-Any multimodal models. It uses a flexible task abstraction for computation graphs and a record-and-replay execution model for efficient data dependency tracking. Achieves up to 3.81x higher throughput and 5.79x lower tail latency.
