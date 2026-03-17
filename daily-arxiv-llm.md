@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1031-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.03.15-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1033-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.03.16-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,12 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-03-14
+* `hardware` `networking` [The Forward-In-Time-Only Assumption in SmartNIC Resource Management: A Critique of Wave and the Case for Bilateral Interaction](http://arxiv.org/abs/2603.13750v1)
+  > **TL;DR**: Critiques the Forward-In-Time-Only communication model in SmartNIC resource management (exemplified by Wave) for causing decision staleness and high latency penalties. Proposes bilateral swap primitives on the same IPU hardware to dissolve latency/atomicity issues, eliminating the 350% degradation seen in Wave.
+* `edge` `serving` `multi-modal` [Audo-Sight: AI-driven Ambient Perception Across Edge-Cloud for Blind and Low Vision Users](http://arxiv.org/abs/2603.13668v1)
+  > **TL;DR**: Proposes Audo-Sight, an edge-cloud system for low-latency AI-powered ambient perception. Uses intent-based dynamic routing and a fusion engine to combine fast edge and accurate cloud responses. Achieves 80% faster output for urgent tasks versus cloud-only.
+
 ### 2026-03-13
 * `agent` `RL` `training` [ARL-Tangram: Unleash the Resource Efficiency in Agentic Reinforcement Learning](http://arxiv.org/abs/2603.13019v1)
   > **TL;DR**: Addresses resource inefficiency in Agentic RL workloads requiring external compute. Proposes ARL-Tangram, a system with action-level orchestration and elastic scheduling for fine-grained resource sharing. Improves average action completion time by 4.3x and reduces external resource usage by 71.2%.
