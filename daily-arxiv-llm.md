@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1033-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.03.16-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1044-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.03.17-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,34 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-03-17
+* `serving` `offloading` [FleetOpt: Analytical Fleet Provisioning for LLM Inference with Compress-and-Route as Implementation Mechanism](http://arxiv.org/abs/2603.16514v1)
+  > **TL;DR**: Presents FleetOpt, an analytical framework for cost-optimal GPU fleet provisioning for LLM inference, using a two-pool architecture and a Compress-and-Route mechanism to mitigate cost cliffs. Achieves 6-82% GPU cost reduction versus a homogeneous fleet on production traces.
+* `training` `offloading` [An Efficient Heterogeneous Co-Design for Fine-Tuning on a Single GPU](http://arxiv.org/abs/2603.16428v1)
+  > **TL;DR**: Addresses the memory bottleneck of fine-tuning LLMs on a single GPU. Proposes SlideFormer, a system with a sliding window engine that overlaps GPU compute with CPU updates and heterogeneous memory management. Enables fine-tuning of 123B models on a single RTX 4090 with 1.4-6.27x higher throughput.
+* `serving` [inference-fleet-sim: A Queueing-Theory-Grounded Fleet Capacity Planner for LLM Inference](http://arxiv.org/abs/2603.16054v1)
+  > **TL;DR**: Addresses how to determine the minimum-cost GPU fleet configuration for LLM inference. Proposes inference-fleet-sim, a tool combining M/G/c queueing theory and discrete-event simulation with a physics-informed GPU model. Empirically finds configurations meeting P99 TTFT SLOs that simple analysis gets wrong.
+
+### 2026-03-16
+* `hardware` `serving` `kernel` [DUET: Disaggregated Hybrid Mamba-Transformer LLMs with Prefill and Decode-Specific Packages](http://arxiv.org/abs/2603.15530v1)
+  > **TL;DR**: Proposes DUET, a disaggregated accelerator with specialized packages for prefill and decode phases of hybrid Mamba-Transformer LLMs. Achieves 4x faster time to first token and 1.5x lower time between tokens vs. NVIDIA B200 GPU.
+* `serving` `kernel` [LMetric: Simple is Better - Multiplication May Be All You Need for LLM Request Scheduling](http://arxiv.org/abs/2603.15202v1)
+  > **TL;DR**: Proposes LMetric, a simple multiplicative score combining KV cache affinity and load balancing indicators for LLM request scheduling. Eliminates hyperparameter tuning while reducing TTFT by up to 92% and TPOT by 21% compared to vLLM-v1.
+* `agent` `networking` [Token Coherence: Adapting MESI Cache Protocols to Minimize Synchronization Overhead in Multi-Agent LLM Systems](http://arxiv.org/abs/2603.15183v1)
+  > **TL;DR**: Addresses synchronization overhead scaling O(n×S×|D|) in multi-agent LLM systems. Proposes Token Coherence, adapting MESI cache protocols for artifact synchronization with lazy invalidation. Achieves 95% token savings at V=0.05, reducing cost to O((n+W)×|D|).
+* `training` `serving` [Guaranteeing Semantic and Performance Determinism in Flexible GPU Sharing](http://arxiv.org/abs/2603.15042v2)
+  > **TL;DR**: Proposes DetShare, a GPU sharing system using GPU coroutines for deterministic, transparent resource allocation. It decouples logical contexts from physical resources for fine-grained sharing. Reduces P99 tail latency by 15.1% and TPOT SLO violations by 21.2%.
+* `training` `inference` `kernel` [Fold-CP: A Context Parallelism Framework for Biomolecular Modeling](http://arxiv.org/abs/2603.14806v1)
+  > **TL;DR**: Presents Fold-CP, a context parallelism framework for biomolecular models like AlphaFold3 to overcome GPU memory limits. Uses multidimensional primitives to parallelize dense triangular updates and local attention. Enables prediction of assemblies exceeding 30,000 residues with O(N²/P) memory scaling on 64 GPUs.
+* `serving` [LMetric: Simple is Better - Multiplication May Be All You Need for LLM Request Scheduling](http://arxiv.org/abs/2603.15202v1)
+  > **TL;DR**: Investigates efficient LLM inference scheduling by proposing LMetric, which uses multiplication of KV cache reuse and load balancing indicators as a scheduling score. Requires no hyperparameter tuning. Reduces TTFT by up to 92% and TPOT by 21% compared to vLLM-v1.
+* `training` `serving` [Guaranteeing Semantic and Performance Determinism in Flexible GPU Sharing](http://arxiv.org/abs/2603.15042v2)
+  > **TL;DR**: Addresses GPU sharing trade-offs between coarse- and fine-grained multiplexing for ML workloads. Introduces DetShare, using GPU coroutines for transparent, deterministic context migration and scheduling. Reduces P99 tail latency by 15.1% and improves training throughput by 79.2%.
+
+### 2026-03-15
+* `agent` `serving` [AeroGen: Agentic Drone Autonomy through Single-Shot Structured Prompting & Drone SDK](http://arxiv.org/abs/2603.14236v1)
+  > **TL;DR**: Presents AeroGen, a framework for generating correct drone autonomy programs using LLMs. Combines structured guardrail prompting with a dedicated SDK to enforce constraints via system context. Successfully generates ~40 lines of deployable code in ~20s per mission with improved robustness.
+
 ### 2026-03-14
 * `hardware` `networking` [The Forward-In-Time-Only Assumption in SmartNIC Resource Management: A Critique of Wave and the Case for Bilateral Interaction](http://arxiv.org/abs/2603.13750v1)
   > **TL;DR**: Critiques the Forward-In-Time-Only communication model in SmartNIC resource management (exemplified by Wave) for causing decision staleness and high latency penalties. Proposes bilateral swap primitives on the same IPU hardware to dissolve latency/atomicity issues, eliminating the 350% degradation seen in Wave.
