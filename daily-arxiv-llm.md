@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1044-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.03.17-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1046-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.03.18-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,12 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-03-18
+* `serving` `networking` [Multi-stage Flow Scheduling for LLM Serving](http://arxiv.org/abs/2603.17456v1)
+  > **TL;DR**: Addresses LLM serving TTFT SLO violations caused by network contention in multi-stage workflows. Proposes MFS, a flow scheduler using a Reverse Multi-Level Queue to approximate Least-Laxity-First scheduling. Improves TTFT SLO attainment by 1.2x to 2.4x over baselines.
+* `serving` `networking` [The 1/W Law: An Analytical Study of Context-Length Routing Topology and GPU Generation Gains for LLM Inference Energy Efficiency](http://arxiv.org/abs/2603.17280v1)
+  > **TL;DR**: Analytically studies energy efficiency (tokens per watt) of LLM inference, showing it halves as context window doubles (1/W law). Proposes context-length routing topology (FleetOpt) to optimize GPU utilization. FleetOpt achieves 2.5x better tok/W over a homogeneous H100 fleet.
+
 ### 2026-03-17
 * `serving` `offloading` [FleetOpt: Analytical Fleet Provisioning for LLM Inference with Compress-and-Route as Implementation Mechanism](http://arxiv.org/abs/2603.16514v1)
   > **TL;DR**: Presents FleetOpt, an analytical framework for cost-optimal GPU fleet provisioning for LLM inference, using a two-pool architecture and a Compress-and-Route mechanism to mitigate cost cliffs. Achieves 6-82% GPU cost reduction versus a homogeneous fleet on production traces.
