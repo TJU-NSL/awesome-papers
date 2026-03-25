@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1046-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.03.23-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1047-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.03.24-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,10 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-03-19
+* `agent` `serving` `offloading` [Act While Thinking: Accelerating LLM Agents via Pattern-Aware Speculative Tool Execution](http://arxiv.org/abs/2603.18897v1)
+  > **TL;DR**: Addresses tool latency bottlenecks in LLM agents by proposing PASTE, a method that speculatively executes tools based on predictable control flows and data dependencies. This reduces average task completion time by 48.5% and improves throughput by 1.8x.
+
 ### 2026-03-18
 * `serving` `networking` [Multi-stage Flow Scheduling for LLM Serving](http://arxiv.org/abs/2603.17456v1)
   > **TL;DR**: Addresses LLM serving TTFT SLO violations caused by network contention in multi-stage workflows. Proposes MFS, a flow scheduler using a Reverse Multi-Level Queue to approximate Least-Laxity-First scheduling. Improves TTFT SLO attainment by 1.2x to 2.4x over baselines.
