@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1047-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.03.29-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1048-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.03.30-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,10 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-03-30
+* `kernel` `quantization` `serving` [ITQ3_S: High-Fidelity 3-bit LLM Inference via Interleaved Ternary Quantization with Rotation-Domain Smoothing](http://arxiv.org/abs/2603.27914v1)
+  > **TL;DR**: Presents ITQ3_S, a 3-bit weight quantization method for LLMs using rotation-domain smoothing via FWHT to handle outliers. Integrates a mathematically exact dequantization kernel fused in CUDA shared memory. Achieves perplexity competitive with FP16 while providing 1.5× higher throughput than 4-bit methods.
+
 ### 2026-03-19
 * `agent` `serving` `offloading` [Act While Thinking: Accelerating LLM Agents via Pattern-Aware Speculative Tool Execution](http://arxiv.org/abs/2603.18897v1)
   > **TL;DR**: Addresses tool latency bottlenecks in LLM agents by proposing PASTE, a method that speculatively executes tools based on predictable control flows and data dependencies. This reduces average task completion time by 48.5% and improves throughput by 1.8x.
