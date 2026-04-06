@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1048-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.04.04-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1050-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.04.05-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,14 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-04-03
+* `serving` `kernel` `multi-modal` [TokenDance: Scaling Multi-Agent LLM Serving via Collective KV Cache Sharing](http://arxiv.org/abs/2604.03143v1)
+  > **TL;DR**: Addresses KV cache redundancy in multi-agent LLM serving with synchronized rounds. Proposes TokenDance with collective KV cache sharing and diff-aware storage for sibling caches. Achieves 11-17x KV cache compression and supports 2.7x more concurrent agents than vLLM.
+
+### 2026-04-01
+* `training` `MoE` `kernel` [Scalable Pretraining of Large Mixture of Experts Language Models on Aurora Super Computer](http://arxiv.org/abs/2604.00785v1)
+  > **TL;DR**: Presents Optimus, a training library for scalable pretraining of large MoE LLMs on the Aurora supercomputer. It uses custom GPU kernels for expert computation and an EP-aware sharded optimizer. Achieves 90% scaling efficiency at 12,288 GPU tiles and up to 1.71x training speedup.
+
 ### 2026-03-30
 * `kernel` `quantization` `serving` [ITQ3_S: High-Fidelity 3-bit LLM Inference via Interleaved Ternary Quantization with Rotation-Domain Smoothing](http://arxiv.org/abs/2603.27914v1)
   > **TL;DR**: Presents ITQ3_S, a 3-bit weight quantization method for LLMs using rotation-domain smoothing via FWHT to handle outliers. Integrates a mathematically exact dequantization kernel fused in CUDA shared memory. Achieves perplexity competitive with FP16 while providing 1.5× higher throughput than 4-bit methods.
