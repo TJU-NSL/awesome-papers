@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1050-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.04.05-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1051-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.04.06-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,10 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-04-06
+* `serving` `offloading` `networking` [Communication-Efficient Collaborative LLM Inference over LEO Satellite Networks](http://arxiv.org/abs/2604.04654v1)
+  > **TL;DR**: Addresses high latency and memory constraints for LLM inference on LEO satellites. Proposes splitting models across satellites with pipeline parallelism and adaptive activation compression, optimizing strategies via graph search. Reduces inference delay by 42% and communication overhead by 71% with <1% accuracy loss.
+
 ### 2026-04-03
 * `serving` `kernel` `multi-modal` [TokenDance: Scaling Multi-Agent LLM Serving via Collective KV Cache Sharing](http://arxiv.org/abs/2604.03143v1)
   > **TL;DR**: Addresses KV cache redundancy in multi-agent LLM serving with synchronized rounds. Proposes TokenDance with collective KV cache sharing and diff-aware storage for sibling caches. Achieves 11-17x KV cache compression and supports 2.7x more concurrent agents than vLLM.
