@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1051-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.04.09-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1053-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.04.10-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,14 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-04-08
+* `serving` `offloading` [Scheduling the Unschedulable: Taming Black-Box LLM Inference at Scale](http://arxiv.org/abs/2604.06970v1)
+  > **TL;DR**: Proposes a client-side scheduler for black-box LLM APIs that uses token count predictions to optimize request scheduling via allocation, ordering, and overload control layers. Achieves 100% deadline satisfaction and keeps short-request P95 latency within tens of milliseconds of isolated performance under high congestion.
+
+### 2026-04-07
+* `serving` `offloading` `kernel` [ForkKV: Scaling Multi-LoRA Agent Serving via Copy-on-Write Disaggregated KV Cache](http://arxiv.org/abs/2604.06370v1)
+  > **TL;DR**: Presents ForkKV, a serving system for multi-LoRA agents that addresses the KV cache divergence problem. It uses a fork with copy-on-write memory paradigm and a DualRadixTree architecture to decouple the cache, with a ResidualAttention kernel for reconstruction. Achieves up to 3.0x higher throughput.
+
 ### 2026-04-06
 * `serving` `offloading` `networking` [Communication-Efficient Collaborative LLM Inference over LEO Satellite Networks](http://arxiv.org/abs/2604.04654v1)
   > **TL;DR**: Addresses high latency and memory constraints for LLM inference on LEO satellites. Proposes splitting models across satellites with pipeline parallelism and adaptive activation compression, optimizing strategies via graph search. Reduces inference delay by 42% and communication overhead by 71% with <1% accuracy loss.
