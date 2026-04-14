@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1053-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.04.12-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1054-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.04.13-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,10 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-04-09
+* `serving` `kernel` [SMART: When is it Actually Worth Expanding a Speculative Tree?](http://arxiv.org/abs/2604.09731v1)
+  > **TL;DR**: Addresses the inefficiency of tree-based speculative decoding by proposing SMART, a hardware-aware framework that uses marginal benefit-cost analysis to optimize tree expansion. Achieves 15.4-20.0% additional speedup over state-of-the-art methods across LLMs and MLLMs.
+
 ### 2026-04-08
 * `serving` `offloading` [Scheduling the Unschedulable: Taming Black-Box LLM Inference at Scale](http://arxiv.org/abs/2604.06970v1)
   > **TL;DR**: Proposes a client-side scheduler for black-box LLM APIs that uses token count predictions to optimize request scheduling via allocation, ordering, and overload control layers. Achieves 100% deadline satisfaction and keeps short-request P95 latency within tens of milliseconds of isolated performance under high congestion.
