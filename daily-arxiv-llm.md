@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1054-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.04.14-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1056-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.04.15-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,14 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-04-13
+* `training` `networking` [ResBM: Residual Bottleneck Models for Low-Bandwidth Pipeline Parallelism](http://arxiv.org/abs/2604.11947v1)
+  > **TL;DR**: Proposes Residual Bottleneck Model (ResBM) for low-bandwidth pipeline parallelism training. Introduces an architecture with residual encoder-decoder bottlenecks across pipeline boundaries to compress activations. Achieves 128x activation compression without significant convergence degradation.
+
+### 2026-04-10
+* `edge` `quantization` `serving` [EdgeFlow: Fast Cold Starts for LLMs on Mobile Devices](http://arxiv.org/abs/2604.09083v1)
+  > **TL;DR**: Addresses high cold-start latency for LLM inference on mobile devices. Proposes EdgeFlow, a framework with adaptive quantization, efficient data packing, and a granular CPU-NPU pipeline. Reduces cold-start latency by up to 4.07x compared to state-of-the-art mobile frameworks.
+
 ### 2026-04-09
 * `serving` `kernel` [SMART: When is it Actually Worth Expanding a Speculative Tree?](http://arxiv.org/abs/2604.09731v1)
   > **TL;DR**: Addresses the inefficiency of tree-based speculative decoding by proposing SMART, a hardware-aware framework that uses marginal benefit-cost analysis to optimize tree expansion. Achieves 15.4-20.0% additional speedup over state-of-the-art methods across LLMs and MLLMs.
