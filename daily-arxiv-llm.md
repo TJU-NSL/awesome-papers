@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1056-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.04.20-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1057-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.04.21-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,10 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-04-20
+* `kernel` `serving` `training` [GPUOS: A GPU Operating System Primitive for Transparent Operation Fusion](http://arxiv.org/abs/2604.17861v1)
+  > **TL;DR**: Addresses kernel launch overhead bottleneck in DL workloads with small tensor operations. Proposes GPUOS, a persistent GPU kernel runtime with JIT operator injection via NVRTC. Achieves up to 15.3x speedup over PyTorch on micro-batched inference and attention workloads.
+
 ### 2026-04-13
 * `training` `networking` [ResBM: Residual Bottleneck Models for Low-Bandwidth Pipeline Parallelism](http://arxiv.org/abs/2604.11947v1)
   > **TL;DR**: Proposes Residual Bottleneck Model (ResBM) for low-bandwidth pipeline parallelism training. Introduces an architecture with residual encoder-decoder bottlenecks across pipeline boundaries to compress activations. Achieves 128x activation compression without significant convergence degradation.
