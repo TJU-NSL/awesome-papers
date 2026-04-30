@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1057-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.04.28-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1058-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.04.29-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,10 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-04-24
+* `edge` `serving` `quantization` [Network Edge Inference for Large Language Models: Principles, Techniques, and Opportunities](http://arxiv.org/abs/2604.22906v1)
+  > **TL;DR**: Explores how to enable LLM inference on resource-constrained edge devices. Surveys system architectures, model optimization (quantization, pruning), and resource scheduling techniques. Identifies challenges and state-of-the-art methods for reducing memory/compute demands in edge deployments.
+
 ### 2026-04-20
 * `kernel` `serving` `training` [GPUOS: A GPU Operating System Primitive for Transparent Operation Fusion](http://arxiv.org/abs/2604.17861v1)
   > **TL;DR**: Addresses kernel launch overhead bottleneck in DL workloads with small tensor operations. Proposes GPUOS, a persistent GPU kernel runtime with JIT operator injection via NVRTC. Achieves up to 15.3x speedup over PyTorch on micro-batched inference and attention workloads.
