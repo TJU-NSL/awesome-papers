@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1058-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.04.29-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1059-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.04.30-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,10 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-04-29
+* `RL` `training` `MoE` [DORA: A Scalable Asynchronous Reinforcement Learning System for Language Model Training](http://arxiv.org/abs/2604.26256v1)
+  > **TL;DR**: Addresses long-tailed trajectory bottlenecks in asynchronous RL training for LLMs. Proposes DORA with multi-version streaming rollout to maintain policy consistency while eliminating pipeline bubbles. Achieves 2-3× higher throughput than state-of-the-art systems without compromising convergence.
+
 ### 2026-04-24
 * `edge` `serving` `quantization` [Network Edge Inference for Large Language Models: Principles, Techniques, and Opportunities](http://arxiv.org/abs/2604.22906v1)
   > **TL;DR**: Explores how to enable LLM inference on resource-constrained edge devices. Surveys system architectures, model optimization (quantization, pruning), and resource scheduling techniques. Identifies challenges and state-of-the-art methods for reducing memory/compute demands in edge deployments.
