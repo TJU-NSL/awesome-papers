@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1059-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.05.03-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1060-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.05.04-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,10 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-05-04
+* `serving` `scheduling` [Taming Request Imbalance: SLO-Aware Scheduling for Disaggregated LLM Inference](http://arxiv.org/abs/2605.02329v1)
+  > **TL;DR**: Addresses SLO violations caused by imbalanced request lengths in disaggregated LLM inference. Proposes Kairos, an SLO-aware scheduler with urgency-based priority for prefill and slack-guided adaptive batching for decode. Improves end-to-end SLO attainment by up to 33.8% compared to baselines.
+
 ### 2026-04-29
 * `RL` `training` `MoE` [DORA: A Scalable Asynchronous Reinforcement Learning System for Language Model Training](http://arxiv.org/abs/2604.26256v1)
   > **TL;DR**: Addresses long-tailed trajectory bottlenecks in asynchronous RL training for LLMs. Proposes DORA with multi-version streaming rollout to maintain policy consistency while eliminating pipeline bubbles. Achieves 2-3× higher throughput than state-of-the-art systems without compromising convergence.
