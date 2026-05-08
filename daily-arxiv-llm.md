@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1060-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.05.06-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1061-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.05.07-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,10 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-05-07
+* `MoE` `serving` `kernel` [Relay Buffer Independent Communication over Pooled HBM for Efficient MoE Inference on Ascend](http://arxiv.org/abs/2605.06055v1)
+  > **TL;DR**: Presents a relay-buffer-free communication design for MoE inference to reduce dispatch and combine bottlenecks. Uses direct placement into globally pooled HBM with lightweight control state instead of intermediate buffers. On Ascend systems, improves TTFT while maintaining competitive TPOT under latency constraints.
+
 ### 2026-05-04
 * `serving` `scheduling` [Taming Request Imbalance: SLO-Aware Scheduling for Disaggregated LLM Inference](http://arxiv.org/abs/2605.02329v1)
   > **TL;DR**: Addresses SLO violations caused by imbalanced request lengths in disaggregated LLM inference. Proposes Kairos, an SLO-aware scheduler with urgency-based priority for prefill and slack-guided adaptive batching for decode. Improves end-to-end SLO attainment by up to 33.8% compared to baselines.
