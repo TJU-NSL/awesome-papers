@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1061-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.05.09-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1062-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.05.10-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,10 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-05-08
+* `serving` `RAG` `multi-modal` [FATE: Future-State-Aware Scheduling for Heterogeneous LLM Workflows](http://arxiv.org/abs/2605.07238v1)
+  > **TL;DR**: Proposes FATE, a scheduler for multi-stage LLM workflows that considers how current scheduling decisions affect future execution state (model residency, locality, prefix reuse) in downstream stages. Uses frontier planning and state-aware scoring to reduce makespan by 32.5% and P95 latency by 32.3% over RoundRobin.
+
 ### 2026-05-07
 * `MoE` `serving` `kernel` [Relay Buffer Independent Communication over Pooled HBM for Efficient MoE Inference on Ascend](http://arxiv.org/abs/2605.06055v1)
   > **TL;DR**: Presents a relay-buffer-free communication design for MoE inference to reduce dispatch and combine bottlenecks. Uses direct placement into globally pooled HBM with lightweight control state instead of intermediate buffers. On Ascend systems, improves TTFT while maintaining competitive TPOT under latency constraints.
