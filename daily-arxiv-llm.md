@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1062-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.05.12-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1064-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.05.13-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,14 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-05-12
+* `serving` `agentic` [Kairos: A Scalable Serving System for Physical AI](http://arxiv.org/abs/2605.11381v1)
+  > **TL;DR**: Addresses the mismatch between digital AI serving systems and physical AI workloads requiring multiple inference-action rounds. Introduces Kairos, a multi-robot serving system that treats generate-execute loops as first-class citizens with execution phase involvement. Reduces average end-to-end task latency by 31.8–66.5% over state-of-the-art systems.
+
+### 2026-05-11
+* `training` `multi-modal` `kernel` [Accelerating Compound LLM Training Workloads with Maestro](http://arxiv.org/abs/2605.10501v1)
+  > **TL;DR**: Addresses inefficiencies in compound LLM training workloads with heterogeneous components and dynamic activation. Proposes Maestro, a section-centric framework with component-aware parallelism and wavefront scheduling. Reduces GPU consumption by ~40% on knowledge distillation and MLLM training workloads.
+
 ### 2026-05-08
 * `serving` `RAG` `multi-modal` [FATE: Future-State-Aware Scheduling for Heterogeneous LLM Workflows](http://arxiv.org/abs/2605.07238v1)
   > **TL;DR**: Proposes FATE, a scheduler for multi-stage LLM workflows that considers how current scheduling decisions affect future execution state (model residency, locality, prefix reuse) in downstream stages. Uses frontier planning and state-aware scoring to reduce makespan by 32.5% and P95 latency by 32.3% over RoundRobin.
