@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1064-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.05.13-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1065-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.05.14-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,10 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-05-13
+* `edge` `serving` `offloading` [PipeSD: An Efficient Cloud-Edge Collaborative Pipeline Inference Framework with Speculative Decoding](http://arxiv.org/abs/2605.13319v2)
+  > **TL;DR**: Aims to improve cloud-edge collaborative LLM inference using speculative decoding. Proposes PipeSD with token-batch pipeline scheduling and dual-threshold verification triggering. Achieves 1.16x-2.16x speedup and reduces energy consumption by 14.3%-25.3%.
+
 ### 2026-05-12
 * `serving` `agentic` [Kairos: A Scalable Serving System for Physical AI](http://arxiv.org/abs/2605.11381v1)
   > **TL;DR**: Addresses the mismatch between digital AI serving systems and physical AI workloads requiring multiple inference-action rounds. Introduces Kairos, a multi-robot serving system that treats generate-execute loops as first-class citizens with execution phase involvement. Reduces average end-to-end task latency by 31.8–66.5% over state-of-the-art systems.
