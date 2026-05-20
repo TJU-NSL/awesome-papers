@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1065-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.05.18-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1066-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.05.19-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,10 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-05-18
+* `training` `video` `quantization` [LongLive-2.0: An NVFP4 Parallel Infrastructure for Long Video Generation](http://arxiv.org/abs/2605.18739v2)
+  > **TL;DR**: Presents LongLive-2.0, an NVFP4-based parallel infrastructure for long video generation. Introduces sequence-parallel AR training and W4A4 NVFP4 inference with quantized KV cache to address memory and speed bottlenecks. Achieves up to 2.15x training speedup and 1.84x inference speedup.
+
 ### 2026-05-13
 * `edge` `serving` `offloading` [PipeSD: An Efficient Cloud-Edge Collaborative Pipeline Inference Framework with Speculative Decoding](http://arxiv.org/abs/2605.13319v2)
   > **TL;DR**: Aims to improve cloud-edge collaborative LLM inference using speculative decoding. Proposes PipeSD with token-batch pipeline scheduling and dual-threshold verification triggering. Achieves 1.16x-2.16x speedup and reduces energy consumption by 14.3%-25.3%.
