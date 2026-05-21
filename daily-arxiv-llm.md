@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1066-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.05.19-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1074-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.05.20-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,26 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-05-20
+* `serving` `MoE` `quantization` [PALS: Power-Aware LLM Serving for Mixture-of-Experts Models](http://arxiv.org/abs/2605.21427v1)
+  > **TL;DR**: Proposes PALS, a power-aware LLM serving runtime that optimizes GPU power caps with software parameters like batch size. It uses offline modeling and a feedback controller to maximize energy efficiency. Achieves 26.3% higher energy efficiency and 4-7x fewer QoS violations under power constraints.
+* `serving` `kernel` [Frontier: Towards Comprehensive and Accurate LLM Inference Simulation](http://arxiv.org/abs/2605.21312v1)
+  > **TL;DR**: Presents Frontier, a high-fidelity discrete-event simulator for modern disaggregated LLM serving. It models disaggregated execution, runtime optimizations, and stateful workloads to accurately predict performance. Achieves an average throughput error below 4% and reduces end-to-end latency error to 6.4% vs. 44.9% for prior simulators.
+* `MoE` `training` `networking` [Diagnosing Overhead in Dispatch Operations: Cross-architecture Observatory](http://arxiv.org/abs/2605.20982v1)
+  > **TL;DR**: Investigates assumptions about AlltoAll communication bottlenecks in Mixture-of-Experts (MoE) training. Uses DODOCO to analyze real MoE model checkpoints and finds routing imbalance is model-intrinsic, not system-correctable. Shows real-text workloads yield up to 2.35x lower routing imbalance than mock tokens.
+* `training` `sparse` `networking` [LOSCAR-SGD: Local SGD with Communication-Computation Overlap and Delay-Corrected Sparse Model Averaging](http://arxiv.org/abs/2605.20866v1)
+  > **TL;DR**: Proposes LOSCAR-SGD, a distributed training method combining local steps, sparse communication, and overlap to reduce communication bottlenecks. Uses a delay-corrected merge rule for model averaging. Achieves reduced training time while maintaining convergence for smooth non-convex problems.
+* `RL` `serving` `training` [PlexRL: Cluster-Level Orchestration of Serviceized LLM Execution for RLVR](http://arxiv.org/abs/2605.20863v1)
+  > **TL;DR**: Addresses the inefficiency of RLVR training, which suffers from anti-correlated idle times. Proposes PlexRL, a cluster-level runtime that time-slices shared LLM services across jobs to fill idle periods. Reduces user GPU hour cost by up to 37.58%.
+* `edge` `kernel` `quantization` [Llamas on the Web: Memory-Efficient, Performance-Portable, and Multi-Precision LLM Inference with WebGPU](http://arxiv.org/abs/2605.20706v1)
+  > **TL;DR**: Presents LlamaWeb, a WebGPU backend for browser-based LLM inference. Uses static memory planning and a tunable, templated kernel library for multiple quantization formats. Reduces memory usage by 29-33% and increases decode throughput by 45-69% versus existing browser frameworks.
+
+### 2026-05-19
+* `serving` `MoE` `kernel` [GEM: GPU-Variability-Aware Expert to GPU Mapping for MoE Systems](http://arxiv.org/abs/2605.19945v1)
+  > **TL;DR**: Addresses straggler GPUs in MoE inference caused by suboptimal expert placement. Proposes GEM, a variability-aware mapping that assigns token loads to match GPU speeds and separates simultaneously used experts. Reduces end-to-end latency by up to 16.5%.
+* `serving` `thinking` `MoE` [Understanding Inference Scaling for LLMs: Bottlenecks, Trade-offs, and Performance Principles](http://arxiv.org/abs/2605.19775v1)
+  > **TL;DR**: Characterizes the system bottlenecks for scaling reasoning-based LLM inference. Analyzes performance of models from 8B to 671B parameters under different parallelism strategies (Data, Tensor, Pipeline). Identifies a crossover point (~32B) where tensor parallelism becomes favorable for overcoming KV-cache fragmentation and memory bottlenecks.
+
 ### 2026-05-18
 * `training` `video` `quantization` [LongLive-2.0: An NVFP4 Parallel Infrastructure for Long Video Generation](http://arxiv.org/abs/2605.18739v2)
   > **TL;DR**: Presents LongLive-2.0, an NVFP4-based parallel infrastructure for long video generation. Introduces sequence-parallel AR training and W4A4 NVFP4 inference with quantized KV cache to address memory and speed bottlenecks. Achieves up to 2.15x training speedup and 1.84x inference speedup.
