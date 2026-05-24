@@ -4,7 +4,7 @@
 # Daily Arxiv Papers (LMSys)
 
 ![Static Badge](https://img.shields.io/badge/total_papers-1074-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.05.22-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/update-2026.05.23-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
