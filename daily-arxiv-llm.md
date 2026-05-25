@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1074-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.05.23-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1084-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.05.24-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,30 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-05-22
+* `training` `MoE` `kernel` [HyperParallel-MoE: Multi-Core Interleaved Scheduling for Fast MoE Training on Ascend NPUs](http://arxiv.org/abs/2605.23764v1)
+  > **TL;DR**: Proposes HyperParallel-MoE, a compilation and scheduling framework for MoE training on Ascend NPUs. It statically schedules tile-level tasks across AIC and AIV units for fine-grained overlap of computation and communication. Reduces Dispatch-to-Combine MoE-FFN latency by up to 1.58x.
+* `serving` `kernel` [AlignedServe: Orchestrating Prefix-aware Batching to Build a High-throughput and Computing-efficient LLM Serving System](http://arxiv.org/abs/2605.23389v1)
+  > **TL;DR**: Addresses iteration-level inefficiencies in LLM serving caused by KV caches of varying lengths. Proposes AlignedServe, which groups requests by KV-cache length and uses a GPU-to-GPU prefetch architecture. Improves decoding throughput by up to 1.98x.
+* `serving` `edge` `offloading` [XWind: A Cross-site Router for Large Language Model Inference Serving at Renewable Energy Farms](http://arxiv.org/abs/2605.23348v1)
+  > **TL;DR**: Proposes AI Greenferencing, deploying LLM inference at wind farms to use renewable energy. Builds XWind, a reactive router using latency and KV-cache to dynamically distribute requests across sites. Reduces P99 end-to-end latency by up to 52% and 98% over baselines.
+* `agentic` `training` `RL` [Inductive Deductive Synthesis: Enabling AI to Generate Formally Verified Systems](http://arxiv.org/abs/2605.23109v1)
+  > **TL;DR**: Presents an agentic LLM system for synthesizing formally verified distributed systems. Combines inductive and deductive synthesis to jointly generate implementations and proofs, learning from failed attempts. Achieves a 200x speedup in synthesis time over expert effort for verified key-value stores.
+
+### 2026-05-21
+* `training` `storage` [Orbax: Distributed Checkpointing with JAX](http://arxiv.org/abs/2605.23066v1)
+  > **TL;DR**: Proposes Orbax, a standardized checkpointing library for JAX to manage distributed ML model checkpoints. It provides a modular abstraction for saving/loading from accelerator systems. Achieves up to 3.5x faster saving and 2x faster loading than PyTorch counterparts.
+* `training` `networking` `kernel` [Exploiting Multicast for Accelerating Collective Communication](http://arxiv.org/abs/2605.22428v1)
+  > **TL;DR**: Investigates how to reduce collective communication latency (AllGather, AlltoAll) for large model training. Proposes MultiWrite, a novel multicast-based semantic that eliminates redundant data transmission. Achieves up to 33% latency reduction on commercially deployed NPUs.
+* `serving` `offloading` `kernel` [Asymmetric Virtual Memory Paging for Hybrid Mamba-Transformer Inference](http://arxiv.org/abs/2605.22416v1)
+  > **TL;DR**: Proposes Asymmetric Virtual Memory Paging (AVMP) for hybrid Mamba-Transformer inference, separating KV cache and SSM state pools behind a virtual address space with dynamic capacity migration. Reduces OOM events by 7.6% and increases throughput up to 13.3x.
+* `training` `edge` `kernel` [LiveR: Fine-Grained Elasticity via Live Reconfiguration for Model Training](http://arxiv.org/abs/2605.22014v1)
+  > **TL;DR**: Presents LiveR, a live reconfiguration runtime for elastic LLM training that avoids stop-and-restart. It asynchronously prepares a new parallel topology and streams state directly between workers, reducing reconfiguration downtime from minutes to seconds (14x-23x speedup) and sustaining 99% training goodput.
+* `RAG` `hardware` [NasZip: Software and Hardware Co-Design to Accelerate Approximate Nearest Neighbor Search with DIMM-Based Near-Data Processing](http://arxiv.org/abs/2605.21952v1)
+  > **TL;DR**: Proposes a hardware-software co-design (NASZIP) to accelerate memory-bound nearest neighbor search for RAG systems. Combines near-data processing with a novel PCA-guided early exiting and a bit-level dynamic-float scheme. Achieves a 1.69x speedup over the state-of-the-art NDP accelerator ANSMET.
+* `agentic` [DeltaBox: Scaling Stateful AI Agents with Millisecond-Level Sandbox Checkpoint/Rollback](http://arxiv.org/abs/2605.22781v1)
+  > **TL;DR**: Proposes DeltaBox, an OS-level sandbox for stateful AI agents, using DeltaState abstraction and copy-on-write mechanisms for filesystem (DeltaFS) and process state (DeltaCR) to enable fast checkpoint/rollback. Achieves millisecond-level latencies (14ms checkpoint, 5ms rollback), enabling significantly more state exploration.
+
 ### 2026-05-20
 * `serving` `MoE` `quantization` [PALS: Power-Aware LLM Serving for Mixture-of-Experts Models](http://arxiv.org/abs/2605.21427v1)
   > **TL;DR**: Proposes PALS, a power-aware LLM serving runtime that optimizes GPU power caps with software parameters like batch size. It uses offline modeling and a feedback controller to maximize energy efficiency. Achieves 26.3% higher energy efficiency and 4-7x fewer QoS violations under power constraints.
