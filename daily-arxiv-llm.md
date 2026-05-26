@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1084-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.05.24-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1093-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.05.25-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,28 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-05-25
+* `RAG` `serving` `networking` [An Efficient and Privacy-Preserving Architecture for Cross-Institutional Collaborative RAG](http://arxiv.org/abs/2605.25716v1)
+  > **TL;DR**: Addresses the challenge of preserving privacy in cross-institutional RAG systems. Proposes FedRAG, a framework using a Scrambled Distributed Attention protocol with feature scrambling and token permutation for distributed inference. Achieves 62x latency reduction over secure baselines with <0.1% utility degradation.
+* `offline` `agent` `RAG` [Neural Router: Semantic Content Matching for Agentic AI](http://arxiv.org/abs/2605.25701v1)
+  > **TL;DR**: Investigates how to use LLMs as a semantic matching engine for agentic pub/sub systems on edge-cloud continuum. Proposes a CoverAndMerge compression pipeline and algorithms for offline multi-label retrieval. Achieves a context-window crossover point that reduces LLM invocations while maintaining accuracy.
+* `edge` `serving` `networking` [Profiling-Driven Adaptive Distributed Transformer Inference on Embedded Edge Deployment](http://arxiv.org/abs/2605.25682v1)
+  > **TL;DR**: Investigates how to achieve efficient distributed Transformer inference on resource-constrained edge devices. Proposes Prism, which uses lightweight profiling and compression to adaptively choose between local and distributed execution. Reduces latency by 65-77% and energy consumption by 34-52% compared to a static distributed setup.
+* `serving` `kernel` `hardware` [Bandwidth-Aware LLM Inference on Heterogeneous Many-Core Supercomputers](http://arxiv.org/abs/2605.25655v1)
+  > **TL;DR**: Presents THInfer, a hardware-aware LLM inference framework optimized for bandwidth-constrained many-core processors. It uses hand-optimized kernels, computation graph fusion, and a Prefill-Buffer-Decode pipeline with hybrid parallelism. Achieves 62-84% higher throughput on Llama models compared to GPU baselines.
+* `training` `serving` `hardware` [Fine-Tuning and Serving Gemma 4 31B on Google Cloud TPU: A Technical Comparison with GPU Baselines](http://arxiv.org/abs/2605.25645v1)
+  > **TL;DR**: Presents an end-to-end system for fine-tuning and serving Gemma 4 31B on Google Cloud TPUs. Compares TPU v5p-8 (training) and v6e-8 (inference) against an H100 GPU baseline using adapted pipelines. Achieves 1.61x faster training at 2.12x lower cost and 2x lower time-to-first-token on TPUs.
+* `diffusion` `serving` `networking` [DisagFusion: Asynchronous Pipeline Parallelism and Elastic Scheduling for Disaggregated Diffusion Serving](http://arxiv.org/abs/2605.25550v1)
+  > **TL;DR**: Addresses performance bottlenecks in disaggregated diffusion model serving. Proposes DisagFusion, which uses asynchronous pipeline parallelism to overlap computation/communication and elastic hybrid scheduling. Achieves 3.4x-20.5x higher throughput and 18.5x lower latency versus a monolithic baseline.
+* `training` `networking` [Bandwidth-Aware and Cost-Efficient Pipeline Parallel Scheduling in Geo-Distributed LLM Training](http://arxiv.org/abs/2605.25375v1)
+  > **TL;DR**: Proposes BACE-Pipe, a scheduling framework for geo-distributed LLM training. It combines dynamic job prioritization, bandwidth-aware pipeline pathfinding, and cost-minimizing resource allocation to optimize job execution order and GPU placement. Achieves 27.9%-64.7% lower JCT and 12.6%-30.6% lower electricity cost.
+
+### 2026-05-24
+* `serving` `quantization` [Kavier: Exploring Performance, Sustainability, and Efficiency of LLM Ecosystems under Inference through Cache-Aware Discrete-Event Simulation](http://arxiv.org/abs/2605.25247v1)
+  > **TL;DR**: Proposes Kavier, a cache-aware discrete-event simulator for predicting LLM ecosystem performance, sustainability, and efficiency during inference. The method is based on a new reference architecture and models KV-caching/prompt prefix caching. Experiments show accurate and time-efficient prediction for large-scale scenarios.
+* `serving` `diffusion` `kernel` [Optimus: Elastic Decoding for Efficient Diffusion LLM Serving](http://arxiv.org/abs/2605.24832v1)
+  > **TL;DR**: Addresses inefficient GPU utilization in LLM serving caused by fixed-granularity diffusion decoding. Proposes Optimus, a system with elastic decoding that dynamically adjusts chunk sizes and uses saturation-aware scheduling. Achieves up to 6.1x higher throughput than autoregressive decoding.
+
 ### 2026-05-22
 * `training` `MoE` `kernel` [HyperParallel-MoE: Multi-Core Interleaved Scheduling for Fast MoE Training on Ascend NPUs](http://arxiv.org/abs/2605.23764v1)
   > **TL;DR**: Proposes HyperParallel-MoE, a compilation and scheduling framework for MoE training on Ascend NPUs. It statically schedules tile-level tasks across AIC and AIV units for fine-grained overlap of computation and communication. Reduces Dispatch-to-Combine MoE-FFN latency by up to 1.58x.
