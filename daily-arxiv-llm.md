@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1093-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.05.26-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1103-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.05.27-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,30 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-05-27
+* `agent` `serving` `networking` [SwarmHarness: Skill-Based Task Routing via Decentralized Incentive-Aligned AI Agent Networks](http://arxiv.org/abs/2605.28764v1)
+  > **TL;DR**: Presents a decentralized protocol to share idle compute for AI tasks. Combines a DHT for discovery, a skill-based router, and a Shapley-value-based credit system to create a self-regulating network. Reduces reliance on centralized infrastructure by enabling direct peer-to-peer compute provisioning.
+* `serving` `MoE` `networking` [How Far Can Disaggregation Go? A Design-Space Exploration of Attention-FFN Disaggregation for Efficient MoE LLM Serving](http://arxiv.org/abs/2605.28302v1)
+  > **TL;DR**: Explores when Attention-FFN Disaggregation (AFD) benefits MoE LLM serving. Proposes a framework combining kernel profiling and network simulation to optimize throughput under TTFT/TPOT SLOs. AFD achieves 4k tokens/s for DeepSeek-V3.2 where non-AFD deployments fail.
+* `offline` `serving` `kernel` [SiDP: Memory-Efficient Data Parallelism for Offline LLM Inference](http://arxiv.org/abs/2605.28095v1)
+  > **TL;DR**: Addresses memory limitations for large-batch offline LLM inference in data-parallel setups. Proposes SiDP, which distributes model weights across GPUs and uses NVLink for on-demand access via Weight-as-a-Service and Compute-as-a-Service modes. Achieves up to 1.5x higher throughput over vLLM by increasing usable KV cache capacity.
+* `training` `networking` [Throughput-Optimized Networks at Scale](http://arxiv.org/abs/2605.27963v1)
+  > **TL;DR**: Addresses how to design optimal network topologies for large-scale AI training clusters. Proposes TONS, an automated synthesis framework using linear optimization to maximize throughput. Achieves geometric mean speedups of 2.1x over best TPU torus variants on all-to-all traffic.
+* `training` `multi-modal` `kernel` [Addressing Variable Heterogeneity in Distributed Multimodal Training with Entrain](http://arxiv.org/abs/2605.27918v1)
+  > **TL;DR**: Proposes Entrain, a distributed MLLM training framework that handles data heterogeneity by using macroscopic batch profiling to determine a static model-parallel configuration and a hierarchical microbatch assignment algorithm. Reduces workload variability by 10.6× and improves training throughput by 1.40×.
+
+### 2026-05-26
+* `training` `multi-modal` `kernel` [Heterogeneous Parallelism for Multimodal Large Language Model Training](http://arxiv.org/abs/2605.27678v1)
+  > **TL;DR**: Addresses throughput limitations in multimodal LLM training from mismatched sharding needs. Proposes heterogeneous parallelism, allowing independent module layouts with boundary communicators for layout transforms. Achieves up to 49.3% higher TFLOPS/GPU with colocated execution.
+* `edge` `agent` [The Energy Blind Spot: NVIDIA's Flagship Edge AI Hardware Cannot Support Process-Level Energy Attribution](http://arxiv.org/abs/2605.27599v1)
+  > **TL;DR**: Evaluates energy observability for agentic AI on NVIDIA's GB10 edge hardware. Identifies a lack of CPU power monitoring and proposes an external metering calibration method. Reports that CPU-side processing accounts for up to 44% of total dynamic energy in agentic workloads.
+* `MoE` `offloading` `serving` [ReMoE: Boosting Expert Reuse through Router Fine-Tuning in Memory-Constrained MoE LLM Inference](http://arxiv.org/abs/2605.27081v1)
+  > **TL;DR**: Addresses high I/O overhead in memory-constrained MoE model inference caused by expert evictions. Proposes ReMoE, a router fine-tuning framework that increases expert reuse to align with cache locality. Improves throughput by 8.4% under vLLM and reduces Time Per Output Token by up to 49.8% on edge devices.
+* `training` `networking` [Revisiting Bruck: Phase-Efficient All-to-All Communication in Reconfigurable Networks](http://arxiv.org/abs/2605.26930v1)
+  > **TL;DR**: Reduces All-to-All communication bottleneck in distributed ML training on reconfigurable networks. Proposes ReTri, a bidirectional schedule using ternary block propagation to amortize topology reconfiguration delays. Achieves up to 10x lower completion time vs. static networks.
+* `serving` `kernel` [Characterization-Guided GPU Fault Resilience in NVIDIA MPS](http://arxiv.org/abs/2605.26461v1)
+  > **TL;DR**: Addresses the problem of weak fault resilience in NVIDIA MPS, which causes process-wide failures. Proposes two software mechanisms for fault isolation in the GPU driver and fast recovery using virtual memory. Reduces the GPU idle time after a fault by 97% with under 5% performance overhead.
+
 ### 2026-05-25
 * `RAG` `serving` `networking` [An Efficient and Privacy-Preserving Architecture for Cross-Institutional Collaborative RAG](http://arxiv.org/abs/2605.25716v1)
   > **TL;DR**: Addresses the challenge of preserving privacy in cross-institutional RAG systems. Proposes FedRAG, a framework using a Scrambled Distributed Attention protocol with feature scrambling and token permutation for distributed inference. Achieves 62x latency reduction over secure baselines with <0.1% utility degradation.
