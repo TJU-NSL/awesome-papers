@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1103-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.05.27-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1104-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.05.28-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,10 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-05-28
+* `serving` `offloading` `quantization` [RTP-LLM: High-Performance Alibaba LLM Inference Engine](http://arxiv.org/abs/2605.29639v1)
+  > **TL;DR**: Presents RTP-LLM, a high-performance inference engine for industrial LLM deployment. Key designs include Prefill-Decode Disaggregation, hierarchical KV cache management, and modular speculative decoding. Achieves 35-37% reduction in P95 time-to-first-token latency and 1.12x-2.48x throughput improvement in speculative decoding.
+
 ### 2026-05-27
 * `agent` `serving` `networking` [SwarmHarness: Skill-Based Task Routing via Decentralized Incentive-Aligned AI Agent Networks](http://arxiv.org/abs/2605.28764v1)
   > **TL;DR**: Presents a decentralized protocol to share idle compute for AI tasks. Combines a DHT for discovery, a skill-based router, and a Shapley-value-based credit system to create a self-regulating network. Reduces reliance on centralized infrastructure by enabling direct peer-to-peer compute provisioning.
