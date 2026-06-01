@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1104-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.05.30-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1107-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.05.31-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,14 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-05-29
+* `training` `MoE` `agent` [PithTrain: A Compact and Agent-Native MoE Training System](http://arxiv.org/abs/2605.31463v1)
+  > **TL;DR**: Proposes PithTrain, a Mixture-of-Experts training system designed for high agent-task efficiency. The framework is built on agent-native principles for automation and extensibility. It matches production throughput while reducing Agent Turns by 62% on framework development tasks.
+* `training` `RL` `agentic` [Federated Variational Preference Alignment with Gumbel-Softmax Prior for Personalized User Preferences](http://arxiv.org/abs/2605.30873v1)
+  > **TL;DR**: Addresses how to perform personalized preference alignment for LLMs in federated learning without collapsing user-specific intents. Proposes FedVPA-GP with a federated mixture prior and orthogonal loss to stabilize variational inference. Improves personalization over monolithic baselines, enabling dynamic preference switching.
+* `training` `serving` `storage` [Reducing the GPU Memory Bottleneck with Lossless Compression for ML -- Extended](http://arxiv.org/abs/2605.30728v1)
+  > **TL;DR**: Reduces GPU memory bottlenecks in ML workloads via lossless compression to minimize PCIe transfers. Introduces Invariant Bit Packing to eliminate redundant bits and uses warp-parallel decompression. Achieves 24% faster LLM inference and 74% faster GNN training.
+
 ### 2026-05-28
 * `serving` `offloading` `quantization` [RTP-LLM: High-Performance Alibaba LLM Inference Engine](http://arxiv.org/abs/2605.29639v1)
   > **TL;DR**: Presents RTP-LLM, a high-performance inference engine for industrial LLM deployment. Key designs include Prefill-Decode Disaggregation, hierarchical KV cache management, and modular speculative decoding. Achieves 35-37% reduction in P95 time-to-first-token latency and 1.12x-2.48x throughput improvement in speculative decoding.
