@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1107-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.05.31-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1117-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.06.01-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,30 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-06-01
+* `serving` `offloading` [Not All Errors Are Equal: A Systematic Study of Error Propagation in Large Language Model Inference](http://arxiv.org/abs/2606.02430v1)
+  > **TL;DR**: Studies how soft errors propagate in LLM inference. Proposes LLMFI, a fault-injection framework to systematically inject errors into three models across 13 tasks. Identifies critical vulnerability patterns and yields 17 insights for improving reliability.
+* `serving` `kernel` [Scaling LLM Inference Beyond Amdahl`s Limits via Eliminating Non-Scalable Overheads](http://arxiv.org/abs/2606.01927v1)
+  > **TL;DR**: Investigates how to scale LLM serving beyond Amdahl's Law limits. Presents Albireo, an inference system that increases the optimal tensor parallelism degree by overlapping scheduling, I/O, and compute with sequence-parallel sampling. Achieves up to 1.9x higher throughput than vLLM.
+* `serving` `agent` [Observation, Not Prediction: Conversation-Level Disaggregated Scheduling for Agentic Serving](http://arxiv.org/abs/2606.01839v1)
+  > **TL;DR**: Addresses schedulings challenges for multi-turn LLM agents. Proposes ConServe, a conversation-level disaggregated scheduler that separates initial prefill from decoding based on observable metrics, eliminating decode-length prediction. Reduces p95 time-to-first-effective-token by 51.08% and improves energy efficiency by 7.51%.
+* `training` `networking` [Don't Let a Few Network Failures Slow the Entire AllReduce](http://arxiv.org/abs/2606.01680v1)
+  > **TL;DR**: Addresses slowdown in AllReduce collective communication during LLM training caused by network failures. Proposes OptCC, a four-stage pipelined algorithm that approaches a new lower bound on completion time under asymmetric bandwidth. Achieves AllReduce within 2-6% of fault-free performance, versus up to 57% overhead for the state-of-the-art.
+* `quantization` `kernel` [TwinQuant: Learnable Subspace Decomposition for 4-Bit LLM Quantization](http://arxiv.org/abs/2606.01556v1)
+  > **TL;DR**: Investigates how to maintain high accuracy with aggressive 4-bit weight quantization. Proposes TwinQuant, a method that learns quantization-friendly subspace decompositions for weights and designs a fused kernel for efficient execution. Achieves near-FP16 accuracy and up to 1.8x end-to-end speedup.
+* `RAG` `serving` [Self-Conditioned Positional HNSW for Overlap-Aware Retrieval in Chunked-Document RAG Systems: Method and Industrial Evidence-Quality Audit](http://arxiv.org/abs/2606.01542v1)
+  > **TL;DR**: Proposes SCP-HNSW, an overlap-aware retrieval method for RAG that appends positional codes to chunk embeddings and uses a query-specific prior to reduce near-duplicate results. Reduces repetition of near-adjacent chunks in top-k retrieval to improve prompt efficiency.
+* `multi-modal` `serving` `RAG` [Compliance-Scored Best-of-N Guardrail Orchestration for Multimodal Document Generation in Payments Dispute Defense](http://arxiv.org/abs/2606.01513v1)
+  > **TL;DR**: Addresses inefficiency in compliant, multi-modal document generation. Proposes an orchestration layer that generates multiple candidates in parallel, scores them against guardrails, and uses the score for early exit. Achieves 91% compliance, generating 5 attempts within 20 seconds.
+
+### 2026-05-30
+* `serving` `MoE` `networking` [ViBE: Co-Optimizing Workload Skew and Hardware Variability for MoE Serving](http://arxiv.org/abs/2606.00735v1)
+  > **TL;DR**: Addresses execution-time imbalance in MoE serving from workload skew and hardware variability. Proposes ViBE, which co-optimizes expert placement by profiling expert load and GPU performance to minimize stragglers. Achieves 45% lower P90 time-to-first-token and 14% higher SLO attainment.
+* `training` `kernel` [ScanWeaver: Compiler-Driven Parallelization of Affine Recurrences via Associative Scan Lowering](http://arxiv.org/abs/2606.00601v1)
+  > **TL;DR**: Investigates how to parallelize input-dependent affine recurrences (e.g., in Mamba models) on GPUs. Proposes ScanWeaver, a compiler framework that transforms recurrences to associative scans and lowers them via MLIR to Blelloch-style GPU kernels. Achieves performance gains over sequential PyTorch and CUDA baselines.
+* `agent` `serving` `offloading` [Idleness is Relative: Exploiting Tool-Call Idle Windows for Offloading in Agentic Systems with MORI](http://arxiv.org/abs/2606.00866v1)
+  > **TL;DR**: Addresses inefficient KV cache offloading for LLM-based agents with varying tool-call durations. Proposes MORI, a serving system that ranks agent requests by relative idleness to dynamically partition KV cache between GPU HBM and CPU DRAM. Achieves 20-71% higher throughput and 18-43% lower TTFT.
+
 ### 2026-05-29
 * `training` `MoE` `agent` [PithTrain: A Compact and Agent-Native MoE Training System](http://arxiv.org/abs/2605.31463v1)
   > **TL;DR**: Proposes PithTrain, a Mixture-of-Experts training system designed for high agent-task efficiency. The framework is built on agent-native principles for automation and extensibility. It matches production throughput while reducing Agent Turns by 62% on framework development tasks.
