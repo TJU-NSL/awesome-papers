@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1117-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.06.01-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1124-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.06.02-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,22 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-06-02
+* `serving` `networking` [NetKV: Network-Aware Decode Instance Selection for Disaggregated LLM Inference](http://arxiv.org/abs/2606.03910v1)
+  > **TL;DR**: Addresses network latency in disaggregated LLM inference by proposing NetKV, a scheduler with a network cost oracle for decode instance selection. It considers topological distance and congestion to reduce Time to First Token. Achieves up to 21.2% lower mean TTFT over round-robin scheduling.
+* `serving` `edge` [E2LLM: Towards Efficient LLM Serving in Heterogeneous Edge/Fog Environments](http://arxiv.org/abs/2606.03770v1)
+  > **TL;DR**: Presents E2LLM, a framework for LLM serving in constrained edge/fog environments. It uses specialized PREFILL/DECODER model replicas and a Genetic Algorithm to cluster devices, with Dynamic Programming for optimal model partitioning. Reduces average waiting time by >50% versus Splitwise.
+* `training` [Demystifying Pipeline Parallelism: First Theory for PipeDream](http://arxiv.org/abs/2606.03498v1)
+  > **TL;DR**: Provides a theoretical analysis of pipeline parallelism for distributed training of large models. Introduces Randomized PipeDream (RPD) with a nonconvex convergence guarantee and analyzes the impact of pipeline stages (S) on staleness. Reports that PipeDream outperforms LocalSGD on a language-modeling task.
+* `RL` `agentic` `training` [Libra: Efficient Resource Management for Agentic RL Post-Training](http://arxiv.org/abs/2606.03077v1)
+  > **TL;DR**: Addresses the challenge of efficient resource management for agentic RL post-training. Proposes Libra, a system with a global GPU planner and a causality-driven scheduler for rollout workloads. Achieves up to 3.0× higher throughput and 2.5× faster convergence.
+* `training` `storage` [FOLD: Fuzzy Online Deduplication for Very Large Evolving Datasets via Approximate Nearest Neighbor Search](http://arxiv.org/abs/2606.03001v1)
+  > **TL;DR**: Presents FOLD, an online fuzzy deduplication system for dynamic LLM training corpora. Uses an incrementally updated HNSW index with a bitmap representation to avoid costly rescans. Achieves 93-97% recall and up to 2.09x higher throughput at large scales compared to alternatives.
+* `serving` `quantization` [DriftSched: Adaptive QoS-Aware Scheduling under Runtime Token Drift for Multi-Tenant GPU Inference](http://arxiv.org/abs/2606.02982v1)
+  > **TL;DR**: Addresses runtime token drift degrading QoS in multi-tenant LLM inference. Proposes DriftSched, an adaptive scheduler with workload classification and feedback-driven drift compensation. Reduces median latency by ~42% and P99 latency by ~16% vs. FIFO under GPU contention.
+* `agent` `serving` [Agent libOS: A Library-OS-Inspired Runtime for Long-Running, Capability-Controlled LLM Agents](http://arxiv.org/abs/2606.03895v1)
+  > **TL;DR**: Presents Agent libOS, a runtime substrate for managing long-running LLM agents as schedulable processes with explicit capabilities and state. The system centralizes authorization at runtime primitives instead of tool boundaries. The prototype implements async scheduling, object memory, and achieves auditable agent execution with 123 regression tests.
+
 ### 2026-06-01
 * `serving` `offloading` [Not All Errors Are Equal: A Systematic Study of Error Propagation in Large Language Model Inference](http://arxiv.org/abs/2606.02430v1)
   > **TL;DR**: Studies how soft errors propagate in LLM inference. Proposes LLMFI, a fault-injection framework to systematically inject errors into three models across 13 tasks. Identifies critical vulnerability patterns and yields 17 insights for improving reliability.
