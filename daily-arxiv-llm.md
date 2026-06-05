@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1124-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.06.03-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1130-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.06.04-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,20 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-06-03
+* `agentic` `RL` `serving` [Latent Reasoning Guidance for Parallel Code Translation](http://arxiv.org/abs/2606.05518v1)
+  > **TL;DR**: Proposes a latent reasoning guidance method to improve autonomous code translation agents. Uses a Process Reward Model (PRM) to score hidden-state trajectories before final code decoding, selecting more promising paths. Increases mean validation rate from 32.89% to 42.1% on a 76-task benchmark.
+* `kernel` [SET: Stream-Event-Triggered Scheduling for Efficient CUDA Graph Pipelines](http://arxiv.org/abs/2606.05495v1)
+  > **TL;DR**: Aims to minimize GPU kernel scheduling and host-device synchronization overheads. Proposes a CUDA runtime framework with a multi-stream task-parallel pipeline model using event-chaining and work-stealing. Evaluations show 1.15–1.44x speedup over state-of-the-art CUDA graph baselines.
+* `serving` [Ekka: Automated Diagnosis of Silent Errors in LLM Inference](http://arxiv.org/abs/2606.04594v1)
+  > **TL;DR**: Presents Ekka, an automated system to diagnose silent errors in LLM inference by differentially debugging against a reference implementation. It systematically compares intermediate execution states. Achieves 80% pass@1 and 88% pass@5 diagnosis accuracy on a benchmark of real-world errors.
+* `serving` `edge` `networking` [Multi-SPIN: Multi-Access Speculative Inference for Cooperative Token Generation at the Edge](http://arxiv.org/abs/2606.04581v1)
+  > **TL;DR**: Proposes Multi-SPIN, a distributed speculative inference system for multi-user edge environments. It jointly optimizes draft lengths and bandwidth allocation to balance computation and communication loads, maximizing token goodput. Achieves up to 88% higher goodput compared to baseline methods.
+* `serving` `kernel` [D^2SD: Accelerating Speculative Decoding with Dual Diffusion Draft Models](http://arxiv.org/abs/2606.04446v1)
+  > **TL;DR**: Addresses the low acceptance rate of single-sequence drafts in speculative decoding. Proposes D^2SD, which uses dual diffusion drafters to generate a confidence-guided tree of candidate continuations verified via cascade attention. Achieves higher speedup over autoregressive baselines.
+* `serving` `kernel` `hardware` [FlexNPU: Transparent NPU Virtualization for Dynamic LLM Prefill-Decode Co-location](http://arxiv.org/abs/2606.04415v1)
+  > **TL;DR**: Addresses phase interference in LLM serving by introducing FlexNPU, a transparent virtualization layer for NPUs that enables dynamic scheduling between compute-intensive prefill and memory-bound decode phases. Achieves up to 26.33% higher throughput and reduces TTFT by over 92% compared to static approaches.
+
 ### 2026-06-02
 * `serving` `networking` [NetKV: Network-Aware Decode Instance Selection for Disaggregated LLM Inference](http://arxiv.org/abs/2606.03910v1)
   > **TL;DR**: Addresses network latency in disaggregated LLM inference by proposing NetKV, a scheduler with a network cost oracle for decode instance selection. It considers topological distance and congestion to reduce Time to First Token. Achieves up to 21.2% lower mean TTFT over round-robin scheduling.
