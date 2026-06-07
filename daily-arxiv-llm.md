@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1130-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.06.05-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1132-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.06.06-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,12 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-06-04
+* `kernel` `training` [LLM-Based Porting of Optimized C++ to CUDA Through Deoptimization and Reoptimization](http://arxiv.org/abs/2606.06063v1)
+  > **TL;DR**: Investigates how CPU-oriented optimizations in C++ code affect LLM-based translation to CUDA for HPC kernels. Proposes a Deopt-Reopt workflow that de-optimizes input code before re-optimizing for GPU. Achieves significant speedups, e.g., for conv2d, depending on the LLM and kernel.
+* `serving` [Beyond Greedy Chunking: SLO-Aware Sliding-Window Scheduling for LLM Inference](http://arxiv.org/abs/2606.05933v1)
+  > **TL;DR**: Proposes SlidingServe, a scheduling system for online LLM inference that uses a sliding-window and SLO-aware batching. It dynamically chunks requests with a latency predictor and a multi-level priority sorter. Improves service capacity by 30% and reduces SLO violation rate by up to 53%.
+
 ### 2026-06-03
 * `agentic` `RL` `serving` [Latent Reasoning Guidance for Parallel Code Translation](http://arxiv.org/abs/2606.05518v1)
   > **TL;DR**: Proposes a latent reasoning guidance method to improve autonomous code translation agents. Uses a Process Reward Model (PRM) to score hidden-state trajectories before final code decoding, selecting more promising paths. Increases mean validation rate from 32.89% to 42.1% on a 76-task benchmark.
