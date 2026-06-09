@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1132-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.06.07-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1143-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.06.08-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,32 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-06-08
+* `kernel` `serving` `quantization` [AutoMegaKernel: A Statically-Checked Agent Harness for Self-Retargeting Megakernel Synthesis](http://arxiv.org/abs/2606.09682v1)
+  > **TL;DR**: Proposes AutoMegaKernel, a system that compiles transformer models into a single, statically-verified CUDA megakernel for inference. It uses an agent-driven search to auto-generate and validate schedules, achieving up to 1.33x speedup over cuBLAS for batch-1 decode on various GPUs with W8A16 quantization.
+* `serving` `multi-modal` [FMplex: Model Virtualization for Serving Extensible Foundation Models](http://arxiv.org/abs/2606.09643v1)
+  > **TL;DR**: Addresses inefficiency in serving multiple customized foundation model (FM) tasks by replicating backbones. Proposes FMplex, a system that virtualizes FM backbones for shared deployment with a batch-aware fair-queueing scheduler. Reduces latency by up to 80% compared to spatial partitioning while hosting 6x more tasks.
+* `training` `kernel` `networking` [Resource-aware Computation-Communication Overlap for multi-GPU ML Workloads](http://arxiv.org/abs/2606.09200v1)
+  > **TL;DR**: Addresses the communication bottleneck in multi-GPU training by enabling computation-communication overlap. Proposes a runtime method using shared-memory-driven occupancy shaping for computation kernels and elevated priority for communication kernels. Achieves up to 25.5% reduction in total execution time.
+* `edge` `offloading` `networking` [CANS: Accelerating Multiuser Collaborative Edge Inference via Cooperative Autodidactic NeuroSurgeon](http://arxiv.org/abs/2606.09175v1)
+  > **TL;DR**: Addresses the challenge of finding optimal DNN partition points for multi-user collaborative edge inference under dynamic conditions. Proposes CANS, a framework using a FedLinUCB-DW algorithm for cooperative online learning and device grouping. Reduces average inference latency by up to 50% compared to a non-cooperative baseline.
+* `serving` `kernel` [Fairness-Aware and Latency-Controllable Scheduling for Chunked-Prefill LLM Serving](http://arxiv.org/abs/2606.09061v1)
+  > **TL;DR**: Addresses fairness and latency jitter in chunked-prefill LLM serving. Proposes an aging-based scheduler and latency-prediction-based mechanisms with active prefill concurrency control. Reduces mean latency by over 10% compared to FCFS and significantly lowers P99 tail latency.
+* `storage` `RAG` [When More Cores Hurts: The Vector Database Scaling Paradox in HPC](http://arxiv.org/abs/2606.08950v1)
+  > **TL;DR**: Investigates the poor scaling of cloud-optimized vector databases for RAG-like workloads on HPC systems. Evaluates Qdrant, Milvus, and Weaviate on 64 nodes, finding that increasing cores can reduce query throughput by up to 30.67% and scaling to 256 workers yields only a 5.46x improvement.
+* `serving` `multi-modal` [FMplex: Model Virtualization for Serving Extensible Foundation Models](http://arxiv.org/abs/2606.09643v1)
+  > **TL;DR**: Addresses inefficient resource usage from deploying independent FM instances. Proposes FMplex, a virtualization system that shares physical FM backbones across tasks via virtual FMs and a batch-aware fair-queueing scheduler. Hosts up to 6× more tasks while reducing latency by up to 80%.
+
+### 2026-06-07
+* `serving` `edge` `offloading` [A Low-Latency Semantic State Estimator using Latent Predictive Learning for Dynamic Network Monitoring and Orchestration](http://arxiv.org/abs/2606.08869v1)
+  > **TL;DR**: Addresses high latency of LLMs for semantic network monitoring. Proposes a latent predictive state estimator using slot-routed representations and a fixed semantic codebook instead of autoregressive generation. Achieves 41x lower mean inference latency than a 4B LLM endpoint while maintaining 82.42% accuracy.
+* `kernel` `quantization` `serving` [APEX4: Efficient Pure W4A4 LLM Inference via Intra-SM Compute Rebalancing](http://arxiv.org/abs/2606.08761v1)
+  > **TL;DR**: Investigates how the performance of pure W4A4 quantized LLM inference is constrained by the intra-SM compute balance between Tensor Cores and CUDA Cores. Proposes APEX4, a system of co-designed INT4 GEMM kernels with ρ-aware granularity adaptation to mitigate the dequantization bottleneck. Achieves up to 2.09x end-to-end speedup in vLLM serving.
+* `serving` `quantization` `offloading` [SpectrumKV: Per-Token Mixed-Precision KV Cache Transfer for Prefill-Decode Disaggregated LLM Serving](http://arxiv.org/abs/2606.08635v1)
+  > **TL;DR**: Proposes SpectrumKV, a method for per-token mixed-precision KV cache transfer in disaggregated LLM serving. It assigns FP16/INT8/INT4 precisions based on token importance and uses a deployment-time probe for model-specific policy selection. Reduces TTFT by 50-62% at a 50% KV transfer budget while minimizing perplexity increase.
+* `training` `kernel` [FlashCP: Load-Balanced Communication-Efficient Context Parallelism for LLM Training](http://arxiv.org/abs/2606.08476v1)
+  > **TL;DR**: Addresses workload imbalance and communication overhead in context parallelism (CP) for LLM training. Proposes FlashCP with a sharding-aware communication mechanism and a heuristic for near-optimal sharding plans. Achieves up to 1.63x training speedup over state-of-the-art CP frameworks.
+
 ### 2026-06-04
 * `kernel` `training` [LLM-Based Porting of Optimized C++ to CUDA Through Deoptimization and Reoptimization](http://arxiv.org/abs/2606.06063v1)
   > **TL;DR**: Investigates how CPU-oriented optimizations in C++ code affect LLM-based translation to CUDA for HPC kernels. Proposes a Deopt-Reopt workflow that de-optimizes input code before re-optimizing for GPU. Achieves significant speedups, e.g., for conv2d, depending on the LLM and kernel.
