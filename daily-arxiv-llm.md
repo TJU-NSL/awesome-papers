@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1147-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.06.09-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1148-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.06.10-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,10 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-06-10
+* `serving` `edge` `networking` [Real-Time Language Model Jamming: A Case Study for Live Music Accompaniment Generation](http://arxiv.org/abs/2606.11886v1)
+  > **TL;DR**: Proposes StreamMUSE, an inference system for frame-synchronous streaming where a client sends high-frequency requests to a server to align LM output with an external signal clock. It models latency-parameter relationships and achieves real-time synchronization for live music accompaniment.
+
 ### 2026-06-09
 * `training` `kernel` [Piper: A Programmable Distributed Training System](http://arxiv.org/abs/2606.11169v1)
   > **TL;DR**: Addresses the inflexibility of manually implementing distributed training strategies. Presents Piper, a system that uses model annotations and directives to compile a unified DAG into per-device execution plans. Achieves performance parity with ZeRO while enabling new strategies like DualPipe.
