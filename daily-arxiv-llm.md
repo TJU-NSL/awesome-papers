@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1148-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.06.10-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1152-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.06.11-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,16 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-06-11
+* `diffusion` `serving` [GF-DiT: Scheduling Parallelism for Diffusion Transformer Serving](http://arxiv.org/abs/2606.13501v1)
+  > **TL;DR**: Addresses inefficient static parallelism in Diffusion Transformer (DiT) serving. Proposes GF-DiT, an elastic runtime that dynamically adapts request parallelism via decomposable trajectory tasks and group-free collectives. Achieves up to 6.01× higher throughput and reduces SLO violations by up to 90%.
+* `training` `networking` [ScaleAcross: Designing Multi-Data-Center Infrastructure for Geo-Distributed AI Training](http://arxiv.org/abs/2606.12963v1)
+  > **TL;DR**: This paper addresses the system challenges of geo-distributed AI training across data centers. It designs an infrastructure framework using EVPN-VXLAN overlays with ECMP routing and a queue-pair-aware traffic distribution mechanism for synchronization-intensive workloads. The emulation framework demonstrates improved communication behavior for AllReduce and Parameter Server patterns under realistic WAN conditions.
+* `serving` `agent` `multi-modal` [Maestro: Workload-Aware Cross-Cluster Scheduling for LLM-Based Multi-Agent Systems](http://arxiv.org/abs/2606.12950v1)
+  > **TL;DR**: Presents Maestro, a scheduler for LLM-based multi-agent systems serving. It uses workload-aware prediction and hierarchical scheduling (node, cluster, global) to manage multi-model, iterative workflows. Reduces KV-reservation HBM by 67.2% and improves SLO attainment by 23.6 percentage points over EDF.
+* `hardware` `kernel` [Rigel: Reverse-Engineering the Metal 4.1 Tensor Compute Path on the Apple M4 Max GPU](http://arxiv.org/abs/2606.12765v1)
+  > **TL;DR**: Characterizes the undocumented hardware behavior of the Metal 4.1 tensor compute path on the Apple M4 Max GPU via microbenchmarking. Reveals the fp8 matmul is emulated and identifies the execution location and accumulator width. A hand-fused kernel based on these insights achieves a 6.5-12.9% performance gain.
+
 ### 2026-06-10
 * `serving` `edge` `networking` [Real-Time Language Model Jamming: A Case Study for Live Music Accompaniment Generation](http://arxiv.org/abs/2606.11886v1)
   > **TL;DR**: Proposes StreamMUSE, an inference system for frame-synchronous streaming where a client sends high-frequency requests to a server to align LM output with an external signal clock. It models latency-parameter relationships and achieves real-time synchronization for live music accompaniment.
