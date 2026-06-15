@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1152-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.06.13-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1154-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.06.14-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,12 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-06-12
+* `multi-modal` `edge` `serving` [PLAIground: SLO-Driven Runtime Model Selection for Compound AI Systems in the Edge-Cloud-Space Continuum](http://arxiv.org/abs/2606.14356v1)
+  > **TL;DR**: Proposes PLAIground, a framework for SLO-driven runtime model selection in compound AI systems. Introduces CAIM abstraction for decoupling tasks and Pixie algorithm for dynamic model switching. Achieves up to 91.3% accuracy while maintaining SLO compliance, outperforming fixed-model strategies.
+* `serving` `RAG` `agentic` [Design Methodology and Performance Trade-offs Management for Distributed and Compound AI Systems](http://arxiv.org/abs/2606.14350v1)
+  > **TL;DR**: Proposes a system design methodology using compound AI systems with distributed components and control logic, moving from monolithic models. Case studies show 60% latency reduction and 71% cost reduction while maintaining near state-of-the-art accuracy.
+
 ### 2026-06-11
 * `diffusion` `serving` [GF-DiT: Scheduling Parallelism for Diffusion Transformer Serving](http://arxiv.org/abs/2606.13501v1)
   > **TL;DR**: Addresses inefficient static parallelism in Diffusion Transformer (DiT) serving. Proposes GF-DiT, an elastic runtime that dynamically adapts request parallelism via decomposable trajectory tasks and group-free collectives. Achieves up to 6.01× higher throughput and reduces SLO violations by up to 90%.
