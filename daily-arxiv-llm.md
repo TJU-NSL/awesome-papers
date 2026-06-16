@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1154-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.06.14-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1169-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.06.15-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,42 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-06-15
+* `training` `kernel` [Tangram: Hiding GPU Heterogeneity for Efficient LLM Parallelization](http://arxiv.org/abs/2606.16907v1)
+  > **TL;DR**: Addresses how to generate efficient parallelization plans for LLM training on heterogeneous GPU clusters. Proposes Tangram, which decouples planning by exposing homogeneous GPU islands to existing parallelizers and composing model slices into pipelines. Achieves up to 2.3x higher training throughput.
+* `serving` `agent` `offloading` [CacheWise: Understanding Workloads and Optimizing KVCache Management for Efficiently Serving LLM Coding Agents](http://arxiv.org/abs/2606.16824v1)
+  > **TL;DR**: Explores how to optimize KV cache management for long-running LLM coding agent sessions. Proposes CacheWise, a management layer using prefix-aware scheduling and reuse-aware eviction based on tool call metadata. Reduces KV cache evictions by up to 2.6x and improves session completion time by 3.5x.
+* `serving` `kernel` `hardware` [SMEPilot: Characterizing and Optimizing LLM Inference with Scalable Matrix Extensions](http://arxiv.org/abs/2606.16332v1)
+  > **TL;DR**: Characterizes LLM inference for CPUs with matrix extensions (SME) via a roofline model. Proposes SMEPilot, an engine that dynamically selects CPU/SME/cooperative execution per operator, optimizes work partitioning, and reuses layouts. Achieves up to 3.94× end-to-end inference speedup.
+* `serving` [Tropical: Enhancing SLO Attainment in Disaggregated LLM Serving via SLO-Aware Multiplexing](http://arxiv.org/abs/2606.16264v1)
+  > **TL;DR**: Addresses the trade-off between latency SLOs for prefill (TTFT) and decode (TPOT) phases in LLM serving architectures. Proposes Tropical, an SLO-aware multiplexing strategy that balances queuing time and interference. Achieves up to 2.09x more requests within 90% SLO attainment.
+* `serving` `offloading` [SwiftCache: Efficient LLM Serving for Multi-turn Conversations with Heterogeneous KV Cache Sharing](http://arxiv.org/abs/2606.16135v1)
+  > **TL;DR**: Addresses the latency and memory pressure of KV cache offloading in multi-turn LLM conversations. Proposes SwiftCache, a system for cross-model KV cache sharing via donated GPU memory and NVLink. Reduces P99 TTFT by up to 69% and extends context length by 3.98x.
+* `edge` `kernel` `serving` [Beyond CPU-GPU Frequency: Memory-Clock and Tail Effects in Edge Inference Latency Estimation](http://arxiv.org/abs/2606.16106v1)
+  > **TL;DR**: Examines accuracy of frequency-based latency estimators for ML inference on edge devices. Identifies significant impacts of memory clock, tail latency bursts, and frequency actuation delays on real-time predictions. Achieves prediction errors within ~2x of target miss rate versus 13x-29x for Gaussian models.
+* `serving` `agent` `offloading` [CacheWise: Understanding Workloads and Optimizing KVCache Management for Efficiently Serving LLM Coding Agents](http://arxiv.org/abs/2606.16824v1)
+  > **TL;DR**: Addresses inefficient KVCache management for long-running LLM coding agents. Proposes CacheWise, a scheduler combining prefix-aware scheduling and reuse-aware eviction using tool call metadata predictions. Reduces KVCache evictions by 2.6x and improves session completion time by 3.5x.
+
+### 2026-06-14
+* `agentic` `serving` [Green SARC: Predictive Cost and Carbon Governance for Agentic AI Systems](http://arxiv.org/abs/2606.15954v1)
+  > **TL;DR**: Proposes an architectural framework, Green SARC, to predictively govern the financial and environmental cost of agentic AI systems. It introduces enforcement gates in the agent loop to bound costs during execution. Achieves 47-55% token/USD/carbon savings by preventing unbounded State Snowball effects.
+
+### 2026-06-13
+* `agent` `serving` `RL` [CoAgent: Concurrency Control for Multi-Agent Systems](http://arxiv.org/abs/2606.15376v1)
+  > **TL;DR**: Presents CoAgent, a concurrency control protocol for parallel LLM agents that mutate shared state. Uses MTPO to fix a serialization order and enable agents to repair conflicting writes via advisory notifications. Achieves 1.4x speedup while staying within 5% of serial correctness, outperforming 2PL and OCC.
+* `serving` `video` [Adaptive Resource Management and Quality Control for Streaming Video Generation](http://arxiv.org/abs/2606.15319v1)
+  > **TL;DR**: Addresses how to ensure playout continuity for real-time streaming video generation. Proposes SlackServe, a system that dynamically reallocates resources via priority queues and elastic parallelism using playout slack, and adapts chunk fidelity. On 16 GPUs, improves Continuous Play Ratio by up to 3.29x.
+* `offloading` `edge` `multi-modal` [Generation Quality-Latency Tradeoff-Aware Inference Offloading for Multimodal LLMs in Cloud-Edge Continuum](http://arxiv.org/abs/2606.15210v1)
+  > **TL;DR**: Investigates how to balance generation quality and latency for multimodal LLM inference in a cloud-edge continuum. Proposes a Quality-Latency Tradeoff-Aware Inference Offloading (QLMIO) framework for collaborative task scheduling. Achieves up to 58.14% latency reduction compared to baselines while maintaining task completion rate.
+* `serving` `MoE` `offloading` [Coordinated Scheduling for MoE LLM Serving](http://arxiv.org/abs/2606.15177v1)
+  > **TL;DR**: Proposes Gimbal, a coordinated scheduler for MoE LLM serving that uses backend pressure signals to dispatch requests and a heuristic for expert placement. Reduces average TTFT by 42.9% and TPOT by 33.3% compared to vLLM.
+* `RAG` `offloading` `edge` [A RAG-Enhanced Bi-Level Cognitive Orchestration Framework for LEO Satellite Networks](http://arxiv.org/abs/2606.15076v1)
+  > **TL;DR**: Proposes a bi-level framework using an LLM with RAG over an expert knowledge base to schedule tasks in LEO satellite networks. The LLM infers preference weights for a lower-level genetic scheduler. Achieves 30.7% lower packet loss and 8.5% lower latency.
+* `serving` `networking` [Solyx AI Grid: Hardware-Telemetry-Aware Routing Across Geographically Distributed GPU Clusters](http://arxiv.org/abs/2606.15050v1)
+  > **TL;DR**: Presents Solyx AI Grid, a control plane for cross-site LLM inference routing using GPU telemetry, vLLM metrics, and WAN signals for per-request placement. Achieves 1.56-1.75x higher throughput at tier-2 SLO compared to round-robin routing.
+* `training` `quantization` `hardware` [NEURON-Fabric: CXL-Side Low-Bit Gradient Aggregation for Distributed Training](http://arxiv.org/abs/2606.15045v1)
+  > **TL;DR**: Proposes NEURON-Fabric, a CXL memory controller that aggregates low-bit (binary/ternary) gradients during distributed training to reduce communication. Uses a layer-aware control interface to switch between low-bit and FP32 paths. Reduces gradient traffic to 3.6-5.4% of the FP32 baseline with minimal accuracy loss on tested models.
+
 ### 2026-06-12
 * `multi-modal` `edge` `serving` [PLAIground: SLO-Driven Runtime Model Selection for Compound AI Systems in the Edge-Cloud-Space Continuum](http://arxiv.org/abs/2606.14356v1)
   > **TL;DR**: Proposes PLAIground, a framework for SLO-driven runtime model selection in compound AI systems. Introduces CAIM abstraction for decoupling tasks and Pixie algorithm for dynamic model switching. Achieves up to 91.3% accuracy while maintaining SLO compliance, outperforming fixed-model strategies.
