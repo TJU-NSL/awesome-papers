@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1169-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.06.15-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1177-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.06.16-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,24 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-06-16
+* `sparse` `kernel` `edge` [S4oP: Operator-level Pruning of Structured State Space Models for Resource-Constrained Devices](http://arxiv.org/abs/2606.18096v1)
+  > **TL;DR**: Proposes an operator-level pruning method for Structured State Space Models to reduce inference cost on resource-constrained devices. The approach interleaves structured masking with fine-tuning, enabling up to 70% of operators to be pruned while preserving performance and reducing latency.
+* `serving` `kernel` [Latency Prediction for LLM Inference on NPU Systems](http://arxiv.org/abs/2606.18042v1)
+  > **TL;DR**: Addresses the problem of predicting LLM inference latency on NPUs with undisclosed architectures. Proposes LENS, a black-box profiling method that uses two end-to-end measurements per bucket to model non-linear latency. Achieves a mean prediction error of 2.15% across multiple NPUs and models.
+* `serving` `RL` [RouteBalance: Fused Model Routing and Load Balancing for Heterogeneous LLM Serving](http://arxiv.org/abs/2606.17949v1)
+  > **TL;DR**: Proposes RouteBalance, a serving scheduler that fuses model routing and load balancing into a single online assignment to jointly optimize quality, latency, and cost. A batched predictor enables fast decisions (~32 ms). Achieves 2.6-4.1x higher throughput than baselines at high load.
+* `serving` [LUMEN: Coordinated Failure Recovery for Distributed LLM Serving](http://arxiv.org/abs/2606.17787v1)
+  > **TL;DR**: Proposes LUMEN, a fault-tolerant LLM serving system that performs coordinated, load-aware recovery from worker failures. It optimizes checkpoint placement, request redistribution, and capacity restoration. In simulations, LUMEN reduces average job completion time by up to 66.9% compared to state-of-the-art methods.
+* `diffusion` `serving` `networking` [AoiZora: Topology-Aware Auto-Parallel Optimization for Inference of Diffusion Transformers](http://arxiv.org/abs/2606.17566v1)
+  > **TL;DR**: Proposes AoiZora, a compiler-mediated topology planner for low-latency video diffusion inference on TPU sub-slices. It optimizes auto-parallel sharding by integrating physical topology into placement decisions using a two-stage compilation flow. Achieves up to 1.42x latency reduction for one-step denoising.
+* `kernel` `serving` `agent` [SpecGen: Accelerating Agentic Kernel Optimization with Speculative Generation](http://arxiv.org/abs/2606.17518v1)
+  > **TL;DR**: Accelerates LLM-driven GPU kernel optimization by forking speculative, non-reasoning generations during agent reasoning. Parallel validation/profiling of speculative kernels increases candidate throughput and enables early termination. Reduces end-to-end optimization time while increasing kernel speedups under fixed resource constraints.
+* `diffusion` `edge` `serving` [RISE: Relay Inference and Online Scheduling for Efficient Edge-Device Collaborative Diffusion Model Services](http://arxiv.org/abs/2606.17378v1)
+  > **TL;DR**: Proposes RISE, an edge-device collaborative system for diffusion model serving using training-free relay inference and a contextual bandit scheduler. Splits denoising steps between edge and device models to reduce latency. Achieves 2.1x speedup while preserving output quality.
+* `agent` `RL` [Cordon: Semantic Transactions for Tool-Using LLM Agents](http://arxiv.org/abs/2606.17573v1)
+  > **TL;DR**: Proposes a transactional runtime, Cordon, for tool-using LLM agents to provide task-level isolation, rollback, and validation of irreversible effects. It uses shadow state and an effect outbox to stage actions. Evaluation shows it reduces irreversible-effect failures by 6.4x with modest latency overhead.
+
 ### 2026-06-15
 * `training` `kernel` [Tangram: Hiding GPU Heterogeneity for Efficient LLM Parallelization](http://arxiv.org/abs/2606.16907v1)
   > **TL;DR**: Addresses how to generate efficient parallelization plans for LLM training on heterogeneous GPU clusters. Proposes Tangram, which decouples planning by exposing homogeneous GPU islands to existing parallelizers and composing model slices into pipelines. Achieves up to 2.3x higher training throughput.
