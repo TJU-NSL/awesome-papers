@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1177-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.06.16-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1184-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.06.17-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,22 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-06-17
+* `video` `serving` `offloading` [TurboServe: Serving Streaming Video Generation Efficiently and Economically](http://arxiv.org/abs/2606.19271v1)
+  > **TL;DR**: Addresses the challenge of efficiently serving multi-user, long-lived streaming video generation sessions. Proposes TurboServe, an online scheduler with migration-aware placement and autoscaling, using coalesced chunk processing and GPU-CPU offloading. Reduces worst-case per-chunk latency by 37.5% and GPU cost by 37.2%.
+* `training` `diffusion` `kernel` [Pulse: Training Acceleration for Large Diffusion Models with Automatic Pipeline Parallelism](http://arxiv.org/abs/2606.19163v1)
+  > **TL;DR**: Addresses the communication bottleneck in pipeline-parallel training of UNet-style diffusion models caused by long-range skip connections. Proposes PULSE, an automatic strategy that collocates skip-connected layers and uses a dynamic-programming partitioner. Reduces communication volume by 89% and increases throughput by 2.3x.
+* `MoE` `training` `networking` [FoMoE: Breaking the Full-Replica Barrier with a Federation of MoEs](http://arxiv.org/abs/2606.19025v1)
+  > **TL;DR**: Proposes FoMoE, a distributed training system for Mixture-of-Experts models that partitions experts across geographically distributed datacenters to avoid full model replication. Its key innovation is a federation of experts with partial replication and a skip-token mechanism, reducing communication costs by up to 45.44x vs. DDP and achieving 1.4x throughput speedup.
+* `training` `diffusion` `RL` [Spotlight: Synergizing Seed Exploration and Spot GPUs for DiT RL Post-Training](http://arxiv.org/abs/2606.19004v1)
+  > **TL;DR**: Reduces the cost of RL post-training for Diffusion Transformers. Proposes Spotlight, a system exploiting idle spot GPUs for seed exploration and elastic sequence parallelism to handle preemptions. Achieves the same validation score 4x faster, reducing total cost by 1.4-6.4x.
+* `serving` `training` [ReMP: Low-Downtime Runtime Model-Parallelism Reconfiguration for LLM Serving](http://arxiv.org/abs/2606.18741v1)
+  > **TL;DR**: Presents ReMP, a system for low-downtime runtime reconfiguration of model parallelism (TP/PP) in LLM serving. It decouples topology from runtime state and migrates the KV cache to enable online changes. Achieves reconfiguration in 1-7 seconds vs. minutes for a restart, with speedups of 10-100x.
+* `serving` `offloading` [ShuntServe: Cost-Efficient LLM Serving on Heterogeneous Spot GPU Clusters](http://arxiv.org/abs/2606.18600v1)
+  > **TL;DR**: Presents ShuntServe, an LLM serving system for cost-efficient inference on heterogeneous spot GPU clusters. It uses a roofline model for performance estimation and dynamic programming for model placement, combined with fault-tolerant request migration. Achieves 1.42x higher throughput and 31.9% cost efficiency over baselines.
+* `training` `networking` `multi-modal` [Splaxel: Efficient Distributed Training of 3D Gaussian Splatting for Large-scale Scene Reconstruction via Pixel-level Communication](http://arxiv.org/abs/2606.18588v1)
+  > **TL;DR**: Addresses the high communication overhead in distributed training of 3D Gaussian Splatting. Proposes Splaxel, a framework that uses pixel-level communication and visibility prediction instead of Gaussian-level synchronization. Achieves a 7.6× speedup over the state-of-the-art distributed training framework.
+
 ### 2026-06-16
 * `sparse` `kernel` `edge` [S4oP: Operator-level Pruning of Structured State Space Models for Resource-Constrained Devices](http://arxiv.org/abs/2606.18096v1)
   > **TL;DR**: Proposes an operator-level pruning method for Structured State Space Models to reduce inference cost on resource-constrained devices. The approach interleaves structured masking with fine-tuning, enabling up to 70% of operators to be pruned while preserving performance and reducing latency.
