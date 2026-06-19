@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1184-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.06.17-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1189-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.06.18-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,18 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-06-18
+* `serving` `edge` `kernel` [Execution-State Capsules: Graph-Bound Execution-State Checkpoint and Restore for Low-Latency, Small-Batch, On-Device Physical-AI Serving](http://arxiv.org/abs/2606.20537v1)
+  > **TL;DR**: Examines how to enable low-latency state management for on-device AI serving with frequent branching and resetting. Proposes execution-state capsules, a graph-bound checkpoint/restore mechanism for all execution state, including KV cache. Achieves sub-millisecond GPU-resident restore and up to 27x TTFT speedup over cold prefill for 16k tokens.
+* `training` `kernel` [ARGUS: Production-Scale Tracing and Performance Diagnosis for over 10,000-GPU Clusters](http://arxiv.org/abs/2606.20374v1)
+  > **TL;DR**: Addresses the challenge of fine-grained performance diagnosis in large-scale LLM training clusters. Proposes ARGUS, a low-overhead (2%) tracing system that compresses kernel traces by ~3700x and provides progressive diagnosis of anomalies. Detects performance issues like stragglers and degraded kernels in 10,000+ GPU clusters.
+* `kernel` `serving` [The Correctness Illusion in LLM-Generated GPU Kernels](http://arxiv.org/abs/2606.20128v1)
+  > **TL;DR**: Exposes the limitations of current correctness oracles for LLM-generated GPU kernels. Proposes an op-schema-aware fuzzing method with high-precision CPU reference. Their oracle identified all 9 seeded bugs missed by standard benchmarks while maintaining 100% accuracy on 15 correct controls.
+* `training` `multi-modal` [Online Dynamic Batching with Formal Guarantees for LLM Training](http://arxiv.org/abs/2606.19989v1)
+  > **TL;DR**: Proposes Online Dynamic Batching (ODB) for LLM training, which constructs batches after preprocessing when true token lengths are known, solving the Distributed Group Alignment Problem. Achieves 1.58-4.43x higher throughput versus standard batching in multi-modal fine-tuning.
+* `serving` `sparse` `offloading` [SAC: Disaggregated KV Cache System for Sparse Attention LLMs with CXL](http://arxiv.org/abs/2606.19746v1)
+  > **TL;DR**: Proposes SAC, a disaggregated KV cache system for sparse attention LLMs that uses CXL to fetch only the required top-k KV entries on-demand. This method reduces memory transmission and waste. Achieves 2.1x higher throughput and 9.7x lower TTFT versus RDMA baselines.
+
 ### 2026-06-17
 * `video` `serving` `offloading` [TurboServe: Serving Streaming Video Generation Efficiently and Economically](http://arxiv.org/abs/2606.19271v1)
   > **TL;DR**: Addresses the challenge of efficiently serving multi-user, long-lived streaming video generation sessions. Proposes TurboServe, an online scheduler with migration-aware placement and autoscaling, using coalesced chunk processing and GPU-CPU offloading. Reduces worst-case per-chunk latency by 37.5% and GPU cost by 37.2%.
