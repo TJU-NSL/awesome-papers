@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1189-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.06.21-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1200-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.06.22-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,34 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-06-22
+* `serving` `multi-modal` `offloading` [Kamera: Unified Position-Invariant Multimodal KV Cache for Training-Free Reuse](http://arxiv.org/abs/2606.23581v1)
+  > **TL;DR**: Addresses redundant re-computation in multimodal agents when re-examining cached content. Proposes Kamera, a position-invariant KV cache with a low-rank patch to restore cross-chunk conditioning lost in naive reuse. Achieves full task accuracy with a rank-1 patch, reducing KV footprint.
+* `training` [The Energy Consumption of Transformer Fine-Tuning: A Roofline-Inspired Scaling Model](http://arxiv.org/abs/2606.23546v1)
+  > **TL;DR**: Presents a framework for predicting the energy consumption of Transformer fine-tuning on multi-GPU systems. Derives a scaling model incorporating compute, memory traffic, and a hardware-efficiency factor based on parallelism strategies. Accurately predicts energy usage across heterogeneous configurations.
+* `serving` `storage` [Concordia: JIT-Compiled Persistent-Kernel Checkpointing for Fault-Tolerant LLM Inference](http://arxiv.org/abs/2606.23521v1)
+  > **TL;DR**: Addresses how to provide fault tolerance for long-running LLM agents without losing GPU state like KV caches. Proposes Concordia, a runtime that JIT-compiles delta-checkpoint handlers into a persistent GPU kernel to asynchronously log state changes. Achieves recovery with less than 2% overhead on inference throughput.
+* `serving` `offloading` `multi-modal` [LiveServe: Interaction-Aware Serving for Real-Time Omni-Modal LLMs](http://arxiv.org/abs/2606.22983v1)
+  > **TL;DR**: Presents LiveServe, an interaction-aware scheduler for real-time omni-modal LLMs. It uses playback progress and speech events to limit generation and employs next-use-aware KV cache eviction. Reduces P90 audio time-to-first-packet by 1.55x on average and increases throughput by 1.15x.
+* `training` `networking` [Factored Gossip DiLoCo: Reducing Blocking Communication in DiLoCo](http://arxiv.org/abs/2606.22768v1)
+  > **TL;DR**: Addresses the blocking, bandwidth-heavy synchronization in distributed low-communication (DiLoCo) training. Proposes Factored Gossip DiLoCo, which replaces exact synchronization with non-blocking gossip and a tunable blocking step. Improves compute utilization substantially while maintaining comparable training progress.
+* `agentic` `edge` `GUI` [AOHP: An Open-Source OS-Level Agent Harness for Personalized, Efficient and Secure Interaction](http://arxiv.org/abs/2606.23449v1)
+  > **TL;DR**: Proposes an OS-level harness (AOHP) for efficient and secure AI agent interaction on Android. Introduces personalized service composition, efficient interfaces, and secure information flow as first-class OS actors. Demonstrates a 51.55% reduction in token cost for agent execution.
+* `edge` `serving` `offloading` [FlexServe: A Fast and Secure LLM Serving System for Mobile Devices with Flexible Resource Isolation](http://arxiv.org/abs/2606.23370v1)
+  > **TL;DR**: Presents FlexServe, a system for secure LLM inference on mobile devices using ARM TrustZone. Decouples access and management permissions for secure resources (memory, NPU) to reduce overhead. Achieves an average TTFT speedup of 10.05x over a baseline.
+
+### 2026-06-21
+* `serving` `MoE` `networking` [ASAP: A Disaggregated and Asynchronous Inference System for MoE Prefill](http://arxiv.org/abs/2606.22541v1)
+  > **TL;DR**: Addresses synchronization stalls and DP imbalance in MoE model prefills due to request variance. Proposes ASAP, a disaggregated, asynchronous inference system with specialized communication primitives and coordinated optimizations to eliminate global barriers. Improves SLO-compliant prefill throughput by 90%.
+* `hardware` `kernel` `serving` [Apple Neural Engine: Architecture, Programming, and Performance](http://arxiv.org/abs/2606.22283v1)
+  > **TL;DR**: Presents a reverse-engineered analysis of the Apple Neural Engine's architecture and software stack for on-device model execution. Describes the datapath, compiler, and kernel driver, providing roofline models for throughput and energy. Reports measured performance characteristics for M1 and M5 chips.
+
+### 2026-06-20
+* `training` `storage` `networking` [FeLoG: Scalable and Efficient Distributed Graph Embedding with Feedback Loop Mechanism](http://arxiv.org/abs/2606.22180v1)
+  > **TL;DR**: Addresses scalability bottlenecks in distributed graph embedding systems. Proposes FeLoG with feedback-coupled sampling, activity-aware communication compression, and a round-interleaved pipeline. Achieves a 27.9x average speedup and reduces communication cost by over 53.1%.
+* `offline` `serving` `networking` [StickyInvoc: Rethinking Task Models for High-throughput Workflows in the LLM Era](http://arxiv.org/abs/2606.22175v1)
+  > **TL;DR**: Addresses the overhead of repeatedly loading LLMs in high-throughput workflows. Proposes StickyInvoc, a task model that separates state creation (sticky task) from computation (invocation task). Achieved a 3.6x speedup for a 150k-inference workflow by amortizing model loading costs.
+
 ### 2026-06-18
 * `serving` `edge` `kernel` [Execution-State Capsules: Graph-Bound Execution-State Checkpoint and Restore for Low-Latency, Small-Batch, On-Device Physical-AI Serving](http://arxiv.org/abs/2606.20537v1)
   > **TL;DR**: Examines how to enable low-latency state management for on-device AI serving with frequent branching and resetting. Proposes execution-state capsules, a graph-bound checkpoint/restore mechanism for all execution state, including KV cache. Achieves sub-millisecond GPU-resident restore and up to 27x TTFT speedup over cold prefill for 16k tokens.
