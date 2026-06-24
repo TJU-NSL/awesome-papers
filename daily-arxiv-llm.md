@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1200-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.06.22-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1202-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.06.23-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,12 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-06-23
+* `serving` `MoE` `offloading` [CrossPool: Efficient Multi-LLM Serving for Cold MoE Models through KV-Cache and Weight Disaggregation](http://arxiv.org/abs/2606.24506v1)
+  > **TL;DR**: Addresses GPU memory inefficiency in serving many cold MoE models. Proposes CrossPool, a system that disaggregates KV-cache and FFN weights into separate GPU memory pools for dynamic sharing. Reduces P99 time-between-tokens by up to 10.4x compared to state-of-the-art.
+* `training` `RL` `diffusion` [Accelerating Disaggregated RL for Visual Generative LLMs with Diffusion-Based Parallelism and Trainer-Assisted Generation](http://arxiv.org/abs/2606.24369v1)
+  > **TL;DR**: Investigates how to efficiently perform reinforcement learning on large diffusion-based visual generative models. Proposes DigenRL, a disaggregated framework with generation-axis pipelining, time-step parallelism, and trainer-assisted generation to reduce execution bubbles. Achieves 1.56-2.10x throughput improvement over state-of-the-art systems.
+
 ### 2026-06-22
 * `serving` `multi-modal` `offloading` [Kamera: Unified Position-Invariant Multimodal KV Cache for Training-Free Reuse](http://arxiv.org/abs/2606.23581v1)
   > **TL;DR**: Addresses redundant re-computation in multimodal agents when re-examining cached content. Proposes Kamera, a position-invariant KV cache with a low-rank patch to restore cross-chunk conditioning lost in naive reuse. Achieves full task accuracy with a rank-1 patch, reducing KV footprint.
