@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1202-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.06.24-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1206-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.06.25-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,16 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-06-25
+* `training` `kernel` [DMuon: Efficient Distributed Muon Training with Near-Adam Overhead](http://arxiv.org/abs/2606.27153v1)
+  > **TL;DR**: Addresses the high computational cost of distributed matrix-orthogonalization optimizers like Muon during LLM training. Proposes DMuon, a drop-in module that optimizes the optimizer step with efficient kernel implementations. Reduces per-step latency to near-AdamW levels, achieving a 1.48x-3.01x end-to-end speedup.
+* `RL` `training` [RolloutPipe: Overlapping Pipelined Rollout and Training in Disaggregated On-Policy LLM Reinforcement Learning](http://arxiv.org/abs/2606.26997v1)
+  > **TL;DR**: Addresses idle time in disaggregated on-policy RL training for LLMs. Proposes RolloutPipe, which pipelines the dispatch of complete rollout groups to the trainer for overlapping generation and training. Shortens rollout-to-train-end time by 30.7%-42.3% and reduces trainer waiting ratio by 37%-76%.
+* `training` `MoE` `multi-modal` [Simulating Unified Tensor Resharding in heterogeneous AI systems](http://arxiv.org/abs/2606.26633v1)
+  > **TL;DR**: Proposes Xsim, a heterogeneity-aware simulator for distributed LLM training. It models non-uniform workload partitioning and collective communication for diverse hardware, supporting MoE and multi-modal models. Achieves less than 5% error in predicting training time for real-world configurations.
+* `serving` `MoE` [Moebius: Serving Mixture-of-Expert Models with Seamless Runtime Parallelism Switch](http://arxiv.org/abs/2606.26607v1)
+  > **TL;DR**: Presents Moebius, a system for MoE model serving that dynamically switches between expert and tensor parallelism at runtime without dropping requests. It reshards expert weights and KV cache using fused GPU transfers. On Qwen3-235B, it outperforms static parallelism on RL rollouts by 1.16-1.25x with 215-434ms switch latency.
+
 ### 2026-06-23
 * `serving` `MoE` `offloading` [CrossPool: Efficient Multi-LLM Serving for Cold MoE Models through KV-Cache and Weight Disaggregation](http://arxiv.org/abs/2606.24506v1)
   > **TL;DR**: Addresses GPU memory inefficiency in serving many cold MoE models. Proposes CrossPool, a system that disaggregates KV-cache and FFN weights into separate GPU memory pools for dynamic sharing. Reduces P99 time-between-tokens by up to 10.4x compared to state-of-the-art.
