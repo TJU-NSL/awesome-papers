@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1206-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.06.28-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1219-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.06.29-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,36 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-06-29
+* `edge` `inference` `networking` [SubEdge: A Subscriber-Centric Edge Computing Subsystem in 6G Networks for AI](http://arxiv.org/abs/2606.30554v1)
+  > **TL;DR**: Proposes SubEdge, a 6G subsystem providing per-subscriber edge compute for AI inference. It introduces a 'computing context' and mobility-driven mechanism to jointly migrate compute instances and traffic routing. Reduces 95th-percentile latency from 22.9 ms to 12.2 ms during mobility.
+* `edge` `hardware` `serving` [COSM: A Cooperative Scheduling Framework for Concurrent PIM and CPU Execution on Mobile Devices](http://arxiv.org/abs/2606.30553v1)
+  > **TL;DR**: Proposes COSM, a cooperative scheduling framework for concurrent CPU and PIM execution on mobile devices to improve LLM inference. It uses a low-interference control interface and idleness-aware scheduling to hide PIM latency. Achieves up to 2.8x higher PIM throughput with <2% CPU performance loss.
+* `training` `kernel` [HSAP: A Hierachical Sequence-aware Parallelism for Hybrid-Context Generative Models](http://arxiv.org/abs/2606.30460v1)
+  > **TL;DR**: Proposes HSAP, a hierarchical sequence parallelism framework that correctly computes causal attention on hybrid-context packed sequences. Uses a sequence-aware algorithm with JIT-compiled NCCL optimization and integrates existing paradigms. Achieves higher throughput and outperforms SOTA methods in multiple metrics.
+* `serving` `offloading` [Energy-Aware Scheduling for Serverless LLM Serving on Shared GPUs](http://arxiv.org/abs/2606.30391v1)
+  > **TL;DR**: Proposes Festina, a profiling-guided control plane for energy-efficient serverless LLM serving on shared GPUs. It coordinates energy-aware request placement, SM partitioning, and GPU frequency scaling. Achieves up to 56% energy reduction while maintaining SLO attainment within 2%.
+* `serving` `quantization` `offloading` [HBM Is Not All You Need: Efficient Disaggregated LLM Serving across Memory-heterogeneous Accelerators](http://arxiv.org/abs/2606.29986v1)
+  > **TL;DR**: Presents HMA-Serve, a system for disaggregated LLM inference across memory-heterogeneous accelerators. It uses phase-wise quantization, compute-transfer pipelining, and deferred dequantization to optimize cross-vendor serving. Achieves up to 3.2x higher goodput than memory-homogeneous methods.
+* `MoE` `serving` `offloading` [Beyond Uniform Experts: Cost-Aware Expert Execution for Efficient Multi-Device MoE Inference](http://arxiv.org/abs/2606.29982v1)
+  > **TL;DR**: Proposes Cost-Aware Expert Execution (CAEE), a runtime that optimizes Mixture-of-Experts inference by pruning low-importance, high-cost experts and redistributing their contributions. Reduces end-to-end latency by 8%-18% on a 671B model while maintaining accuracy.
+* `training` `scheduling` [SMART-MIG: A Learning Framework for Scalable and Energy-Efficient GPU Scheduling](http://arxiv.org/abs/2606.29775v1)
+  > **TL;DR**: Addresses energy-efficient online partitioning and job scheduling for MIG-enabled GPUs. Proposes SMART-MIG, a system combining Mean-Field Multi-Agent RL for partition management with heuristic job scheduling. Achieves 18% higher energy-tardiness efficiency versus a static-partitioning baseline.
+* `serving` `offloading` [Demystifying the Design Space and Best Practices for Heterogeneous LLM Inference and Serving](http://arxiv.org/abs/2606.29708v1)
+  > **TL;DR**: Demystifies the design space for heterogeneous LLM inference across prefill/decode stages. Proposes a framework based on four axes (accelerator, precision, interconnect, KV residency) and three boundary decisions. Analysis is grounded in industrial deployments and identifies precision policy as a runtime decision.
+
+### 2026-06-28
+* `serving` `multi-modal` `hardware` [Energy-Efficient Multimodal Inference Serving with Tri-serve](http://arxiv.org/abs/2606.29629v1)
+  > **TL;DR**: Addresses power inefficiency from GPU hardware-managed frequency scaling during multimodal inference serving. Proposes Tri-serve, a software DVFS controller that optimizes frequency for inter-stage dependencies, arithmetic intensity, and thermal effects. Achieves 22% energy efficiency improvement with no latency or throughput degradation.
+* `edge` `quantization` `serving` [Fog Computing and Large Language Models: A vision for the mutual beneficiaries](http://arxiv.org/abs/2606.29483v1)
+  > **TL;DR**: Proposes deploying LLMs on fog computing infrastructure to address latency and bandwidth issues. Identifies a need for optimizations like quantization and pruning for edge servers. Discusses how LLMs can also benefit fog computing through automated application deployment.
+* `quantization` `video` [W4A4 Quantization for Inference on Wan2.2-I2V-A14B](http://arxiv.org/abs/2606.29337v1)
+  > **TL;DR**: Proposes a 4-bit weight and activation (W4A4) quantization method for the Wan2.2-I2V-A14B video generation model, combining MixQ-style mixed precision and SmoothQuant-style smoothing to handle outliers. The approach maintains quality within 2-3.5% of FP16 on VBench metrics, overcoming a 5% degradation from a naive baseline.
+* `serving` `agent` `offloading` [KernelFlume: Elastic Core-Attention Scaling for Agentic Long-Context Decoding](http://arxiv.org/abs/2606.29207v1)
+  > **TL;DR**: Addresses inefficient scaling for long-context agentic workloads by disaggregating model components. Proposes KernelFlume, an elastic architecture that offloads KV cache to separate 'attention nodes', enabling query-first dispatch and kernel pipelining. Achieves up to 61% lower cost per million tokens with flat p99 latency.
+* `kernel` `quantization` [Improved Scaling for Fast Mode of Ozaki Scheme II](http://arxiv.org/abs/2606.29129v1)
+  > **TL;DR**: Addresses inaccuracies in the fast mode of Ozaki scheme II for high-precision matrix multiplication via low-precision integers. Proposes a scale-invariant scaling formula derived from the CRT uniqueness condition. On an NVIDIA GH200, achieves accuracy of the accurate mode with throughput of the fast mode.
+
 ### 2026-06-25
 * `training` `kernel` [DMuon: Efficient Distributed Muon Training with Near-Adam Overhead](http://arxiv.org/abs/2606.27153v1)
   > **TL;DR**: Addresses the high computational cost of distributed matrix-orthogonalization optimizers like Muon during LLM training. Proposes DMuon, a drop-in module that optimizes the optimizer step with efficient kernel implementations. Reduces per-step latency to near-AdamW levels, achieving a 1.48x-3.01x end-to-end speedup.
