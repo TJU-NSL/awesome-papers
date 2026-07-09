@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1250-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.07.07-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1256-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.07.08-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,22 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-07-08
+* `training` `quantization` `networking` [GIFT: Geometry-Informed Low-precision Gradient Communication for LLM Pretraining](http://arxiv.org/abs/2607.07494v1)
+  > **TL;DR**: Proposes GIFT, a geometry-informed gradient scaling method that transforms gradients for low-precision communication. It uses a near-isotropic transformation to reduce quantization error, reducing Llama-600M pretraining time by 7.6% on 64 NVIDIA GH200 Superchips.
+* `serving` `agentic` `RL` [Progressive Crystallization: Turning Agent Exploration into Deterministic, Lower-Cost Workflows in Production](http://arxiv.org/abs/2607.07052v1)
+  > **TL;DR**: Addresses the high cost of repeatedly using LLM agents for similar tasks. Introduces a lifecycle that converts successful, repeated agent behaviors into deterministic workflows. Reduced per-incident agent costs by 70% and increased deterministic execution to 45% in production.
+* `edge` `serving` `multi-modal` [Voltron: Enabling Elastic Multi-Device Execution of LLM Inference for Empowered Edge Intelligence](http://arxiv.org/abs/2607.07046v1)
+  > **TL;DR**: Proposes Voltron, a framework for distributed LLM inference across multiple edge devices to overcome single-device resource limits. It enables elastic model execution by utilizing available local resources cooperatively. Achieves up to 16.5% higher accuracy than single-device models while meeting QoS.
+
+### 2026-07-07
+* `MoE` `serving` `networking` [UBEP: Re-architecting Expert Parallelism Communication Library for Production Superpods](http://arxiv.org/abs/2607.06202v2)
+  > **TL;DR**: Addresses communication bottlenecks (execution serialization, synchronization overhead, load imbalance) for MoE inference on high-bandwidth superpods. Proposes UBEP, a communication library that optimizes All-to-All primitives. Reduces All-to-All latency by up to 52.4% and inference TPOT by up to 11.1%.
+* `training` `sparse` [MatrixFSDP: communication-free matrix optimizers under ZeRO-3 parameter sharding](http://arxiv.org/abs/2607.05895v1)
+  > **TL;DR**: Presents MatrixFSDP, a method to efficiently run matrix-based optimizers like Muon under ZeRO-3 without communication overhead. It introduces a novel sharding layout where one rank holds entire weight matrices, enabling local optimizer steps. Achieves a 54.6x reduction in optimizer-step latency over stock FSDP2-Muon on 8 nodes.
+* `serving` `offloading` `MoE` [Think Before You Grid-Search: Floor-First Triage for LLM Serving](http://arxiv.org/abs/2607.05876v2)
+  > **TL;DR**: Proposes Floor-First, a triage workflow for LLM serving that uses analytical modeling to estimate latency floors (based on HBM, FLOPs, network, KV capacity) instead of profiling. Applied to a 671B MoE model, it explains capacity limits and optimal layout choices (e.g., EP16+DP-attention achieves ~644 concurrent requests vs. TP16's ~70).
+
 ### 2026-07-06
 * `serving` `RL` [Adaptive Inference Batching using Policy Gradients](http://arxiv.org/abs/2607.05272v1)
   > **TL;DR**: Investigates using RL for adaptive batching and routing in LLM inference serving. Trains REINFORCE and PPO agents on a simulator to create policies based on queue state and GPU availability. In multi-GPU routing, the learned policy achieves 3.5x higher throughput and 25% lower latency vs. heuristics.
