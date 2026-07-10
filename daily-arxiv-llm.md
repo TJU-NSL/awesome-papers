@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1256-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.07.08-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1260-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.07.09-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,16 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-07-09
+* `serving` `agent` [SMetric: Rethink LLM Scheduling for Serving Agents with Balanced Session-centric Scheduling](http://arxiv.org/abs/2607.08565v1)
+  > **TL;DR**: Investigates LLM request scheduling for agentic workloads where high KV cache reuse creates load imbalance. Proposes SMETRIC, a session-aware scheduler that routes a session's first request for load balance and subsequent requests for cache locality. Increases cluster tokens-per-second by 10-34% over state-of-the-art schedulers while maintaining low latency.
+* `storage` `hardware` `networking` [Who Needs DRAM? We Have Fiber](http://arxiv.org/abs/2607.08407v1)
+  > **TL;DR**: Proposes Fiber Memory, an optical broadcast delay-line architecture using multi-core fiber to store and distribute large immutable data like LLM weights across accelerators. Eliminates redundant weight storage for 10,000 accelerators and reduces weight-delivery energy by over 70% versus HBM3e.
+* `kernel` `hardware` [Empirical Analysis of GPU Frequency Behavior Under ML Workloads](http://arxiv.org/abs/2607.08307v1)
+  > **TL;DR**: Investigates how GPU frequency scaling behavior under ML workloads violates the assumption of independent kernel latencies. Empirically analyzes frequency dependence on recent workload history (~80ms window). Challenges existing predictors and suggests kernel reordering could improve latency estimation and scheduling.
+* `serving` `MoE` `multi-modal` [On the Limitations of Non-GPU AI Accelerators for Large-Model Inference: A Field Study of MoE and Multimodal Serving on Huawei Ascend](http://arxiv.org/abs/2607.08215v1)
+  > **TL;DR**: Analyzes the real-world engineering challenges of serving large MoE and multi-modal models on non-GPU AI accelerators. Presents a field study of serving DeepSeek-V4-Flash models on Huawei Ascend using vLLM-Ascend, detailing required patches and system limitations. Quantifies integration effort and benchmark quality for reliable deployment.
+
 ### 2026-07-08
 * `training` `quantization` `networking` [GIFT: Geometry-Informed Low-precision Gradient Communication for LLM Pretraining](http://arxiv.org/abs/2607.07494v1)
   > **TL;DR**: Proposes GIFT, a geometry-informed gradient scaling method that transforms gradients for low-precision communication. It uses a near-isotropic transformation to reduce quantization error, reducing Llama-600M pretraining time by 7.6% on 64 NVIDIA GH200 Superchips.
