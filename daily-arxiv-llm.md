@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1260-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.07.12-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1266-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.07.13-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,22 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-07-13
+* `serving` `kernel` `quantization` [Decomposing Runtime, Kernel, and Quantization Speedups via a Matched FP16 Intermediate: A Hardware-Conditioned Case Study on Four NVIDIA RTX A5000 GPUs](http://arxiv.org/abs/2607.11368v1)
+  > **TL;DR**: Decomposes LLM serving speedups by isolating runtime from quantization/kernel gains using a matched FP16 intermediate. On four GPUs, the full 2.58x speedup is mostly attributed to runtime, with kernel/quantization contributing ≤1.5%. Quantization also extends concurrent user capacity 4x past a memory cliff.
+* `hardware` `kernel` [GPU-Tile-Sim: A Tile-Centric GPU Simulation Framework for LLM Hardware-Software Co-Design](http://arxiv.org/abs/2607.11262v1)
+  > **TL;DR**: Proposes GPU-Tile-Sim, a tile-centric GPU simulation framework for LLM kernel performance modeling. It models execution as a warp-level tile graph to capture dependency structures for co-design. Achieves high accuracy (MAPE 1.22%-8.71%) on A100/H100 for GEMM, attention, and inference workloads.
+* `serving` `diffusion` `offloading` [Xema: Efficient Diffusion Serving through Fine-Grained Memory Management and Auto-Configuration](http://arxiv.org/abs/2607.11136v1)
+  > **TL;DR**: Addresses GPU memory bottlenecks in diffusion model serving for high-resolution images and long videos. Proposes Xema, which uses trace-guided memory optimization for precise, interval-based offloading and a statically planned runtime. Achieves up to 3.7x higher SLO attainment and reduces planning time from hours to seconds.
+* `serving` `agent` `networking` [[AAFLOW+] Stateful Operator Abstraction with Zero-Copy Distributed KV Cache Orchestration for Multi-Agent Workflows](http://arxiv.org/abs/2607.10987v1)
+  > **TL;DR**: Addresses the inefficiency of repeated context recomputation in multi-agent LLM workflows. Proposes AAFLOW+, a system with stateful operators for zero-copy, distributed KV cache orchestration and transfer. Reduces Time to First Token by up to 50.2x and compute cost by 7.63x for 16-agent scale workloads.
+
+### 2026-07-11
+* `serving` `offloading` `networking` [Stateful Worlds, Stateless Elasticity: Exact-State Serving for Interactive World Models](http://arxiv.org/abs/2607.10389v1)
+  > **TL;DR**: Presents Stateful Worlds, Stateless Elasticity, a system for live migration of interactive world models while preserving bit-identical state. It moves the multi-gigabyte KV cache across GPUs with a guarantee of exact-state transfer, achieving 92.1-94.8 Gb/s bandwidth and completing same-node migrations in 18.8 ms.
+* `serving` `offloading` `edge` [Automated Tensor Scheduling for Hybrid CPU-GPU LLM Inference on Consumer Devices](http://arxiv.org/abs/2607.10183v1)
+  > **TL;DR**: Proposes ATSInfer, a system for LLM inference on resource-constrained consumer devices that uses fine-grained tensor scheduling and load-aware dynamic transfer between CPU and GPU. Improves decode throughput by up to 3.29x compared to existing offloading systems.
+
 ### 2026-07-09
 * `serving` `agent` [SMetric: Rethink LLM Scheduling for Serving Agents with Balanced Session-centric Scheduling](http://arxiv.org/abs/2607.08565v1)
   > **TL;DR**: Investigates LLM request scheduling for agentic workloads where high KV cache reuse creates load imbalance. Proposes SMETRIC, a session-aware scheduler that routes a session's first request for load balance and subsequent requests for cache locality. Increases cluster tokens-per-second by 10-34% over state-of-the-art schedulers while maintaining low latency.
