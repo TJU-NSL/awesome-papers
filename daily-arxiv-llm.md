@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1266-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.07.13-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1269-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.07.14-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,14 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-07-14
+* `edge` `kernel` `serving` [Cross-Core Inference Offload as an Operating-System Service on Dual-Core Microcontrollers](http://arxiv.org/abs/2607.12620v1)
+  > **TL;DR**: Presents an OS service for cross-core inference offloading on asymmetric dual-core microcontrollers. Uses lock-free ring buffers in shared SRAM for zero-copy tensor staging and message passing between application and AI runtime cores. Achieves round-trip latencies of 15 µs typical and 81 µs worst-case.
+* `edge` `kernel` `serving` [Inference Pipelines as Operating-System Objects: Priority Scheduling and Constant-Footprint Streaming for Microcontroller Neural Inference](http://arxiv.org/abs/2607.12614v1)
+  > **TL;DR**: Presents an OS-level inference engine for microcontrollers that treats multi-stage pipelines as schedulable objects. Proposes a priority job scheduler and constant-footprint memory management for streaming execution. Achieves a frame time of 4.63 ms (215.8 FPS) for a face-detection pipeline, with constant 2,784-byte memory use.
+* `edge` `kernel` `serving` [SynapticOS: An Inference-First Runtime Architecture for Neural Processing Units on Resource-Constrained Microcontrollers](http://arxiv.org/abs/2607.12606v1)
+  > **TL;DR**: Presents SynapticOS, an OS runtime for efficient LLM inference on microcontrollers. It introduces a tensor-aware memory allocator and NPU abstraction layer for zero fragmentation and deterministic scheduling. Achieves constant-time allocation (~154 cycles) on an NXP MCXN947.
+
 ### 2026-07-13
 * `serving` `kernel` `quantization` [Decomposing Runtime, Kernel, and Quantization Speedups via a Matched FP16 Intermediate: A Hardware-Conditioned Case Study on Four NVIDIA RTX A5000 GPUs](http://arxiv.org/abs/2607.11368v1)
   > **TL;DR**: Decomposes LLM serving speedups by isolating runtime from quantization/kernel gains using a matched FP16 intermediate. On four GPUs, the full 2.58x speedup is mostly attributed to runtime, with kernel/quantization contributing ≤1.5%. Quantization also extends concurrent user capacity 4x past a memory cliff.
