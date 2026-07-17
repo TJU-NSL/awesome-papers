@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1269-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.07.15-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1271-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.07.16-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,12 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-07-16
+* `RL` `training` `MoE` [LongStraw: Long-Context RL Beyond 2M Tokens under a Fixed GPU Budget](http://arxiv.org/abs/2607.14952v1)
+  > **TL;DR**: Enables RL post-training for million-token contexts under fixed GPU memory. Proposes an execution stack that evaluates prompts without autograd and replays short response branches sequentially. Achieves RL on 2.1M-token prompts with only a 0.21 GB memory increase per group size on 8 H20 GPUs.
+* `video` `edge` `offloading` [CODA: Algorithm-Hardware Co-design for Edge Video Diffusion via NMP-Enabled Compute-Cache Operator Disaggregation](http://arxiv.org/abs/2607.14908v1)
+  > **TL;DR**: Proposes CODA, an algorithm-hardware co-design to accelerate Video Diffusion Model inference on edge devices. It disaggregates and offloads cache operators to a near-memory engine to reduce PCIe overhead. Achieves up to 1.80x end-to-end speedup while preserving generation quality.
+
 ### 2026-07-14
 * `edge` `kernel` `serving` [Cross-Core Inference Offload as an Operating-System Service on Dual-Core Microcontrollers](http://arxiv.org/abs/2607.12620v1)
   > **TL;DR**: Presents an OS service for cross-core inference offloading on asymmetric dual-core microcontrollers. Uses lock-free ring buffers in shared SRAM for zero-copy tensor staging and message passing between application and AI runtime cores. Achieves round-trip latencies of 15 µs typical and 81 µs worst-case.
