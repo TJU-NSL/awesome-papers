@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1271-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.07.18-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1275-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.07.19-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,16 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-07-17
+* `agentic` `RL` [The Honest Quorum Problem: Epistemic Byzantine Fault Tolerance for Agentic Infrastructure](http://arxiv.org/abs/2607.16109v1)
+  > **TL;DR**: Investigates how to achieve safety and liveness in BFT consensus with reasoning agents that may endorse invalid transitions. Proposes Epistemic BFT, adding separate fault budgets for invalid endorsements and degraded liveness. Derives quorum conditions and shows adding agents helps only if it reduces correlation of errors.
+* `serving` `kernel` [Every Microsecond Matters: Achieving Near Speed-of-Light Latency in GPU Collectives](http://arxiv.org/abs/2607.16100v1)
+  > **TL;DR**: Proposes low-latency GPU collective algorithms optimized for LLM inference, using barrier-free synchronization and symmetric memory. Achieves latency for small messages within 7% of the speed-of-light hardware lower bound, improving LLM token generation.
+* `multi-modal` `RL` `training` [JoyNexus: Service-Oriented Multi-Tenant Post-Training for VLA Models](http://arxiv.org/abs/2607.16074v1)
+  > **TL;DR**: Presents JoyNexus, a service-oriented system for multi-tenant post-training (SFT, RL) of Vision-Language-Action models. It decouples services into APIs with shared base models and introduces group batching for heterogeneous data. Reduces aggregate GPU time versus isolated execution via cross-tenant scheduling.
+* `agent` `serving` `RAG` [Scalable LLM Agent Tool Access in the Cloud](http://arxiv.org/abs/2607.15593v1)
+  > **TL;DR**: Presents a cloud gateway system for scalable LLM agent tool access via the Model Context Protocol (MCP). The design manages legacy service integration, tool recommendation, and session-aware routing. Reduces tool selection time by 8.9x and token usage by 23.8x while scaling to 3000+ tools.
+
 ### 2026-07-16
 * `RL` `training` `MoE` [LongStraw: Long-Context RL Beyond 2M Tokens under a Fixed GPU Budget](http://arxiv.org/abs/2607.14952v1)
   > **TL;DR**: Enables RL post-training for million-token contexts under fixed GPU memory. Proposes an execution stack that evaluates prompts without autograd and replays short response branches sequentially. Achieves RL on 2.1M-token prompts with only a 0.21 GB memory increase per group size on 8 H20 GPUs.
