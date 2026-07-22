@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1293-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.07.20-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1297-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.07.21-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,16 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-07-21
+* `serving` `agent` [Keeping the Cache Warm Pays: Keepalive Economics for Agentic Workloads](http://arxiv.org/abs/2607.19214v1)
+  > **TL;DR**: Proposes a client-side keepalive strategy to maintain LLM cache warmth during agentic workloads with long pauses, preventing costly prefix re-processing. Analyzes cost-optimal ping frequencies relative to provider TTLs. Achieves up to 12.5x cost reduction compared to idle baseline eviction.
+* `agent` `serving` [ARBITER: Guarded Agentic Control for SLO-Oriented Kubernetes Remediation](http://arxiv.org/abs/2607.19182v1)
+  > **TL;DR**: Presents ARBITER, a guarded control plane for SLO remediation in Kubernetes. It uses an LLM-backed planning harness with a finite action interface, deterministic checks, and safety gates to select and execute remediation actions. In evaluations, it correctly identified and targeted a downstream service for remediation where HPA failed.
+* `serving` `kernel` [InstantInfer: Enabling Fast LLM Cold Start with Communicating Finite Automata](http://arxiv.org/abs/2607.18957v1)
+  > **TL;DR**: Addresses slow LLM inference cold starts caused by sequential initialization and fine-grained I/O. Proposes InstantInfer, which uses a Communicating Finite Automata abstraction to safely refactor component execution for concurrency and I/O merging. Achieves up to 7.2x speedup in cold start time.
+* `MoE` `training` `serving` [Searching for Plans You Can Actually Build: A Realizability-Aware Full-Space Optimizer for MoE Training and Serving](http://arxiv.org/abs/2607.18631v1)
+  > **TL;DR**: Presents moefs, a full-space optimizer for MoE that ensures deployment realizability by co-optimizing parallelism, schedule, and kernels. It generates plans for both Megatron training and SGLang serving stacks. On 8x H800, the serving plan achieves a throughput ratio of 1.0304 vs. a hand-tuned baseline.
+
 ### 2026-07-20
 * `serving` `offloading` [HyMCache: A KV Cache Framework for Multi-Turn LLM Serving with CXL-Hybrid Memory](http://arxiv.org/abs/2607.18141v1)
   > **TL;DR**: Addresses high cost of scaling KV-cache capacity for multi-turn LLM serving. Proposes HyMCache, a framework using CXL-hybrid memory (DRAM+SSD) with prefetching and write buffering. Achieves 3.0x higher throughput than LMCache under the same DRAM budget.
