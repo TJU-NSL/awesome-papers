@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1297-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.07.26-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1303-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.07.27-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,22 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-07-27
+* `serving` `edge` `networking` [Denial of Deadline: Network-Driven Accuracy Collapse in Distributed Inference Pipelines](http://arxiv.org/abs/2607.24692v1)
+  > **TL;DR**: Investigates network-driven attacks on distributed ML inference pipelines with fast (edge) and slow (cloud) paths. Describes how burst requests cause resource contention, delaying slow-path results past deadlines and causing accuracy collapse. Demonstrates a p99 latency increase from 92ms to 2s, reducing object tracking quality by 7.0 HOTA points.
+* `agent` `serving` `offloading` [SpecBox: Speculative Sandbox Scheduling for Efficient LLM Agent Serving](http://arxiv.org/abs/2607.23933v1)
+  > **TL;DR**: Investigates how to reduce latency and memory overhead for LLM agents using external tools (sandboxes). Proposes SpecBox, a system that speculatively prewarms sandboxes based on intent prediction and optimizes data transfer. Achieves 2.9x lower P99 latency and 45.9% lower memory use.
+
+### 2026-07-25
+* `diffusion` `kernel` [X-Stage: An Overlooked Pipeline Stage for Communication-Computation Overlap in DiT Inference](http://arxiv.org/abs/2607.23264v1)
+  > **TL;DR**: Addresses unpredictable communication backpressure in distributed DiT inference by modeling the post-issue 'X-Stage' pipeline. Proposes a Burst-Gap model to guide kernel redesign, enabling computation-communication overlap. Achieves up to 1.62x kernel speedup by restructuring fused kernels to place computation between remote-store bursts.
+* `training` `kernel` [Libra: Taming Attention Workload Skew in Long-Context LLM Training with Bounded Sequence Pool](http://arxiv.org/abs/2607.23250v1)
+  > **TL;DR**: Addresses load imbalance in long-context LLM training caused by skewed attention workloads in sequence packing. Proposes Libra, which groups sequences into fixed-size pools and uses variance-reduced placement to balance attention costs. Achieves up to 2.54x end-to-end throughput improvement over Ulysses.
+* `serving` `networking` `offloading` [Gleam: Adaptive Network-Efficient CUDA API Remoting for Cross-Device GPU Sharing over LANs](http://arxiv.org/abs/2607.23115v1)
+  > **TL;DR**: Proposes Gleam, a framework for network-efficient GPU sharing across LANs via CUDA API remoting. It reduces bandwidth via weight caching, uses asynchronous execution for latency, and dynamically schedules API remoting. Achieves up to 1.79x higher system throughput.
+* `serving` `hardware` `networking` [Application-Driven Architecture Exploration for Cross-Layer Heterogeneous Systems](http://arxiv.org/abs/2607.23042v1)
+  > **TL;DR**: Seeks to automate the design of cross-layer hardware systems for workloads like LLM inference. Proposes CHASE, a framework that decouples workload mapping and hardware optimization using a graph-based search and simulation. For LLMs, the resulting designs achieve a 2.12x geomean speedup while reducing cost and power.
+
 ### 2026-07-21
 * `serving` `agent` [Keeping the Cache Warm Pays: Keepalive Economics for Agentic Workloads](http://arxiv.org/abs/2607.19214v1)
   > **TL;DR**: Proposes a client-side keepalive strategy to maintain LLM cache warmth during agentic workloads with long pauses, preventing costly prefix re-processing. Analyzes cost-optimal ping frequencies relative to provider TTLs. Achieves up to 12.5x cost reduction compared to idle baseline eviction.
