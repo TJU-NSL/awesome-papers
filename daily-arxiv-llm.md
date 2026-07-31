@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1303-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.07.29-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1314-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.07.30-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,34 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-07-30
+* `serving` [Queue-Theoretic Admission Control for Multi-Tenant GPU Clusters](http://arxiv.org/abs/2607.28223v1)
+  > **TL;DR**: Presents a queue-theoretic model for GPU cluster admission control to provide wait time bounds. Formalizes the problem as a multi-class, multi-resource queueing network and proves structural decomposition for workload quotability. Validation on Kueue shows the proposed model correctly identifies bottlenecks and Little's Law holds exactly.
+* `serving` `offloading` `networking` [SmartGen: Seamless Disaggregated LLM Inference with Selective KV Cache Transfer](http://arxiv.org/abs/2607.28150v1)
+  > **TL;DR**: Addresses the network bottleneck of transferring KV caches in disaggregated LLM serving. Proposes SmartGen, a KV cache transfer engine using profile-based proactive, parallel on-demand, and speculative transfer paths. Reduces time-to-second-token by up to 4.3x compared to full KV cache transfer.
+
+### 2026-07-29
+* `serving` `offloading` `kernel` [InferScale: GPU-Native KV Injection for Personalized LLM Serving](http://arxiv.org/abs/2607.27090v1)
+  > **TL;DR**: Presents InferScale, a GPU-native system to reduce TTFT in LLM serving with persistent context by precomputing and injecting reusable KV cache entries for retrieved memories. Introduces Chunked RoPE for position embedding. Achieves 72-79% lower TTFT at k=50 retrieval compared to prefilling.
+* `serving` `diffusion` `multi-modal` [ServerlessT2I: Efficient Text-to-Image Workflow Serving on a Serverless Platform](http://arxiv.org/abs/2607.26566v1)
+  > **TL;DR**: Investigates how to efficiently serve dynamic text-to-image workflows on serverless platforms. Proposes ServerlessT2I, which decomposes workflows into model functions with per-model scaling and uses slack GPU memory for a fast data plane. Achieves 2x higher request rates or 3x lower GPU cost while meeting SLOs.
+* `serving` `offloading` [DualDecoder: Accelerate Long Context LLM Inference by Predictive Prefetch](http://arxiv.org/abs/2607.26475v1)
+  > **TL;DR**: Addresses GPU memory overhead from auxiliary states in sparse KV cache offloading for long-context LLM inference. Proposes DualDecoder, which uses speculative token-based prediction to prefetch critical KV entries, overlapping transfer with computation. Achieves up to 2.62x higher decoding throughput.
+* `training` `serving` `networking` [StrataCL: Fabric-Native Communication Library for Production Supernodes](http://arxiv.org/abs/2607.26444v1)
+  > **TL;DR**: Addresses communication bottlenecks in distributed AI training and inference across hundreds of accelerators. Proposes StrataCL, a fabric-native library with registration-on-allocation and workload-balanced NPU-core partitioning for direct buffer communication. Improves LLM inference throughput by 1.9x and reduces P99 TTFT by 2.2x on production workloads.
+
+### 2026-07-28
+* `training` `MoE` `networking` [Incast-Free MoE Rate-Based Scheduling](http://arxiv.org/abs/2607.26340v1)
+  > **TL;DR**: Addresses the fabric oversubscription bottleneck in MoE training caused by round-robin scheduling. Proposes a proactive, rate-based fair scheduling framework to prevent exponential incast. Reduces Collective Completion Time and maintains near-100% link utilization in simulations.
+* `serving` `kernel` `networking` [The Fabric Is the Cluster Driver: Cross-Layer eBPF Policies for GPU-CXL Fabrics](http://arxiv.org/abs/2607.26335v1)
+  > **TL;DR**: Introduces fabric_ext, an eBPF-based middleware to optimize data movement for compute kernels (e.g., LLM prefill) across GPU-CXL fabrics. It compiles a semantic movement graph into verified eBPF programs for efficient dataflow. Demonstrates optimization for attention and FFN kernel streams in LLM serving.
+* `serving` `MoE` `quantization` [Route-Block Membership Selects Packed-AWQ Arithmetic: A Controlled Single-Fixture Mechanism Study](http://arxiv.org/abs/2607.26316v1)
+  > **TL;DR**: Investigates the causal impact of token-to-expert routing decisions on the exact arithmetic trajectory of packed AWQ kernels in MoE models. Uses controlled perturbations on a Qwen3-Coder layer to show routing alignment selects kernel execution path. Achieves bitwise equivalence by forcing a specific grid construction.
+* `hardware` `inference` `kernel` [MDTransformer: A Hardware-Software Co-Design of Mode-Division Photonic Transformer Accelerator with Inverse-Designed Coherent Crossbar](http://arxiv.org/abs/2607.26016v1)
+  > **TL;DR**: Proposes a photonic accelerator for efficient Transformer inference. Co-designs hardware using inverse-designed, mode-division optical components to create a compact tensor core for matrix multiplication. Achieves 63.6% power saving and 40.6% energy saving over a state-of-the-art photonic accelerator.
+* `training` `networking` [PowerScale: Energy-Efficient Geo-Distributed Model Training with Federated Datacenter Power](http://arxiv.org/abs/2607.25650v1)
+  > **TL;DR**: Addresses the energy inefficiency of geo-distributed LLM training. Proposes PowerScale, a hierarchical aggregation system using regional clusters and adaptive sync to reduce WAN communication. Achieves comparable accuracy while reducing energy consumption by up to 3.9x.
+
 ### 2026-07-27
 * `serving` `edge` `networking` [Denial of Deadline: Network-Driven Accuracy Collapse in Distributed Inference Pipelines](http://arxiv.org/abs/2607.24692v1)
   > **TL;DR**: Investigates network-driven attacks on distributed ML inference pipelines with fast (edge) and slow (cloud) paths. Describes how burst requests cause resource contention, delaying slow-path results past deadlines and causing accuracy collapse. Demonstrates a p99 latency increase from 92ms to 2s, reducing object tracking quality by 7.0 HOTA points.
