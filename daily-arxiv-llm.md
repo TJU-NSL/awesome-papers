@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1314-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.08.02-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1326-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.08.03-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,32 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-08-03
+* `serving` `quantization` `offloading` [Efficiency and Cost Alignment in Batched LLM Serving via Resource-Fair Scheduling](http://arxiv.org/abs/2608.02244v1)
+  > **TL;DR**: Addresses resource unfairness in batched LLM serving where short requests are penalized by the long request's KV-cache cost. Proposes the ISJL scheduling algorithm to bound KV-cache disparity among co-batched requests. Achieves a 3/4 competitive ratio and balances throughput with cost alignment.
+* `training` `kernel` [DEFT: Joint Task Placement and DVFS for Energy-Efficient Multi-GPU Runtimes](http://arxiv.org/abs/2608.02122v1)
+  > **TL;DR**: Presents DEFT, an energy-aware scheduler for multi-GPU systems that jointly optimizes task placement and DVFS settings. It uses a cost model integrating execution time, data movement, and DVFS overheads. Reduces energy consumption by 14.8% and 4.8% on L40S and L4 GPUs while maintaining performance within 1.5%.
+* `serving` `edge` `offloading` [Learning-Based Collaborative MEC for LLM Inference with Soft-Deadline Awareness via Transformer-Enhanced PPO](http://arxiv.org/abs/2608.02031v1)
+  > **TL;DR**: Addresses scheduling LLM inference tasks with soft deadlines across collaborative mobile edge servers. Proposes a transformer-enhanced PPO algorithm to optimize task migration and minimize deadline extensions while respecting dependencies. Improves task completion rate by up to 20% over conventional PPO.
+* `edge` `multi-modal` `serving` [TALSC: Timeliness-Aware Large-Small VLM Collaboration for Infrastructure-Assisted Autonomous Driving](http://arxiv.org/abs/2608.01998v1)
+  > **TL;DR**: Proposes TALSC, a scheduling framework for infrastructure-assisted autonomous driving that balances the accuracy of large VLMs and the timeliness of small VLMs by modeling Age of Information. Uses a Lyapunov-based online algorithm, achieving a 12.6% improvement in Micro-F1 score.
+* `serving` `offloading` `kernel` [Energy-Efficient LLM Serving via Disaggregated Attention--FFN and Flexible Frequency Scaling](http://arxiv.org/abs/2608.01891v1)
+  > **TL;DR**: How to reduce LLM serving energy consumption via fine-grained frequency scaling. Proposes AFlex, a framework for disaggregated Attention/FFN serving with operator-level DVFS and an interleaved pipeline. Reduces energy per token by up to 49% over prior disaggregated serving while meeting SLOs.
+* `serving` `multi-modal` [HorizonServe: Coordinating Request Scheduling with GPU Sharing for Omni-Model Serving](http://arxiv.org/abs/2608.01785v1)
+  > **TL;DR**: Addresses GPU scheduling for omni-models with heterogeneous SLOs across shared backbone and divergent output stages. Proposes HorizonServe, coordinating request admission and GPU allocation via latency profiling and SM throttling. Improves SLO attainment by up to 7.0x and reduces first-response latency by 38.4-63.7%.
+* `kernel` `training` `sparse` [LongCat Sparse Attention: Taming the Lightning via Streaming-aware Hierarchical Cross-Layer Indexing](http://arxiv.org/abs/2608.01662v1)
+  > **TL;DR**: Improves the efficiency of sparse attention for long-context LLM training. Proposes LongCat Sparse Attention, a co-designed framework with streaming-aware, cross-layer, and hierarchical indexing. Achieves full-attention parity while enabling native training on one-million-token contexts and underpinning the 1.6T-parameter LongCat-2.0.
+* `serving` `offloading` [Preserving Admission Responsibility in Multi-Tenant Large Language Model Prefix Caches](http://arxiv.org/abs/2608.01657v1)
+  > **TL;DR**: Addresses the admission-responsibility gap in multi-tenant LLM prefix caching where one tenant's new KV blocks evict another's reusable state. Proposes PrefixShield, a caching system that meters block materialization and uses projected debt for eviction. Improves victim cache hit ratio by up to 79.95 percentage points over LRU at scale.
+* `serving` `offloading` `RAG` [PrefixPlace: Provable Prefix Key-Value Placement for Large Language Model Serving under Heterogeneous Compute and Transfer Costs](http://arxiv.org/abs/2608.01655v1)
+  > **TL;DR**: This paper addresses the challenge of optimally placing Prefix Key-Value (KV) caches for LLM serving under heterogeneous compute and network transfer costs. The proposed system, PrefixPlace, is an epoch-level planner that formulates placement as a facility-location problem, solved with an efficient algorithm. It achieves up to 40.4% materialization-cost savings over baselines in RAG workloads.
+* `serving` `kernel` `RL` [Bole: Efficient Tree Speculation for Hybrid-Attention Language Models](http://arxiv.org/abs/2608.01651v1)
+  > **TL;DR**: Presents Bole, a kernel-runtime co-design for efficient tree speculative decoding on hybrid-attention LLMs. It transforms the linear-attention recurrence for parallel node verification and losslessly encodes state updates to reduce memory. Achieves up to 4.72x higher throughput and 67.6% lower TTFT over baselines.
+* `training` `kernel` `edge` [Meganeura: Portable GPU Training and Inference through Vulkan and Metal](http://arxiv.org/abs/2608.01563v1)
+  > **TL;DR**: Investigates if a single compiler can span LLM training and inference on consumer GPUs. Presents Meganeura, a native compiler with a static graph and runtime for Vulkan/Metal. Achieves median valid training latency 1.8x PyTorch, with compilation in 0.1-2.4s vs. 6-96s.
+* `agent` `training` `serving` [AtumAI: A Principled Framework for Agentic Generation of Datacenter Control-Plane Policies](http://arxiv.org/abs/2608.02569v1)
+  > **TL;DR**: Presents AtumAI, an agentic AI framework for generating datacenter control-plane policies. Combines an LLM with a compiler for formal task specification and an evolutionary loop for search. The framework reduces policy onboarding from months to writing a description and generates policies outperforming expert baselines.
+
 ### 2026-07-30
 * `serving` [Queue-Theoretic Admission Control for Multi-Tenant GPU Clusters](http://arxiv.org/abs/2607.28223v1)
   > **TL;DR**: Presents a queue-theoretic model for GPU cluster admission control to provide wait time bounds. Formalizes the problem as a multi-class, multi-resource queueing network and proves structural decomposition for workload quotability. Validation on Kueue shows the proposed model correctly identifies bottlenecks and Little's Law holds exactly.
