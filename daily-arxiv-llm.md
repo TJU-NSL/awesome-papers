@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1326-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.08.04-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1331-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.08.05-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,18 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-08-05
+* `agent` `kernel` `sparse` [SparseDitto: Customizing GPU Kernels for Different Sparsity Patterns with LLM-Based Agentic System](http://arxiv.org/abs/2608.05033v1)
+  > **TL;DR**: Addresses the high GPU performance variability of sparse matrix kernels across different sparsity patterns. Proposes SparseDitto, an LLM-based agentic system that generates and verifies custom kernels for each matrix and operator. Achieves a geometric-mean speedup of 2.68x over cuSPARSE on an NVIDIA RTX PRO 6000 GPU.
+* `serving` `networking` `quantization` [RAC: Reference-Aware Activation Compression for Communication-Efficient Split LLM Inference](http://arxiv.org/abs/2608.04991v1)
+  > **TL;DR**: Addresses the communication bottleneck in split LLM inference for agents by proposing RAC, a reference-aware codec that compresses boundary hidden states using historical retrieval and quantization. Achieves 1.24-2.72x speedup in time-to-first-token and time-per-output-token ratios.
+* `serving` `offloading` `edge` [AsymSpec: Efficient Cloud-Edge Speculative Decoding over Asymmetric Networks](http://arxiv.org/abs/2608.04974v1)
+  > **TL;DR**: AsymSpec improves cloud-edge speculative decoding under constrained uplink bandwidth. It introduces an asymmetric verification protocol to minimize uplink data and a confirmed-prefix pipeline to hide verification latency. Achieves 2.82-28.03x higher output-token throughput versus baselines.
+* `serving` `MoE` `offline` [AFD-Ledger: Deployment Provisioning for Attention--FFN Disaggregation](http://arxiv.org/abs/2608.04502v1)
+  > **TL;DR**: Addresses whether AFD deployment provides higher throughput than collocated deployment for MoE models under constraints. Proposes AFD-Ledger, an analytical provisioning system with an execution model and bounded hardware search. Reduces deployment evaluations by 68.8%-83.5% while recovering the optimal deployment.
+* `agentic` `serving` `hardware` [Architectural Implications of Agentic AI Workflows](http://arxiv.org/abs/2608.04458v1)
+  > **TL;DR**: Characterizes the architectural bottlenecks of agentic AI workflows (fragmented, heterogeneous execution across CPU/GPU). Proposes Agora, a server prototype with dynamic CPU harvesting, GPU memory oversubscription, and role-based core pooling. Increases server throughput by 2.8x while preserving tail latency.
+
 ### 2026-08-03
 * `serving` `quantization` `offloading` [Efficiency and Cost Alignment in Batched LLM Serving via Resource-Fair Scheduling](http://arxiv.org/abs/2608.02244v1)
   > **TL;DR**: Addresses resource unfairness in batched LLM serving where short requests are penalized by the long request's KV-cache cost. Proposes the ISJL scheduling algorithm to bound KV-cache disparity among co-batched requests. Achieves a 3/4 competitive ratio and balances throughput with cost alignment.
