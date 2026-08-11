@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1331-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.08.09-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1342-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.08.10-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,32 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-08-10
+* `training` `RL` `edge` [Rethinking Factor Sharing in Federated LoRA: A Rank-Aware Adaptive Approach](http://arxiv.org/abs/2608.09742v1)
+  > **TL;DR**: Investigates which LoRA factor (A or B) to share in federated fine-tuning of LLMs. Proposes FedAS-LoRA, which uses a Rank-Aware Shared-Subspace Sufficiency metric to pre-select the optimal sharing strategy. Improves downstream task accuracy by up to 4.0% across various data distributions.
+* `serving` `kernel` [Depth-adaptive Inference of Looped Language Models via Continuous Depth Batching](http://arxiv.org/abs/2608.09444v1)
+  > **TL;DR**: Enables efficient batching for looped LMs with adaptive depth. Proposes Continuous Depth Batching, which schedules individual loop iterations and boundary stages separately. Achieves 1.5-1.9x higher offline throughput and 45-90% lower latency versus baseline.
+* `edge` `sparse` `kernel` [UnionSparse: An Index-Efficient Sparsity Framework for Low-Bit Sparse LLM Inference on Edge](http://arxiv.org/abs/2608.09291v1)
+  > **TL;DR**: Addresses the bottleneck of sparse metadata overhead in quantized LLM inference on edge devices. Proposes UnionSparse, a framework combining index-efficient bitmap encoding and a custom SpMM kernel optimized for small batches. Achieves up to 3.46x speedup over cuBLAS Tensor Core under W4A4 quantization.
+* `training` `kernel` `networking` [SwiftQK: Fast and Communication-Efficient Tensor Parallelism for Query-Key Normalization](http://arxiv.org/abs/2608.09160v1)
+  > **TL;DR**: Addresses the communication overhead of Query-Key Normalization under Tensor Parallelism. Proposes SwiftQK, a persistent kernel that exchanges scalar statistics and overlaps P2P reduction with computation. Reduces QK-Norm latency by up to 93.9% and TPOT by 29.5%.
+
+### 2026-08-08
+* `RAG` `serving` `networking` [OpRAG: A Resource-Deterministic Runtime for GPU-Backed Multi-Stage RAG Workflows](http://arxiv.org/abs/2608.08340v1)
+  > **TL;DR**: Presents OpRAG, a distributed runtime for multi-stage RAG workflows that models stages as resource-aware operators to reduce orchestration overhead. It lowers workflows into communication-aware graphs with overlapped execution, reducing end-to-end latency by 52-60% while maintaining recall.
+* `RAG` `serving` [SAGE: SLO-Aware Adaptive Retrieval for Production RAG Systems](http://arxiv.org/abs/2608.08237v1)
+  > **TL;DR**: Proposes SAGE, a system to dynamically adjust the number of passages retrieved per query in a RAG pipeline to meet latency SLOs. It uses lightweight features and imitation learning for an adaptive retrieval policy. Achieves 95% SLO compliance vs. 30% for best static baseline, with 36% lower P95 latency.
+* `serving` `offloading` `kernel` [OasisKV: Scaling In-Decode KV Cache Beyond HBM with Lookahead Sparse Prefetching](http://arxiv.org/abs/2608.08097v1)
+  > **TL;DR**: Addresses the memory bottleneck of KV cache in LLM inference. Proposes OasisKV, a system that uses lookahead sparse prefetching to keep only relevant KV entries in HBM, offloading the rest. Achieves 1.69x throughput over dense vLLM with <0.1 accuracy loss on reasoning workloads.
+* `kernel` `edge` [Effect of Abstractions and Prompting Strategies on LLM-Guided High-Performance Optimizations](http://arxiv.org/abs/2608.08085v1)
+  > **TL;DR**: Investigates if traditional code abstractions improve LLM-guided HPC optimization. Compares LLM performance when generating C code versus using high-level framework schedules on PolyBench. LLM-generated C code achieves better performance and validity rates than framework-based approaches.
+* `training` `edge` [ZeroLock: Concurrent Memory-Efficient LLM Training via Modular Update Decoupling](http://arxiv.org/abs/2608.07974v1)
+  > **TL;DR**: Proposes ZeroLock, a backpropagation-free fine-tuning algorithm that decouples model updates into independent chunks to break update locking. Enables concurrent training, reducing memory usage by 26.5% and improving throughput by 4.9% on edge devices in prototype evaluations.
+* `training` `offline` `kernel` [ElastiCo: Elastic Configuration and Interference-Aware Orchestration for GPU Clusters](http://arxiv.org/abs/2608.07971v1)
+  > **TL;DR**: Addresses GPU underutilization from rigid allocation of training and offline LLM inference jobs. Proposes ElastiCo, an orchestration framework using resource transformation, shadow pricing, and interference-aware co-location. Increases cluster throughput by 2.02x and GPU utilization from 25% to 46%.
+* `training` `RL` [Directed Neuro-Symbolic Stochastic Execution for Verification of Distributed Parallel AI Programs](http://arxiv.org/abs/2608.07947v1)
+  > **TL;DR**: Proposes DNSSE, a testing framework for distributed parallel AI programs that uses an LLM to guide schedule exploration with symbolic solving and stochastic mutation, targeting concurrency bugs. Increases branch coverage from 68.6% to 91.6% and detects 2.9% more bugs than baselines.
+
 ### 2026-08-05
 * `agent` `kernel` `sparse` [SparseDitto: Customizing GPU Kernels for Different Sparsity Patterns with LLM-Based Agentic System](http://arxiv.org/abs/2608.05033v1)
   > **TL;DR**: Addresses the high GPU performance variability of sparse matrix kernels across different sparsity patterns. Proposes SparseDitto, an LLM-based agentic system that generates and verifies custom kernels for each matrix and operator. Achieves a geometric-mean speedup of 2.68x over cuSPARSE on an NVIDIA RTX PRO 6000 GPU.
