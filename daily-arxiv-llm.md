@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1342-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.08.12-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1344-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.08.13-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,14 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-08-13
+* `serving` `offloading` `kernel` [vToken: Token-Level Virtualization for Reclaimable KV Caches](http://arxiv.org/abs/2608.13263v1)
+  > **TL;DR**: Addresses intra-block fragmentation in KV cache management by proposing vToken, a token-level virtualization layer that decouples logical tokens from physical blocks for asynchronous repacking. Reduces retained KV blocks per request by up to 72.3% and improves throughput by 1.37x.
+
+### 2026-08-11
+* `serving` `edge` `offloading` [MemSpec: Memory-Aware Runtime for Adaptive Draft Scheduling in Speculative Decoding on Edge Devices](http://arxiv.org/abs/2608.10362v1)
+  > **TL;DR**: Proposes MemSpec, a memory-aware runtime for adaptive speculative decoding on edge devices. It uses a predictor for draft effectiveness and a scheduler for proactive model loading to reduce switching overhead. Achieves 40.7% higher throughput over adaptive baselines on a Jetson Orin Nano.
+
 ### 2026-08-10
 * `training` `RL` `edge` [Rethinking Factor Sharing in Federated LoRA: A Rank-Aware Adaptive Approach](http://arxiv.org/abs/2608.09742v1)
   > **TL;DR**: Investigates which LoRA factor (A or B) to share in federated fine-tuning of LLMs. Proposes FedAS-LoRA, which uses a Rank-Aware Shared-Subspace Sufficiency metric to pre-select the optimal sharing strategy. Improves downstream task accuracy by up to 4.0% across various data distributions.
