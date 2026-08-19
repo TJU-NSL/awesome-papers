@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1344-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.08.17-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1347-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.08.18-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,18 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-08-18
+* `serving` `offloading` `storage` [Bounded-State Restoration: Decoupling Local Restore Capacity from External LLM State](http://arxiv.org/abs/2608.17826v1)
+  > **TL;DR**: Proposes a method to decouple LLM state restoration capacity from local GPU memory by introducing a bounded restoration working set. The BSR technique installs state in chunks of size W, achieving a 64x external-to-local state ratio while reducing restore time-to-first-token from 43.1s to 17.6s.
+
+### 2026-08-17
+* `edge` `multi-modal` `MoE` [AdaSprite: Resource-efficient Online Co-Adaptation for V2I Systems Under Large-scale Data Drifts](http://arxiv.org/abs/2608.16188v1)
+  > **TL;DR**: Presents AdaSprite, a system for resource-efficient online adaptation of Vision Mixture-of-Experts (V-MoE) models in vehicle-infrastructure (V2I) systems. The method combines cooperative elastic scaling and multi-level multiplexing to optimize DRAM usage and I/O. On a weak edge device, it supports 17 concurrent tasks (vs. 6 for baselines) and improves throughput by 2.1x.
+
+### 2026-08-14
+* `RL` `multi-modal` `training` [Rollplex: Cross-Phase GPU Spatial Sharing for Vision Language Model Post-Training](http://arxiv.org/abs/2608.14498v1)
+  > **TL;DR**: Presents Rollplex, a runtime for vision-language model reinforcement learning post-training that enables cross-phase GPU spatial sharing. It overlaps prefix processing with rollout decoding via phase-aware memory management and parallelism-aware weight sharing. Achieves 1.23x-2.24x speedup over baselines on 32 H800 GPUs.
+
 ### 2026-08-13
 * `serving` `offloading` `kernel` [vToken: Token-Level Virtualization for Reclaimable KV Caches](http://arxiv.org/abs/2608.13263v1)
   > **TL;DR**: Addresses intra-block fragmentation in KV cache management by proposing vToken, a token-level virtualization layer that decouples logical tokens from physical blocks for asynchronous repacking. Reduces retained KV blocks per request by up to 72.3% and improves throughput by 1.37x.
