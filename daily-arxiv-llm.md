@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1347-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.08.23-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1351-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.08.24-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,18 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-08-23
+* `edge` `offloading` `sparse` [NeuroPrefetcher: Storage-Aware Sparse LLM Inference via Delta Prefetching](http://arxiv.org/abs/2608.22643v1)
+  > **TL;DR**: Addresses LLM inference when the model exceeds device memory by exploiting temporal locality in sparse MLP activation. Proposes NeuroPrefetcher, which uses a small predictor to prefetch only delta weights from storage. Achieves a 7.9-12.0x speedup over llama.cpp on edge hardware.
+* `training` `networking` [Understanding the Synchronization Tax in GPU Scale-Up Domains](http://arxiv.org/abs/2608.22503v1)
+  > **TL;DR**: Analyzes the performance penalty from GPU synchronization delays in large-scale ML training. Uses kernel tracing and extreme value theory to model the 'synchronization tax' caused by GEMM kernel time variation. Shows the tax consumes over 50% of communication time in an 8-GPU domain, limiting interconnect scaling returns.
+
+### 2026-08-19
+* `serving` `offloading` `storage` [The Lazy Pod That Lies: Deferred Cost and Failure Semantics of Lazy Container Image Pulling for Model Serving on Kubernetes](http://arxiv.org/abs/2608.19412v1)
+  > **TL;DR**: Evaluates lazy container-image pulling for LLM serving on Kubernetes, assessing cost deferral and failure semantics. Compares eStargz and AWS SOCI systems, finding lazy pulling enables size-independent cold starts (17s vs. 575s eager) but introduces node-level cache exhaustion causing pod read failures under sustained load.
+* `serving` `networking` `edge` [Pre-Compiled Pipeline Shards for Distributed LLM Inference on Intel AI PC Fleets](http://arxiv.org/abs/2608.19147v1)
+  > **TL;DR**: Proposes a pipeline parallelism system for distributed LLM inference on Intel AI PCs. Splits models into pre-compiled shards and uses speculative decoding and request interleaving over a network. A 2-node pipeline serves 2 concurrent users at 1.79x the single-user throughput of the unsplit model.
+
 ### 2026-08-18
 * `serving` `offloading` `storage` [Bounded-State Restoration: Decoupling Local Restore Capacity from External LLM State](http://arxiv.org/abs/2608.17826v1)
   > **TL;DR**: Proposes a method to decouple LLM state restoration capacity from local GPU memory by introducing a bounded restoration working set. The BSR technique installs state in chunks of size W, achieving a 64x external-to-local state ratio while reducing restore time-to-first-token from 43.1s to 17.6s.
