@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1351-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.08.25-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1362-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.08.26-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,34 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-08-26
+* `training` `agent` `offloading` [psRL: Efficient Training for Agentic AI via Training-Time Prefix Sharing](http://arxiv.org/abs/2608.25683v1)
+  > **TL;DR**: Addresses the bottleneck of the update phase in agentic AI training by exploiting prefix redundancy across samples. Proposes psRL with novel workload scheduling and a dynamic KV cache manager for distributed training. Achieves up to 5.2x higher throughput compared to existing systems.
+
+### 2026-08-25
+* `serving` `offloading` `hardware` [FLINT: Efficiently Leveraging High Bandwidth Flash for Capacity-Scalable LLM Inference Acceleration](http://arxiv.org/abs/2608.25062v1)
+  > **TL;DR**: Addresses the memory capacity constraint in LLM inference by using high-bandwidth flash (HBF). Proposes FLINT, a hardware substrate with a burst-buffer controller, phantom-plane refresh, and a read-only FTL for efficient weight offloading. Achieves 97% of HBF's peak bandwidth and hides flash latency, enabling larger models on capacity-limited accelerators.
+* `edge` `serving` [Hydra: Phase-Aware Workload Characterization of LLM Inference across Edge SoC Generations, Backends, and Quantization Levels](http://arxiv.org/abs/2608.25053v1)
+  > **TL;DR**: Investigates how backend, hardware, and quantization affect LLM inference latency and efficiency on edge SoCs. Presents Hydra, a framework for phase-aware workload characterization that fuses software timing with hardware telemetry. Analysis shows quantization reduces memory traffic and energy by up to a factor of two, but aggregate latency hides key deployment effects.
+* `hardware` `serving` [Maia 200: A Software Defined Dataflow System for Large-scale AI Acceleration](http://arxiv.org/abs/2608.24664v1)
+  > **TL;DR**: Presents Maia 200, a software-defined dataflow AI accelerator designed for high-throughput inference. The architecture shifts from thread-centric to data-movement-centric design with specialized memory engines. Achieves 10,145 Tflop/s FP4 performance within a 750W power envelope.
+* `training` `networking` `edge` [SatDL: Jointly Optimizing Data Redistribution and Training for Satellite-Based Distributed Learning](http://arxiv.org/abs/2608.24516v1)
+  > **TL;DR**: Seeks to minimize total learning time and energy for distributed ML training on satellite constellations with non-IID data. Proposes SatDL, a framework that jointly optimizes data redistribution and training by modeling transfer delay and convergence time. Reduces total end-to-end learning time by up to 18.6%.
+* `training` `quantization` `sparse` [Compression Trinity: Exploring Sparsity, Quantization, and Low-Rank Approximations for LLM Compression](http://arxiv.org/abs/2608.24070v1)
+  > **TL;DR**: Proposes Compression Trinity, a unified framework combining sparsity, quantization, and low-rank approximations for LLM pre-training and compression. Techniques include optimizer acceleration and dynamic/static masking to reduce computational cost. Achieves up to 1.85x faster convergence and 5.66% higher accuracy over SOTA compressed models.
+* `RAG` `serving` [Analyzing and Reducing Search Quality Differences in Vector Similarity Search](http://arxiv.org/abs/2608.25185v1)
+  > **TL;DR**: Addresses search quality disparities in vector similarity search, a key RAG component. Proposes RCheck, a runtime system that dynamically adapts per-query search effort to meet target recall. Increases queries meeting target recall by 8-47% at equivalent throughput compared to global tuning.
+
+### 2026-08-24
+* `training` `networking` `kernel` [ShardMeter: Sharded and Geo-Distributed Training Without the Guesswork](http://arxiv.org/abs/2608.23840v1)
+  > **TL;DR**: Proposes ShardMeter, an analytical model to predict performance for sharded, geo-distributed training of transformers. It models tightly coupled factors like model size, GPU memory, and bandwidth to estimate runtime and cost. Predicts bottlenecks and identifies configurations 10x faster than exhaustive benchmarking.
+* `serving` `offloading` `MoE` [Memory-Sovereign Inference: Output-Exact Execution Beyond Full Residency](http://arxiv.org/abs/2608.23805v1)
+  > **TL;DR**: Proposes a falsifiable certification method for exact output in memory-constrained LLM serving, specifically for Mixture-of-Experts models. Validates a storage-backed inference system that correctly offloads experts, demonstrating exact results while staying within a 11 GiB host memory budget versus a 34 GiB full-residency requirement.
+* `quantization` `inference` [FAMPWQ: Fisher Information-based Adaptive Mixed Precision Weight Quantization for Effective LLM Inference](http://arxiv.org/abs/2608.24945v1)
+  > **TL;DR**: Proposes FAMPWQ, an adaptive mixed-precision quantization method that uses a novel Fisher information metric and a reinforcement learning allocator to assign layer-wise bit-widths for LLMs. Achieves up to 6.87% higher accuracy compared to baselines on commodity GPUs.
+* `training` `networking` `sparse` [CED-EF: Compressed Exact Diffusion with Error Feedback for Multi-Agent Learning](http://arxiv.org/abs/2608.23013v1)
+  > **TL;DR**: Proposes CED-EF, an exact diffusion method with error feedback for decentralized multi-agent learning under compressed communication. Achieves improved convergence with a stochastic term of O(σ/√(NK)) and reduces transient time dependencies on compression and network topology.
+
 ### 2026-08-23
 * `edge` `offloading` `sparse` [NeuroPrefetcher: Storage-Aware Sparse LLM Inference via Delta Prefetching](http://arxiv.org/abs/2608.22643v1)
   > **TL;DR**: Addresses LLM inference when the model exceeds device memory by exploiting temporal locality in sparse MLP activation. Proposes NeuroPrefetcher, which uses a small predictor to prefetch only delta weights from storage. Achieves a 7.9-12.0x speedup over llama.cpp on edge hardware.
