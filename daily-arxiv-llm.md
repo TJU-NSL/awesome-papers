@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1362-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.08.26-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1365-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.08.27-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,14 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-08-27
+* `training` `RL` `thinking` [Performance Foundations of Parallel & Distributed Reasoning Language Models](http://arxiv.org/abs/2608.27046v1)
+  > **TL;DR**: This paper analyzes the massive computational demands of training Reasoning Language Models (RLMs) via RL-style post-training. It systematizes RL-for-LLM paradigms and develops a taxonomy of parallelism strategies for multi-model RLM training, aiming to provide guidelines for building scalable and cost-effective RLM systems.
+* `serving` `training` `hardware` [Benchmarking Confidential Computing Performance on NVIDIA Blackwell GPUs](http://arxiv.org/abs/2608.26575v1)
+  > **TL;DR**: Quantifies the performance overhead of confidential computing for LLM inference/training on NVIDIA Blackwell GPUs. Uses microbenchmarks to isolate costs from encrypted boundaries and NVLink traffic. Achieves 1-3% throughput overhead with optimized configuration, down from 30-40%.
+* `serving` `MoE` `kernel` [VPP: Virtual Pipeline Parallelism for Efficient Chunked Prefill in Long-Context LLM Inference](http://arxiv.org/abs/2608.26523v1)
+  > **TL;DR**: Proposes Virtual Pipeline Parallelism (VPP), a pipeline scheduling method for long-context LLM prefill that uses a virtual-stage layout to balance attention costs. VPP reduces pipeline bubbles from 6.4% to 0.1% on a 512K-token workload, improving throughput by up to 13.1% over prior methods.
+
 ### 2026-08-26
 * `training` `agent` `offloading` [psRL: Efficient Training for Agentic AI via Training-Time Prefix Sharing](http://arxiv.org/abs/2608.25683v1)
   > **TL;DR**: Addresses the bottleneck of the update phase in agentic AI training by exploiting prefix redundancy across samples. Proposes psRL with novel workload scheduling and a dynamic KV cache manager for distributed training. Achieves up to 5.2x higher throughput compared to existing systems.
