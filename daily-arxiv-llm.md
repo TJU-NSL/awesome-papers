@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1365-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.08.29-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1369-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.08.30-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,16 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-08-28
+* `training` `RL` `MoE` [HARTS: Efficient Agentic Reinforcement Learning for Hybrid-Attention Models over Arbitrary Rollout Trees](http://arxiv.org/abs/2608.28158v1)
+  > **TL;DR**: Presents HARTS, a system for efficient agentic RL training on hybrid-attention models by eliminating redundant computation in irregular rollout trees through joint scheduling and prefix compression. Achieves 4.81-4.87x speedup in forward/backward/gradient passes on SWE-bench workloads.
+* `hardware` `training` `serving` [AI Hardware Accelerators for Large Language Models: Architectures and the Memory Wall](http://arxiv.org/abs/2608.28048v1)
+  > **TL;DR**: Reviews AI hardware accelerators for LLMs, analyzing constraints via roofline models. Identifies the memory bandwidth as the decisive bottleneck, especially for autoregressive decoding. Compares architectures on compute, memory, energy, and scalability, finding domain-specific ASICs excel for high-volume workloads.
+* `serving` `MoE` [Characterization of Request and Token Energy Costs for LLM Inference Workloads on GPU Platforms](http://arxiv.org/abs/2608.28044v1)
+  > **TL;DR**: Characterizes the mismatch between token-based pricing and energy consumption in LLM inference. Proposes a decomposed energy model with fixed prefill/generation setup costs and marginal token costs. Shows increasing output length from 10 to 512 tokens reduces token energy by 10x on H200, but increases total request energy by 5x.
+* `training` `MoE` `networking` [TerraceMoE: A Cost Model for Hierarchical MoE All-to-All Communication](http://arxiv.org/abs/2608.27874v1)
+  > **TL;DR**: Presents a cost model for evaluating hierarchical two-hop dispatch to reduce slow-fabric traffic in MoE training. The model includes validation gates and routing constraints to screen communication-call trade-offs. For a specific geometry, it finds a corrected breakeven hierarchy ratio of 3.98 for the measured PyTorch implementation.
+
 ### 2026-08-27
 * `training` `RL` `thinking` [Performance Foundations of Parallel & Distributed Reasoning Language Models](http://arxiv.org/abs/2608.27046v1)
   > **TL;DR**: This paper analyzes the massive computational demands of training Reasoning Language Models (RLMs) via RL-style post-training. It systematizes RL-for-LLM paradigms and develops a taxonomy of parallelism strategies for multi-model RLM training, aiming to provide guidelines for building scalable and cost-effective RLM systems.
