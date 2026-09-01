@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1369-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.08.30-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1370-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.08.31-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,10 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-08-30
+* `serving` `agent` [Bridging Agent Semantics with Spot Capacity: An Elastic and Recoverable Service Model](http://arxiv.org/abs/2608.29581v1)
+  > **TL;DR**: Proposes SemSpot, a semantics-aware service model for LLM agents to utilize spot capacity from inference platforms. It uses short-lived offers based on price and completion probability that agents select via task state. An audit of 1,535 agent cases shows varied cost and service-time tradeoffs.
+
 ### 2026-08-28
 * `training` `RL` `MoE` [HARTS: Efficient Agentic Reinforcement Learning for Hybrid-Attention Models over Arbitrary Rollout Trees](http://arxiv.org/abs/2608.28158v1)
   > **TL;DR**: Presents HARTS, a system for efficient agentic RL training on hybrid-attention models by eliminating redundant computation in irregular rollout trees through joint scheduling and prefix compression. Achieves 4.81-4.87x speedup in forward/backward/gradient passes on SWE-bench workloads.
