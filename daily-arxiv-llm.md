@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1370-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.08.31-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1376-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.09.01-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,20 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-09-01
+* `training` `edge` `offloading` [Just Talk Once: Communication-Efficient Split Federated LLM Fine-Tuning on Edge Devices](http://arxiv.org/abs/2609.01457v1)
+  > **TL;DR**: Proposes L-shaped SFT, a federated LLM fine-tuning framework that eliminates bidirectional communication by supervising server-side activations with target embeddings. Allows one-shot client participation by caching activations. Reduces communication costs by up to 90% compared to baselines on heterogeneous edge devices.
+* `multi-modal` `edge` `networking` [Contribution-Aware Bandwidth Allocation for Multimodal Split Learning](http://arxiv.org/abs/2609.01406v1)
+  > **TL;DR**: Addresses inefficient bandwidth allocation for multimodal split learning at the edge. Proposes ModalShare, an allocator that uses server-computed Shapley scores to set per-modality keep-ratios under a fixed uplink budget. Improves accuracy by up to 15.4 percentage points on CREMA-D at 5x compression.
+* `edge` `offloading` `serving` [mzCache: On-Device LLM Memory Management under Multitasking](http://arxiv.org/abs/2609.01338v1)
+  > **TL;DR**: Addresses LLM inference latency degradation from memory eviction during app switching on mobile devices. Proposes mzCache, a system with fine-grained, GPU-CPU shared memory buffers and hybrid swap policies for concurrent eviction/restoration. Achieves 2.1-5.5× reduction in Time-to-First-Token.
+* `serving` `RL` `MoE` [AInfer-PD: Communication-Safe In-Place Prefill-Decode Multiplexing for Distributed MoE Rollouts](http://arxiv.org/abs/2609.00993v1)
+  > **TL;DR**: Addresses interference between prefill and decode phases in distributed MoE model rollouts for RL. Proposes AInfer-PD, a system that ensures communication safety for concurrent execution by coordinating collective order and isolating protocol state. Reduces rollout completion time by 18.0-35.3% over baselines.
+* `training` `networking` [Characterizing the Scalability and Performance of Large-Scale AI Training Under Multi-Tenancy](http://arxiv.org/abs/2609.00817v1)
+  > **TL;DR**: Characterizes scalability and interference of large-scale AI training jobs in multi-tenant HPC clusters. Evaluates performance up to 2400 GPUs using a benchmark suite across different parallelization strategies and interconnects. Quantifies communication overheads and job interference using a designed noise model.
+* `edge` `offloading` `kernel` [mzCache: On-Device LLM Memory Management under Multitasking](http://arxiv.org/abs/2609.01338v1)
+  > **TL;DR**: Addresses slow responsiveness in on-device LLM inference when multitasking causes memory eviction. Proposes mzCache, a system that uses fine-grained shared buffers and hybrid swap policies for elastic KV cache management. Achieves 2.1-5.5× reduction in Time-to-First-Token compared to storage-backed offload.
+
 ### 2026-08-30
 * `serving` `agent` [Bridging Agent Semantics with Spot Capacity: An Elastic and Recoverable Service Model](http://arxiv.org/abs/2608.29581v1)
   > **TL;DR**: Proposes SemSpot, a semantics-aware service model for LLM agents to utilize spot capacity from inference platforms. It uses short-lived offers based on price and completion probability that agents select via task state. An audit of 1,535 agent cases shows varied cost and service-time tradeoffs.
