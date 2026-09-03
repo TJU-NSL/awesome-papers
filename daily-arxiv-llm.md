@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1376-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.09.01-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1379-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.09.02-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,14 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-09-02
+* `edge` `serving` `networking` [AceSpec: An Asymmetric Edge-Cloud Collaborative Framework for Communication-Efficient LLM Inference](http://arxiv.org/abs/2609.02514v1)
+  > **TL;DR**: Aims to reduce communication bottlenecks in edge-cloud speculative LLM inference over volatile WANs. Proposes AceSpec, which uses edge-side state caching and an asymmetric protocol to avoid pipeline stalls. Achieves a 3.52x throughput speedup and maintains performance with 50 Kbps bandwidth.
+* `serving` `kernel` [MeanField Surrogate Modeling for Scalable Runtime Scheduling of Concurrent Heterogeneous AI Inference on Shared GPUs](http://arxiv.org/abs/2609.02109v1)
+  > **TL;DR**: Addresses the high profiling cost for runtime scheduling of concurrent heterogeneous AI inference on shared GPUs. Proposes a MeanField surrogate model that predicts performance from local config and aggregate GPU state. Achieves high accuracy (R²≈0.96) with a linear empirical sample budget, enabling a GA scheduler that is 5× faster than exhaustive search.
+* `RAG` `kernel` [RT-HiSS: Ray Tracing Accelerated High Dimensional Vector Similarity Searches](http://arxiv.org/abs/2609.01975v1)
+  > **TL;DR**: Proposes RT-HiSS, a high-dimensional vector similarity search algorithm that leverages GPU ray tracing cores for fast index construction and search, followed by CUDA core refinement. Achieves up to 8.37× speedup over state-of-the-art GPU algorithms for exact nearest neighbor search.
+
 ### 2026-09-01
 * `training` `edge` `offloading` [Just Talk Once: Communication-Efficient Split Federated LLM Fine-Tuning on Edge Devices](http://arxiv.org/abs/2609.01457v1)
   > **TL;DR**: Proposes L-shaped SFT, a federated LLM fine-tuning framework that eliminates bidirectional communication by supervising server-side activations with target embeddings. Allows one-shot client participation by caching activations. Reduces communication costs by up to 90% compared to baselines on heterogeneous edge devices.
