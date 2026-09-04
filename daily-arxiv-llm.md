@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1379-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.09.02-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1383-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.09.03-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,16 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-09-03
+* `training` `kernel` [Every Kernel Is a Join: Automatic Multi-GPU Parallelism for AI Computations in Einsummable](http://arxiv.org/abs/2609.03905v1)
+  > **TL;DR**: Automates distribution of AI computations (e.g., LLaMA transformer blocks) across multi-GPU servers without manual annotations. Models operations as tensor joins/aggregations and synthesizes topology-aware exchange programs. Achieves 8.97 ms geometric-mean runtime vs. 13.80 ms for hand-tuned PyTorch.
+* `training` `inference` `kernel` [FlowTT: Exploiting Computation Flow Reuse in Irregular Tensor-Train Embedding](http://arxiv.org/abs/2609.03459v1)
+  > **TL;DR**: Optimizes Tensor-Train embedding lookup by exploiting partial computation reuse. Proposes FlowTT, a GPU framework with flow-aware index grouping, fused execution, and persistent-thread scheduling. Reduces inference latency by up to 42.2% and training latency by up to 49.2%.
+* `serving` `agentic` `networking` [Latency-Aware Orchestration for Multi-Agent LLM Workflows on Heterogeneous GPUs](http://arxiv.org/abs/2609.03335v1)
+  > **TL;DR**: Proposes a prediction-guided runtime for multi-agent LLM workflows that forecasts execution metrics to optimize physical execution graphs. Achieves up to 36.8% reduction in end-to-end makespan compared to state-of-the-art schedulers on heterogeneous GPU pools.
+* `edge` `inference` `networking` [Iapetus: Content-Aware Hierarchical Scheduling for Collaborative ViT Inference in LEO Satellite Networks](http://arxiv.org/abs/2609.03318v1)
+  > **TL;DR**: Addresses efficient collaborative Vision Transformer inference in satellite edge networks. Proposes Iapetus, a hierarchical scheduler that performs content-aware token compression and adaptive layer offloading to balance latency, energy, and quality. Reduces mean latency by 53.0% and battery draw by 70.8% while achieving 91.6% task completion.
+
 ### 2026-09-02
 * `edge` `serving` `networking` [AceSpec: An Asymmetric Edge-Cloud Collaborative Framework for Communication-Efficient LLM Inference](http://arxiv.org/abs/2609.02514v1)
   > **TL;DR**: Aims to reduce communication bottlenecks in edge-cloud speculative LLM inference over volatile WANs. Proposes AceSpec, which uses edge-side state caching and an asymmetric protocol to avoid pipeline stalls. Achieves a 3.52x throughput speedup and maintains performance with 50 Kbps bandwidth.
