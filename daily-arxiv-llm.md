@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1383-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.09.05-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1384-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.09.06-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,10 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-09-04
+* `serving` `kernel` [Adaptive Context Parallelism for Production LLM Serving](http://arxiv.org/abs/2609.04774v1)
+  > **TL;DR**: Addresses the high computational cost of long-context LLM serving by proposing Vertumnus, a system with adaptive context parallelism, dynamic request routing, and a global prefix-cache. Achieves up to a 28.1% reduction in mean TTFT under high load.
+
 ### 2026-09-03
 * `training` `kernel` [Every Kernel Is a Join: Automatic Multi-GPU Parallelism for AI Computations in Einsummable](http://arxiv.org/abs/2609.03905v1)
   > **TL;DR**: Automates distribution of AI computations (e.g., LLaMA transformer blocks) across multi-GPU servers without manual annotations. Models operations as tensor joins/aggregations and synthesizes topology-aware exchange programs. Achieves 8.97 ms geometric-mean runtime vs. 13.80 ms for hand-tuned PyTorch.
