@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1384-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.09.07-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1395-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.09.08-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,36 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-09-08
+* `training` `networking` `sparse` [Tools-CC-Bench: a Benchmark Suite for Collective Communication with Compression in HPC and AI Workloads](http://arxiv.org/abs/2609.08739v1)
+  > **TL;DR**: Measures the impact of communication compression on the performance of distributed HPC and LLM training. Proposes CC-Bench, a benchmark suite using declarative modeling and hardware monitoring to evaluate libraries. Reveals accuracy-performance trade-offs and bottlenecks on CPU/GPU clusters.
+* `kernel` `serving` `sparse` [Sample-Guided Exact Top-K Selection for Long-Context Sparse Attention](http://arxiv.org/abs/2609.08450v1)
+  > **TL;DR**: Addresses the inefficiency of exact Top-K selection in sparse attention for long contexts. Proposes a sample-guided selector that uses a fixed-stride view to propose a coarse boundary, certified by a full-row pass. Achieves a 1.55× geometric-mean speedup over the fastest baseline.
+* `serving` `edge` `quantization` [A Measurement Study of LLM Inference Trade-offs Across Edge Continuum Hardware](http://arxiv.org/abs/2609.08307v1)
+  > **TL;DR**: Presents a measurement study of LLM inference trade-offs on edge hardware. Benchmarks latency, energy, and accuracy of various models and quantization levels on a Jetson Orin and a near-edge server. Shows GPU-enabled server has lowest latency (4.8ms/token) but Jetson is more energy-efficient (5.8 Joules for 128-token output).
+* `training` `networking` `MoE` [SemBridge: Compiling Consumer Observations into Cross-Stack Communication Plans](http://arxiv.org/abs/2609.08231v1)
+  > **TL;DR**: Proposes SemBridge, a compiler that generates cross-stack communication plans to ensure correct consumer observations between distributed ML runtimes. A symbolic checker validates backend-neutral plans for CUDA/NCCL and CANN/HCCL. On a 1-GbE deployment, it reduces result traffic by >99.97% and increases throughput by up to 80.20% for MoE workloads.
+
+### 2026-09-07
+* `MoE` `serving` `kernel` [Analytical Resource Management for Fine-grained MoE Computation-Communication Overlap](http://arxiv.org/abs/2609.07536v1)
+  > **TL;DR**: Proposes an analytical model for resource management to optimize computation-communication overlap in distributed Mixture-of-Experts inference. The method selects communication-CTA counts and resource partitions at launch time using a wave-quantized model. Achieves up to 4.22x speedup over baselines at the operator level.
+* `training` [Parallelism Strategy Chaining for Fast Training Convergence](http://arxiv.org/abs/2609.07236v1)
+  > **TL;DR**: Addresses the suboptimal time-to-perplexity of large language model training due to static parallelism strategies. Proposes CONA, an online method that dynamically switches strategies using a throughput and gradient-based surrogate metric. Achieves 1.4-9.6x faster convergence to target perplexity compared to state-of-the-art.
+* `serving` `RL` `offloading` [Online Draft Co-Training for Speculative Decoding in Large-Scale, Long-Context RL Post-Training](http://arxiv.org/abs/2609.07108v1)
+  > **TL;DR**: Presents an end-to-end system for online draft co-training to accelerate RL post-training for large, long-context models. Introduces extended zigzag ring attention for branch attention and TapChannel for cross-stage feature transport. Achieves substantial rollout speedups and strong scaling at 256K tokens.
+* `serving` `edge` `offloading` [Unified AI Gateway: A Framework for Joint Model Routing and KV Cache Management](http://arxiv.org/abs/2609.06940v1)
+  > **TL;DR**: Proposes the Unified AI Gateway for joint LLM model routing and KV cache management across edge and cloud. It performs online selection of model, execution site, and cache action, with background cache optimization. Achieves TTFT speedups of 1.25x-13.28x and input-cost benefits of 1.20x-6.16x.
+
+### 2026-09-06
+* `MoE` `serving` `offloading` [EStream: Fast and Memory-Efficient MoE Prefill through Expert Virtualization on Mobile NPUs](http://arxiv.org/abs/2609.06551v1)
+  > **TL;DR**: Proposes EStream, a system for fast MoE model prefill on mobile NPUs using expert virtualization to handle dynamic routing and a UFS-NPU pipeline for memory-efficient expert loading. Achieves 2.25-27.57x speedup in time-to-first-token and reduces peak memory by 1.19-12.29x compared to baselines.
+
+### 2026-09-05
+* `training` `kernel` [Poseidon: DAG-Guided Parallelism Search for LLM Pre-Training on Heterogeneous Clusters](http://arxiv.org/abs/2609.06086v1)
+  > **TL;DR**: Addresses inefficient parallelism search for LLM pre-training on heterogeneous clusters. Proposes Poseidon, which uses a DAG-based training time model and efficient search strategies including stage-level pruning and ridge-pattern mapping. Achieves up to 2.76x higher training throughput over SOTA.
+* `offloading` `kernel` `serving` [AutoUVM: Automated Prefetching Framework for LLMs under UVM Oversubscription](http://arxiv.org/abs/2609.06172v1)
+  > **TL;DR**: Addresses the performance overhead of GPU memory oversubscription for LLMs using NVIDIA UVM. Proposes AutoUVM, a framework that exposes tensor-level access information to drive fine-grained prefetching. Achieves an average 3.1x speedup over baseline UVM.
+
 ### 2026-09-04
 * `serving` `kernel` [Adaptive Context Parallelism for Production LLM Serving](http://arxiv.org/abs/2609.04774v1)
   > **TL;DR**: Addresses the high computational cost of long-context LLM serving by proposing Vertumnus, a system with adaptive context parallelism, dynamic request routing, and a global prefix-cache. Achieves up to a 28.1% reduction in mean TTFT under high load.
