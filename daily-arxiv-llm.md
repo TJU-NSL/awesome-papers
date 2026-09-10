@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1395-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.09.08-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1399-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.09.09-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,16 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-09-09
+* `kernel` `hardware` [PASCAL: A Phase-Aware Shared-Cache Model for Parallel Scans](http://arxiv.org/abs/2609.10515v1)
+  > **TL;DR**: Investigates how to reduce cache misses and DRAM traffic in AI accelerators for parallel scan patterns like attention and GEMM. Proposes PASCAL, a phase-aware shared-cache model that predicts miss rates by modeling progress divergence across cores. Achieves a MAPE of 13.84% vs. 54.16% for SDCM.
+* `agent` `serving` `offline` [Avatar: Toward Autonomous End-to-End Orchestration of Scientific Workflows using LLMs](http://arxiv.org/abs/2609.10509v1)
+  > **TL;DR**: Investigates autonomous orchestration of scientific workflows using LLMs. Proposes Avatar, an actor-based architecture with pluggable decision policies (rule-based or LLM-backed) for an orchestrator, executor, and monitor. Achieves a 55% reduction in compute wastage and a 40% cut in GPU-busy time.
+* `serving` `MoE` `diffusion` [Epoch: Compiling Diffusion Blocks for Sparse MoE Serving](http://arxiv.org/abs/2609.09748v1)
+  > **TL;DR**: Presents Epoch, a system for efficiently serving MoE-based diffusion language models. It compiles a block plan for the iterative refinement process, optimizing expert routing and computation for live tokens. Achieves up to 2.7x speedup in end-to-end execution time compared to baseline systems.
+* `edge` `serving` `quantization` [PELM: Power Efficient On-Device LLM Inference with Speculative Decoding and Dynamic Voltage Frequency Scaling](http://arxiv.org/abs/2609.09662v1)
+  > **TL;DR**: Addresses power efficiency for on-device LLM inference under thermal constraints. Proposes PELM, combining DVFS with speculative decoding and variable verification depth to reduce computational workload. Achieves 52.4% energy reduction and 23.1% speedup while maintaining task accuracy.
+
 ### 2026-09-08
 * `training` `networking` `sparse` [Tools-CC-Bench: a Benchmark Suite for Collective Communication with Compression in HPC and AI Workloads](http://arxiv.org/abs/2609.08739v1)
   > **TL;DR**: Measures the impact of communication compression on the performance of distributed HPC and LLM training. Proposes CC-Bench, a benchmark suite using declarative modeling and hardware monitoring to evaluate libraries. Reveals accuracy-performance trade-offs and bottlenecks on CPU/GPU clusters.
