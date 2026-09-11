@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1399-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.09.09-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1405-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.09.10-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,20 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-09-10
+* `serving` `offloading` `storage` [Building py-kvcache: A Performance Characterization of External KV Caching for vLLM with NVMe SSDs](http://arxiv.org/abs/2609.11744v1)
+  > **TL;DR**: Presents py-kvcache, a system for external KV cache offloading to CPU/NVMe in vLLM. It optimizes I/O with async direct I/O, staging, and scheduler-aware preloading. Loading from disk is 2.0x faster than LMCache, and it performs within 4% of vLLM's native offload.
+* `training` `kernel` `networking` [Entwine: Coordinating Tiled Computation and Fine-Grained Communication across GPUs](http://arxiv.org/abs/2609.11562v1)
+  > **TL;DR**: Addresses limited computation-communication overlap in tiled tensor computations on GPUs. Proposes Entwine, which coordinates tile computation order, fine-grained SM-based communication, and resource allocation. Achieves a geomean speedup of 1.232x over cuBLAS+NCCL on tensor-parallel LLM workloads.
+* `kernel` `training` [Taming Bitwise Behavior in GPU Kernels with Tensor Core: Black-Box Reconstruction, Compiler Enforcement, and Static Verification](http://arxiv.org/abs/2609.11356v1)
+  > **TL;DR**: Addresses bitwise non-determinism in GPU kernels for ML, focusing on GEMM operations crucial for LLM training. Proposes a descriptor for reduction order, enforces balanced-tree compilation, and develops static equivalence checkers. Enables bitwise matching with cuBLAS while maintaining within 10% performance of free-order kernels.
+* `serving` `MoE` [Phase-Decoupled, Model-Calibrated Power Control for Disaggregated LLM Serving](http://arxiv.org/abs/2609.11133v1)
+  > **TL;DR**: Proposes a phase-decoupled, model-calibrated power controller for disaggregated LLM serving to convert SLO headroom into energy savings. It configures prefill and decode lanes independently with automatic latency-gated calibration. On an 8x B200 node, it achieves +20.4% tokens/J at +3.5% mean latency, a Pareto improvement over NVIDIA's Max-Q.
+* `edge` `multi-modal` `offloading` [EMMI: Edge Multi-Modal Intelligence for Communication-Efficient MLLM Inference via Fused Representation Compression](http://arxiv.org/abs/2609.11058v1)
+  > **TL;DR**: Presents EMMI, a system for MLLM inference on edge devices that reduces communication by fusing and compressing sensor data into a compact latent representation before offloading to a server. Achieves a 32x reduction in communication payload.
+* `serving` `agent` `offloading` [Memory Compression for High-Fanout Agent Sandboxes](http://arxiv.org/abs/2609.11294v1)
+  > **TL;DR**: Investigates the memory inefficiency of high-fanout AI agent sandboxes. Proposes AgentZip, a system that uses template-relative and cross-sandbox compression, prefetching, and LLM-waiting-period-aligned scheduling. Reduces sandbox-owned memory by up to 8.7x while limiting slowdown to 1.40x.
+
 ### 2026-09-09
 * `kernel` `hardware` [PASCAL: A Phase-Aware Shared-Cache Model for Parallel Scans](http://arxiv.org/abs/2609.10515v1)
   > **TL;DR**: Investigates how to reduce cache misses and DRAM traffic in AI accelerators for parallel scan patterns like attention and GEMM. Proposes PASCAL, a phase-aware shared-cache model that predicts miss rates by modeling progress divergence across cores. Achieves a MAPE of 13.84% vs. 54.16% for SDCM.
