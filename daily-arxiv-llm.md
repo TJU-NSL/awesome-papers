@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1405-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.09.14-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1442-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.09.15-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,90 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-09-15
+* `training` `networking` `hardware` [Nested Parallel von Neumann Architecture and Nested BSP](http://arxiv.org/abs/2609.16787v1)
+  > **TL;DR**: Proposes a Nested BSP model and a corresponding Nested Parallel von Neumann Architecture for million-scale AI computing. The design advocates recursive nesting of parallel work phases and a unified, memory-semantic interconnect for peer-to-peer communication. Claims to enable scalable parallelism under a single system image.
+* `training` `serving` [DeepShare: Assurance-Driven Deep Learning Job Scheduling for Multi-Tenant Clusters](http://arxiv.org/abs/2609.16682v1)
+  > **TL;DR**: Presents DeepShare, a scheduler for multi-tenant GPU clusters that uses a continuous tenant-assurance signal to coordinate elastic quotas, preemption, and colocation. It improves average GPU utilization by 29.5% over baselines and reduces average queueing delay by 46%.
+* `serving` `MoE` `agent` [PipeSwift: Revisiting Pipeline Parallelism for Large-Scale Completion-Oriented Agentic Serving](http://arxiv.org/abs/2609.16491v1)
+  > **TL;DR**: Investigates how to optimize serving for LLM agents with completion time objectives. Proposes PipeSwift, a pipeline-parallel runtime with JCT-aware scheduling, improving the prefill-decode trade-off. Achieves up to 2.33x lower job completion time over vLLM on 360B+ MoE models.
+
+### 2026-09-14
+* `serving` `kernel` `RAG` [BOA: Beamwidth Online Adaptation for Filtered-ANNS on a GPU](http://arxiv.org/abs/2609.16175v1)
+  > **TL;DR**: Addresses the inefficiency of using a fixed, high beamwidth for filtered approximate nearest neighbor search (ANNS) queries on a GPU. Proposes BOA, an engine that uses online beamwidth adaptation and overlapping multi-phase search. Increases throughput by 7x-12.5x while maintaining high recall (94.05%-99.96%).
+* `training` `networking` `hardware` [Cnuas: A Software-Defined AI/HPC Rack-scale Emulation Platform and Hyperscale Data Center Facility Twin](http://arxiv.org/abs/2609.15889v1)
+  > **TL;DR**: Presents Cnuas, a software-defined rack-scale emulation platform for AI/HPC systems. It uses functional emulation of OCP Open Rack v3 specs, including RDMA networking and GPU fabrics, for system-level software development. Enables experimentation with rack management and accelerator interfaces on commodity hosts.
+* `training` `edge` `networking` [CIDERS: Cloud-Edge LLM Collaborative Learning via Accelerating Personalized Bilevel Optimization](http://arxiv.org/abs/2609.15664v1)
+  > **TL;DR**: Addresses the challenge of balancing global model consensus with local personalization in cloud-edge LLM systems. Proposes CIDERS, a bilevel optimization framework and solver using consensus-variate correction and task-aware distillation. Achieves 3.1x and 1.7x gains on mathematical reasoning and code generation tasks.
+* `serving` `MoE` `kernel` [DeepSeek-V4-Flash on AMD gfx90a: Correctness Recovery and Inference Performance Engineering](http://arxiv.org/abs/2609.15627v1)
+  > **TL;DR**: Enables and optimizes inference for the DeepSeek-V4-Flash MoE model on AMD MI250 GPUs. Corrects a weight layout error and employs kernel-level optimizations like packed FP4 weights and INT8 quantization. Achieves ~74.5 tok/s decode throughput and ~2,234 input tok/s prefill speed on four GCDs.
+* `hardware` `kernel` `training` [FlashGPU-sim: Enabling GPU Modeling for Modern Architectures and AI Workloads](http://arxiv.org/abs/2609.15311v1)
+  > **TL;DR**: Presents FlashGPU-sim, an execution-driven GPU simulator for modeling modern AI workloads and architectures. It supports features like tensor cores and asynchronous data movement, with a Triton front-end. Achieves a 5.24% cycle-level MAPE accuracy and a 7.86x simulation speedup.
+* `serving` `hardware` `kernel` [ETCInfer: An Energy-efficient Thermal-aware Cooling-joint Scheduler for LLM Inference in AI Datacenters](http://arxiv.org/abs/2609.15230v1)
+  > **TL;DR**: Proposes ETCInfer, a joint cooling-computing scheduler for LLMs to minimize datacenter energy. It uses physics-informed models and a learning-based controller to adapt CRAC setpoints, GPU frequency, and micro-batch size. Reduces total job energy by up to 33.1% while keeping SLO violations below 0.7%.
+* `serving` `offloading` [Shared KV Caching for Replicated 27B Inference: Correctness Failures and Performance Boundaries](http://arxiv.org/abs/2609.15021v1)
+  > **TL;DR**: Investigates correctness and performance of shared host-memory KV caching for replicated LLM inference. Proposes validation methods and uses a modified vLLM with a packed-page patch and stream-correct pointer handling. Reduces median cross-replica time to first token from 92s to 0.79s for 256k inputs.
+* `serving` `offline` [Agentic Autoscaling through Worker-Pool Orchestration for LLM-driven Text Classification in Cloud Computing Environments](http://arxiv.org/abs/2609.14898v1)
+  > **TL;DR**: Proposes an agentic autoscaling framework for LLM-driven batch text classification. Uses a dynamic worker-pool orchestration with priority queues and real-time metrics to manage bursty workloads. Achieves high accuracy (e.g., 99.5% on SMS Spam) while improving resource efficiency over static allocation.
+
+### 2026-09-13
+* `serving` `networking` [CATS: A Carbon-Aware Task Simulator for Reducing AI Data Center Emissions](http://arxiv.org/abs/2609.14775v1)
+  > **TL;DR**: Presents CATS, a carbon-aware task simulator for reducing AI data center emissions from inference workloads. It uses a trace-driven framework to evaluate spatial and temporal scheduling of tasks based on grid carbon-intensity. Achieves 38.4% CO2 reduction via spatial shifting vs. a speed-first baseline.
+* `serving` `RAG` `offline` [TriCalRAG: A Three-Strategy, Retrieval-Augmented Benchmark for On-Premise LLM-Based Root Cause Analysis in AIOps](http://arxiv.org/abs/2609.14762v1)
+  > **TL;DR**: Evaluates on-premise LLM serving for AIOps RCA to avoid cloud costs/privacy issues. Benchmarks vLLM-served models on a single GPU, comparing prompting strategies and quantization. Achieves 41x throughput scaling with batching and 20% latency reduction via 4-bit quantization without accuracy loss.
+* `edge` `serving` `offloading` [MANE: A Multi-Path Adaptive Network for Edge Onloading of Deep Neural Networks](http://arxiv.org/abs/2609.14660v1)
+  > **TL;DR**: Addresses how an edge server can efficiently serve multiple concurrent DNN inference requests without SLO violations. Proposes MANE, a framework with a multi-path tail model, joint distillation training, and a hysteresis-based scheduler. Achieves over 80% SLO satisfaction rate with up to 40 concurrent devices, versus baseline failures.
+* `MoE` `serving` `offloading` [BigMoMo: Efficient Inference of Large-Scale MoE with Speculative Decoding on Mobile Devices](http://arxiv.org/abs/2609.14643v1)
+  > **TL;DR**: Addresses slow MoE inference on mobile devices from fragmented expert offloading. Proposes BigMoMo, which uses speculative decoding to decouple expert transfers from execution for weight reuse and load-compute overlap. Achieves a mean 4.83x speedup over on-demand autoregressive offloading.
+* `serving` `MoE` `offloading` [Physically Partitioned KVCache Format for CPU--GPU Load Balancing in MoE Inference](http://arxiv.org/abs/2609.14507v1)
+  > **TL;DR**: Addresses CPU-GPU load imbalance during long-context MoE inference with KV cache spilling. Proposes InplaceKVCache, a physically partitioned KV format enabling dynamic load balancing via a four-region layout and WriteScope scheduler. Achieves 1.4×–2.5× speedup over baselines while supporting 1M-token contexts within 32GB VRAM.
+* `training` `MoE` `offloading` [Flattening Every Memory Peak in Long-Context Mixture-of-Experts Training](http://arxiv.org/abs/2609.14306v1)
+  > **TL;DR**: Addresses memory peak challenges in long-context MoE training via four memory-bounding schedules. Methods include pipelined expert dispatch, a ring-based projection, selective CPU offloading, and a pipelined optimizer. Increases trainable context length by 8-32x and throughput by up to 10.4x over FSDP2.
+* `serving` `kernel` `networking` [OpWeave: Flexible Operator Disaggregation for Heterogeneous LLM Serving](http://arxiv.org/abs/2609.14237v1)
+  > **TL;DR**: Presents OpWeave, a framework for operator-disaggregated LLM serving across heterogeneous devices. It uses an analytical cost model and regularity-aware planner to optimize operator partitioning and deployment. Achieves up to 1.89x lower serving cost compared to baselines while meeting latency SLOs.
+* `edge` `kernel` `serving` [Partition-Aware Scheduling for Mobile Heterogeneous Inference Co-Execution](http://arxiv.org/abs/2609.14213v1)
+  > **TL;DR**: Investigates how to schedule DAG-based inference on mobile heterogeneous platforms. Proposes an online iterative search framework that jointly optimizes operator partitioning, device assignment, and execution order. Achieves latency close to an offline optimal solution with scheduling overhead kept to a fraction of model initialization cost.
+* `agent` `edge` [ECAS: An Edge-Controlled Agentic System for Validation-Gated Scientific Application Execution](http://arxiv.org/abs/2609.14211v1)
+  > **TL;DR**: Presents ECAS, a system that separates LLM reasoning on the cloud from execution control on an edge agent to automate scientific computing. It uses validation-gated execution and edge-resident skills to ensure safety. Validation gating prevented all 3 target-scale failures in experiments.
+* `agent` `RL` [LLM Agent Capabilities Should Follow Task Intent and Context Source](http://arxiv.org/abs/2609.14631v1)
+  > **TL;DR**: Proposes IntentCap, a system that scopes LLM agent capabilities to the current task intent by composing authority from multiple context sources. It generates short-lived leases enforced by a deterministic checker. Blocks all tested security violations without rejecting benign actions.
+
+### 2026-09-12
+* `serving` `kernel` `training` [Affinity-Aware Sharding for Delayed Tensor Parallelism](http://arxiv.org/abs/2609.13846v1)
+  > **TL;DR**: Investigates how to optimize model sharding for Delayed Tensor Parallelism (DTP) inference. Proposes an affinity-aware sharding method that co-locates KV heads and FFN neurons to maximize inter-device affinity. Reduces distillation steps by 33-50% compared to naive layouts for models like Qwen3-0.6B.
+* `training` `kernel` [ForgeTrain: Forging Production-Grade Training Frameworks via Harness-Driven AI Development](http://arxiv.org/abs/2609.13645v1)
+  > **TL;DR**: Presents ForgeTrain, a method to build specialized training frameworks per scenario via AI code generation to avoid the overhead of general-purpose frameworks. It uses a harness-driven approach with monotonic correctness relaxation. Achieves 4.7–33.2% higher Model FLOPs Utilization (MFU) compared to Megatron-LM.
+
+### 2026-09-11
+* `serving` `offloading` `kernel` [BOOST: Concurrent Access to Host Memory and HBM to Accelerate LLM Inference](http://arxiv.org/abs/2609.13592v1)
+  > **TL;DR**: Proposes BOOST, a runtime system to accelerate LLM inference by enabling concurrent, bandwidth-proportional data access to both GPU HBM and host memory. It uses wave-aware page placement for static weights and KV cache management. Achieves 31% higher throughput and 4.3% lower TPOT compared to HBM-only serving.
+* `training` `kernel` `networking` [mKernel: Fast Multi-GPU, Multi-Node Fused Kernels](http://arxiv.org/abs/2609.13585v1)
+  > **TL;DR**: Addresses communication bottlenecks in distributed training. Proposes mKernel, a library of multi-GPU/Node fused kernels overlapping computation and RDMA at tile-level with adaptive SM partitioning. Achieves up to 1.88x speedup on Ring Attention.
+* `kernel` `training` [PEAT: Pseudo-Error Assessment for GPU Kernel Validation in DNN Training](http://arxiv.org/abs/2609.13544v1)
+  > **TL;DR**: Proposes PEAT, a framework for validating GPU kernel correctness in DNN training flows. Uses fault injection to profile and analyze differences between kernel implementations and golden references. Achieves lightweight inspection with 90% reduction in storage costs compared to exhaustive validation.
+* `serving` `MoE` `offloading` [Dynamic HBM Repartitioning for Multi-Turn MoE Serving](http://arxiv.org/abs/2609.13537v1)
+  > **TL;DR**: Addresses the problem of KV-cache eviction in multi-turn MoE serving due to static GPU memory partitioning. Proposes VAMP, a framework that dynamically repartitions HBM between expert weights and KV-cache using CUDA virtual memory. Reduces p90 TTFT from 26.1s to 1.10s (23.6x) while increasing throughput by 20.7%.
+* `training` `RL` [Adaptive Phase-Switching for Communication-Efficient Federated LoRA Fine-Tuning](http://arxiv.org/abs/2609.13512v1)
+  > **TL;DR**: Proposes ReverseAdaptive, an adaptive phase-switching method for federated LoRA fine-tuning to reduce communication costs. It switches aggregation phases based on relative loss improvement, achieving a 40.5% round-trip communication saving over FLoRA with minimal loss degradation.
+* `serving` `kernel` [Dissecting GPU Utilization for LLM Inference on Nvidia Hopper](http://arxiv.org/abs/2609.12923v1)
+  > **TL;DR**: Analyzes the misleading nature of single-metric GPU utilization for LLM inference. Proposes a multi-view profiling methodology using Nsight Compute to attribute utilization gaps to specific mechanisms like fragment fill and occupancy. Identifies that small-batch decode kernels on H100 achieve only 5-15% FP16/32 utilization due to small-row GEMMs.
+* `training` `multi-modal` [4D Parallelism Unlocks Exascale Bayesian Neural Networks for High-Fidelity Atmospheric Modeling](http://arxiv.org/abs/2609.12815v1)
+  > **TL;DR**: Investigates how to train a massive Bayesian Swin Transformer for atmospheric forecasting. Proposes a novel 4D-parallelism scheme combining domain-tensor and uncertainty parallel methods. Achieves a peak performance of 3.96 EFLOP/s and generates ensembles 3-4x faster than the current-best AI model.
+* `serving` `kernel` [RoofLang: Enabling AI-Driven Architecting of LLM Inference Systems](http://arxiv.org/abs/2609.12551v1)
+  > **TL;DR**: Proposes RoofLang, a DSL enabling architecture-level AI optimization of LLM inference systems with a verifiable mutation space, to overcome profiling-bound search limitations. Identified DeepSeek V4 designs achieving 3.5-39.5x higher throughput and an agent-discovered architecture improving throughput by up to 50.1%.
+* `serving` `edge` `hardware` [HeatCache: Thermal-aware Energy-efficient LLM Inference Scheduling for Chassis-level Liquid Cooling in Sustainable Edge Server Rooms](http://arxiv.org/abs/2609.12449v1)
+  > **TL;DR**: Addresses thermal throttling and energy waste in edge LLM inference at high ambient temperatures. Proposes HeatCache, a scheduler that uses AIO liquid cooling loops as a heat buffer and a thermal estimator (HeatiTS). Reduces computing energy by up to 18.0% and thermal-throttle exposure by 81.7%.
+* `edge` `quantization` `serving` [HoliBench: A Cross-Platform Benchmarking and Deployment Toolkit for Foundation Models in CPS-IoT Applications](http://arxiv.org/abs/2609.12412v1)
+  > **TL;DR**: Addresses the lack of deployment-aware evaluation for foundation models on edge/CPS-IoT devices. Proposes HoliBench, a toolkit for cross-platform benchmarking of accuracy, latency, and energy across devices, quantization levels, and backends. Quantization reduces latency up to 60% on devices with low-precision support.
+* `serving` `kernel` [OneLA: Scaling Linear-Attention Decoding to Large Beams in Generative Recommendation](http://arxiv.org/abs/2609.12399v1)
+  > **TL;DR**: Addresses the high memory and traffic overhead of large-beam decoding for generative recommendation with linear attention. Proposes OneLA, a framework using a shared prompt state and compact transition records with a fused GPU kernel. Achieves 1.54-2.46x faster decoding and reduced memory use.
+* `serving` `kernel` `offloading` [ForgeMegakernel: A General Framework for Efficient Auto-Regressive Model Decode Megakernels](http://arxiv.org/abs/2609.12379v1)
+  > **TL;DR**: Presents ForgeMegakernel, a framework to auto-generate high-performance, correct CUDA megakernels for auto-regressive LLM decoding. Uses a knowledge base of structural milestones and a test oracle to ensure correctness. Achieves 1.21x-1.54x speedup over baselines and up to 85.9% memory bandwidth utilization.
+* `kernel` `training` `serving` [Unleashing the Power of Equality Saturation for Tensor Program Superoptimization](http://arxiv.org/abs/2609.12330v1)
+  > **TL;DR**: Presents EqiForge, a tensor program superoptimizer using equality saturation to jointly optimize high-level algebra and low-level GPU execution. It automatically generates fused kernels, achieving up to 1.87x speedup over FlashAttention and 5.84x over torch.compile on transformer layers.
+* `kernel` `training` `RL` [Argus: Orchestrating Cross-Layer GPU Performance Measurements around Semantic Regions](http://arxiv.org/abs/2609.12299v1)
+  > **TL;DR**: Presents Argus, a system for automated, interference-aware performance measurement of semantic code regions on GPUs. It orchestrates compilation, execution, and profiling across backends using region identity. Improves a TinyLlama-1.1B decode kernel speed from 4.92 ms/token to 1.65 ms/token.
+
 ### 2026-09-10
 * `serving` `offloading` `storage` [Building py-kvcache: A Performance Characterization of External KV Caching for vLLM with NVMe SSDs](http://arxiv.org/abs/2609.11744v1)
   > **TL;DR**: Presents py-kvcache, a system for external KV cache offloading to CPU/NVMe in vLLM. It optimizes I/O with async direct I/O, staging, and scheduler-aware preloading. Loading from disk is 2.0x faster than LMCache, and it performs within 4% of vLLM's native offload.
