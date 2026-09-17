@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1442-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.09.15-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1443-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.09.16-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,10 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-09-16
+* `serving` `agent` `offloading` [Ask the Tool, Don't Guess: Agent Tool Calls Hold Their Progress, and the Serving System Should Read It](http://arxiv.org/abs/2609.18849v1)
+  > **TL;DR**: Addresses the inefficiency of LLM agent serving where KV cache is held during tool calls. Proposes explicit progress reporting from tools to inform cache offloading decisions. Achieves a 20.7% reduction in p90 TTFT after a tool call compared to an LRU baseline.
+
 ### 2026-09-15
 * `training` `networking` `hardware` [Nested Parallel von Neumann Architecture and Nested BSP](http://arxiv.org/abs/2609.16787v1)
   > **TL;DR**: Proposes a Nested BSP model and a corresponding Nested Parallel von Neumann Architecture for million-scale AI computing. The design advocates recursive nesting of parallel work phases and a unified, memory-semantic interconnect for peer-to-peer communication. Claims to enable scalable parallelism under a single system image.
