@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1443-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.09.17-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1450-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.09.18-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,22 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-09-17
+* `serving` `diffusion` `networking` [PixelFlow: Token-Level Workload Management for Efficient Distributed DiT Serving](http://arxiv.org/abs/2609.20723v1)
+  > **TL;DR**: Investigates how to efficiently serve Diffusion Transformers (DiTs) under latency SLOs. Proposes token-level workload management, partitioning requests into image tokens for fine-grained batching and GPU-group-based scheduling with communication-computation overlap. Achieves up to 2.8x higher goodput than state-of-the-art systems.
+* `serving` `networking` [A Kubernetes-Native Request Router for Quality-Aware Inference Serving in the Computing Continuum](http://arxiv.org/abs/2609.20497v1)
+  > **TL;DR**: Presents ASRB, a dynamic request router for Kubernetes to optimize ML inference serving across distributed infrastructure. It balances requests based on combined QoS metrics (latency, accuracy), adaptively controlling monitoring overhead. Achieves up to 70% lower monitoring cost and 10 ms lower mean response time versus SOTA.
+* `training` `networking` [Accelerating Sharded Data Parallelism at Scale with Federated Learning](http://arxiv.org/abs/2609.20359v1)
+  > **TL;DR**: Proposes hybrid algorithms (FL+FSDP, FL+HSDP) combining sharded data parallelism with federated learning principles to reduce communication overhead in large-scale LLM training. On 512 GPUs, achieves 8.04x faster data processing and 4.48x lower perplexity compared to baseline FSDP/HSDP.
+* `training` `networking` [The Life of a Token: from Words to Bits on the Wire](http://arxiv.org/abs/2609.19924v1)
+  > **TL;DR**: Investigates how tokenized text translates into network traffic patterns during large-scale LLM training. Uses analytical models and case studies to illustrate how model architecture and parallelism shape inter-accelerator communication. Provides quantitative characterization of network requirements for multi-accelerator training systems.
+* `training` `edge` [Xronos: Heterogeneity-Aware Tensor Parallelism for Collaborative LLM Fine-Tuning on Edge CPUs](http://arxiv.org/abs/2609.19909v1)
+  > **TL;DR**: Proposes Xronos, a heterogeneity-aware tensor parallelism framework for collaborative LLM fine-tuning on CPU-based edge devices. Uses lightweight profiling and optimized tensor partitioning to mitigate stragglers. Reduces fine-tuning time by up to 56% and device idle time by ~5.9x over SOTA methods.
+* `training` `storage` `quantization` [Sketching the Error, Not the Product: Post Hoc Fault Recovery for Half Precision GPU Matrix Multiplication](http://arxiv.org/abs/2609.19758v1)
+  > **TL;DR**: Presents FP-Sketch, a post-hoc fault recovery method for half-precision GPU matrix multiplication. It uses sum and moment sketches to detect and localize silent data corruption without kernel modification. It restores perplexity damage recovery on Llama-2-7B from 0.402 to 1.000 by adapting to run-time noise.
+* `kernel` `quantization` `hardware` [Syndrome Decoding for Silent Data Corruption in Quantized Integer GPU Arithmetic](http://arxiv.org/abs/2609.19743v1)
+  > **TL;DR**: Presents SProbe, a kernel for detecting and correcting silent data corruption in quantized integer GEMM operations on GPUs. Uses randomized Freivalds' algorithm and Reed-Solomon decoding for error diagnosis. Adds 30% throughput overhead while eliminating corruptions in an INT8 LLM.
+
 ### 2026-09-16
 * `serving` `agent` `offloading` [Ask the Tool, Don't Guess: Agent Tool Calls Hold Their Progress, and the Serving System Should Read It](http://arxiv.org/abs/2609.18849v1)
   > **TL;DR**: Addresses the inefficiency of LLM agent serving where KV cache is held during tool calls. Proposes explicit progress reporting from tools to inform cache offloading decisions. Achieves a 20.7% reduction in p90 TTFT after a tool call compared to an LRU baseline.
