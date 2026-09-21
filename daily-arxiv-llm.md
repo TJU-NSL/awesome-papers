@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1450-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.09.19-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1452-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.09.20-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,12 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-09-18
+* `training` `MoE` `kernel` [HyperParallel-FSDP: Topology-Aware Fully Sharded Training with Layout-Driven Muon on Ascend SuperPods](http://arxiv.org/abs/2609.21594v1)
+  > **TL;DR**: Presents HyperParallel-FSDP, a system for topology-aware sharded training that introduces dual-mode DTensor execution and a cross-layer backward pipeline. On Ascend SuperPods, it sustains 421k tokens/s for a 505B MoE model, reducing mean step time by 29.7% vs. PyTorch FSDP2.
+* `MoE` `kernel` `serving` [Weave: Fine-Grained Dynamic SM Scheduling in an MoE Megakernel for Compute-Communication Overlap](http://arxiv.org/abs/2609.21483v1)
+  > **TL;DR**: Addresses resource underutilization during Mixture-of-Experts inference. Proposes Weave, a system with intra-kernel dynamic schedulers that partition SMs for communication and computation per layer. Achieves a 2.89x geometric-mean speedup for MoE layers over state-of-the-art baselines.
+
 ### 2026-09-17
 * `serving` `diffusion` `networking` [PixelFlow: Token-Level Workload Management for Efficient Distributed DiT Serving](http://arxiv.org/abs/2609.20723v1)
   > **TL;DR**: Investigates how to efficiently serve Diffusion Transformers (DiTs) under latency SLOs. Proposes token-level workload management, partitioning requests into image tokens for fine-grained batching and GPU-group-based scheduling with communication-computation overlap. Achieves up to 2.8x higher goodput than state-of-the-art systems.
