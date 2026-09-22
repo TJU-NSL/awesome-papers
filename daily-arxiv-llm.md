@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1452-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.09.20-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1459-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.09.21-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,22 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-09-21
+* `serving` `quantization` [Who Pays for the KV Cache? Attributing Shared AI Inference Spend Across Kubernetes and LLM Provider Bills](http://arxiv.org/abs/2609.24991v1)
+  > **TL;DR**: Investigates how to accurately attribute inference costs, specifically KV cache usage, in multi-tenant LLM serving. Proposes unalloc, a tool to join cost data from Kubernetes and API providers. In a vLLM-based scenario, different metering rules shifted a tenant's cost share by 12-14 percentage points.
+* `serving` `edge` `hardware` [SPECTRA: Adaptive Execution of Speculative Decoding on a Runtime-Reconfigurable Tiled Architecture](http://arxiv.org/abs/2609.24847v1)
+  > **TL;DR**: Investigates how to efficiently execute speculative decoding for LLM inference on resource-constrained edge devices. Proposes SPECTRA, a reconfigurable tiled architecture that dynamically adapts parallelism and compute modes between GEMV and GEMM. Achieves up to 2.09x speedup over fixed designs on an FPGA prototype.
+* `serving` [Analytical Power-Aware Provisioning for Prefill-Decode Disaggregated AI Inference](http://arxiv.org/abs/2609.24639v1)
+  > **TL;DR**: Develops an analytical framework for provisioning prefill-decode disaggregated inference systems under power constraints. Models serving capacity and power consumption based on workload distribution and hardware limits, capturing KV-cache coupling. Enables selection of deployments on the capacity-power Pareto front.
+* `training` `RL` `networking` [Conduit: An Experience Data Plane for Distributed Reinforcement Learning](http://arxiv.org/abs/2609.24456v1)
+  > **TL;DR**: Addresses the bottleneck of the experience data path in distributed reinforcement learning. Proposes Conduit, a framework-agnostic runtime with an Experience Data Plane for optimized experience placement and scheduling. Reduces exposed experience-path latency by up to 97% and scales to 1,024 GPUs.
+* `kernel` `serving` `hardware` [Dissecting How Die Scaling Breaks GPU Fine-grained Scheduling](http://arxiv.org/abs/2609.24270v1)
+  > **TL;DR**: Addresses performance degradation from GPU die-scaling asymmetries. Proposes a lightweight characterization method to uncover per-chip topology/memory affinity, enabling asymmetry-aware fine-grained scheduling. Improves multiplexed LLM inference performance by up to 14.3%.
+* `training` [A principled approach for energy-efficient training via phase-aware GPU frequency tuning](http://arxiv.org/abs/2609.24205v1)
+  > **TL;DR**: Addresses high energy consumption in AI model training due to pipeline bottlenecks. Proposes PAFT, a system that monitors training phases and dynamically reduces GPU clock frequencies during stalls to match bottlenecked devices. Achieves energy savings of up to 46% with an average overhead of 4%.
+* `agent` `edge` [MCP-GRANITE Benchmark: GRANularity Interface TEsting for MCP-Based LLM Agents](http://arxiv.org/abs/2609.24161v1)
+  > **TL;DR**: Investigates how tool-interface granularity affects the performance of MCP-based LLM agents in edge/IoT scenarios. Proposes the MCP-GRANITE benchmark to systematically evaluate different granularity levels. Results show a 4-tool interface improves task completion by up to 33.6% over baselines.
+
 ### 2026-09-18
 * `training` `MoE` `kernel` [HyperParallel-FSDP: Topology-Aware Fully Sharded Training with Layout-Driven Muon on Ascend SuperPods](http://arxiv.org/abs/2609.21594v1)
   > **TL;DR**: Presents HyperParallel-FSDP, a system for topology-aware sharded training that introduces dual-mode DTensor execution and a cross-layer backward pipeline. On Ascend SuperPods, it sustains 421k tokens/s for a 505B MoE model, reducing mean step time by 29.7% vs. PyTorch FSDP2.
