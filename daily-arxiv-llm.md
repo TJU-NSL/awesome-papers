@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1459-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.09.22-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1472-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.09.23-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,36 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-09-23
+* `serving` `offloading` [The KV Cache Working Set: Online Capacity Planning for LLM Inference Systems](http://arxiv.org/abs/2609.27746v1)
+  > **TL;DR**: Addresses how to determine the minimum KV cache capacity needed for a target hit rate in LLM serving. Proposes KVSET, an online analyzer using the Mattson stack algorithm to estimate working sets. Validation on production traces shows estimates closely match real deployments.
+* `RL` `training` `kernel` [EBRL: Asynchronous Embodied RL by Multi-Grained Resource Management](http://arxiv.org/abs/2609.27547v1)
+  > **TL;DR**: Improves resource utilization for embodied reinforcement learning, which involves LLM-based policies. Proposes EBRL, an asynchronous training system with a pipelined scheduler and fine-grained resource manager. Achieves 1.30-3.47x higher end-to-end rollout throughput than SOTA systems.
+* `edge` `agent` [From PyTorch to the NPU: LLM-Agent-Driven Model Conversion Across Heterogeneous Inference Runtimes](http://arxiv.org/abs/2609.27249v1)
+  > **TL;DR**: Presents an LLM agent-driven approach to automate AI model deployment across heterogeneous edge runtimes (e.g., OpenVINO, RKNN, TensorRT). It decomposes deployment into stages with runtime-specific knowledge injection. Successfully converted PyTorch models to target runtimes with a focus on FP16 deployment verification.
+* `training` `storage` [LayerCheck: Adaptive Layer-wise Checkpointing for Large Language Model Post-training](http://arxiv.org/abs/2609.27193v1)
+  > **TL;DR**: Proposes LayerCheck, an adaptive layer-wise checkpointing framework for LLM training. It selectively persists layers whose weight updates exceed a threshold, distributing I/O writes. Reduces total checkpoint size by up to 22.6x and end-to-end training time by 1.31x compared to state-of-the-art.
+* `training` `offloading` [ZOCheck: CPU-Shadow Checkpointing for Zeroth-Order LLM Fine-Tuning](http://arxiv.org/abs/2609.27189v1)
+  > **TL;DR**: Proposes ZOCheck, a fault-tolerant system for zeroth-order LLM fine-tuning that uses a CPU shadow process to asynchronously replay logged updates and materialize checkpoints, reducing checkpoint overhead by 219.7x and recovery latency by 1.55x.
+* `serving` `offloading` `kernel` [xTier: Intelligent Tiering for CXL-Enabled Memory](http://arxiv.org/abs/2609.27266v1)
+  > **TL;DR**: Presents xTier, a kernel-resident learned memory-tiering system for CXL-enabled servers. It uses eBPF and a quantized MLP to score pages at microsecond latency for optimal DRAM/CXL placement. At a 1:15 DRAM:CXL ratio, it is fastest in 14/18 configurations and moves 22% fewer pages.
+
+### 2026-09-22
+* `serving` `agent` [Crossflow: Prefill-Decode Elasticity for Agentic LLM Serving](http://arxiv.org/abs/2609.27085v1)
+  > **TL;DR**: Introduces Crossflow, a system for elastic resource allocation between prefill and decode phases in agentic LLM serving to handle fluctuating demand. Key design is a short-lived, revocable lease from decode nodes to temporarily borrow capacity. Improves token throughput by up to 43.4% at high load and reduces mean TTFT.
+* `serving` `offloading` [EMA: Elastic and Performance Transparent Memory Across GPUs](http://arxiv.org/abs/2609.27040v1)
+  > **TL;DR**: Addresses GPU memory underutilization in multi-GPU servers during LLM inference. Proposes EMA, an elastic memory sharing system using prefetching to hide remote access latency and on-demand reclamation. Achieves up to 52% higher user throughput while maintaining baseline latency.
+* `serving` `agent` `networking` [SARA: SLO-Aware Resource Allocation for Disaggregated Agentic LLM Services](http://arxiv.org/abs/2609.26763v1)
+  > **TL;DR**: Presents SARA, an analytical framework for SLO-aware resource allocation in disaggregated LLM serving systems. It models the serving pipeline via queuing theory to optimize goodput under cost constraints. Achieves 26.6% higher goodput than baselines with SLO prediction errors below 5%.
+* `serving` `edge` `networking` [DHSched: Stateless Control for Stateful Real-Time Avatar Serving](http://arxiv.org/abs/2609.26363v1)
+  > **TL;DR**: Addresses the challenge of elastic control for long-lived, stateful avatar sessions during real-time serving. DHSched introduces a stateless control plane using generation-based ownership to manage session migrations and execution authority. Achieves 98.3 ms P99 latency for session creation and handles 9,927 migrations with zero dual-owner conflicts.
+* `training` `networking` [Flux: Optimal Scheduling of Optical Circuit Switches for LLM Training](http://arxiv.org/abs/2609.25949v1)
+  > **TL;DR**: Investigates the inefficiency of scheduling optical circuit switches independently of compute in LLM training. Proposes Flux, a scheduler that optimally provisions circuits by aligning reconfigurations with the workload's communication timeline. Reduces training iteration time by up to 10x and peak NIC buffer requirements by over 1000x.
+* `video` `edge` `networking` [Lizard: Bandwidth-Adaptive Real-Time Video Analytics through Content-Aware Packet Discarding at Last-Mile Edge Routers](http://arxiv.org/abs/2609.25817v1)
+  > **TL;DR**: Proposes Lizard, a system for real-time video analytics that addresses latency from bandwidth drops at edge routers. It uses content-aware RTP extensions and priority-based packet discarding to drop less important frame blocks. Achieves 53.2% lower latency and 27.1% higher accuracy.
+* `hardware` `networking` `serving` [Co-Fabric: Breaking Host-Domain Boundaries for Unified xPU Interconnection](http://arxiv.org/abs/2609.25560v1)
+  > **TL;DR**: Proposes Co-Fabric, a bus-based interconnect that breaks host-domain boundaries for unified xPU communication. Uses a streamlined 4-layer protocol stack and unified addressing to reduce latency and overhead. Achieves 30%-80% faster DeepSeek R1 inference and 50% lower inter-node latency vs. RoCE.
+
 ### 2026-09-21
 * `serving` `quantization` [Who Pays for the KV Cache? Attributing Shared AI Inference Spend Across Kubernetes and LLM Provider Bills](http://arxiv.org/abs/2609.24991v1)
   > **TL;DR**: Investigates how to accurately attribute inference costs, specifically KV cache usage, in multi-tenant LLM serving. Proposes unalloc, a tool to join cost data from Kubernetes and API providers. In a vLLM-based scenario, different metering rules shifted a tenant's cost share by 12-14 percentage points.
