@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1472-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.09.25-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1479-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.09.26-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,22 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-09-24
+* `kernel` `serving` [KernelOPT: Dispatch-Aware Agentic Search for GPU Kernel Optimization](http://arxiv.org/abs/2609.30059v1)
+  > **TL;DR**: Presents KernelOPT, a multi-agent system for optimizing GPU kernels in compiled models. It selectively targets Triton sub-kernels using five LLM agents and a four-gate verification cascade to re-stitch the model. Achieves geometric mean speedups of up to 1.40x over torch.compile.
+* `kernel` `training` [KREX: Concurrent Kernel Benchmarking on Shared GPUs via Region-Granular Exclusivity](http://arxiv.org/abs/2609.30057v1)
+  > **TL;DR**: Presents KREX, a runtime that enables concurrent GPU kernel benchmarking for LLM agent-driven optimization by enforcing exclusivity only in timing-critical regions. It achieves up to 3.4x higher benchmarking throughput with minimal p95 timing inflation (<3.9%).
+* `serving` `multi-modal` [Cross-Model Autoscaling for Shared LLM Serving](http://arxiv.org/abs/2609.29160v1)
+  > **TL;DR**: Presents TRE, a control-plane framework for autoscaling in shared LLM serving clusters. It introduces a calibrated Token Service Share signal to coordinate capacity reallocation across models under a fixed GPU budget. Reduces P95 latency by up to 79.0% compared to a state-of-the-art autoscaler.
+* `agent` `serving` [MeshHeal: Two-Timescale Self-Healing for Gray Failures in Decentralized LLM Agent Networks](http://arxiv.org/abs/2609.29015v1)
+  > **TL;DR**: Proposes a two-timescale self-healing framework, MeshHeal, for detecting and mitigating gray failures in decentralized LLM agent networks. It uses peer review for fast correction and ability-conditioned detection for slow agent exclusion/integration. Achieves 0.839 accuracy using 51k tokens per task, vs. 0.807 with 115k for a baseline.
+* `serving` `kernel` `offloading` [When Fancy Eviction Fails: Rethinking Cache Replacement For LLM Prefix Reuse](http://arxiv.org/abs/2609.28870v1)
+  > **TL;DR**: Investigates prefix-cache replacement policies for LLM inference with growing contexts. Analyzes production traces and finds LRU performs nearly as well as complex policies due to regular session pacing. Proposes enhancements like compute-aware partial eviction, achieving up to 40% of the performance of an optimal offline oracle.
+* `kernel` `serving` `hardware` [KREX: Concurrent Kernel Benchmarking on Shared GPUs via Region-Granular Exclusivity](http://arxiv.org/abs/2609.30057v1)
+  > **TL;DR**: Presents KREX, a runtime enabling concurrent kernel benchmarking for LLM optimization agents. Achieves exclusivity only for timing-critical regions, isolating CPU/GPU execution, while allowing concurrency elsewhere. Increases throughput by 3.4x with <4% p95 timing inflation for short kernels.
+* `agentic` `kernel` `edge` [Hard Stop: Kernel-Level Preemption and Containment for Rogue Agentic Execution](http://arxiv.org/abs/2609.29808v1)
+  > **TL;DR**: Presents a system architecture to prevent rogue agent actions by implementing out-of-band supervisory control and microsecond-scale kernel-level preemption. The proposed method achieves deterministic containment with a 4.8 μs median latency for interrupt handling.
+
 ### 2026-09-23
 * `serving` `offloading` [The KV Cache Working Set: Online Capacity Planning for LLM Inference Systems](http://arxiv.org/abs/2609.27746v1)
   > **TL;DR**: Addresses how to determine the minimum KV cache capacity needed for a target hit rate in LLM serving. Proposes KVSET, an online analyzer using the Mattson stack algorithm to estimate working sets. Validation on production traces shows estimates closely match real deployments.
