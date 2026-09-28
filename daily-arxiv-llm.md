@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1479-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.09.26-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1488-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.09.27-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,26 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-09-25
+* `serving` `multi-modal` `offloading` [EAServe: Encode-Aware Disaggregated Serving for Multimodal Large Language Models](http://arxiv.org/abs/2609.31551v1)
+  > **TL;DR**: Addresses resource imbalance in the three-stage Encode-Prefill-Decode pipeline for multimodal LLM serving. Proposes EAServe with an encode-aware runtime for micro-batching and partial offload, and a configuration layer for GPU allocation. Achieves up to 4.3x higher goodput than NVIDIA Dynamo under SLO constraints.
+* `agent` `serving` [Authority at Commit Time: Reject-and-Rerun Semantics for Governed Agentic Systems](http://arxiv.org/abs/2609.31490v1)
+  > **TL;DR**: Proposes a commit-time protocol to ensure institutional authority for long-running enterprise AI agents by validating proposals against a current state snapshot before effect dispatch. The system uses dependency checks and semantic verification, with evaluation showing correct effect detection during reconciliation.
+* `training` `storage` [Deduplication-while-Training: A Resilient Paradigm for Privacy-Preserving Cross-Client Deduplication in Federated Learning](http://arxiv.org/abs/2609.31262v1)
+  > **TL;DR**: Proposes Deduplication-while-Training (DwT), a resilient paradigm for concurrent deduplication and model training in federated learning. Designs DwT-FL with a state-claim mechanism and dual-queue scheduling for online deduplication. Reduces failure recovery time by up to 93.04%.
+* `serving` `agent` [DynBranch: Speculative Subgraph Reuse for Dynamic Agentic LLM Serving](http://arxiv.org/abs/2609.31047v1)
+  > **TL;DR**: Proposes DynBranch for speculative subgraph reuse to break the branch-resolution barrier in agentic LLM workflows. A two-level controller runs predictable subgraphs early and reuses results, reducing mean latency by up to 32% over prior systems.
+* `edge` `serving` `networking` [Predictive Rolling-Horizon Optimization for Commitment-Aware Model-Parallel Inference under Spatio-Temporal Edge Dynamics](http://arxiv.org/abs/2609.31018v1)
+  > **TL;DR**: Addresses how to schedule model-parallel LLM inference on resource-dynamic edge systems while honoring service commitments. Proposes PROMISE, a predictive rolling-horizon optimizer using future workload estimates for scheduling. Achieves robust performance under diverse system scales and dynamics.
+* `serving` `offloading` `quantization` [The KV Cache Is the New Memory Wall](http://arxiv.org/abs/2609.30854v1)
+  > **TL;DR**: Analyzes the LLM inference memory wall, identifying the KV cache as the bottleneck at long contexts. Systematically evaluates KV cache compression techniques (quantization, eviction, paging, prefix caching, tiering) under a unified protocol. Derives arithmetic intensity models showing KV compression achieves speedups near the roofline bound when its traffic dominates weights.
+* `training` `hardware` `storage` [Job Class Thermal Intent Aware Liquid Cooling Allocation for AI Data Centers](http://arxiv.org/abs/2609.30785v1)
+  > **TL;DR**: Proposes Job-Class Thermal Intent (JCTI) to coordinate AI job scheduling with liquid cooling in data centers. Feeds job class and thermal signature from the scheduler to pre-stage coolant, reducing thermal lag. Achieves 56.4% fewer thermal violations and 60.2% less cumulative temperature overshoot.
+* `RL` `agentic` [WeEnv: The Environment for Agentic Reinforcement Learning at WeChat](http://arxiv.org/abs/2609.30766v1)
+  > **TL;DR**: Addresses the high environment tax in agentic RL, where environment management consumes most iteration time. Proposes WeEnv, a lifecycle solution for environment packaging, on-demand initialization, and elastic resource provisioning. Cuts environment's share of iteration time from 53.4% to 9.1%.
+* `agent` `serving` `offloading` [ActKV: Efficient LLM Agents through Action-Guided KV Cache Management](http://arxiv.org/abs/2609.31395v1)
+  > **TL;DR**: Proposes ActKV, a KV cache compression framework for agentic LLM inference, using action-guided eviction and confidence-driven budget allocation to reduce memory overhead. Achieves 3.97x higher token throughput while retaining 98.53% accuracy with only 25.98% of the original cache size.
+
 ### 2026-09-24
 * `kernel` `serving` [KernelOPT: Dispatch-Aware Agentic Search for GPU Kernel Optimization](http://arxiv.org/abs/2609.30059v1)
   > **TL;DR**: Presents KernelOPT, a multi-agent system for optimizing GPU kernels in compiled models. It selectively targets Triton sub-kernels using five LLM agents and a four-gate verification cascade to re-stitch the model. Achieves geometric mean speedups of up to 1.40x over torch.compile.
