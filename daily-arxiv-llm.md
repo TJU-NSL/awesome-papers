@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1488-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.09.27-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1533-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.09.28-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,102 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-09-28
+* `serving` [Beyond Energy: When Sustainability Dimensions Reshape LLM Serving Decisions](http://arxiv.org/abs/2609.35569v1)
+  > **TL;DR**: Investigates how to jointly optimize LLM serving for sustainability across energy, carbon, water, and biodiversity. Proposes PRISM, a framework characterizing configuration vs. deployment impacts and balancing dimensions to minimize regret. Reduces median worst-case regret by 50.2% vs. baselines.
+* `training` `MoE` `networking` [TopoEP: Topology-Aware Load Balancing for Expert-Parallel MoE Training](http://arxiv.org/abs/2609.35481v1)
+  > **TL;DR**: Addresses load imbalance in MoE training caused by dynamic routing. Proposes TopoEP, a GPU-native, topology-aware load balancer that makes replication and rerouting decisions to minimize hierarchical communication costs. Achieves 6.2%-11.4% higher throughput on a 32-GPU cluster.
+* `training` `sparse` [SOLO: Pretraining Billion-Parameter Language Models with Shared-Output Local Learning](http://arxiv.org/abs/2609.35440v1)
+  > **TL;DR**: Proposes SOLO, a local learning method for pretraining LLMs without update locking by using a shared readout from the final layer. This allows for smaller activation memory per pipeline stage, achieving up to 1.44x higher throughput than pipeline backpropagation.
+* `training` `edge` `networking` [Weaver: A System for AI-RAN Compute Sharing with Foundation Model Training](http://arxiv.org/abs/2609.35276v1)
+  > **TL;DR**: Investigates how to harness spare GPU capacity in AI-RAN infrastructure for decentralized FM training. Proposes Weaver, a RAN-first system with compute-aware scheduling and a two-level elastic training framework. Achieves 2.1-3.7x training throughput improvement over baselines.
+* `serving` `kernel` [WavePP: High-Throughput Pipeline Parallel LLM Prefill under Prefix Reuse](http://arxiv.org/abs/2609.35263v1)
+  > **TL;DR**: Addresses how to improve prefill throughput in pipeline-parallel LLM serving systems under prefix reuse. Proposes WavePP, a runtime that overlaps request admission with execution and dynamically plans chunks to maximize pipeline utilization. Achieves up to 2.91x higher throughput compared to TensorRT-LLM.
+* `edge` `GUI` `training` [EdgeCraft: Automated Model Crafting for Edge IoT](http://arxiv.org/abs/2609.35167v1)
+  > **TL;DR**: Presents EdgeCraft, an LLM-driven system to automate the creation of deployable ML models for edge IoT from high-level intents. It uses a constraint-aware synthesis tree and a multi-fidelity verifier. Across 50 tasks, it found an SLO-feasible artifact for 45.
+* `kernel` `RL` `training` [AReaL-TIK: Stateful Agentic Optimization of Unified RL Kernels through an Optimization IR](http://arxiv.org/abs/2609.35140v1)
+  > **TL;DR**: Presents an agentic framework for optimizing unified RL training kernels to avoid numerical discrepancies between rollout and update phases. It uses an optimization IR to coordinate code modifications while preserving bitwise correctness. Achieves a 1.40x average speedup in phase latency across 15 model-GPU pairs.
+* `kernel` `hardware` `training` [E3J: An Efficient and Open-Source Backend for Euclidean Equivariant Operations on GPU and TPU](http://arxiv.org/abs/2609.35099v1)
+  > **TL;DR**: Presents E3J, an efficient JAX backend for Euclidean equivariant operations on GPUs and TPUs. Combines optimized CUDA/Pallas kernels with algorithmic improvements for tensor products and convolutions. Achieves over 80% of H100 memory bandwidth and up to 34% speed-up in MLIP simulations.
+* `serving` `offloading` `kernel` [TempoKV: Timely Staging of LLM KV Caches for Memory-Semantic Flash](http://arxiv.org/abs/2609.35065v1)
+  > **TL;DR**: Proposes TempoKV, a timing-aware staging layer for LLM KV caches in memory-semantic flash hierarchies. It delays resource commitment for reusable KV caches based on runtime retrieval estimates. Reduces protected fast-tier byte-time per request by up to 91% and p95 TTFT by up to 48% versus baseline.
+* `inference` `kernel` `hardware` [Accelerator Choice Is Not Enough: AlphaFold2 Inference on Cloud TPUs](http://arxiv.org/abs/2609.34818v1)
+  > **TL;DR**: Analyzes performance portability and software overheads for AlphaFold2 inference across CPUs, GPUs, and TPUs. Investigates JAX compilation time, batching (vmap), and multi-device parallelism (pmap). Finds TPU is 28x faster than GPU per chip, but default software setup leaves 7/8 of TPU slice idle.
+* `diffusion` `kernel` `video` [WaveAlign: Cache-Aware Query-Row Scheduling for Sparse Attention in Long-Video Generation](http://arxiv.org/abs/2609.34814v1)
+  > **TL;DR**: Proposes WaveAlign, a cache-aware query-row scheduler for sparse attention in long-video diffusion transformers. It reorders rows to increase K/V cache locality and reduce HBM traffic via pattern grouping and GPU-wave-aware sorting. Achieves up to 1.25x kernel speedup and reduces HBM traffic by 92.11%.
+* `offloading` `kernel` `hardware` [Torch-PIM: Automated Profile-Guided PIM Offloading for PyTorch](http://arxiv.org/abs/2609.34657v1)
+  > **TL;DR**: Presents Torch-PIM, a PyTorch compiler framework that uses profile-guided optimization to automatically decide which loop nests to offload to processing-in-memory hardware. It assesses work volume and memory boundedness from the MLIR lowering. Achieves up to 5.1x speedup on GPT-J-6B over CPU-only execution.
+* `RL` `training` `kernel` [Nereus: Adaptive Parallelism for LLM Post-Training](http://arxiv.org/abs/2609.34645v1)
+  > **TL;DR**: Investigates dynamic resource adaptation for RL post-training of LLMs on GPU clusters. Proposes Nereus, a cost-aware runtime that uses Elastic Model Units and a transition graph to reconfigure parallelism and GPU assignments online. Achieves 27.7% lower average step latency and 2.14-7.27x higher throughput vs. baselines.
+* `agent` `edge` [AgentWare: Automating the Lifecycle of Agentic Applications across the Edge-to-Cloud Continuum](http://arxiv.org/abs/2609.34586v1)
+  > **TL;DR**: Proposes AgentWare, an AgenticOps framework that automates provisioning, deployment, observability, and evaluation of distributed LLM-agent applications on the Edge-to-Cloud continuum. It enables automatic deployment and generates unified evaluation reports. Reduces manual effort for deployment and analysis in experiments.
+* `serving` `agent` `RL` [Semantics, Workflows, and Infrastructure: Understanding Agent Serving at Production Scale](http://arxiv.org/abs/2609.34432v1)
+  > **TL;DR**: Characterizes production-scale LLM agent serving by analyzing 11.7M requests. Examines task semantics, workflow patterns, and infrastructure demands from a trace of a 10k+ GPU platform. Identifies skewed session volumes and context reuse to guide efficient agent system design.
+* `serving` `offloading` `quantization` [DPS: Dual-Mode Precision LLM Serving with Semi-Unified Memory](http://arxiv.org/abs/2609.34380v1)
+  > **TL;DR**: Addresses how to adapt LLM serving to bursty workloads by making model weight memory elastic. Proposes DPS, a dual-precision system using Semi-Unified Memory to dynamically switch weight precision and repurpose memory for KV cache. Improves sustained throughput by 2.1-3.3x over a static baseline.
+* `serving` `kernel` [Spexis: Speculative Lookahead Scheduling for LLM Inference](http://arxiv.org/abs/2609.34370v1)
+  > **TL;DR**: Proposes a multi-GPU LLM inference framework, Spexis, that improves efficiency by introducing speculative parallelism as a new axis alongside pipeline/tensor parallelism. It uses lookahead scheduling to predict speculation quality and manage memory. Achieves up to 34% speedup over an optimized baseline on vLLM.
+* `MoE` `serving` `networking` [VarioPath: Workload-Aware All-to-All Communication for PCIe GPU Clusters](http://arxiv.org/abs/2609.34340v1)
+  > **TL;DR**: Addresses inefficient AlltoAllv communication for MoE model inference in PCIe GPU clusters. Proposes VarioPath, a scheduler combining an offline topology analyzer with an online demand-aware scheduler. Achieves average AlltoAllv speedups of 5.88x and reduces Qwen3 inference latency by up to 27.2%.
+* `training` `sparse` [HyDra: Demystifying and Taming Dynamic Context Parallelism at Production Scale](http://arxiv.org/abs/2609.34318v1)
+  > **TL;DR**: Addresses computational imbalance in long-context LLM training caused by dynamic context parallelism. Proposes HyDra, a load-driven scheduler with a nested parallelism engine to balance workloads. Achieves up to 2.48x higher throughput and reduces pipeline bubbles from 36% to 14% in production.
+* `training` `kernel` `quantization` [Broken Symmetry in BF16 Attention: Why FlashAttention Gradients Blow Up Late in Training](http://arxiv.org/abs/2609.34272v1)
+  > **TL;DR**: Investigates numerical instability in BF16 training with fused attention kernels. Diagnoses a broken conservation law in softmax gradients and proposes GProj, a rank-one correction method. Restores median query gradient error from 219% to 0.34% for a 4.7% time overhead, matching FP32 attention loss.
+* `training` `MoE` `networking` [Arachne: Learning to Plan Parallel Training on Dynamic Heterogeneous Clusters](http://arxiv.org/abs/2609.34244v1)
+  > **TL;DR**: Proposes Arachne, a learning-based planner for efficient parallel training on dynamic, heterogeneous GPU clusters. It reduces the search space by focusing on pipeline structure templates learned offline, achieving up to 84.5% higher throughput on dense models and 4.6x on MoE models.
+* `training` `offloading` [SlideDP: Scaling Host-Resident LLM Fine-Tuning Across Multiple GPUs](http://arxiv.org/abs/2609.34162v1)
+  > **TL;DR**: This paper tackles the host resource contention problem in multi-GPU, host-resident LLM fine-tuning. It introduces SlideDP, a synchronous data-parallel runtime that pipelines parameter delivery and gradient aggregation while managing a single host state. The system achieves geometric-mean throughput improvements of 1.46-2.64x over prior methods.
+* `serving` `offloading` [Kafila: Serving Large Language Models on a Trusted Set of Heterogeneous Commodity Machines](http://arxiv.org/abs/2609.34045v1)
+  > **TL;DR**: Proposes Kafila, a system for serving LLMs on a trusted set of heterogeneous commodity machines. It uses a planner to optimally partition the model based on device capabilities and a ring-based protocol for communication. Achieves up to 5.2x reduction in the slowest pipeline stage latency compared to an even model split.
+* `agent` `kernel` [Argus: Agentic, Reference-Calibrated, Tree-Guided, System-Software-Level Bottleneck Localization](http://arxiv.org/abs/2609.35508v1)
+  > **TL;DR**: Presents Argus, an LLM-based system for automated OS kernel bottleneck localization. It uses reference calibration and a tree-guided agent to pinpoint specific code paths from performance data. Reduces incorrect deep-path diagnoses by 19x compared to baseline while maintaining low diagnosis time (~31s).
+* `agent` `storage` [Planarian: Managing Agent State with Statepoints](http://arxiv.org/abs/2609.35366v1)
+  > **TL;DR**: Proposes Planarian, an agent runtime with state management using 'statepoints' to snapshot and restore both local and remote environment state. It introduces snapshots, rollbacks, and forks to enable error recovery and parallel exploration. Achieves task quality improvement of up to 15x with 3% overhead.
+* `edge` `kernel` `offloading` [Dynamic Flow, Static Graph: KV Cache Reuse for Efficient LLM Serving on Mobile NPUs](http://arxiv.org/abs/2609.34727v1)
+  > **TL;DR**: Proposes a system for efficient KV cache reuse on memory-constrained mobile NPUs. The design includes static graph computation, a hierarchical KV manager, and a pipeline overlapping KV operations with execution. Reduces time-to-first-token by 40-60% compared to baseline methods.
+
+### 2026-09-27
+* `kernel` `training` `sparse` [Validating Memory-Optimal Transformer Kernels on Real Hardware: From Formal Derivation to Measured Performance Across Two HPC Clusters](http://arxiv.org/abs/2609.33916v1)
+  > **TL;DR**: Validates formally-derived, memory-optimal transformer kernels on HPC clusters. Measures performance of kernels for attention, MLP, and fused forward+backward passes against theoretical predictions. Reports a 2.5x speedup after fixing an atomic contention issue in a fused GPU kernel.
+* `training` `agent` `RL` [QwenGyre: An Elastic Reinforcement Learning Framework for Training xLong-Horizon Agents](http://arxiv.org/abs/2609.33848v1)
+  > **TL;DR**: Addresses training inefficiency for LLM agents on extreme-long-horizon tasks with high variance and trajectory redundancy. Proposes QwenGyre, an elastic RL framework with dynamic GPU reallocation and trajectory deduplication. Achieves up to 1.85x speedup over baseline methods.
+* `serving` `offloading` `agent` [EfficientAgent: What Makes KV Cache Offloading Work for Concurrent Agents?](http://arxiv.org/abs/2609.33762v1)
+  > **TL;DR**: Analyzes why KV cache offloading is inconsistently effective for concurrent LLM agents. Proposes EfficientAgent, which models the reuse working set to size a host tier and uses a runtime write-filtering policy. Cuts recomputed tokens by 93% and end-to-end time by 39% on SWE-bench.
+* `kernel` `serving` [FoldAttention: Declared-Reference Softmax for Fast Decode and Deterministic Backward](http://arxiv.org/abs/2609.33410v1)
+  > **TL;DR**: Presents FoldAttention, a softmax formulation that pre-declares a normalization reference for faster, more deterministic attention. The method gates KV cache reads and enables additive composition of partial results, achieving up to 3.09x faster inference on H100 while maintaining accuracy.
+* `MoE` `offloading` `diffusion` [OLED-MoE: Accelerating MoE-Based dLLM Inference via Inter-Iteration Locality-Aware Expert Offloading](http://arxiv.org/abs/2609.33385v1)
+  > **TL;DR**: Addresses high latency in MoE-based diffusion LLM inference due to ineffective expert loading. Proposes OLED-MoE, which uses confidence-guided inter-iteration expert retention and CPU-GPU cooperative execution instead of intra-iteration prefetching. Reduces time per output token by up to 7.93x and achieves near-full performance with only 40% expert GPU memory.
+* `agent` `serving` `offline` [AgentLoop: Runtime Control of Slot-closed Execution Loops for Tool-augmented LLM Agents](http://arxiv.org/abs/2609.33315v1)
+  > **TL;DR**: Investigates runtime inefficiency in tool-augmented LLM agents that continue executing after task completion. Proposes AgentLoop, a state-driven controller that verifies answer completeness using slot closure to limit iterations. Reduces total token cost by up to 88.44% and average service invocations by 76.85%.
+* `serving` `MoE` `kernel` [CascadeEP: Asynchronous Expert Execution for MoE Prefill under Attention Imbalance](http://arxiv.org/abs/2609.33252v1)
+  > **TL;DR**: This paper tackles the prefill latency problem in MoE serving caused by imbalanced attention computation across replicas. It proposes ASYNCEP, an execution engine with asynchronous expert processing, token streaming, and opportunistic weight fetching. It achieves up to 1.48x speedup in p95 time-to-first-token.
+* `serving` `agentic` `kernel` [PackServe: SLO-Aware Request Scheduling for Agentic LLM Serving at Scale](http://arxiv.org/abs/2609.33224v1)
+  > **TL;DR**: Presents PackServe, a scheduler for agentic LLMs that reduces GPU footprint while meeting token-level latency SLOs. It uses white-box latency models to pack requests, trading latency headroom for throughput. Deployment on 1000+ GPUs showed a 34.7% reduction in resource footprint.
+* `kernel` `serving` `quantization` [MpFA: Hardware-Efficient Train-Free QK4V8 FlashAttention Kernels on Blackwell GPUs](http://arxiv.org/abs/2609.33135v1)
+  > **TL;DR**: Presents MpFA, a training-free FlashAttention kernel for NVIDIA Blackwell GPUs using mixed-precision QK4PV8. The kernel employs rank-one smoothing compensation and optimizations for data movement and parallelization. Achieves 2.81x higher end-to-end throughput over a BF16 baseline for 128K contexts.
+* `training` `RL` `kernel` [Splitting Prompt Prefill from Response Replay for Context-Parallel Long-Context LLM Post-Training](http://arxiv.org/abs/2609.33133v1)
+  > **TL;DR**: Addresses the inefficiency of recomputing prompt KV states in RL-based long-context LLM post-training. Proposes AugTree, a context-parallel execution scheme that decouples prompt prefill from response replay and uses an online planner. Achieves up to 7.08× speedup in training step time.
+* `serving` `kernel` `offloading` [SketchSSM: Write to the Full State, Read from a Compact Sketch](http://arxiv.org/abs/2609.33051v1)
+  > **TL;DR**: Proposes SketchSSM to reduce state-read bottlenecks in hybrid-attention model inference. Uses a fixed basis to precompute outputs into a compact sketch, avoiding full-state reads per query. Achieves up to 7.78x kernel speedup and 10x reduction in state-access traffic.
+
+### 2026-09-26
+* `serving` `RAG` `agent` [Tessera: Demand-Driven KV Cache Management for Retrieval-Augmented LLM Serving](http://arxiv.org/abs/2609.32999v1)
+  > **TL;DR**: Proposes Tessera, a disaggregated LLM serving system that uses retrieval as a control plane to manage KV cache for RAG and agent workloads. It coordinates caching and routing based on demand to enable reuse of recurring content. Reduces mean Time-To-First-Token by up to 3.6x over baselines while matching quality.
+* `RAG` `agent` [Ask Without Telling: Local SLMs Consult Cloud LLMs Without Revealing Task Intent](http://arxiv.org/abs/2609.32642v1)
+  > **TL;DR**: Addresses how to consult cloud LLMs for local SLMs without revealing user task intent. Proposes PriCon, an end-to-end framework that transforms the task via recoverable mathematical reformulation. Reduces cloud-side task-intent inference accuracy to near 0% while preserving utility.
+* `agent` `RL` `training` [SCLATE: a Substrate for Continual-Learning Agent Training and Evaluation](http://arxiv.org/abs/2609.32391v1)
+  > **TL;DR**: Presents SCLATE, an execution substrate for training and evaluating continual-learning agents by unifying event scheduling. It enables efficient multi-session rollouts with hybrid time compression and was used for post-training, resulting in a 16.7-point improvement in SWE-bench pass rate.
+* `agent` `serving` [AgentReplay: Token-Wise Trace Replay Is Essential for Fair Serving System Performance Benchmarking](http://arxiv.org/abs/2609.32283v1)
+  > **TL;DR**: Proposes AgentReplay, a trace record-and-replay framework for LLM agents to eliminate workload variation from different execution trajectories during serving system benchmarking. It forces recorded tokens and MoE selections during replay, enabling fair comparisons. Experiments show it eliminates variation that greedy decoding and length-wise replay cannot.
+* `serving` `agent` `offloading` [RR-Evict: Fine-Grained Prefix Cache Eviction beyond LRU for Agentic LLM Serving](http://arxiv.org/abs/2609.32278v1)
+  > **TL;DR**: Studies the problem of prefix cache eviction skew under LRU for LLM-based agents, causing high TTFT outliers. Proposes RR-EVICT, a fine-grained policy that evicts tail chunks from agents in round-robin. Reduces P99 TTFT by up to 75.4% versus LRU.
+* `video` `diffusion` `networking` [SparSP: Exploiting Communication Sparsity for Sequence-Parallel Video DiTs](http://arxiv.org/abs/2609.32197v1)
+  > **TL;DR**: Proposes SparSP, a communication system for scaling video Diffusion Transformer inference. It co-designs token placement, sparse KV routing, and asynchronous execution to exploit attention sparsity for reduced communication. Achieves 1.17-1.69x end-to-end speedup and 12.54-23.05% reduction in communication volume.
+* `agent` `edge` `storage` [REBASE: Device-Cloud Experience Coherence for GUI Agents Across App Updates](http://arxiv.org/abs/2609.32130v1)
+  > **TL;DR**: Proposes REBASE, a protocol to maintain GUI agent experience coherence across app updates via cloud replay and device verification with evidence-based patching. Reduces data transfer by 708x and restores success rate to match fresh experience after an episode.
+* `edge` `kernel` `serving` [Empowering Hybrid Attention Models on NPUs](http://arxiv.org/abs/2609.32114v1)
+  > **TL;DR**: Enables efficient hybrid attention LLM inference on edge NPUs. Proposes HA-NPU, a system with core-, operator-, and tensor-level dataflow reorganization for linear attention layers. Achieves 2.03x faster end-to-end latency and a 35.95x kernel speedup.
+
 ### 2026-09-25
 * `serving` `multi-modal` `offloading` [EAServe: Encode-Aware Disaggregated Serving for Multimodal Large Language Models](http://arxiv.org/abs/2609.31551v1)
   > **TL;DR**: Addresses resource imbalance in the three-stage Encode-Prefill-Decode pipeline for multimodal LLM serving. Proposes EAServe with an encode-aware runtime for micro-batching and partial offload, and a configuration layer for GPU allocation. Achieves up to 4.3x higher goodput than NVIDIA Dynamo under SLO constraints.
