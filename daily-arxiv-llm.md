@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1533-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.09.28-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1547-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.09.29-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,36 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-09-29
+* `kernel` `hardware` `training` [RLX: A Unified Multi-Backend Tensor Compiler and Distributed Runtime in Rust](http://arxiv.org/abs/2609.37916v1)
+  > **TL;DR**: Presents RLX, a unified tensor compiler and runtime for ML, to simplify the stack and improve performance. Combines compiler and runtime in Rust with a multi-backend IR. Outperforms PyTorch-MPS on all-MiniLM-L6-v2 (16.6ms vs 26.7ms at batch 32) and achieves 946,487 img/s training throughput on MNIST.
+* `MoE` `serving` `networking` [Joint Effects of GPU Server Topology, Parallelism, and Congestion Control on MoE Inference: A Controlled Simulation Study](http://arxiv.org/abs/2609.37828v1)
+  > **TL;DR**: Investigates how GPU server topology, parallelization strategy, and congestion control affect MoE model inference performance. Uses ASTRA-sim with NS-3 to simulate 32-GPU systems, revealing that exposed communication accounts for 89.9-95.8% of completion time, which is heavily influenced by the choice of collective algorithm and network configuration.
+* `kernel` `quantization` `hardware` [FP64 Is All You Want, INT8 Is All You Need, FP4/6/8 Is All You Have](http://arxiv.org/abs/2609.37693v1)
+  > **TL;DR**: Investigates how to minimize low-precision GEMM operations for emulating FP64 arithmetic. Proposes a combinatorial program to select moduli and computation methods, deriving new FP6, FP8, and FP4 schemes. Achieves up to 83x speedup over native FP64 on Blackwell GPUs.
+* `serving` `networking` `kernel` [SPLASH: Switching Parallel Layouts of Attention with Seamless Handoff for LLM Serving](http://arxiv.org/abs/2609.37626v1)
+  > **TL;DR**: Explores how to dynamically switch LLM attention parallelization layouts during serving to handle varying workloads. Proposes SPLASH, a system that performs seamless, low-overhead (0.51% median) layout handoffs by exploiting decoupled KV cache and weight sharding. Achieves 1.3-1.73x throughput gains over fixed-layout deployments.
+* `serving` `kernel` `diffusion` [DScale: Scaling Block-Diffusion Speculative Decoding with Adaptive Verification](http://arxiv.org/abs/2609.37532v1)
+  > **TL;DR**: Proposes DScale, a system for block-diffusion speculative decoding that introduces path-aware tiling and dynamic verify-length allocation to reduce verification overhead. Achieves up to 48.8% higher throughput and 30.8-52.5% lower decode-step time compared to baselines.
+* `hardware` `training` [MEDEM: Multi-Engine DL Accelerator Design Methodology](http://arxiv.org/abs/2609.37399v1)
+  > **TL;DR**: Proposes MEDEM, a systematic methodology for designing multi-engine DL accelerators to handle heterogeneous workloads. It defines engine abstractions, co-designs instances, and selects combinations to minimize execution cost under a resource budget. Achieves up to 4.84x improvement in energy-delay product.
+* `serving` `kernel` [vSkipper: Translating Dynamic Layer Skipping into LLM Serving Gains](http://arxiv.org/abs/2609.37062v1)
+  > **TL;DR**: Presents vSkipper, a virtualization layer enabling dynamic layer-skipping techniques within modern LLM serving engines. It groups tokens by skip decision per layer, using routed execution for profitable cases. Integrated into SGLang, it reduces mean latency by 36.8% on GSM8K and increases throughput by 11.3% under saturation.
+* `RL` `multi-modal` [CF-LoRA: Decoupled Factor Aggregation and Adaptation-Aware Client Clustering for Federated LoRA Fine-Tuning](http://arxiv.org/abs/2609.36986v1)
+  > **TL;DR**: Addresses data heterogeneity in federated LoRA fine-tuning. Proposes CF-LoRA, which decouples the aggregation of LoRA factors and clusters clients based on adaptation patterns for personalized federated learning. Achieves highest average accuracy on 8 language and vision tasks compared to baselines.
+* `training` `MoE` `networking` [Cobalt: Leveraging Expert Co-activation for Efficient Distributed MoE Training](http://arxiv.org/abs/2609.36959v1)
+  > **TL;DR**: Addresses the communication and workload imbalance bottlenecks in distributed MoE training. Proposes Cobalt, a framework that co-locates frequently co-activated experts to reduce cross-node traffic and rebalances workloads. Achieves up to 2.41x speedup and reduces cross-node token traffic by up to 99.26%.
+* `serving` `kernel` `networking` [Purlin: Separating Orchestration from the Datapath of Collectives](http://arxiv.org/abs/2609.36954v1)
+  > **TL;DR**: Presents Purlin, a communication framework separating collective semantics, orchestration, and datapath. Uses the SNAC protocol and hardware-specific Atom primitives for flexible, efficient collectives. Achieves up to 5.14x lower latency and improves LLM serving throughput by up to 1.37x.
+* `serving` `agent` `offloading` [Efficient Agentic LLM Serving over SSD-based Sparse KV Storage](http://arxiv.org/abs/2609.36938v1)
+  > **TL;DR**: Presents Janus, a serving framework for agentic LLMs that use sparse attention and SSD-based KV storage. It decouples KV selection from inference via pre-computation and prediction to overlap SSD reads with model execution. Reduces time to first token latency by up to 3.69x compared to existing systems.
+* `training` `RL` [Reshaping Rollout Workloads for Asynchronous RL Post-Training on Heterogeneous Accelerators](http://arxiv.org/abs/2609.36899v1)
+  > **TL;DR**: Addresses scheduling for RL post-training rollouts across heterogeneous hardware. Proposes CadenceRL, which reshapes workloads via pacing and concentration with late-bound KV preparation. Improves decode throughput by up to 48% and reduces P95 trajectory latency by up to 64%.
+* `quantization` `serving` [Replay the Curvature: Accurate and Scalable NVFP4 Quantization for Large Language Model Inference](http://arxiv.org/abs/2609.36654v1)
+  > **TL;DR**: Proposes an accurate and scalable NVFP4 quantization method for LLM inference. Combines the Schur Replay scale-selection algorithm, which accounts for GPTQ interdependencies, with a memory-tiered execution infrastructure. Achieves 15.17x faster per-layer quantization time on a 397B model compared to ModelOpt.
+* `diffusion` `serving` `kernel` [ParaAnya: Accelerating Parallel Diffusion Sampling with Plug-and-Play Output Caching](http://arxiv.org/abs/2609.36522v1)
+  > **TL;DR**: Proposes ParaAnya, a plug-and-play output cache for parallel diffusion samplers to eliminate redundant computations on overlapping timesteps. Caches function evaluations and dispatches only new timesteps to GPUs. Achieves 1.30-2.43x speedup over uncached parallel samplers and reduces NFE by up to 70.1%.
+
 ### 2026-09-28
 * `serving` [Beyond Energy: When Sustainability Dimensions Reshape LLM Serving Decisions](http://arxiv.org/abs/2609.35569v1)
   > **TL;DR**: Investigates how to jointly optimize LLM serving for sustainability across energy, carbon, water, and biodiversity. Proposes PRISM, a framework characterizing configuration vs. deployment impacts and balancing dimensions to minimize regret. Reduces median worst-case regret by 50.2% vs. baselines.
