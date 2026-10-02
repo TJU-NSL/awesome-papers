@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1547-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.09.30-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1552-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.10.01-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,18 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-10-01
+* `MoE` `offloading` `serving` [MoE-CORE: Coordinated Expert Offloading and Residency for Memory-Constrained MoE Inference](http://arxiv.org/abs/2610.01950v1)
+  > **TL;DR**: Tackles memory-constrained MoE inference by coordinating expert offloading and residency. Proposes MoE-CORE, which uses alternating buffers for prefill and a cache with routing-aware replacement/prefetching for decode. Achieves 38.0 ms mean TPOT vs. 1269.1 ms for vLLM Prefetch on DeepSeek-V4.
+* `serving` `quantization` [ePACT: Energy-Performance-Aware Commitment Tracking for LLM Serving](http://arxiv.org/abs/2610.01784v1)
+  > **TL;DR**: Addresses the cost of electricity procurement deviations during LLM serving with hourly commitments. Proposes ePACT, a two-level controller that dynamically adjusts serving capacity and GPU clocks to minimize asymmetric deviation cost. Reduces deviation costs by 73.8% while maintaining near-vLLM SLO attainment.
+* `MoE` `training` `networking` [GPU-Initiated Communication: Dissecting Down to the Bone](http://arxiv.org/abs/2610.01380v1)
+  > **TL;DR**: Dissects the performance of GPU-initiated communication for fine-grained tasks like MoE model training. Compares GPU-direct and CPU-proxy submission paths with minimal transports and industry libraries on modern NVIDIA platforms. Achieves 0.7 μs operation issue time and reveals a 59% NIC message rate drop at ~3000 active connections.
+* `serving` `offloading` `MoE` [RapidMoE: Exploiting Cross-Asymmetry via Adaptive Residual Offloading for Large-Scale MoE Inference](http://arxiv.org/abs/2610.01265v1)
+  > **TL;DR**: Addresses the inefficiency of serving large-scale Mixture-of-Experts models on heterogeneous CPU-GPU hardware. Proposes RapidMoE, a system using adaptive residual offloading to shift from expert-level to bit-level data handling and computation partitioning. Achieves up to 3.5x decoding speedup over SOTA offloading systems.
+* `serving` `agent` [Serving a Revisable World: Versioned Execution for Interruptible Agents](http://arxiv.org/abs/2610.01160v1)
+  > **TL;DR**: Addresses how LLM servers handle agent task revisions inefficiently via simple abort-and-restart. Proposes Retire, a control-plane with versioned execution that revokes obsolete work's authority while allowing state inheritance. Reduces revision-to-successor time-to-first-token by a median 17.1%.
+
 ### 2026-09-29
 * `kernel` `hardware` `training` [RLX: A Unified Multi-Backend Tensor Compiler and Distributed Runtime in Rust](http://arxiv.org/abs/2609.37916v1)
   > **TL;DR**: Presents RLX, a unified tensor compiler and runtime for ML, to simplify the stack and improve performance. Combines compiler and runtime in Rust with a multi-backend IR. Outperforms PyTorch-MPS on all-MiniLM-L6-v2 (16.6ms vs 26.7ms at batch 32) and achieves 946,487 img/s training throughput on MNIST.
