@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1552-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.10.03-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1563-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.10.04-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,30 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-10-02
+* `training` `networking` `offloading` [Cross-Facility LLM Pre-training on HPC: Elastic Aggregation, Data Leasing, and Queue-Aware Placement](http://arxiv.org/abs/2610.03457v1)
+  > **TL;DR**: Presents a system for pre-training LLMs across geographically distributed HPC facilities with different hardware. Uses elastic aggregation, a data-leasing protocol, and queue-aware placement to pool resources. Achieved a per-round overhead of ~110s, reducing its share of wall-clock time to 3.1% at H=2000.
+* `training` `MoE` `networking` [RailWave: Adaptive Spatial and Temporal Scheduling for Expert-Parallel Communication](http://arxiv.org/abs/2610.03415v1)
+  > **TL;DR**: Addresses irregular All-to-All communication bottlenecks in expert-parallel Mixture-of-Experts models. Proposes RailWave, an adaptive communication layer using spatial traffic redistribution and a reusable permutation schedule. Achieves up to 5.84x speedup on H800 over the native implementation.
+* `edge` `agent` `serving` [EdgeAgent: Orchestrating On-Device LLM inference for End-User Multi-Agent Systems on CPU-GPU Unified Memory Architectures](http://arxiv.org/abs/2610.03394v1)
+  > **TL;DR**: Presents EdgeAgent, a system for efficient on-device inference of multi-agent LLMs on UMA. It uses zero-copy UMA-aware tensor parallelism and dynamic scheduling with asynchronous agent suspension to handle tool-use stalls. Achieves a 1.77x speedup over baselines on an Apple M4 SoC.
+* `training` `agent` `RL` [VenusRL: A Fully Disaggregated Agentic RL System with Priority Scheduling and Scalable Interaction](http://arxiv.org/abs/2610.03286v1)
+  > **TL;DR**: Addresses bottlenecks in agentic RL training caused by slow trajectories and wasted tool sandbox memory. Proposes VenusRL with a priority-aware scheduler for rollout groups and a memory-sharing manager for sandboxes. Achieves 4.24x end-to-end training speedup and 89% environment cost reduction.
+* `agent` `kernel` [D2K-Bench: Can LLM Agents Turn Expert Designs into Efficient GPU Kernels?](http://arxiv.org/abs/2610.03226v1)
+  > **TL;DR**: Investigates if LLM agents can implement expert GPU kernel designs efficiently. Presents the D2K-Bench diagnostic benchmark to measure performance gains from providing multi-level design guidance. Guidance raised the geometric mean speedup of generated kernels from 1.69x to 2.49x for frontier models.
+* `serving` `MoE` [AFORE: Attention-FFN Disaggregation with Overlapped Reconfiguration of Experts](http://arxiv.org/abs/2610.03203v1)
+  > **TL;DR**: Addresses expert load imbalance in Mixture-of-Experts (MoE) serving with attention-FFN disaggregation. Proposes AFORE, a system using timely expert reconfiguration with overlapped migration based on prefetched demand. Improves throughput by up to 17.6% and reduces P95 latency by 9.5% compared to baselines.
+* `serving` `agent` `offloading` [Coda: Exploiting Admission Flexibility for Coding-Agent Serving](http://arxiv.org/abs/2610.03088v1)
+  > **TL;DR**: Addresses inefficient serving for LLM-based coding agents with long-lived sessions and reusable KV states. Proposes Coda, a system with a readiness-informed admission layer using Tiered-Aging state admission and Compatibility-Aware execution admission. Achieves 70.5% average improvement in SLO-compliant throughput.
+* `training` `kernel` `networking` [ByteSplat: Efficient Distributed 3D Gaussian Splatting Training via Intra- and Inter-GPU communication reduction](http://arxiv.org/abs/2610.02851v1)
+  > **TL;DR**: Presents ByteSplat, a distributed training framework for 3D Gaussian Splatting that reduces communication bottlenecks. It fuses forward/backward kernels and performs gradient sparsity-based compression for inter-GPU transfers. Achieves up to 6.1x speedup on 8 GPUs with 65.8% lower inter-GPU communication volume.
+* `serving` `kernel` [ServeTwin: A Benchmark-Validated Simulator for Distributed LLM Architecture Exploration](http://arxiv.org/abs/2610.02732v1)
+  > **TL;DR**: Presents ServeTwin, a simulator for distributed LLM serving that uses analytical timing (iSTAGE) instead of hardware profiling to predict performance. It accurately reproduces serving benchmark behavior, showing a 3.6% mean error in predicting throughput-interactivity tradeoffs.
+* `serving` `offloading` [WakeKV: Reactive, Reversible KV Residency for Heads That Change Their Minds](http://arxiv.org/abs/2610.02713v1)
+  > **TL;DR**: Proposes WakeKV, a dynamic KV-cache policy that reactively offloads 'cooling' attention heads to CPU based on changing access patterns during generation. Improves throughput on Mistral-7B by reducing cache miss rates compared to static policies like SnapKV while maintaining quality on LongBench.
+* `kernel` `hardware` [Annotation-Driven Migration of CUDA Programs to Tenstorrent Blackhole](http://arxiv.org/abs/2610.02658v1)
+  > **TL;DR**: Investigates how to automatically migrate CUDA HPC kernels to the Tenstorrent Blackhole architecture. Proposes an MLIR-based compiler that uses declarative annotations to map compute and data movement across distributed cores. Achieves up to a 4.2x speedup for BF16 Gaussian elimination.
+
 ### 2026-10-01
 * `MoE` `offloading` `serving` [MoE-CORE: Coordinated Expert Offloading and Residency for Memory-Constrained MoE Inference](http://arxiv.org/abs/2610.01950v1)
   > **TL;DR**: Tackles memory-constrained MoE inference by coordinating expert offloading and residency. Proposes MoE-CORE, which uses alternating buffers for prefill and a cache with routing-aware replacement/prefetching for decode. Achieves 38.0 ms mean TPOT vs. 1269.1 ms for vLLM Prefetch on DeepSeek-V4.
