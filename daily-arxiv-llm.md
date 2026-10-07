@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1582-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.10.05-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1589-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.10.06-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,22 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-10-06
+* `RL` `training` `networking` [NeMo-DCR: Bit-Exact Delta-Compressed Refit for Scalable Agentic RL at Trillion-Parameter Scale](http://arxiv.org/abs/2610.08430v1)
+  > **TL;DR**: Addresses slow policy synchronization in agentic RL by proposing NeMo-DCR, a delta compression protocol for transmitting only changed parameters. Uses bit-exact affine mappings and XOR masks to ensure correctness. Achieves a 12-40x speedup for refitting 30B-1T models.
+* `serving` `offloading` `agent` [Lachesis: Lifetime-Aware KV Cache Placement for Agent Serving across HBM and High-Bandwidth Flash](http://arxiv.org/abs/2610.08378v1)
+  > **TL;DR**: Addresses HBM/HBF memory placement for KV cache in LLM agent serving to improve flash write endurance. Proposes Lachesis, a lifetime-aware placement layer that writes cache segments to HBM or HBF based on predicted lifetime from agent harness analysis. Extends HBF lifetime by 1.19-3.13x over baseline under continuous operation.
+* `serving` `edge` `kernel` [DySCo: Dynamic Sharding for Collaborative Edge-Cloud LLM Inference with Depth-Synchronized Batching](http://arxiv.org/abs/2610.08268v1)
+  > **TL;DR**: Addresses inefficiencies in collaborative edge-cloud LLM inference with heterogeneous model split points. Proposes DySCo, a runtime with depth-synchronized batching to batch requests at common suffix layers despite differing execution depths. Improves throughput by 275% over FIFO scheduling at a concurrency of eight.
+* `agent` `serving` [Do I Need the Cloud? Uncertainty-Aware Step-Level Handoff for Small Language Model Agents](http://arxiv.org/abs/2610.07816v1)
+  > **TL;DR**: Proposes STEPGATE, an uncertainty-aware handoff framework for LLM agents that dynamically escalates challenging steps from a local SLM to a stronger cloud model. Achieves 69.0% multi-turn trajectory success using only 30.0% cloud actions, outperforming local-only and query-level routing.
+* `serving` `kernel` `agent` [Persistent Memory in Multi-Agent LLM Inference: What It Costs, What It Buys, and When You Can Tell](http://arxiv.org/abs/2610.07782v1)
+  > **TL;DR**: Evaluates the memory costs and accuracy benefits of adding persistent memory to multi-agent LLM inference systems. Analyzes a three-tier architecture, measuring KV cache usage and accuracy. Finds decomposition reduces peak KV cache to 14.3 MiB versus 35.5 MiB baselines, but persistent memory adds cost with no detectable accuracy gain.
+* `training` `networking` `storage` [FailBench: Evaluating Fault Tolerance Across Distributed Training Architectures](http://arxiv.org/abs/2610.07688v1)
+  > **TL;DR**: Presents FailBench, a unified evaluation framework for fault-tolerance mechanisms across seven distributed training architectures. Evaluates 142 combinations of architectures, mechanisms, and failure traces. Shows mechanisms are not universally optimal, with overheads ranging from 0.5% to 176% depending on the architecture.
+* `training` `offloading` `MoE` [TRANSIT: Transparent Scale-in for Multi-Node LLM Training](http://arxiv.org/abs/2610.07593v1)
+  > **TL;DR**: Presents TRANSIT, a transparent scale-in framework for multi-node LLM training that uses CPU DRAM as GPU memory extension via a zero-copy data path. Enables training with 50% fewer GPUs while maintaining over 90% of baseline throughput.
+
 ### 2026-10-05
 * `training` `kernel` [One Global Beam Across Many GPUs: High-Throughput Beam Search at Billion-Record Frontier Scale](http://arxiv.org/abs/2610.06718v1)
   > **TL;DR**: Proposes a distributed beam search algorithm for high-throughput state-space exploration across many GPUs. The system keeps states on GPUs and uses a CPU for coordination, guaranteeing correctness with one global reduction per key. Achieves 74.746 million state generator evaluations per second on 8 H200 GPUs.
