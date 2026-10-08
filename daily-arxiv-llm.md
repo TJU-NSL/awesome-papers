@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1589-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.10.06-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1595-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.10.07-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,20 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-10-07
+* `agent` `kernel` `storage` [LOCAA: An Agentic System for Automated Lossy Compressor Tuning](http://arxiv.org/abs/2610.10487v1)
+  > **TL;DR**: Presents LOCAA, an LLM-based agent for automated tuning of lossy compression parameters. Uses tool-integrated execution and persistent memory to search configurations that meet user-defined quality and time constraints. Reduces average evaluation trials by 72.4% compared to binary search.
+* `training` `offloading` [Fast and Memory Efficient Offload Training Framework with Hybrid XPU Computation](http://arxiv.org/abs/2610.09657v1)
+  > **TL;DR**: Addresses GPU memory bottlenecks in large model training. Proposes MemFerry, a framework using Direct Host Access (DHA) for hybrid GPU-CPU computation and an execution scheduler to overlap communication and computation. Achieves 1.68x faster training and ability to train 1.52x larger models compared to ZeRO-Offload.
+* `training` `offline` [Differential Refresh Policies for Models Trained on Lagging Data Snapshots: From a Single-Age Equivalence Limit to an Optimal Per-Segment Allocation](http://arxiv.org/abs/2610.09519v1)
+  > **TL;DR**: Identifies that adaptive global staleness triggers for model refresh are operationally equivalent to a uniform timer. Proposes a differential refresh policy that optimally allocates a refresh budget across data segments. In simulation, the policy reduces weighted stale exposure by 8-29% compared to a uniform timer at matched cost.
+* `serving` `MoE` `networking` [Democratizing MoE inference on commodity GPUs with CoMoE](http://arxiv.org/abs/2610.09424v1)
+  > **TL;DR**: Presents CoMoE, a system for efficient MoE inference on consumer GPUs with limited PCIe bandwidth. It uses a novel host-centric routing design with token multicast and fine-grained aggregation to reduce communication. Achieves 1.46x higher throughput, enabling performance near A800 GPUs at 23.4% of the cost.
+* `training` `MoE` `networking` [Expert Coupling in MoE Pretraining: Reducing All-to-All Overhead with Correlated Placement and Token Shuffling](http://arxiv.org/abs/2610.09372v1)
+  > **TL;DR**: Addresses the communication overhead of all-to-all collectives in MoE model training. Proposes correlated expert placement and token shuffling to exploit routing correlations, reducing inter-GPU communication. Achieves up to 2.63× lower all-to-all time and 1.41× faster end-to-end step time.
+* `serving` `multi-modal` `video` [vLLM-Omni Technical Report: A Unified Serving Runtime for Omni-Modality Generation](http://arxiv.org/abs/2610.09307v1)
+  > **TL;DR**: Proposes a unified serving runtime for heterogeneous multi-stage generation pipelines (text, audio, image, video, actions). Introduces a single orchestrator with specialized stage engines and a data plane connector for cross-stage streaming. Improves generation performance over ad-hoc deployments.
+
 ### 2026-10-06
 * `RL` `training` `networking` [NeMo-DCR: Bit-Exact Delta-Compressed Refit for Scalable Agentic RL at Trillion-Parameter Scale](http://arxiv.org/abs/2610.08430v1)
   > **TL;DR**: Addresses slow policy synchronization in agentic RL by proposing NeMo-DCR, a delta compression protocol for transmitting only changed parameters. Uses bit-exact affine mappings and XOR masks to ensure correctness. Achieves a 12-40x speedup for refitting 30B-1T models.
