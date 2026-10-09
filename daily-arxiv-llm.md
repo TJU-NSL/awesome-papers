@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1595-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.10.07-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1597-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.10.08-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,12 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-10-08
+* `kernel` `serving` [PageWeaver: KV-Guided Query Unions for Sparse Attention](http://arxiv.org/abs/2610.11201v1)
+  > **TL;DR**: Investigates how to optimize sparse attention computation for GPU efficiency during LLM prefill. Proposes PageWeaver, which forms query groups based on KV-page affinity to maximize reuse and utilizes a two-CTA kernel. Achieves a 1.70x geometric-mean speedup over FlashInfer on H200 hardware with FP8 KV.
+* `serving` `MoE` `networking` [Zepp: Accelerating Distributed MoE Serving under Relaxed Balance Constraints](http://arxiv.org/abs/2610.11158v1)
+  > **TL;DR**: Investigates how to optimize communication bottlenecks in distributed Mixture-of-Experts (MoE) model serving. Presents Zepp, which uses a placement, routing, and execution strategy with relaxed resource constraints instead of strict load balancing. Achieves up to 6.68x layer speedup over baselines.
+
 ### 2026-10-07
 * `agent` `kernel` `storage` [LOCAA: An Agentic System for Automated Lossy Compressor Tuning](http://arxiv.org/abs/2610.10487v1)
   > **TL;DR**: Presents LOCAA, an LLM-based agent for automated tuning of lossy compression parameters. Uses tool-integrated execution and persistent memory to search configurations that meet user-defined quality and time constraints. Reduces average evaluation trials by 72.4% compared to binary search.
