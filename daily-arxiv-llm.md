@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1597-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.10.10-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1607-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.10.11-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,28 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-10-09
+* `serving` `offloading` `quantization` [Adaptive DHiSparse: Speculative Decoding over a Load-Adaptive KV Hierarchy](http://arxiv.org/abs/2610.13708v1)
+  > **TL;DR**: Presents Adaptive DHiSparse, a system for efficient long-context LLM serving with speculative decoding. It uses a hierarchical, load-adaptive KV cache that offloads history to host memory and employs fused retrieval. At 100K context, it achieves 1.45x higher throughput than HiSparse while sustaining 4x concurrency.
+* `kernel` [CompileMask: Bridging the Gap Between Expressiveness and Efficiency in Attention Masking](http://arxiv.org/abs/2610.13474v1)
+  > **TL;DR**: Addresses the inefficiency of supporting diverse, metadata-dependent attention masks in transformers. Proposes CompileMask, a compiler that generates a mask-specific preprocessing kernel from a high-level DSL (MaskSpec). Achieves up to 3.8x speedup over existing methods.
+* `serving` `offloading` `kernel` [Ember: Making Unified Virtual Memory Practical for Discrete-Memory GPUs](http://arxiv.org/abs/2610.13408v1)
+  > **TL;DR**: Seeks to make GPU memory oversubscription practical for stock GPUs. Proposes Ember, a UVM framework with counter-driven region promotion and decay-based reclamation for transparent data migration. Achieves 4.7-16x faster LLM token generation at sizes where manual placement fails.
+* `serving` `kernel` `agentic` [Taking Tokenization off the Host for Agentic LLM Serving](http://arxiv.org/abs/2610.13325v1)
+  > **TL;DR**: Proposes GraphTok, a GPU-based tokenizer implemented as a replayable CUDA graph to eliminate the tokenization bottleneck for agentic LLM serving. Achieves 4.7-6.0x speedup over CPU tokenizers and enables a 2.1-2.4x reduction in mean time-to-first-token when serving with cached prefixes.
+* `multi-modal` `edge` `networking` [Multi-Source and Multi-Dimensional Information Fusion in Resource-Constrained Edge Networks](http://arxiv.org/abs/2610.13298v1)
+  > **TL;DR**: Proposes Hyper-Slot, a fusion framework for coordinating multi-source, multi-modal semantic information uploading and fusion on resource-constrained edge networks. Uses iterative token-to-slot assignment and an incentive mechanism. Achieves 3.66 pp mAP improvement with >80% parameter reduction.
+* `training` [Execution-Feasible Dispatch of LLM Pre-training Loads for Renewable-Dominant AI Data Centers](http://arxiv.org/abs/2610.13047v1)
+  > **TL;DR**: Proposes an execution-feasible dispatch framework for LLM pre-training to integrate with renewable energy in data centers. The method models workloads as checkpoint-constrained states and maps them to feasible 3D-parallel GPU modes for scheduling. Achieves a 20.02% reduction in operating cost and lowers renewable curtailment from 1.077 MWh to 0.014 MWh.
+* `training` `offloading` `kernel` [SlackSwap: Bandwidth-Aware Activation Swapping and Recomputation for Memory-Efficient DNN Training](http://arxiv.org/abs/2610.13003v1)
+  > **TL;DR**: Addresses memory constraints in DNN training by optimizing the trade-off between activation swapping and recomputation. Proposes SlackSwap, a bandwidth-aware scheduler that allocates host-link budget to expensive-to-recompute tensors and uses FIFO offloads with prefetching. Achieves 96-100% of unlimited-memory throughput while using half the activation memory.
+* `serving` `edge` `offloading` [Minions: A Dynamic and Distributed Virtual GPU Cloud Built on Idle Apple Silicon Devices](http://arxiv.org/abs/2610.12970v1)
+  > **TL;DR**: Proposes a distributed virtual GPU cloud (Minions) for ML inference by pooling idle Apple Silicon GPUs from macOS devices. The system dynamically aggregates resources for task execution with fault tolerance. Enables teams to run workloads without procuring new GPUs.
+* `serving` `offloading` `kernel` [Ember: Making Unified Virtual Memory Practical for Discrete-Memory GPUs](http://arxiv.org/abs/2610.13408v1)
+  > **TL;DR**: Presents Ember, a UVM framework to make GPU memory oversubscription practical for LLM inference. Uses counter-driven promotion and decay-based reclamation for online data placement. Achieves 4.7-16x faster LLM token generation compared to standard UVM at high oversubscription.
+* `storage` `serving` [PredictIO: Decoupling Workload Prediction from OS-Controlled Storage Prefetching](http://arxiv.org/abs/2610.12971v1)
+  > **TL;DR**: Investigates how to decouple workload-aware data prefetching from application logic for I/O latency reduction. Proposes PredictIO, a programmable OS interface that separates user-space prediction policies from a kernel-space prefetch executor. Reduces LLM model loading latency by up to 47.9%.
+
 ### 2026-10-08
 * `kernel` `serving` [PageWeaver: KV-Guided Query Unions for Sparse Attention](http://arxiv.org/abs/2610.11201v1)
   > **TL;DR**: Investigates how to optimize sparse attention computation for GPU efficiency during LLM prefill. Proposes PageWeaver, which forms query groups based on KV-page affinity to maximize reuse and utilizes a two-CTA kernel. Achieves a 1.70x geometric-mean speedup over FlashInfer on H200 hardware with FP8 KV.
