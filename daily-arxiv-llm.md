@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1607-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.10.12-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1630-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.10.13-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,58 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-10-13
+* `MoE` `serving` `networking` [FastEEP: Fast Intra-Instance Elastic Scaling for Expert-Parallel MoE Serving](http://arxiv.org/abs/2610.18451v1)
+  > **TL;DR**: Proposes FastEEP, a system for fast intra-instance elastic scaling of Expert-Parallel MoE models. It uses Partial Reuse to preserve runtime state (worker execution, GPU memory, comms) during EP group resizing, avoiding instance reconstruction. Achieves 4.5x-11.7x faster scaling than a vLLM-based approach.
+* `training` `kernel` [LunaTP: Enabling Efficient and Scalable Tensor Product for Equivariant MLIPs](http://arxiv.org/abs/2610.18393v1)
+  > **TL;DR**: Addresses the high computational cost of Clebsch-Gordan tensor product convolutions in equivariant machine learning interatomic potentials. Proposes LunaTP, a parallel execution system exploiting path-group parallelism and multi-level reuse. Achieves up to 28.7x higher training throughput over prior frameworks.
+* `training` `kernel` [A Distributed View from a Single GPU: RankLens for Distributed Training](http://arxiv.org/abs/2610.18009v1)
+  > **TL;DR**: Proposes RankLens, a single-GPU system for distributed training analysis by emulating one rank and replacing communication with recorded/estimated results. It achieves 100% training-tensor structure match and <5% timing error, reducing analysis resource needs from a cluster to one GPU.
+* `serving` `scheduling` [Quota-Based Aging for Prediction-Guided Scheduling in LLM Serving](http://arxiv.org/abs/2610.17795v1)
+  > **TL;DR**: Addresses scheduling in LLM serving with heterogeneous response lengths. Proposes a Quota-Based Aging (QBA) policy that combines short-first scheduling with quota-bounded promotion of aged long requests. Reduces long-request tail latency while retaining mean-latency benefits of prediction-guided scheduling.
+* `training` `offloading` [DisaggKD: Efficient Knowledge Distillation through Teacher-Student Disaggregation and a Fused Loss](http://arxiv.org/abs/2610.17644v1)
+  > **TL;DR**: Proposes DisaggKD, a disaggregated knowledge distillation system that offloads the teacher model to separate nodes to overcome GPU memory limits. It uses a loss decomposition and prefetching to stream hidden states. Achieves successful distillation for a 35B-to-9B model pair where a colocated baseline runs out of memory.
+* `edge` `offloading` `quantization` [Capacity over TFLOPS: Memory-Centric Deployment of Large Clinical Language Models on Consumer CPUs](http://arxiv.org/abs/2610.17551v1)
+  > **TL;DR**: Proposes deploying large clinical language models on consumer CPUs, treating edge nodes as capacity-enabled via system RAM. Evaluates an INT4-quantized 27B model, showing it loads entirely into RAM while GPUs are OOM, achieving inference at 0.6-2.4 tokens/s.
+* `training` `MoE` [ATTUNE: Agentic Throughput Tuning for LLM Training](http://arxiv.org/abs/2610.17528v1)
+  > **TL;DR**: Presents ATTUNE, an automated agent for tuning LLM training recipes. It diagnoses runs and adjusts hyperparameters sequentially, guided by past lessons, and validates correctness with a gate. Achieves up to 54.7% throughput gain on GLM-4.5 versus a public H100 recipe.
+
+### 2026-10-11
+* `serving` `kernel` [Lightweight Scheduling Policies for Continuously Batched LLLM Serving Across GPU Architectures](http://arxiv.org/abs/2610.15899v1)
+  > **TL;DR**: Investigates if lightweight scheduling policies can improve latency-throughput tradeoffs for continuously batched LLM serving. Evaluates eight policies on a custom testbench with real execution across models and GPUs. Shows scheduler choice alone can significantly impact throughput and latency (TTFT) without kernel or model changes.
+* `RL` `training` `offline` [Learning based Scalable Multi-Objective Scheduling of Workflows across UD-IaaS-FaaS Systems](http://arxiv.org/abs/2610.15886v1)
+  > **TL;DR**: Proposes a learning-based scheduler for workflow optimization. Uses a GNN and multi-sample REINFORCE to place heterogeneous workflow tasks across UD, IaaS, and FaaS resources. Reduces makespan by 10-17.5%, energy by 3-9%, and cost by 4-10% compared to baselines.
+* `training` `kernel` `networking` [Multi-GPU Communication Schemes for Iterative Solvers: When CPUs are Not in Charge](http://arxiv.org/abs/2610.15878v1)
+  > **TL;DR**: Investigates how to reduce CPU orchestration overhead in multi-GPU systems for iterative solvers. Proposes a CPU-free execution model using persistent kernels and device-initiated communication. Achieves a 58.8% reduction in 3D stencil communication latency on 8 A100 GPUs.
+* `serving` `offloading` `kernel` [Native Dual Pools or Shared Paging? Memory Organization for Concurrent Hybrid LLM Serving](http://arxiv.org/abs/2610.15755v1)
+  > **TL;DR**: Investigates memory organization strategies for concurrent serving of hybrid attention-SSM models. Proposes and compares four schemes (S0-S2, D0) for managing KV cache and recurrent state. The S2 paging scheme improves completed-output throughput by 1.9x and reduces tail latency by 2.1x over a baseline.
+* `training` `networking` [DualColl: Throughput-Optimal Bandwidth-Bound Collective Communications via Fractional Tree Packing](http://arxiv.org/abs/2610.15704v1)
+  > **TL;DR**: Presents DualColl, a throughput-optimal algorithm for bandwidth-bound AllReduce collective communication in distributed training. Uses a multiplicative-weights algorithm with a minimum-cost collective-tree oracle for fractional tree packing. Provides provable throughput guarantees of at least (1-ε)² of optimal.
+* `serving` `offloading` [Compositional Performance Modeling of LLM Inference Clusters with Hierarchical KV Caching](http://arxiv.org/abs/2610.15366v1)
+  > **TL;DR**: Presents a compositional simulator for exploring LLM inference cluster design by modeling hierarchical KV cache interactions. Separates local service costs from shared resource contention, calibrated from minimal deployments. Achieves a 1.34% mean latency error for QA workloads and a 15.33x simulation speedup.
+
+### 2026-10-10
+* `RAG` `serving` `storage` [Recall-Bounded Staleness for Filtered Multi-Tenant ANN Graph Indexes under Concurrent Updates](http://arxiv.org/abs/2610.15130v1)
+  > **TL;DR**: Presents a graph-based vector index for low-latency, high-recall filtered ANN search under concurrent updates. Combines a tenant-aware staging cache with a scheduler using staleness ceilings for recall guarantees. Achieves elimination of SLA violations while maintaining 99%+ recall@10.
+* `training` `kernel` [BSIPipe: Bidirectional Sequence-Level Interleaved Pipeline Parallelism for Long-Sequence Large Language Model Training](http://arxiv.org/abs/2610.14935v1)
+  > **TL;DR**: Proposes BSIPipe, a bidirectional sequence-level pipeline parallelism method for long-sequence LLM training. It uses V-shaped interleaved pipelines and basic-unit concatenation to bound activation memory, achieving 1.11× to 1.13× speedup over SOTA baselines.
+* `edge` `offline` [Seamless Deployment of Machine Learning Inference at the Far Edge: An Empirical AWS IoT Greengrass Architecture for Industrial Predictive Maintenance](http://arxiv.org/abs/2610.14815v1)
+  > **TL;DR**: Presents a hybrid cloud-edge ML architecture with AWS IoT Greengrass for real-time predictive maintenance at the far edge. Evaluates a model deployed for local inference against a cloud baseline, reducing cloud-bound bandwidth by 86.8% and latency by 256x while maintaining high accuracy.
+* `agent` `serving` `networking` [AgentWeave: Efficient Distributed Agent Serving via Flow Decomposition](http://arxiv.org/abs/2610.14804v1)
+  > **TL;DR**: Addresses the throughput limitations of distributed agent serving caused by pipeline bubbles in disaggregated architectures and request blocking in aggregated ones. Proposes AgentWeave with flow decomposition to break long requests into units, allowing independent progress and dynamic scheduling. Achieves 1.81x higher throughput and 2.45x lower average latency versus baselines.
+* `training` `MoE` `networking` [Accelerating MoE Training through Expert Placement and Replica Coordination](http://arxiv.org/abs/2610.14798v1)
+  > **TL;DR**: Addresses communication and load imbalance bottlenecks in distributed MoE training. Proposes PlaceMoE, a joint optimizer for expert placement and token-to-copy mapping to minimize hierarchical all-to-all traffic. Achieves up to 6.94x faster communication and 2.33x end-to-end training speedup.
+* `agentic` `serving` `networking` [Energy-Aware Agentic Orchestration for Multi-Site Service Deployment](http://arxiv.org/abs/2610.14793v1)
+  > **TL;DR**: Investigates the energy overhead of LLM-based decision-making in multi-site service orchestration. Proposes a framework to measure the GPU energy consumption of different agent strategies (ReAct, plan-and-execute) on a distributed Kubernetes testbed. Prefix caching reduced mean ReAct GPU energy consumption by 29.4%.
+* `serving` `agentic` `offloading` [Vesta: Queueing-Aware LLM Scheduling for Real-World Workloads](http://arxiv.org/abs/2610.14686v1)
+  > **TL;DR**: Proposes Vesta, a queueing-aware scheduler for multi-turn agentic LLM serving that jointly optimizes KV cache locality and load balancing. It decouples cache storage from execution and models queueing externality to migrate requests. Improves throughput by 14.0% and reduces mean TTFT by 57.8%.
+* `serving` `networking` [Dissecting the Carbon-SLO Tension in Geo-Distributed LLM Serving](http://arxiv.org/abs/2610.14571v1)
+  > **TL;DR**: Investigates how to reduce carbon emissions for geo-distributed LLM serving while meeting latency SLOs. Proposes a simulator and several schedulers, including a MILP-based one that prices energy collectively. Achieves up to 60% carbon reduction with only 3% average SLO violation.
+* `agent` `serving` [A Self-Defining Operator for Distributed Applications](http://arxiv.org/abs/2610.14547v1)
+  > **TL;DR**: Addresses high operational cost of using LLMs for incident diagnosis by proposing a system that distills experiences into reusable playbooks and detectors. Achieves a 52% reduction in resolution time for recurring faults while keeping per-incident token costs low.
+* `kernel` `hardware` `serving` [GMM: Generalized OS Memory Management for Programmable XPUs](http://arxiv.org/abs/2610.14532v1)
+  > **TL;DR**: Proposes GMM, a generalized OS memory management subsystem for programmable XPUs (e.g., GPUs) to provide unified, NUMA-aware memory APIs. It enables sharing of advanced memory features and delegation. Achieves up to 22.6x faster inference serving switch latency and reduces XPU memory utilization by 10%.
+
 ### 2026-10-09
 * `serving` `offloading` `quantization` [Adaptive DHiSparse: Speculative Decoding over a Load-Adaptive KV Hierarchy](http://arxiv.org/abs/2610.13708v1)
   > **TL;DR**: Presents Adaptive DHiSparse, a system for efficient long-context LLM serving with speculative decoding. It uses a hierarchical, load-adaptive KV cache that offloads history to host memory and employs fused retrieval. At 100K context, it achieves 1.45x higher throughput than HiSparse while sustaining 4x concurrency.
