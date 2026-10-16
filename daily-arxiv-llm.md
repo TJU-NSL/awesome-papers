@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1630-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.10.14-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1647-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.10.15-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,44 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-10-15
+* `training` `hardware` `kernel` [Architecting for Hardware Diversity: Meta's End-to-End Co-Design for High-Performance AI Training on AMD GPUs](http://arxiv.org/abs/2610.22230v1)
+  > **TL;DR**: Presents co-design methods for porting AI training to non-NVIDIA hardware. Uses an analytical performance model for optimal kernel selection and agentic workflows for microarchitecture-aware optimizations. Achieves a 1.5x end-to-end training throughput improvement.
+* `serving` `offloading` `edge` [Efficient KV Cache Migration for Geo-Distributed LLM Inference in Collaborative Edge Computing](http://arxiv.org/abs/2610.22172v1)
+  > **TL;DR**: Addresses KV cache migration for robust LLM inference in bandwidth-constrained edge networks. Proposes EdgeFlow, a hybrid scheme combining direct transmission with activation-based recomputation. Reduces migration time by up to 45% compared to baseline methods.
+* `training` `quantization` [ETH: Data-Balanced Heterogeneous Pipeline Parallelism for Training Large Models](http://arxiv.org/abs/2610.22035v1)
+  > **TL;DR**: Proposes Heterogeneous Pipeline Parallelism (HPP) and the ETH system for efficient large model training on heterogeneous devices. Uses a hierarchical workload balancer and block-wise gradient aggregation to achieve fine-grained data balance. Achieves up to 2x training speedup over state-of-the-art systems.
+* `serving` `kernel` `training` [Exact Makespan Bounds and the GPipe Homogeneity Bias for Heterogeneous LLM Inference Pipelines](http://arxiv.org/abs/2610.21815v1)
+  > **TL;DR**: Provides exact makespan bounds for LLM inference pipelines on heterogeneous GPU clusters, exposing the bias in the homogeneous GPipe model. Theorems decompose latency into computational and communication components, showing stage compute balancing dominates for throughput. Validated with a maximum error of <1e-9 across extensive tests.
+* `RL` `agentic` [ReFlow: Replay-Driven Decoupling for Efficient RL Post-Training](http://arxiv.org/abs/2610.21640v1)
+  > **TL;DR**: Seeks to improve the efficiency of reinforcement learning (RL) for LLMs. Proposes ReFlow, a framework that uses experience replay for sample reuse and a decoupled architecture with dynamic resource allocation. Achieves up to 2.06x higher training throughput over baseline RL systems.
+* `serving` `offloading` `MoE` [When the KV Cache Is Slower Than the GPU: Scaling Remote KV Tiers for Context-Parallel Prefill](http://arxiv.org/abs/2610.21500v1)
+  > **TL;DR**: Investigates performance degradation when using a remote KV cache tier for LLM prefill. Proposes a sharded, partitioned cache design with asynchronous loading to increase bandwidth and prevent queue instability. Reduces p99 latency on a hit-heavy workload from 83.32 s to 0.67 s.
+* `serving` `edge` `offloading` [HyCo: Hybrid Drafting for Cost-Efficient Mobile-Cloud Speculative Decoding](http://arxiv.org/abs/2610.21436v1)
+  > **TL;DR**: Proposes HyCo, a hybrid mobile-cloud speculative decoding framework combining a server's multi-token prediction head with a local small LM to reduce server latency. Achieves a 38.6% reduction in server GPU time per token versus server-side speculation on Spec-Bench.
+* `training` `kernel` [Coordination-Free Workload Regularization for Variable-Cost Distributed Training](http://arxiv.org/abs/2610.21162v1)
+  > **TL;DR**: Addresses the performance bottleneck of variable-cost data in synchronous data-parallel training. Proposes Batch Cost Lookahead (BCL), a coordination-free data-loader that repartitions a local buffer into cost-balanced packs. Achieves a 1.343x speedup on 4 H200 nodes by reducing per-rank batch-cost variability by up to 82.8%.
+* `serving` `offloading` [Characterizing Predictability-Latency Trade-offs of KV-Cache SSD Offloading in LMCache for LLM Serving Systems](http://arxiv.org/abs/2610.21249v1)
+  > **TL;DR**: Characterizes the predictability-latency trade-offs in KV-cache SSD offloading systems like LMCache for LLM serving. Compares buffered I/O with page cache versus O_DIRECT with prefix-aware deduplication, finding that O_DIRECT offers stable latency (93 ms TTFT) at the cost of higher average latency versus a potentially faster but unpredictable page cache.
+* `serving` `offloading` `kernel` [Range: Decoupling KV-Cache Reuse Granularity from Storage Work](http://arxiv.org/abs/2610.21241v1)
+  > **TL;DR**: Addresses the performance bottleneck of restoring large KV-caches from SSD by restructuring the storage engine. Proposes Range, which uses token metadata, byte stripes, and completion-owned transfers to decouple costs from logical objects. Achieves a median TTFT of 1.79s, outperforming a tuned baseline by up to 1.22s.
+
+### 2026-10-14
+* `hardware` `storage` [Understanding NVIDIA Grace-Blackwell Unified Memory Through Placement-Controlled Microbenchmarks](http://arxiv.org/abs/2610.20354v1)
+  > **TL;DR**: Characterizes the performance variance of NVIDIA GB200's Unified Memory by developing controlled microbenchmarks that isolate memory placement and access patterns. Reveals bandwidth varies from 304 GB/s (host-mapped) to 4.6 TB/s (prefetched HBM), showing performance is governed by placement history and capacity pressure.
+* `kernel` `training` [TrimSO(2): Fast and Memory-Efficient Training of Equivariant Interatomic Potentials](http://arxiv.org/abs/2610.20029v1)
+  > **TL;DR**: Addresses the high memory and time cost of training SO(2)-equivariant interatomic potentials. Proposes TrimSO(2), which integrates representation transformations into the model's dataflow to avoid materializing intermediate tensors. Achieves 2.07-2.94× faster training and reduces peak memory by 1.53-3.16×.
+* `agent` `serving` `offloading` [JointServe: Serving Multi-Model Agents on Memory-Constrained GPUs](http://arxiv.org/abs/2610.19822v1)
+  > **TL;DR**: Addresses high latency from GPU memory constraints when serving multi-model agent workloads. Proposes JointServe, a system that unifies memory management for weights and KV cache, using prefetching and preemptive scheduling. Reduces session completion time by up to 49% and improves SLO attainment from 2.8-24.5% to 76.8-100%.
+* `serving` `RAG` `offloading` [The Cost of Context: Profiling the Energy Footprint of Input Tokens in Large Language Models](http://arxiv.org/abs/2610.19819v1)
+  > **TL;DR**: Profiles the energy footprint of LLM input tokens in long-context and RAG scenarios. Uses high-resolution telemetry to analyze scaling laws, revealing how PagedAttention delays the O(n²) attention bottleneck. Optimized serving with vLLM achieves up to 8.9× better energy efficiency at 112k tokens compared to standard baselines.
+* `serving` `kernel` [Delta Tokenizer: Reference-Identical Tokenization of Session Deltas and Segment-Parallelism for Long Prompts on Multicore CPUs](http://arxiv.org/abs/2610.19801v1)
+  > **TL;DR**: Addresses the CPU bottleneck of retokenizing identical conversation prefixes for LLM inference. Proposes Delta Tokenizer, which tokenizes only the appended delta and enables parallel encoding of long prompts. Reduces median TTFT by 59% and improves P99 TTFT by 9.5x under load.
+* `training` `MoE` [Beyond the Trial-and-Error Loop: Hybrid Projection and Automated Tuning for Distributed Training](http://arxiv.org/abs/2610.19423v1)
+  > **TL;DR**: Seeks to automate the selection of distributed training configurations for LLMs to avoid expensive multi-node trial-and-error. Proposes Primus, a system combining a hybrid projection engine (measuring and simulating performance) with an intelligent tuning agent. Achieves projections within ~10% of real throughput and finds a configuration yielding +27% throughput for Mixtral 8x22B.
+* `serving` `training` `networking` [Scaling LLM Inference via Parallelism: Throughput-Latency Trade-off](http://arxiv.org/abs/2610.19405v1)
+  > **TL;DR**: Presents a framework for selecting LLM inference parallelism (TP, PP) under workload QoS constraints. Systematically constructs throughput-latency Pareto frontiers to identify optimal configurations for TTFT/ITL SLOs. Shows PP excels for prefill-heavy/long-context workloads, enabling up to 6x higher SLO attainment than TP.
+
 ### 2026-10-13
 * `MoE` `serving` `networking` [FastEEP: Fast Intra-Instance Elastic Scaling for Expert-Parallel MoE Serving](http://arxiv.org/abs/2610.18451v1)
   > **TL;DR**: Proposes FastEEP, a system for fast intra-instance elastic scaling of Expert-Parallel MoE models. It uses Partial Reuse to preserve runtime state (worker execution, GPU memory, comms) during EP group resizing, avoiding instance reconstruction. Achieves 4.5x-11.7x faster scaling than a vLLM-based approach.
