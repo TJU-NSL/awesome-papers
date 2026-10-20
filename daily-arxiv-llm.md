@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1647-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.10.18-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1667-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.10.19-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,54 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-10-19
+* `training` `networking` [GeoTrain: Energy-Aware Automatic Parallelism for Foundation Model Training on Heterogeneous Geo-Distributed Resources](http://arxiv.org/abs/2610.26178v1)
+  > **TL;DR**: Proposes GeoTrain, an automatic parallelism system that jointly optimizes performance and energy for training on heterogeneous geo-distributed GPUs. It uses a memetic algorithm to select GPUs and configure pipelines under compute, memory, and network constraints. Reduces iteration time by up to 61.4% and energy by 11.7% over SOTA.
+* `serving` `edge` `networking` [CEMA-Router: Infrastructure-Aware Batch Routing for LLM Inference in Cloud-Edge Systems](http://arxiv.org/abs/2610.26171v1)
+  > **TL;DR**: Addresses optimal batch routing for LLM inference across heterogeneous cloud-edge resources. Proposes CEMA-Router, a memetic algorithm that minimizes quality loss, cost, energy, and completion time. Reduces a weighted objective by up to 86% and energy consumption by up to 33% compared to SOTA.
+
+### 2026-10-18
+* `multi-modal` `serving` `offloading` [StreamAhead: Real-Time Streaming Video Question Answering via Adaptive Precomputation](http://arxiv.org/abs/2610.25551v1)
+  > **TL;DR**: Addresses high latency in real-time streaming video question answering. Proposes StreamAhead, a system that adaptively precomputes segment representations (features to KV caches) and schedules computation across CPUs/GPUs to overlap with query execution. Achieves up to 10.4x lower time-to-first-token (TTFT) while sustaining 30 FPS.
+* `serving` `quantization` `offloading` [ATEST: Adaptive Resource-Aware Test-Time Scaling for LLM Inference](http://arxiv.org/abs/2610.25519v1)
+  > **TL;DR**: Addresses inefficient fixed sampling budgets in LLM test-time scaling by proposing ATEST, a framework that dynamically adjusts the sampling budget based on query difficulty and real-time GPU energy costs. Achieves 60.0% accuracy on GSM8K under high load without deferrals, compared to 44.0% for a calibrated baseline, while maintaining an energy budget.
+* `training` `networking` `MoE` [An Information-Geometric Framework for OCS-Reconfigurable Interconnect Topology in Large-Scale AI Clusters](http://arxiv.org/abs/2610.25173v1)
+  > **TL;DR**: Presents an information-geometric framework for optimizing Optical Circuit Switch (OCS) topologies in AI clusters. Uses a proximal-gradient algorithm to reconfigure interconnects based on traffic. Achieves linear convergence and bounded regret, validated on pipeline, data, and MoE workloads.
+* `training` `scheduling` [Ineffective Occupancy in Heterogeneous GPU Clusters: Prediction, Contribution Analysis, and Readiness-Aware Scheduling](http://arxiv.org/abs/2610.25066v1)
+  > **TL;DR**: Addresses resource waste from 'ineffective occupancy' in GPU clusters, where jobs hold GPUs but are not ready to run. Proposes Readiness-Aware Scheduling (RAS), a predictor-based admission reordering. Reduces ineffective-occupancy ratio from 43.64% to 27.15%.
+* `training` `offloading` `storage` [PlaneZip: Lossless Bit-Plane Compression of Training Activations Offloaded over PCIe](http://arxiv.org/abs/2610.25033v1)
+  > **TL;DR**: Proposes PlaneZip, a lossless bit-plane compression method for GPU training activations offloaded over PCIe to reduce rematerialization cost. The system integrates a lightweight codec on the copy path and a planner that budgets for compressed transfers. Cuts rematerialization overhead by up to 73% compared to a baseline.
+* `serving` `kernel` `offloading` [Conjugate Compilation: Self-Improving Agentic Co-Compilation for Speculative Decoding](http://arxiv.org/abs/2610.25012v1)
+  > **TL;DR**: Improves speculative decoding for LLM serving by jointly optimizing draft and target models via cross-model compilation. Introduces conjugate compilation with interleaved operand layouts and an LLM-driven agentic search for optimization plans. Achieves a geometric-mean speedup of 1.37x over conventional execution on single-GPU setups.
+* `agent` `serving` `storage` [AgentLens: Framework-Aware Characterization and Resource Control for Heterogeneous LLM Agents](http://arxiv.org/abs/2610.25231v1)
+  > **TL;DR**: Addresses the problem of uncontrolled resource usage by co-located LLM agents. Proposes AgentLens, a framework-aware controller that combines offline fingerprinting and online signals to manage memory via cgroup v2. Reduces P95 allocation latency by 2.1-2.6x compared to static allocation.
+* `serving` `offloading` [gKSM: GPU Memory Deduplication at Driver Layer for Serverless LLM Inference](http://arxiv.org/abs/2610.25219v1)
+  > **TL;DR**: Proposes gKSM, a GPU memory deduplication framework for serverless LLM inference. It uses CPU-GPU collaborative hashing, zero-copy weight deduplication, and a cross-privilege page fault handler to eliminate duplicate data. Reduces GPU memory usage by 59.8% and improves aggregate throughput by 2.15x.
+* `serving` `multi-modal` `offloading` [Visual Cache Reuse for Efficient Multimodal Inference](http://arxiv.org/abs/2610.25136v1)
+  > **TL;DR**: Addresses high prefill latency in vision-language model inference from long visual token sequences. Proposes VisMemo, which enables approximate KV cache reuse via an entropy-aware algorithm and differentiated management across GPU/CPU/SSD. Increases cache hit rate from 27.78% to 61.45% and reduces prefill latency by up to 48.3%.
+
+### 2026-10-17
+* `serving` `offloading` `kernel` [TideKV: Delayed KV Eviction via Layer-Wise Chunked Prefill for Memory-Efficient Long-Context LLM Inference](http://arxiv.org/abs/2610.24499v1)
+  > **TL;DR**: Proposes TideKV, a layer-wise chunked prefill method with delayed KV cache eviction for long-context LLM inference. It processes chunks per layer and evicts KVs at layer end to reduce transient memory. Reduces construction-time memory footprint by 83.89% for a 64K context on A100.
+* `serving` `networking` [Koi: Evidence-Guided, Self-Calibrating Planning for Multi-Cloud, Heterogeneous LLM Inference Fleets](http://arxiv.org/abs/2610.24355v1)
+  > **TL;DR**: Presents Koi, a self-calibrating planner for heterogeneous, multi-cloud LLM inference fleets. It uses an RLM hierarchy and causal graph to automate accelerator selection, parallelism, and placement decisions. Achieves 1.18x higher goodput and 20% lower $/token versus baselines.
+
+### 2026-10-16
+* `serving` `networking` `offloading` [KVCompass: A Discovery Plane for Internet-Scale Prefix Cache Sharing in LLM Serving](http://arxiv.org/abs/2610.24179v1)
+  > **TL;DR**: Presents KVCompass, a discovery plane for finding and reusing KV caches across geo-distributed LLM serving clusters. Decouples cache identity from placement via a discovery index for prefix lookups, enabling load-aware request forwarding. Achieves 1.3-14x lower P99 TTFT and up to 4.7x higher throughput versus baselines.
+* `training` `serving` `hardware` [Agentic AI for Heterogeneous System Design Across Chip, Scale-Up, and Scale-Out Domains](http://arxiv.org/abs/2610.23724v1)
+  > **TL;DR**: Proposes ArchAgent, an LLM-based multi-agent framework to automate the design of heterogeneous AI systems spanning chip, node, and cluster levels. Uses a deterministic analytical evaluator to guide the search, achieving a 1.93x speedup over a homogeneous baseline for mixed AI/HPC workloads under a 1 MW power constraint.
+* `training` `MoE` `offloading` [BaGuaLu-2: Taming Dynamic Memory Fluctuation for Efficient MoE Model Training over 10,000 GPUs](http://arxiv.org/abs/2610.23064v1)
+  > **TL;DR**: Addresses dynamic memory fluctuation from expert load imbalance in large-scale MoE model training. Proposes BaGuaLu-2, which uses fine-grained, on-demand memory allocation for activations and system optimizations to offset overhead. Trains a 1.04T parameter model on 12,288 GPUs, achieving a 35% MFU and 1.14x throughput over baselines.
+* `serving` `kernel` `diffusion` [DIFFLET: A Fast Inference Engine for Diffusion Transformer Models on AWS Trainium](http://arxiv.org/abs/2610.23047v1)
+  > **TL;DR**: Presents Difflet, an inference engine for diffusion transformers that uses ahead-of-time compilation, fused attention kernels, and dynamic caching to accelerate denoising steps. Achieves 1.2-4.3x speedup in denoiser steps and 1.5-3.4x faster end-to-end generation over baseline serving.
+* `training` `kernel` `sparse` [Scalable Levenberg-Marquardt Training Framework for Deep Learning](http://arxiv.org/abs/2610.22925v1)
+  > **TL;DR**: Proposes LeMA, a distributed Levenberg-Marquardt algorithm for large-scale DNN training. It uses an exact dual formulation and Jacobian sharding to avoid materializing the full Jacobian. Achieves a 7.97x speedup and 99.7% strong scaling efficiency on an 8-GPU node.
+* `MoE` `networking` [MailRail: Mitigating Incast Congestion with User-Space, Node-Based Flow Control](http://arxiv.org/abs/2610.22890v1)
+  > **TL;DR**: Addresses incast congestion in large-scale systems running irregular workloads like MoE models. Proposes MailRail, a user-space, node-based credit flow control system that shifts from per-process to shared per-node credit pools. Achieves up to a 1132x speedup over unconstrained execution at a 4096:1 incast ratio.
+* `agent` `serving` `offloading` [Understanding KV Residency in Production-Scale Agentic LLM Workloads](http://arxiv.org/abs/2610.22863v1)
+  > **TL;DR**: Analyzes the memory footprint of KV cache in production agentic LLMs with long, stateful sessions. Characterizes workloads and evaluates strategies like idle caps and multi-resolution retention (int4) to reduce the 501.8 TB peak memory requirement, cutting recompute rates from 63% (LRU) to 13.6%.
+
 ### 2026-10-15
 * `training` `hardware` `kernel` [Architecting for Hardware Diversity: Meta's End-to-End Co-Design for High-Performance AI Training on AMD GPUs](http://arxiv.org/abs/2610.22230v1)
   > **TL;DR**: Presents co-design methods for porting AI training to non-NVIDIA hardware. Uses an analytical performance model for optimal kernel selection and agentic workflows for microarchitecture-aware optimizations. Achieves a 1.5x end-to-end training throughput improvement.
