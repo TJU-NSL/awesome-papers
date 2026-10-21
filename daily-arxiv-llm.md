@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1667-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.10.19-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1671-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.10.20-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,16 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-10-20
+* `serving` `kernel` `offloading` [Weight Placement Is Not Enough: Synchronization in Multi-Node CPU Decoding of Ternary LLMs](http://arxiv.org/abs/2610.28620v1)
+  > **TL;DR**: Investigates synchronization overhead in multi-node CPU decoding of ternary LLMs. Proposes a Megatron-style column splitting strategy to reduce thread wait times at barriers. Achieves 1.5-2.1x faster decoding than ik_llama.cpp with lower energy per token.
+* `serving` `kernel` [The Token-Energy Law of LLM Decode: Active Bytes and Realized Time Account for Joules per Token](http://arxiv.org/abs/2610.28576v1)
+  > **TL;DR**: Models GPU energy consumption per output token during LLM decoding. Proposes the Token-Energy Law, a linear model based on active bytes (shared weights, KV cache) and realized decode time. On Hopper/Blackwell GPUs, model estimates differ from measurements by at most 3.73%.
+* `serving` `quantization` `kernel` [BitMTP: When Multi-Token Prediction Meets Low-Bit Large Language Models](http://arxiv.org/abs/2610.28500v1)
+  > **TL;DR**: Presents BitMTP, a system for accelerating ultra-low-bit quantized LLM inference by integrating multi-token prediction directly into the model. Combines specialized quantization execution, CUDA Graph replay, and a hybrid decoding strategy to reduce sequential steps. Achieves 2.0x-3.3x throughput improvements on various GPUs while maintaining task quality.
+* `kernel` `video` `sparse` [KPage: Cross-Block Page Compaction for Hardware-Efficient Sparse Attention](http://arxiv.org/abs/2610.28096v1)
+  > **TL;DR**: Presents KPage, a hardware-efficient sparse attention kernel that compacts and packs K/V pages across block boundaries during loading for video Transformers. Achieves a geometric mean speedup of 1.77x in forward passes over NVIDIA Block-Sparse Attention on partially occupied 3D layouts.
+
 ### 2026-10-19
 * `training` `networking` [GeoTrain: Energy-Aware Automatic Parallelism for Foundation Model Training on Heterogeneous Geo-Distributed Resources](http://arxiv.org/abs/2610.26178v1)
   > **TL;DR**: Proposes GeoTrain, an automatic parallelism system that jointly optimizes performance and energy for training on heterogeneous geo-distributed GPUs. It uses a memetic algorithm to select GPUs and configure pipelines under compute, memory, and network constraints. Reduces iteration time by up to 61.4% and energy by 11.7% over SOTA.
