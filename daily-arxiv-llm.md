@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1671-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.10.21-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1677-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.10.22-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,20 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-10-22
+* `serving` `edge` `quantization` [Evaluating the Applicability of LLM Inference Optimizations on Apple Silicon](http://arxiv.org/abs/2610.31479v1)
+  > **TL;DR**: Evaluates the portability of LLM inference optimizations from NVIDIA GPUs to Apple Silicon for local serving. Analyzes KV-cache pruning, speculative decoding, kernel ports, and quantization on four Apple machines. Finds KV-cache pruning can yield up to 1.75x throughput gain on Apple but degrades performance on desktop NVIDIA GPUs.
+* `MoE` `serving` `networking` [Low-Latency MoE Inference in Space Data Centers: A Wireless-Power-Transfer Perspective](http://arxiv.org/abs/2610.30923v1)
+  > **TL;DR**: Addresses power supply-demand mismatch for MoE LLM inference in satellite-based data centers. Proposes SpaceWPT, a framework using inter-satellite wireless power transfer to redistribute solar energy, optimized via a two-sided water-filling strategy. Achieves up to 29.25% lower inference latency.
+* `kernel` `storage` `serving` [uGDS: A User-Space Development Kit for High-Performance GPU Direct Storage](http://arxiv.org/abs/2610.30868v1)
+  > **TL;DR**: Presents uGDS, a user-space GPU Direct Storage library that reduces I/O overhead by moving NVMe command management to user space. Enables PCIe P2P DMA with workload-aware scheduling. Achieves up to 30.69x higher batch-write bandwidth and reduces LLM time-to-first-token by 62.7% in LMCache.
+* `agentic` `edge` `serving` [Know When to Escalate: Critic-Guided Adaptive Execution for Cloud-Local Embodied Agents](http://arxiv.org/abs/2610.30587v1)
+  > **TL;DR**: Proposes CARE, a framework for embodied agents to dynamically escalate control from a local model to a stronger cloud model based on execution reliability, using a lightweight critic model. Reduces median time-between-action latency by 28.8-82.6% while matching cloud-only performance.
+* `serving` `kernel` `quantization` [Repair Changes Which Layers to Remove: Exact Optima for Depth Pruning of Language Models](http://arxiv.org/abs/2610.30552v1)
+  > **TL;DR**: Examines how to optimally select layers for depth pruning in LLMs. Proposes a greedy search method guided by a second-order score that accounts for post-pruning linear repair. The method reduces perplexity by 20-66% compared to a baseline, tested on models up to 27B parameters.
+* `serving` `offloading` `agent` [SARIA: Persistence-Aware KV Caching with Coordinated DRAM--SSD Reload for LLM Agents](http://arxiv.org/abs/2610.31169v1)
+  > **TL;DR**: Addresses SSD endurance and bandwidth limitations for KV caching in multi-turn LLM agents. Proposes SARIA, a system that selectively persists reusable KV blocks to SSD and coordinates DRAM-SSD transfers to accelerate reload. Reduces SSD writes by 57.1-58.9% and TTFT by 42.3-79.7% over baselines.
+
 ### 2026-10-20
 * `serving` `kernel` `offloading` [Weight Placement Is Not Enough: Synchronization in Multi-Node CPU Decoding of Ternary LLMs](http://arxiv.org/abs/2610.28620v1)
   > **TL;DR**: Investigates synchronization overhead in multi-node CPU decoding of ternary LLMs. Proposes a Megatron-style column splitting strategy to reduce thread wait times at barriers. Achieves 1.5-2.1x faster decoding than ik_llama.cpp with lower energy per token.
