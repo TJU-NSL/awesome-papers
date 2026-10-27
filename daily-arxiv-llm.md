@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1677-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.10.25-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1692-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.10.26-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,42 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-10-26
+* `video` `offloading` `storage` [WorldPager: Zero-Stall Tiered Memory for Long-Horizon World Models on a Single Consumer GPU](http://arxiv.org/abs/2610.35529v1)
+  > **TL;DR**: Addresses the GPU memory capacity bottleneck for long-horizon interactive video generation world models. Proposes WorldPager, a zero-stall tiered memory system that offloads and prefetches KV cache across GPU, DRAM, and NVMe. Generates 37.5 minutes of video continuously with constant host memory.
+* `serving` `RAG` `networking` [Governing Enterprise AI Traffic at Scale: Design and Operation of a Policy-Driven, Multi-Vendor LLM Gateway on Envoy](http://arxiv.org/abs/2610.35509v1)
+  > **TL;DR**: Presents the design of Cosmos LLM Gateway, a policy-driven system for managing multi-vendor LLM API consumption. It separates I/O-bound control from in-proxy processing (e.g., token metering, caching) to minimize latency. The system handles 200B+ tokens/day with a median added overhead of 4 ms.
+* `kernel` `serving` [One Megakernel is Not Enough: Predicting Where to Cut for Streaming Inference](http://arxiv.org/abs/2610.35336v1)
+  > **TL;DR**: Investigates the optimal number and placement of megakernels for streaming LLM inference. Proposes a framework to predictively select megakernel compositions from profiles, avoiding monolithic designs. In an NH-TTS model, a three-megakernel design improves throughput by 28% and reduces latency by 21.4% compared to a single megakernel.
+* `serving` `networking` [Context Is Not Free: Carbon-Aware LLM Routing for Multi-Turn LLM Web Services across Geo-Distributed Data Centers](http://arxiv.org/abs/2610.35230v1)
+  > **TL;DR**: Addresses the carbon cost of multi-turn LLM conversations served across geo-distributed data centers. Proposes CarbonRouter, a framework that uses a cache-aware carbon cost model and a lightweight gate to route queries, minimizing emissions. Reduces CO2 by 16.1% on average versus a state-of-the-art baseline.
+* `kernel` `serving` [Waypoint: Analytically Modeling GEMM for CPUs](http://arxiv.org/abs/2610.34914v1)
+  > **TL;DR**: Presents Waypoint, an analytical model to automatically find the optimal tiling configuration for GEMM operations on CPUs. The model estimates performance by capturing hardware effects like memory hierarchy and ILP, enabling an automated search. Achieves 1.36-1.98x speedup in CPU-based LLM inference.
+* `kernel` `hardware` [When and Why to Use TMA: A Workload-Grounded Characterization of Tensor Memory Acceleration on NVIDIA Hopper GPUs](http://arxiv.org/abs/2610.34907v1)
+  > **TL;DR**: Characterizes NVIDIA's Tensor Memory Accelerator (TMA) to guide kernel developers on when to use it versus alternatives like cp.async or DSM. Uses microbenchmarks on H100 GPUs to analyze transfer size, multicast scaling, and KV cache access patterns. Identifies crossover points where TMA outperforms other methods, with speedups dependent on operand size and cluster configuration.
+* `serving` [HiLO: Towards Product-Level Graceful Degradation with a Quality-Aware, Load-Aware Control Framework](http://arxiv.org/abs/2610.34844v1)
+  > **TL;DR**: Presents HiLO, a product-level graceful degradation framework for LLM serving under overload. It uses a pre-validated product state lattice for deterministic control across services. Deployment in Bing bounds the relevance metric drop to under 0.5 points even under 2x baseline peak load.
+
+### 2026-10-25
+* `multi-modal` `storage` `kernel` [Cross-Modal Data Co-Locality for Heterogeneous Storage Systems](http://arxiv.org/abs/2610.34595v1)
+  > **TL;DR**: Addresses performance degradation of multi-modal queries in vector stores due to poor cross-modal data locality. Proposes Coloc, a storage-management layer that optimizes data layout for co-accessed vectors using a Cross-Modal Access Graph and a migration manager. Reduces query latency by 48% for multimodal ANN search while moving 5.9x less data during workload shifts.
+* `agentic` `GUI` [NovaFabric: A Black-Box Recorder for AI Agents with Sealed, Replayable, Diffable and Auditable Runs](http://arxiv.org/abs/2610.34594v1)
+  > **TL;DR**: Presents NovaFabric, a system for recording, sealing, and replaying the complex execution traces of AI agents. It introduces a file-based capsule format and tooling for fail-closed replay, auditing, and dashboard visualization. The system handles over 150 top-level commands.
+* `serving` `MoE` `kernel` [Speculative Decoding for Mixture-of-Experts Models: Expert Bytes, Kernel Bandwidth and the Best Draft Length](http://arxiv.org/abs/2610.34440v1)
+  > **TL;DR**: Proposes a deduplication technique for speculative decoding on MoE models that reads each expert once per pass instead of per token. Derives analytical model for speedup and optimal draft length based on kernel bandwidth. On modified llama.cpp, achieves prediction of optimal draft length within one token in 10 of 12 configurations.
+* `serving` `offloading` `quantization` [Prefix Keys and Values Matter Late: RIPE Caching for Self-Speculative Decoding in Looped Language Models](http://arxiv.org/abs/2610.34436v1)
+  > **TL;DR**: Proposes RIPE, a KV cache management strategy for looped language models that selectively stores the deepest cache plane plus a window of recent positions. Reduces cache memory to 11.9% for a 1024-token context while achieving a 2.58x self-speculative decoding speedup.
+* `RL` `training` `kernel` [ScaleRLT: Exact Log-Probabilities and Fast Deferred Rollouts for Reinforcement Learning on Looped Transformers](http://arxiv.org/abs/2610.34427v1)
+  > **TL;DR**: Proposes ScaleRLT, a system for efficient reinforcement learning on looped transformers by using deferred rollouts for speed and a hybrid log-probability computation for bitwise reproducibility. Achieves a 1.47-1.56x rollout throughput increase and maintains training loss accuracy to within 3.1×10^-4 of a float64 reference.
+* `serving` [InferScale: Kubernetes-Native Predictive Autoscaling for SLO-Aware AI Inference](http://arxiv.org/abs/2610.34006v1)
+  > **TL;DR**: Presents InferScale, a Kubernetes-native autoscaler for AI inference that uses demand prediction and SLO-state control to mitigate slow pod startup times. It improves SLO compliance from 47.8% to 65.3% on a ResNet-50 workload with a 21-second cold start.
+
+### 2026-10-24
+* `agentic` `GUI` [Ring-0 by Default: Agents as Operating Systems (AaOS)](http://arxiv.org/abs/2610.33753v1)
+  > **TL;DR**: Analyzes LLM agents as de facto operating systems (AaOS) lacking security protections. Maps 116 OS mechanisms to agent components, finding 65 missing, mainly security controls. Tests reveal vulnerabilities in CLI tools, such as bypassing checks and forging transcripts, highlighting weak privilege separation.
+* `hardware` `kernel` `serving` [Operating System Support for Accelerators as First-Class Compute Elements in Heterogeneous Systems](http://arxiv.org/abs/2610.33380v1)
+  > **TL;DR**: Investigates high software overheads when using hardware accelerators as peripheral devices. Proposes MEERKAT, an FPGA framework with virtual-memory-aware communication, lightweight invocation, and an HA-aware scheduler. Achieves up to 260x faster communication and 2-6x wall-clock time improvement.
+
 ### 2026-10-22
 * `serving` `edge` `quantization` [Evaluating the Applicability of LLM Inference Optimizations on Apple Silicon](http://arxiv.org/abs/2610.31479v1)
   > **TL;DR**: Evaluates the portability of LLM inference optimizations from NVIDIA GPUs to Apple Silicon for local serving. Analyzes KV-cache pruning, speculative decoding, kernel ports, and quantization on four Apple machines. Finds KV-cache pruning can yield up to 1.75x throughput gain on Apple but degrades performance on desktop NVIDIA GPUs.
