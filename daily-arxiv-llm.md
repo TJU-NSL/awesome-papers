@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1692-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.10.27-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1697-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.10.28-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,18 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-10-27
+* `serving` `kernel` [Request-Adaptive Execution for Efficient Hybrid LLM Inference](http://arxiv.org/abs/2610.37432v1)
+  > **TL;DR**: Proposes Morph, a serving system enabling request-adaptive hybrid LLM inference. Co-designs model architecture (paired Attention/SSM layers with gating) and runtime (selective batching, hybrid-aware caching) for per-request layer selection. Achieves 3.87x higher serving throughput over static hybrid baselines.
+* `serving` `agent` `offloading` [TAO: Tool-Aware Joint Scheduling for LLM-Based Agentic Serving](http://arxiv.org/abs/2610.37230v1)
+  > **TL;DR**: Addresses resource wastage and suboptimal scheduling in LLM-based agentic serving by proposing TAO, a joint scheduling framework that considers tool readiness, cache credit, and token footprint. Achieves up to 36.3% reduction in mean time to first token compared to SOTA baselines.
+* `kernel` `training` `serving` [PipeLink: Contract-Guided Linking of GPU Kernel Components](http://arxiv.org/abs/2610.37200v1)
+  > **TL;DR**: Presents PipeLink, a contract-guided linker for composing GPU kernel components while managing shared SM resources. The system allows separate compilation and linking of components like loaders and epilogues, enabling new compositions. A linked GEMM+SwiGLU kernel runs 1.2x faster on Blackwell than a cuBLAS baseline.
+* `training` `serving` `RL` [InfraDev: Can Coding Agents Develop AI Infrastructure, and How Can We Tell?](http://arxiv.org/abs/2610.36589v1)
+  > **TL;DR**: Proposes InfraDev, a benchmark to evaluate coding agents on real-world AI infrastructure tasks from pull requests to frameworks like Megatron-LM and vLLM. Introduces hidden probes and a shared execution environment. The best model resolves only 38.9% of tasks, and hidden probes catch 32% of faulty submissions that pass official tests.
+* `kernel` `training` [JustGoal: With Only a Goal, the AI Baseline Is Above the Expert Kernels](http://arxiv.org/abs/2610.36434v1)
+  > **TL;DR**: Investigates if specialized domain knowledge is necessary for developing high-performance LLM GPU kernels. Proposes JustGoal, a baseline where a general-purpose agent builds an optimization workflow using only the objective and constraints. Outperforms open-source libraries on 8/10 operators with up to 2.34x speedup.
+
 ### 2026-10-26
 * `video` `offloading` `storage` [WorldPager: Zero-Stall Tiered Memory for Long-Horizon World Models on a Single Consumer GPU](http://arxiv.org/abs/2610.35529v1)
   > **TL;DR**: Addresses the GPU memory capacity bottleneck for long-horizon interactive video generation world models. Proposes WorldPager, a zero-stall tiered memory system that offloads and prefetches KV cache across GPU, DRAM, and NVMe. Generates 37.5 minutes of video continuously with constant host memory.
