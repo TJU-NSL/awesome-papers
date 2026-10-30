@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1697-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.10.28-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1708-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.10.29-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,32 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-10-29
+* `serving` `kernel` [PhOSv1: Efficient Scaling of Model Sleeping on a Single Server for Autoscaling with GPU-Context Deduplication](http://arxiv.org/abs/2610.39999v1)
+  > **TL;DR**: Addresses the GPU memory bloat from model sleeping for autoscaling. Proposes PhOSv1, which uses API remoting to deduplicate CUDA driver context and kernel binaries across sleeping engines. Reduces GPU memory footprint by up to 2x while maintaining vLLM's scale-up speed.
+* `RL` `agentic` [Sandman: Building and Operating Sandboxes for Agentic Reinforcement Learning on Shared Kubernetes](http://arxiv.org/abs/2610.39711v1)
+  > **TL;DR**: Presents Sandman, a sandbox service for agentic RL tool execution on Kubernetes. Designs pods with a daemon to manage bursts of task environments that persist across calls. Successfully held 11,858 concurrent sandboxes and created 3.1 million for SWE-bench training.
+* `training` `quantization` `multi-modal` [Dobb: Shard-Local Preconditioning in Block-Diagonal Eigenbases](http://arxiv.org/abs/2610.39412v1)
+  > **TL;DR**: Proposes Dobb, a communication-efficient matrix-aware optimizer for distributed training. It uses shard-local block-diagonal preconditioning to approximate second moments, avoiding all-to-all communication. Reduces optimizer step time from 124.1 ms to 9.2 ms on 32 GPUs while achieving lower validation loss.
+* `hardware` `serving` `kernel` [Learning to Formulate: Agentic Hardware-Software Co-Design of AI Infrastructure through Progressive Optimization and Verification](http://arxiv.org/abs/2610.39380v1)
+  > **TL;DR**: Proposes Formulaic, an agentic co-design flow to optimize AI infrastructure by jointly formulating chip and software constraints. Uses LLM agents to iteratively refine computation graphs into hardware-aware templates. Achieves 1.075x latency reduction for Qwen3-8B layers on NVIDIA GB10 vs. SGLang.
+* `hardware` `training` `serving` [When Does Heterogeneity Pay Off? Understanding GPU-WSE System Complementarity](http://arxiv.org/abs/2610.39222v1)
+  > **TL;DR**: Investigates when heterogeneous systems combining GPUs and WSEs yield performance gains versus bottlenecks. Proposes a hierarchical benchmarking methodology and an analytical model to characterize architectural complementarity. Identifies conditions where heterogeneity provides system-level performance improvements.
+* `serving` `MoE` `offloading` [PDScope: Breaking the Prefill-Decode Seesaw for Memory-Bound MoE Inference](http://arxiv.org/abs/2610.39216v1)
+  > **TL;DR**: Addresses the prefill-decode scheduling conflict in memory-bound MoE model inference. Proposes PDScope, a phase-aware system that predicts expert activations, adapts GPU/CPU loading policies per phase, and uses static graphs for I/O pipelines. Achieves 2.1-10.3x higher throughput vs. baselines.
+* `serving` `offloading` [PhOSv1: Efficient Scaling of Model Sleeping on a Single Server for Autoscaling with GPU-Context Deduplication](http://arxiv.org/abs/2610.39999v1)
+  > **TL;DR**: Addresses the GPU memory overhead of keeping multiple models asleep for autoscaling. Proposes PhOSv1, which deduplicates GPU context across sleeping engines via API remoting to a central daemon. Reduces GPU memory footprint while maintaining fast scale-up, improving multi-model serving performance.
+
+### 2026-10-28
+* `training` `networking` [MCCL: Training Pytorch models across a fleet of Macs at Skywalker Sound](http://arxiv.org/abs/2610.39029v1)
+  > **TL;DR**: Presents MCCL, a new distributed MPS backend for PyTorch to enable multi-node training on Mac fleets. Enables high-performance collective operations over Ethernet via a custom Metal backend. Achieves 95.9% parallel efficiency scaling a 113.5M-parameter ViT across 24 nodes.
+* `serving` `offloading` `storage` [FlatCake: A Flat KVCache Storage Architecture for LLM Serving](http://arxiv.org/abs/2610.38355v1)
+  > **TL;DR**: Proposes FlatCake, a flat KV cache storage architecture that treats DRAM and SSD as peer media in a unified address space to eliminate read amplification from tiered caching. It places blocks directly on the target medium in session-contiguous order. Reduces mean TTFT by up to 2.4x and eliminates 6.7x read amplification compared to baseline.
+* `training` `networking` `kernel` [The Endgame of FSDP Communication: Layout-Aware Collectives on Copy Engines, RDMA, and NVSwitch](http://arxiv.org/abs/2610.38228v1)
+  > **TL;DR**: Addresses communication overheads in Fully Sharded Data Parallel (FSDP) training. Proposes TIDE, zero-copy collectives using NVSwitch multicast and RDMA to eliminate layout conversion and reduce kernel interference. On 64 GPUs, reduces step time by up to 27.1% and cuts reduce-scatter SM time by 12.5-14.5x.
+* `serving` `multi-modal` `offloading` [GearUp: DAG-aware Acceleration for Serverless Inference Serving via Slack-guided Pre-loading](http://arxiv.org/abs/2610.38196v1)
+  > **TL;DR**: Reduces critical path latency for serverless ML DAG inference by pre-loading model weights and CUDA kernels during DAG slack time. GearUp profiles node loading stages and schedules them behind upstream execution, reusing instances. Reduces median end-to-end latency by up to 75.9% and integrated GPU memory by 83.9% vs eager pre-loading.
+
 ### 2026-10-27
 * `serving` `kernel` [Request-Adaptive Execution for Efficient Hybrid LLM Inference](http://arxiv.org/abs/2610.37432v1)
   > **TL;DR**: Proposes Morph, a serving system enabling request-adaptive hybrid LLM inference. Co-designs model architecture (paired Attention/SSM layers with gating) and runtime (selective batching, hybrid-aware caching) for per-request layer selection. Achieves 3.87x higher serving throughput over static hybrid baselines.
