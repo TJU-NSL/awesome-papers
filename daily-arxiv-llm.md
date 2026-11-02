@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1708-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.10.31-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1713-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.11.01-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,18 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-10-30
+* `hardware` `serving` `kernel` [Matching Workloads to Blackwell: Power-Resolved Benchmarking of NVIDIA B200 and B300 across HPC and AI Workloads](http://arxiv.org/abs/2610.41919v1)
+  > **TL;DR**: Evaluates the performance of Blackwell GPUs for AI workloads, isolating per-kernel costs. Benchmarks LLM inference (Llama-70B) and other tasks, finding B300 trails by 24-27% on LLM throughput despite similar power draw. Attributes differences to kernel-level performance and software stack.
+* `quantization` `offloading` `serving` [Where KV-Cache Error Lives in Looped Language Models: A Diagnostic Study of Ouro and Huginn](http://arxiv.org/abs/2610.41825v1)
+  > **TL;DR**: Diagnoses the impact of quantization errors in the KV-cache of looped LLMs on next-token distributions. Proposes a cell-level allocator based on error analysis to minimize one-step KL divergence. Achieves comparable task accuracy with 25-48% of the BF16 KV-cache bytes.
+* `training` `kernel` [MemX: Memory-Aware Automatic Parallelism for Cross-Vendor Heterogeneous GPU Training](http://arxiv.org/abs/2610.41525v1)
+  > **TL;DR**: Proposes MemX, a memory-aware system for automatic parallelism in cross-vendor heterogeneous GPU training. It jointly optimizes iteration time and memory usage via a novel profiler, predictor, and search algorithm. Achieves a 12.17% MAPE in performance prediction and finds top configurations 55,000x faster than profiling.
+* `serving` `agent` `offloading` [HiState: Hierarchical Prefix Cache Management for Hybrid LLM Serving in Agentic Workloads](http://arxiv.org/abs/2610.41508v1)
+  > **TL;DR**: Addresses inefficient prefix caching for hybrid LLMs in agentic workloads. Proposes HiState, a hierarchical cache that offloads recurrent checkpoints to SSD while prioritizing KV entries in memory. Achieves up to 5.73x speedup in p99 TTFT.
+* `serving` `networking` [ARK: Avoiding Routing Collisions for KV Cache Transfer in Disaggregated LLM Inference](http://arxiv.org/abs/2610.41160v1)
+  > **TL;DR**: Addresses network congestion from KV-cache transfers in disaggregated LLM inference. Proposes ARK, a distributed path reservation mechanism that coordinates senders to avoid hash collisions and balance traffic. Reduces P95 flow completion time by up to 34.0%.
+
 ### 2026-10-29
 * `serving` `kernel` [PhOSv1: Efficient Scaling of Model Sleeping on a Single Server for Autoscaling with GPU-Context Deduplication](http://arxiv.org/abs/2610.39999v1)
   > **TL;DR**: Addresses the GPU memory bloat from model sleeping for autoscaling. Proposes PhOSv1, which uses API remoting to deduplicate CUDA driver context and kernel binaries across sleeping engines. Reduces GPU memory footprint by up to 2x while maintaining vLLM's scale-up speed.
