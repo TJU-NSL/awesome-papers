@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1713-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.11.01-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1723-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.11.02-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,28 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-11-01
+* `serving` `RAG` [Fairway: Load-Aware KV Cache Reuse for LLM Prefill Scheduling](http://arxiv.org/abs/2611.02082v1)
+  > **TL;DR**: Investigates how to schedule LLM prefill with varying KV cache reuse to balance TTFT fairness and efficiency. Proposes Fairway, a dual-lane scheduler that adaptively prioritizes reuse vs. fairness. Reduces p99 TTFT by up to 8.6x over reuse-first scheduling while maintaining median performance.
+* `training` `kernel` [ReWY: Faster Gradient Computation for Delta-Rule Attention Family](http://arxiv.org/abs/2611.01940v1)
+  > **TL;DR**: Presents ReWY, an algebraic reformulation of delta-rule linear attention backward passes to reduce computational overhead. The method replaces auxiliary adjoint calculations with a triangular residual system and optimized matrix contractions. Achieves 1.15-1.81x geometric-mean backward speedup on NVIDIA GPUs.
+* `kernel` `hardware` `training` [Ascend-SpMM: Accelerating Sparse Matrix-Dense Matrix Multiplication on Ascend NPUs](http://arxiv.org/abs/2611.01936v1)
+  > **TL;DR**: Presents Ascend-SpMM, a framework optimizing Sparse Matrix-Dense Matrix Multiplication for Ascend NPUs. Uses a memory-centric cost model and conflict-bounded mapping to leverage Cube/Vector architecture. Achieves a geometric-mean speedup of 12.70-20.55x over NPU baselines.
+* `inference` `edge` `networking` [A Compute Center Anyone Can Join: A Peer-to-Peer System for AI Inference](http://arxiv.org/abs/2611.01865v1)
+  > **TL;DR**: Proposes a peer-to-peer protocol, Open Inference Market, to enable distributed AI inference using idle GPUs. It uses an economic mechanism with random audits and 'earnings as collateral' to deter cheating. Analysis shows ~0.3 audits per worker per day can make cheating unprofitable.
+* `serving` `MoE` `offloading` [Apto: Self-Adaptive CPU-GPU Hybrid MoE Inference on Shared PCs](http://arxiv.org/abs/2611.01859v1)
+  > **TL;DR**: Presents Apto, a self-adaptive CPU-GPU hybrid inference system for MoE models on shared PCs. It uses a dynamic dual-ended queue for expert scheduling and cancellable tail racing to mitigate stragglers. Achieves up to 5.97x and 3.45x speedup in prefill/decode under CPU contention.
+* `serving` `offloading` `kernel` [CacheWeave: Learning to Recompute for Efficient Position-Independent KV Caching](http://arxiv.org/abs/2611.01735v1)
+  > **TL;DR**: Investigates how to maintain accuracy while using position-independent KV caching to accelerate LLM prefill. Proposes CacheWeave, which trains a model-native block selector to identify tokens for recomputation, balancing accuracy and latency. Achieves up to 16.1x lower TTFT versus full prefill with only 1.6% mean accuracy loss.
+* `serving` `offloading` `agentic` [DIMWIT: Directly Invoking Models Without Intensive Tuning](http://arxiv.org/abs/2611.01463v1)
+  > **TL;DR**: Investigates using pre-trained models instead of custom policies for resource management decisions. Proposes DIMWIT, which directly queries an LLM with system state to make autoscaling and DRAM sizing choices. A small decision model reduces DRAM usage by up to 27.5% while maintaining 95% of baseline performance.
+* `serving` `agent` `offloading` [Serving Agentic Robot Fleets: Workload Characterization, KV-Cache Thrashing, and Admission Control](http://arxiv.org/abs/2611.01404v1)
+  > **TL;DR**: Investigates how to serve a fleet of agentic robots coupled with long-context LLMs and real-time action models. Characterizes workload properties and proposes admission control to manage KV-cache thrashing. An episode cap restores throughput from 1.30 to 5.55 episodes/min.
+* `offloading` `kernel` `serving` [Layer-wise CPU-GPU Scheduling for LLM Inference on Memory-Limited Consumer GPUs](http://arxiv.org/abs/2611.01393v1)
+  > **TL;DR**: Addresses high latency from CPU-GPU weight transfers during LLM inference on memory-limited GPUs. Proposes a layer-wise scheduling algorithm that overlaps CPU computation with asynchronous weight prefetching. Accelerates OPT-30B inference by 3.5x over HuggingFace Accelerate.
+* `serving` `quantization` [Token-as-a-Utility: A Model-Agnostic Architecture for Metering and Provisioning AI Inference Services](http://arxiv.org/abs/2611.01371v1)
+  > **TL;DR**: Proposes Token-as-a-Utility, a model-agnostic architecture for metering and provisioning LLM inference services based on actual resource demand. Introduces Reference Inference Units (RIUs) for cost-reflective accounting and occupancy-indexed ratings. Reduces tenant mispricing from 7.36x to 1.06x compared to flat token counting.
+
 ### 2026-10-30
 * `hardware` `serving` `kernel` [Matching Workloads to Blackwell: Power-Resolved Benchmarking of NVIDIA B200 and B300 across HPC and AI Workloads](http://arxiv.org/abs/2610.41919v1)
   > **TL;DR**: Evaluates the performance of Blackwell GPUs for AI workloads, isolating per-kernel costs. Benchmarks LLM inference (Llama-70B) and other tasks, finding B300 trails by 24-27% on LLM throughput despite similar power draw. Attributes differences to kernel-level performance and software stack.
