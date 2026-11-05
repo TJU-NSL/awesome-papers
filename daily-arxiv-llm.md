@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1746-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.11.03-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1752-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.11.04-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,20 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-11-04
+* `serving` `networking` [flash-comm: Self-Synchronizing Collective Communication for LLM Decoding](http://arxiv.org/abs/2611.06634v1)
+  > **TL;DR**: Proposes flash-comm, a communication library that fuses synchronization with data movement for LLM decoding. It introduces self-synchronizing transfers and a cost-guided protocol to eliminate separate barriers. Achieves a median 28.8% reduction in all-reduce latency and up to 6.8% lower time per output token.
+* `training` `storage` `offline` [Chiron: Cache Management Empowered by LLM Intelligence for AI Workloads](http://arxiv.org/abs/2611.06179v1)
+  > **TL;DR**: Addresses dynamic cache management for AI workloads with changing access patterns. Proposes Chiron, which uses an LLM advisor to asynchronously diagnose patterns and recommend policies, gated by a deterministic harness. Reduces job completion time by 14.3-41.2% over the best baseline.
+* `serving` `offloading` `kernel` [Shallow Encoding Emits Deep Memories](http://arxiv.org/abs/2611.06084v1)
+  > **TL;DR**: Addresses memory and compute inefficiency in serving hybrid language models with deep memories. Proposes SEED, which writes deep layer memories from shallower layers (reducing prefill layers by up to 63%) and compresses recurrent states. Increases throughput of Qwen3.8-Flash-Next by 1.2-1.4x.
+* `MoE` `offloading` `serving` [vExpert: Virtualizing Expert Storage for Adaptive Load Balancing in Distributed MoE Inference](http://arxiv.org/abs/2611.06057v1)
+  > **TL;DR**: Addresses dynamic load imbalance in distributed MoE model inference caused by static expert placement. Proposes vExpert, a system using virtualized expert storage and a runtime allocator to decouple expert placement from routing with a disaggregated memory manager. Achieves up to 1.2× end-to-end speedup.
+* `serving` `kernel` [A Controlled Experimental Evaluation of Configuration and Cache Architecture in LLM Serving Engines](http://arxiv.org/abs/2611.05991v1)
+  > **TL;DR**: Evaluates how configuration differences, especially prefill chunking and KV cache reuse granularity, impact LLM serving engine performance. Uses a controlled testbed to compare vLLM and SGLang. Matching a single configuration parameter reduced the capacity gap by 78% and highlighted a 2.4-6.4x tail-latency advantage for cache-aware scheduling.
+* `training` `kernel` `networking` [CHARM+: Cross-Hardware Attention with Re-Merge Multistream Mechanism](http://arxiv.org/abs/2611.05906v1)
+  > **TL;DR**: Proposes CHARM+, a distributed attention mechanism for long-sequence LLM training. It reorganizes communication into parallel, overlapping streams and decouples cross-hardware from intra-hardware communication to reduce synchronization overhead. Achieves up to 2.9x speedup in backward pass versus Ring-Attention on a dual-node NVLink architecture.
+
 ### 2026-11-03
 * `serving` `kernel` [What Sets the Serving Speed of Looped Language Models? Measurements and Optimizations Graded by Exactness](http://arxiv.org/abs/2611.05150v1)
   > **TL;DR**: Investigates optimization strategies for serving looped language models. Introduces kernel fusion, prefix caching, and noise injection to reduce per-token overhead from many small kernels. Achieves up to 3.3x higher throughput while maintaining bitwise-identical results on test requests.
