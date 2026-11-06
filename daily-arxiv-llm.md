@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1752-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.11.04-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1759-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.11.05-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,22 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-11-05
+* `quantization` `offloading` `serving` [StrataFlux: Memory-Hierarchy-Native Low-Bit LLM Inference](http://arxiv.org/abs/2611.08363v1)
+  > **TL;DR**: Investigates how to maintain accuracy with extreme low-bit quantization for LLM inference. Proposes StrataFlux, a framework that co-designs refinement representations from host RAM/SSD with selective streaming and reuse. For 2-bit Llama-3.1-8B-Instruct, reduces WikiText-2 perplexity from 9.46 to 8.40 while maintaining 95.4% of the quantized base throughput.
+* `diffusion` `kernel` `serving` [Measured Coupling for Parallel Decoding in Diffusion Language Models](http://arxiv.org/abs/2611.08307v1)
+  > **TL;DR**: Presents a method to improve parallel decoding for diffusion language models by directly measuring token coupling via cheap probes, replacing mean-field approximation. Reduces the number of decoding steps required while maintaining accuracy, achieving faster inference.
+* `offloading` `video` `multi-modal` [Precision - Preserving Subtensor Inference for a 22B Joint Audio - Video Generator under a Fixed GPU Working Set](http://arxiv.org/abs/2611.08023v1)
+  > **TL;DR**: Presents Precision-Preserving Subtensor Inference (PSI), a runtime for a 22B parameter audio-video transformer that performs sub-block weight streaming to fit within a fixed GPU memory budget. Reduces peak memory from 8.5 GB to 360 MB while increasing mean inference time from 247s to 349s on an RTX A6000.
+* `RAG` `networking` [ZeroRAG: Adaptive Semantic Peer Routing for Decentralized Retrieval-Augmented Generation](http://arxiv.org/abs/2611.07928v1)
+  > **TL;DR**: Presents ZeroRAG, a decentralized routing layer for RAG that routes queries via a self-organizing peer-to-peer network without a central index. Uses a best-first walk with local neighbor state to steer queries. Achieves recall approaching a centralized system while scaling to 100,000 peers.
+* `kernel` `hardware` `training` [Characterizing CUDA Locality Domains on Blackwell GPUs](http://arxiv.org/abs/2611.07535v1)
+  > **TL;DR**: Characterizes latency implications of data placement on multi-die Blackwell GPUs using CUDA Locality Domains. Proposes die-aware adaptations for libraries like NCCL. Achieves speedups up to 111.3% for nvbandwidth and reduces GPU memory allocation overhead by 7-10x.
+* `training` `kernel` `quantization` [ZYFA: Speed and Accuracy of FP8 FlashAttention on AMD CDNA4](http://arxiv.org/abs/2611.07496v1)
+  > **TL;DR**: Presents ZYFA, optimized FP8 FlashAttention kernels for AMD MI355X GPUs to improve prefill throughput. Uses direct FP8 softmax computation, ping-pong scheduling, and probability scaling to improve kernel efficiency. Achieves 1.16-1.76x higher throughput than vendor kernels on real model activations.
+* `training` `kernel` `networking` [KOSMOS: Self-scheduling Persistent Kernels for Communication-Compute Overlap](http://arxiv.org/abs/2611.07477v1)
+  > **TL;DR**: Presents KOSMOS, a self-scheduling persistent kernel library that dynamically overlaps communication and computation in transformer layers for TP+SP and EP. Uses queues for on-demand workgroup role switching, fusing all collectives with GEMMs. Speeds up Megatron-LM training by 1.10-1.28x on AMD GPUs.
+
 ### 2026-11-04
 * `serving` `networking` [flash-comm: Self-Synchronizing Collective Communication for LLM Decoding](http://arxiv.org/abs/2611.06634v1)
   > **TL;DR**: Proposes flash-comm, a communication library that fuses synchronization with data movement for LLM decoding. It introduces self-synchronizing transfers and a cost-guided protocol to eliminate separate barriers. Achieves a median 28.8% reduction in all-reduce latency and up to 6.8% lower time per output token.
