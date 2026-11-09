@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1759-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.11.07-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1770-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.11.08-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,30 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-11-06
+* `serving` `RAG` `agentic` [Nebula: Distributed Position-Independent Caching for LLM Serving](http://arxiv.org/abs/2611.09474v1)
+  > **TL;DR**: Presents Nebula, a distributed LLM serving framework with position-independent caching (PIC) for workloads like RAG and agents. Uses optimistic accounting, ghost-hit feedback, and a prefill time model for cache management and scheduling. Reduces median TTFT by 61.4% and recovers 76.1% of tokens missed by prefix caching.
+* `inference` `quantization` `kernel` [MINE: Entropy-coded Memory-efficient Inference for Large Language Models](http://arxiv.org/abs/2611.09424v1)
+  > **TL;DR**: Proposes MINE, a lossless entropy coding method to accelerate memory-bound single-stream LLM inference. It uses dtANS-LLM, an auto-tuned GPU entropy coding scheme for quantized weights, integrated into vLLM. Achieves 2.52x speedup over baseline on an RTX 4060 Ti with a 2.1-bit quantized model.
+* `training` `multi-modal` `video` [DataHelix: A CPU-GPU Co-Scheduling Data Plane for Multimodal Model Training](http://arxiv.org/abs/2611.09411v1)
+  > **TL;DR**: Addresses data loading bottlenecks and resource heterogeneity in multimodal model training. Proposes DataHelix, a CPU-GPU co-scheduling data plane that uses metadata and cost-aware collective rebalancing. Achieves 2.72x geometric-mean throughput over standard DataLoaders.
+* `training` `RL` `thinking` [RPEG: Training Reasoning Language Models Scalably and Cost-Effectively](http://arxiv.org/abs/2611.09207v1)
+  > **TL;DR**: Addresses the high cost and complexity of scaling reinforcement learning pipelines for Reasoning Language Models (RLMs). Proposes RPEG, a data-centric graph IR and runtime that optimizes pipeline structure and execution. Achieves up to 2x performance improvement and 2.48x lower step latency on systems with 256 GPUs.
+* `edge` `serving` [UniExit: A Unified Latency-Aware Early-Exit Runtime for Heterogeneous Edge AI](http://arxiv.org/abs/2611.09159v1)
+  > **TL;DR**: Proposes UniExit, a runtime for latency-aware early-exit inference of heterogeneous CNN/Transformer models on edge devices. It uses dynamic latency prediction and budget-aware routing. Achieves improved deadline satisfaction and latency-accuracy trade-offs over static baselines.
+* `serving` `offloading` [DARIC: A Position-Independent KV Cache Reuse System with Distribution-Aware Recomputation](http://arxiv.org/abs/2611.09109v1)
+  > **TL;DR**: Proposes DARIC, a system-algorithm co-design for efficient position-independent KV cache reuse in LLM inference. It introduces a distribution-aware token selection strategy and a lightweight architecture for integration with standard engines. Achieves a 1.1x-4.5x speedup in time-to-first-token.
+* `training` `scheduling` `RL` [Two-Layer Evolutionary Scheduling for Machine Learning Jobs in Multi-Cluster Environments](http://arxiv.org/abs/2611.09093v1)
+  > **TL;DR**: Proposes EVO-GP, a two-layer evolutionary scheduler for ML jobs across GPU clusters. It decouples global job-to-cluster assignment from intra-cluster GPU allocation, using an evolutionary algorithm and a learned priority function. Reduces average weighted queuing time by up to 27% versus baselines.
+* `MoE` `serving` `networking` [ISER-MoE: Dynamic In-Switch Replication of Hot Experts for Load Balancing in Expert-Parallel](http://arxiv.org/abs/2611.09008v1)
+  > **TL;DR**: Addresses load imbalance from hot experts in MoE model serving. Proposes ISER-MoE, which uses in-switch multicast through NVLink to replicate hot experts to GPU groups, combined with a GPU scheduler. Improves throughput by 17.4% on a math benchmark for DeepSeek-V4-Pro.
+* `serving` [Capital Efficiency, Isolation, Risk, and Ruin in Generative AI Inference Serving Infrastructure](http://arxiv.org/abs/2611.08999v1)
+  > **TL;DR**: Addresses capital inefficiency in generative AI inference due to heterogeneous request costs. Proposes workload isolation, a fleet-level strategy that groups similar requests to prevent costly requests from dictating overall fleet efficiency. Analysis indicates this can prevent a 5-15% reduction in overall capital efficiency caused by heterogeneity.
+* `serving` `agent` `offloading` [Inside the Trap: A Renewal Law for Prefix-Cache Collapse in LLM Agent Serving](http://arxiv.org/abs/2611.08902v1)
+  > **TL;DR**: Investigates prefix-cache collapse in LLM agent serving where bursts cause KV cache misses and a non-draining backlog. Proposes a renewal law model for the trapped state and validates a session cap mechanism. In tests, the cap rescued all established traps without session shedding at the same load.
+* `training` `RL` `offline` [Adaptive Scheduling Pipeline for Multi-Instance Asynchronous Reinforcement Learning](http://arxiv.org/abs/2611.08864v1)
+  > **TL;DR**: Proposes an offline scheduler (ASP) to reduce rollout underutilization in multi-instance asynchronous RL for LLMs by mitigating padding, skewness, and sorting bubbles. Improves end-to-end throughput by up to 3.22x and reduces iteration time by 76.8% compared to MindSpeed-RL.
+
 ### 2026-11-05
 * `quantization` `offloading` `serving` [StrataFlux: Memory-Hierarchy-Native Low-Bit LLM Inference](http://arxiv.org/abs/2611.08363v1)
   > **TL;DR**: Investigates how to maintain accuracy with extreme low-bit quantization for LLM inference. Proposes StrataFlux, a framework that co-designs refinement representations from host RAM/SSD with selective streaming and reuse. For 2-bit Llama-3.1-8B-Instruct, reduces WikiText-2 perplexity from 9.46 to 8.40 while maintaining 95.4% of the quantized base throughput.
