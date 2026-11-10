@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1770-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.11.08-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1778-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.11.09-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,24 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-11-09
+* `MoE` `training` `networking` [Release Sooner, Expose Less: Offloading MoE Dispatch in NCCL-EP under Dual-Batch Overlap](http://arxiv.org/abs/2611.12362v1)
+  > **TL;DR**: Investigates how to reduce GPU idle time in MoE model training with dual-batch overlap. Proposes three NCCL-EP configurations (GPI, GPI-MC, GDAKI Free Flow) that offload dispatch-send operations from the GPU. Achieves a 15-42% reduction in Time Per Output Token (TPOT) relative to baseline NCCL-EP and DeepEP v1.
+* `kernel` `serving` [Mitigating SM-Level Load Imbalance in 3D Gaussian Splatting on GPUs](http://arxiv.org/abs/2611.12319v1)
+  > **TL;DR**: Addresses SM-level GPU load imbalance in 3D Gaussian Splatting (3DGS) rendering, a key component for real-time generative models. Proposes a persistent kernel that schedules heavy screen tiles first and chunks outlier tiles across CTAs. Accelerates alpha blending by up to 2.93x in a large-scale urban scene.
+* `serving` `agent` `offloading` [Evolving Infra: Agent-Adaptive LLM Serving at Scale](http://arxiv.org/abs/2611.12304v1)
+  > **TL;DR**: Proposes Evolving Infra, an agent-adaptive LLM serving framework that dynamically adjusts compute allocation and distributed KV cache management based on agent workload signals. Reduces mean latency by 4.1x and P95 TTFT by 14x versus a baseline on up to 256 GPUs.
+* `serving` `agentic` `offline` [RecoGEM: A Serving System for Production-Scale Generative Recommendation](http://arxiv.org/abs/2611.12296v1)
+  > **TL;DR**: Presents RecoGEM, a serving system for generative recommendation models that autoregressively decode items. Uses a decoupled runtime--engine architecture to optimize attention, candidate selection, and execution for short sequences. Achieves 2.88× higher throughput and P99 latency < 35 ms versus baselines.
+* `thinking` `serving` `edge` [Late but Valuable: Why Deadlines Change the Measured Value of LLM Reasoning](http://arxiv.org/abs/2611.11910v1)
+  > **TL;DR**: Investigates how deadlines affect the measured value of LLM reasoning in automated labs. Proposes evaluating the actual executed action (model answer or fallback) based on arrival time. Shows thinking mode's value can be overstated by 0.0241 per decision when deadlines are missed.
+* `serving` `MoE` `networking` [OverlapAdvisor: Modeling and Adapting Computation-Communication Overlap for Distributed MoE Serving](http://arxiv.org/abs/2611.11857v1)
+  > **TL;DR**: Presents OverlapAdvisor, a performance model for optimal computation-communication overlap strategy in distributed MoE serving. It uses a unified model considering workload and hardware to select strategies at launch time. Achieves up to 31.7% higher throughput and 1.59x kernel speedup.
+* `kernel` `hardware` `serving` [Exploiting Native Hardware Heterogeneity: Custom GPSIMD Operators for Accelerating Emerging LLM Memory on AWS Trainium](http://arxiv.org/abs/2611.11820v1)
+  > **TL;DR**: Proposes a toolchain to create custom GPSIMD operators on AWS Trainium accelerators for LLM memory modules. The method compiles and injects C++ operators to optimize irregular n-gram hashing and sparse table lookups. Achieves up to 1.14x speedup in Engram computation for DeepSeek-V4.1-Flash.
+* `serving` `offloading` `storage` [Why Kubernetes Cannot Contain a Full Lazy-Pulling Cache: Two Impossibility Results and a Bounded, Honest Design for Model Serving](http://arxiv.org/abs/2611.11739v1)
+  > **TL;DR**: Addresses the lack of resource bounding for lazy-pulling model caches in Kubernetes, which causes failures. Proposes a bounded cache design with a filesystem-keyed byte budget and pass-through semantics for failed writes. Achieves zero file errors versus 273 failures in stargz-snapshotter at 90% cache fill.
+
 ### 2026-11-06
 * `serving` `RAG` `agentic` [Nebula: Distributed Position-Independent Caching for LLM Serving](http://arxiv.org/abs/2611.09474v1)
   > **TL;DR**: Presents Nebula, a distributed LLM serving framework with position-independent caching (PIC) for workloads like RAG and agents. Uses optimistic accounting, ghost-hit feedback, and a prefill time model for cache management and scheduling. Reduces median TTFT by 61.4% and recovers 76.1% of tokens missed by prefix caching.
