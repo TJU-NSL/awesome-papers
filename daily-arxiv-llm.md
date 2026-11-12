@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1778-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.11.10-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1786-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.11.11-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,24 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-11-10
+* `serving` `offloading` [Can KV Cache Be Reused Across Model Updates? A DeepSeek-V4-Flash Case Study](http://arxiv.org/abs/2611.14051v1)
+  > **TL;DR**: Investigates if KV caches from previous model versions can be reused for faster inference on updated models. Studies Direct Cache Reuse on DeepSeek-V4-Flash updates, measuring Functional Cache Divergence. Achieves median time-to-first-token speedups of 2.10–5.08x on QA benchmarks despite behavioral changes.
+* `serving` `quantization` [Scaling Shapley Energy Attribution to Large LLM Batches](http://arxiv.org/abs/2611.13802v1)
+  > **TL;DR**: Presents StepSplit, a method to fairly attribute GPU energy consumption to individual LLM inference requests in batched serving. It derives a closed-form Shapley value based on step-wise energy decomposition (shared + request-specific). Achieves 0.4-4.3% L1 error vs. 13.4-61.3% for token-proportional allocation.
+* `serving` `agent` `training` [Multi-Objective Scheduling of LLM-Based Multi-Agent Workflows in Cloud Computing](http://arxiv.org/abs/2611.13740v1)
+  > **TL;DR**: Addresses scheduling LLM-based multi-agent workflows in the cloud to minimize latency and cost while maximizing utilization. Proposes MO-SAIC, a framework with four multi-objective schedulers. Evaluations show a reduction in monetary cost by up to 35% compared to single-objective baselines.
+* `serving` `quantization` `offloading` [Deterministic, Reproducible Inference in Exact Integer Arithmetic, and Verifiable Distributed Inference as Its Consequence](http://arxiv.org/abs/2611.13730v1)
+  > **TL;DR**: Presents tritify, a system for reproducible LLM/MoE/video model inference using exact integer arithmetic instead of floating-point. Achieves bit-identical outputs across different hardware and distributed setups, verified on a 106B parameter MoE model split across multiple machines.
+* `serving` `kernel` [ForeSpark: Joint Draft and Verification Budget Scheduling for Parallel Speculative Decoding](http://arxiv.org/abs/2611.13442v1)
+  > **TL;DR**: Proposes ForeSpark, a system for joint draft and verification budget scheduling in parallel speculative decoding to reduce wasted compute from drafting unverified tokens. It uses a context-aware estimator and lightweight scheduler to dynamically allocate draft/verify lengths, improving throughput by up to 2.49x over autoregressive decoding.
+* `offloading` `serving` `storage` [Placing LLM Lookup Tables by Per-Layer Prefetch Deadlines](http://arxiv.org/abs/2611.13413v1)
+  > **TL;DR**: Investigates how to efficiently place large LLM lookup tables for inference. Proposes SlackTier, a system that prefetches table rows based on per-layer deadlines to offload tables to slower storage tiers. Reduces host memory from 212 GiB to 34 GiB with only a 1.4% increase in token latency while enabling a 36% throughput gain.
+* `serving` `agent` `offloading` [Bursts That Outlast Themselves: Persistent Degradation in Prefix-Cached Agent Serving](http://arxiv.org/abs/2611.13412v1)
+  > **TL;DR**: Identifies metastability in LLM agent serving with prefix caching, where small bursts trigger persistent degradation. Proposes a budgeter that bounds the resident KV demand of active sessions to the cache pool to prevent collapse. Prevents failure and recovers throughput from a 50% drop in all tested runs.
+* `training` `agentic` [Plumbline: When the Loss Lies, Validating LLM Training Correctly](http://arxiv.org/abs/2611.13393v1)
+  > **TL;DR**: Presents Plumbline, a system to validate correctness throughout the LLM training lifecycle, from data to serving. It uses a systematic methodology and agentic workflows for onboarding new models and tracing root causes. Found 61 problems (32 silent) across 3 frameworks and 5 models.
+
 ### 2026-11-09
 * `MoE` `training` `networking` [Release Sooner, Expose Less: Offloading MoE Dispatch in NCCL-EP under Dual-Batch Overlap](http://arxiv.org/abs/2611.12362v1)
   > **TL;DR**: Investigates how to reduce GPU idle time in MoE model training with dual-batch overlap. Proposes three NCCL-EP configurations (GPI, GPI-MC, GDAKI Free Flow) that offload dispatch-send operations from the GPU. Achieves a 15-42% reduction in Time Per Output Token (TPOT) relative to baseline NCCL-EP and DeepEP v1.
