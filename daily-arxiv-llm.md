@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1786-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.11.11-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1800-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.11.12-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,38 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-11-12
+* `offline` `agent` `serving` [Reducing Batch Makespan for LLM Agent Workloads through Inference-Environment Coordination](http://arxiv.org/abs/2611.16661v1)
+  > **TL;DR**: Presents coordinated optimizations to reduce the makespan of batch LLM agent workloads, which alternate between inference and environment interaction. Methods include a resource model for GPU allocation, trajectory-aware scheduling, and Chain-Advancing Action Scheduling (CAAS). Achieves makespan reductions of 10.4% to 65.0% on various benchmarks.
+* `training` `multi-modal` [SS-HSDP: Efficient and Flexible Sharded Data Parallelism via Runtime-Update Decoupling](http://arxiv.org/abs/2611.16467v1)
+  > **TL;DR**: Proposes SS-HSDP, a sharded data-parallel training framework that decouples runtime compute layouts from optimizer parameter structures to improve flexibility and efficiency. It uses shared data views and hierarchical sharding, achieving up to 21.7% higher MFU than baselines.
+* `training` `RL` `hardware` [LoCoJAX: Host-Local Coordination for Small-Model RL on TPUs](http://arxiv.org/abs/2611.16301v1)
+  > **TL;DR**: Addresses high host-coordination overhead for small-model RL training on TPUs. Proposes LoCoJAX, a system with local rollout/reward processing on each host and synchronous global training. Achieves 1.3-3.6x faster per-step time compared to a Pathways baseline on an 8-64 chip setup.
+* `kernel` `serving` [MegaOps: A Kernel Overlapping Framework with PyTorch-like Modularity and Megakernel Performance](http://arxiv.org/abs/2611.16248v1)
+  > **TL;DR**: Investigates if modular kernel-per-operator ML frameworks can match megakernel performance. Proposes MegaOps, a framework that overlaps kernel execution on separate CUDA streams by synchronizing on individual data tiles instead of entire kernels. Achieves 1.09x-1.10x the decode throughput of the best-performing baseline on H100 GPUs.
+* `serving` `kernel` `MoE` [GC-MoE on SM120: Overlapping Expert-Parallel Token Dispatch with Warp-Level FP8xFP4 Block-Scaled MMA on Consumer Blackwell](http://arxiv.org/abs/2611.16219v1)
+  > **TL;DR**: Optimizes expert-parallel MoE model inference latency on consumer GPUs by designing a high-performance kernel using SM120's warp-level FP8xFP4 tensor cores and a novel token dispatch/caching system. Achieves 1.52x speedup over FlashInfer on an 8xRTX PRO 5000 setup.
+* `serving` `offloading` [Fast Serverless LLM Cold Starts by Sharing and Prewarming Startup Work](http://arxiv.org/abs/2611.16180v1)
+  > **TL;DR**: Addresses slow LLM cold starts in serverless platforms. Proposes Cairn, which shares compiled engine artifacts and weights via a CXL memory pool and pre-warms model-independent setup. Achieves 4.1-5.2x faster cold starts and 64% lower median TTFT.
+
+### 2026-11-11
+* `training` `kernel` `hardware` [Starscream: Reimagining LLM Sharding on AMD Instinct GPUs with GPU Partitioning](http://arxiv.org/abs/2611.15951v1)
+  > **TL;DR**: Addresses performance degradation of LLM sharding strategies on modern multi-die GPUs with NUMA characteristics. Proposes Starscream, which introduces an orthogonal intra-GPU sharding dimension to preserve kernel shapes and minimize communication. Achieves up to 4x speedup for attention kernels on AMD MI300X.
+* `serving` `quantization` [Smart Model Routing for Order-of-Magnitude LLM Cost Reduction](http://arxiv.org/abs/2611.15911v1)
+  > **TL;DR**: Proposes a model routing framework to reduce LLM inference costs by directing queries to the cheapest model predicted to answer adequately. Uses a threshold-based policy and calibration. Achieves up to an order-of-magnitude cost reduction over always using frontier models under specific pricing.
+* `MoE` `offloading` [Fewer Expert Transfers Without Changing Routing: Expert Eviction for MoE Offloading](http://arxiv.org/abs/2611.15842v1)
+  > **TL;DR**: Investigates how to reduce CPU-to-GPU expert copies in offloaded MoE models. Proposes an eviction policy that removes the expert whose next use is farthest in the future. Copies 2.1x fewer experts than LRU at no quality loss, achieving within 3.5% of the optimal copy count.
+* `MoE` `training` `sparse` [MoE Pretraining:Parallelism Layout Changes the Model, Not Quality](http://arxiv.org/abs/2611.15271v1)
+  > **TL;DR**: Investigates how parallelism layout affects model reproducibility during MoE pretraining. Compares models trained with different parallel strategies and random seeds using fp32/16 on CPUs/GPUs. Finds layout changes model parameters (90% routing differences) but not final quality, with routing instability driven by near-tie expert selections.
+* `serving` `kernel` [Read Once, Answer Many: Parallel Prompting for Shared-Context LLM Inference](http://arxiv.org/abs/2611.15130v1)
+  > **TL;DR**: Addresses the memory bandwidth bottleneck when decoding multiple questions on the same long document in LLM inference. Proposes Parallel Prompting, which decodes questions as independent streams with a stream-id attention mask to share KV cache reads. Achieves 3.7x-6.0x faster decoding than stock SGLang on A100 and A6000 GPUs.
+* `serving` `agent` `offloading` [Recompute or Restore? Host-Tier KV for Multi-Model Agent Workflows on a Static-Graph NPU Serving Stack](http://arxiv.org/abs/2611.15126v1)
+  > **TL;DR**: Investigates whether to recompute or restore evicted KV cache prefixes for multi-agent workflows on a static-graph NPU. Proposes a host-DRAM tier with a scheduler-aware event model to restore prefixes via offloading. Raises workflow SLO attainment from 22.8% to 100% in overload conditions.
+* `serving` `multi-modal` `edge` [Scaling VLA Serving Under Robotic Execution Constraints](http://arxiv.org/abs/2611.14969v1)
+  > **TL;DR**: Addresses the challenge of efficiently serving Vision-Language-Action models for a fleet of physically-constrained robots. Proposes XInfer, a system that coordinates heterogeneous computation and manages interference to balance GPU efficiency with real-time feedback. Achieves 1.26-3.75x higher effective robot capacity than state-of-the-art systems.
+* `inference` `kernel` [SubGPU Pipelining: Intra-GPU Fine-Grained Spatial Parallelism for LLM Inference](http://arxiv.org/abs/2611.14904v1)
+  > **TL;DR**: Addresses underutilization of GPU resources during LLM inference. Proposes SubGPU Pipelining, a fine-grained spatial execution model that partitions and pipelines operator graphs across SM pools. Reduces decoder iteration time by 10.33% and improves DRAM throughput utilization.
+
 ### 2026-11-10
 * `serving` `offloading` [Can KV Cache Be Reused Across Model Updates? A DeepSeek-V4-Flash Case Study](http://arxiv.org/abs/2611.14051v1)
   > **TL;DR**: Investigates if KV caches from previous model versions can be reused for faster inference on updated models. Studies Direct Cache Reuse on DeepSeek-V4-Flash updates, measuring Functional Cache Divergence. Achieves median time-to-first-token speedups of 2.10–5.08x on QA benchmarks despite behavioral changes.
