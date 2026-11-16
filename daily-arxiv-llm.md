@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1800-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.11.14-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1810-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.11.15-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,28 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-11-13
+* `serving` `agent` [Callo: Serving Cache-Miss Requests with Speculative Decoding on Invalidated KV under Prefill-Decode Disaggregation](http://arxiv.org/abs/2611.18459v1)
+  > **TL;DR**: Addresses latency from frequent KV cache invalidation in agent sessions. Proposes Callo, a disaggregated system that speculatively decodes using invalidated KV caches and verifies drafts against the exact state. Achieves 1.05-1.19x speedup over vLLM.
+* `networking` `kernel` `serving` [Compiling Specialized GPU-Initiated Networking](http://arxiv.org/abs/2611.18145v1)
+  > **TL;DR**: Addresses the optimization of GPU-initiated communication in ML systems. Proposes Obaleth, a compiler that co-optimizes computation and communication in a kernel's IR. On 256 H100 GPUs, runs all-to-all 2.3x faster than NCCL GIN and serves a 235B model 1.29x faster.
+* `training` `networking` `kernel` [Zero-SM NCCL: A Systematic Guide to Designing and Deploying SM-Free GPU Communication](http://arxiv.org/abs/2611.18075v1)
+  > **TL;DR**: Presents Zero-SM NCCL, a communication library that bypasses GPU SMs to reduce interference with computation. It uses copy engines and a CPU proxy for RDMA. In FSDP training, it accelerates pipeline parallelism by up to 15% and improves overlapped GEMM performance.
+* `RL` `serving` `training` [TIDE: Reclaiming Lost Performance In On-Policy Reinforcement Learning](http://arxiv.org/abs/2611.17924v1)
+  > **TL;DR**: Addresses resource under-utilization in synchronous, on-policy RL post-training of LLMs caused by long-tail rollouts. Proposes TIDE, which dynamically repurposes rollout GPUs for training and migrates rollouts between engines to boost throughput. Achieves a 1.36x end-to-end speedup over colocated baselines.
+* `networking` `agent` `offline` [OrbitWeaver: LLM Agent Planning with Simulation Feedback for Optically Interconnected Orbital GPU Clusters](http://arxiv.org/abs/2611.17850v1)
+  > **TL;DR**: Presents OrbitWeaver, an offline LLM agent planner to optimize rank placement and communication order for orbital GPU clusters with optical interconnects. The agent uses simulation feedback to coordinate link access and reduce contention, achieving a 6.2-33.5% reduction in mean job completion time.
+* `hardware` `kernel` [SIMTurn: Lightweight Divergent Subgroup Scheduling for Intra-Warp Synchronization](http://arxiv.org/abs/2611.17827v1)
+  > **TL;DR**: Addresses deadlock from intra-warp synchronization in SIMT execution. Proposes SIMTurn, a compiler-hardware co-design using yield instructions and bounded subgroup pools for context switching. Achieves up to 2.7x speedup over baseline while adding only 17-24% scheduler area overhead versus 39-91% for full ITS.
+* `training` `storage` `kernel` [TailGuard-GDS: Tail-Safe Control of GPU Storage Data Movement](http://arxiv.org/abs/2611.17824v1)
+  > **TL;DR**: Investigates how to minimize tail latency in GPU data movement for distributed training. Proposes TailGuard-GDS, a runtime that dynamically selects optimal I/O delivery plans per application phase based on real-time profiling. Reduces FSDP step p95 latency by 18.4% and GPU-idle p95 by 25.3% versus the strongest fixed path.
+* `serving` `edge` `networking` [Superfluid: Local AI Server for Distributed LLM Inference](http://arxiv.org/abs/2611.17753v1)
+  > **TL;DR**: Presents Superfluid, a local AI server for distributed LLM inference that pools heterogeneous devices into a unified service. It uses a scheduler for request prioritization and shared prompt computation. Achieves median first-token latency of 12s across 6 machines and scales to 10.6k tok/s on 12 M3 Ultras.
+* `kernel` `training` [AscendGYM: A Cost-Aware Kernel Optimization Benchmark for Real-World Workloads on Ascend NPUs](http://arxiv.org/abs/2611.17621v1)
+  > **TL;DR**: Presents AscendGYM, a benchmark for cost-aware kernel optimization on Ascend NPUs using kernels and tensor shapes from real LLM training/inference workloads. Introduces Speedup-Token Score to measure performance gain relative to optimization cost. The benchmark contains 48 kernels across three difficulty levels.
+* `training` `storage` `kernel` [TailGuard-GDS: Tail-Safe Control of GPU Storage Data Movement](http://arxiv.org/abs/2611.17824v1)
+  > **TL;DR**: Addresses tail-latency of GPU data movement during model training. Presents TailGuard-GDS, a runtime that dynamically selects optimal I/O paths (e.g., GPUDirect Storage vs. host staging) for PyTorch FSDP/DeepSpeed workloads. Reduces training step p95 latency by up to 42.6% compared to fixed-path baselines.
+
 ### 2026-11-12
 * `offline` `agent` `serving` [Reducing Batch Makespan for LLM Agent Workloads through Inference-Environment Coordination](http://arxiv.org/abs/2611.16661v1)
   > **TL;DR**: Presents coordinated optimizations to reduce the makespan of batch LLM agent workloads, which alternate between inference and environment interaction. Methods include a resource model for GPU allocation, trajectory-aware scheduling, and Chain-Advancing Action Scheduling (CAAS). Achieves makespan reductions of 10.4% to 65.0% on various benchmarks.
