@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1810-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.11.15-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1814-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.11.16-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,18 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-11-16
+* `training` `quantization` `kernel` [CertiSum: Bitwise-Identical MXFP4 Training Across Platforms and Parallelism Layouts](http://arxiv.org/abs/2611.21584v1)
+  > **TL;DR**: Presents CertiSum to ensure bitwise-deterministic training with MXFP4 quantization across hardware and parallelism layouts. The method certifies native matrix multiplication results for exactness and recomputes uncertified outputs using exact kernels. Adds 11.8-60.5% latency vs. non-exact MXFP4 while achieving speedups of up to 1.70x over deterministic BF16.
+* `serving` `multi-modal` [A Matter of Stages: Energy-Latency Trade-offs in Multimodal LLM Serving](http://arxiv.org/abs/2611.21165v1)
+  > **TL;DR**: Explores the energy-latency trade-offs of disaggregating visual encoding, prefill, and decode stages for multimodal LLM serving. Systematically characterizes fused vs. EPD-disaggregated architectures and introduces a budgeted frequency exploration strategy. EPD disaggregation reduces GPU energy per request by 13.3-37.0% at nearly identical throughput.
+* `networking` `inference` `edge` [Network-Native DNN Architecture Synthesis for Distributed Inference](http://arxiv.org/abs/2611.20824v1)
+  > **TL;DR**: Proposes network-native DNN architecture synthesis, where the physical network topology dictates the neural network structure for distributed inference. Uses an LP-based algorithm to allocate computation across nodes under resource constraints. Achieves up to 10.69% higher accuracy than a model-first baseline under matched network deadlines.
+
+### 2026-11-15
+* `serving` `offloading` `thinking` [Making Preemption Productive in Long-Output LLM Serving](http://arxiv.org/abs/2611.20106v1)
+  > **TL;DR**: Addresses KV cache thrashing from preemption during long-output LLM serving. Proposes Stint, which stores and restores fixed-length KV snapshots in CPU memory using fused kernels and age-based readmission. Reduces p99 time per output token by 50.7% and increases throughput by 12.0%.
+
 ### 2026-11-13
 * `serving` `agent` [Callo: Serving Cache-Miss Requests with Speculative Decoding on Invalidated KV under Prefill-Decode Disaggregation](http://arxiv.org/abs/2611.18459v1)
   > **TL;DR**: Addresses latency from frequent KV cache invalidation in agent sessions. Proposes Callo, a disaggregated system that speculatively decodes using invalidated KV caches and verifies drafts against the exact state. Achieves 1.05-1.19x speedup over vLLM.
