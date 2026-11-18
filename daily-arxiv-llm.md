@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1814-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.11.16-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1823-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.11.17-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,26 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-11-17
+* `training` `networking` `sparse` [SPICE: Sparse Parameter Gossip for LLM Pretraining](http://arxiv.org/abs/2611.23053v1)
+  > **TL;DR**: Addresses communication bottlenecks in decentralized LLM pretraining across limited bandwidth. Proposes SPICE, which uses sparse parameter gossip with error feedback for efficient peer-to-peer exchanges. Achieves higher throughput than DDP and dense gossip under bandwidth constraints.
+* `serving` `offloading` `kernel` [Storing the Gemma 4 K=V Cache Once: Exact Global-KV Memory Savings in a Paged Serving Engine with Unchanged Attention Kernels](http://arxiv.org/abs/2611.23035v1)
+  > **TL;DR**: Proposes storing a single projection for Gemma 4's KV cache instead of separate keys and values, leveraging the model's specific mathematical relationship. A modified paged attention kernel reads this compact cache via strided views. Reduces KV memory per request by 1.34-1.40x and increases decode throughput by up to 1.30x.
+* `agent` `offline` `kernel` [CodeReel: Accelerating Code-to-Video Agents with Exact Frame Reuse and Blocking-Aware Scheduling](http://arxiv.org/abs/2611.22967v1)
+  > **TL;DR**: Improves the efficiency of code-to-video agents by minimizing redundant frame rendering. Proposes CodeReel with exact frame reuse via command-based keys and a blocking-aware scheduler that runs checks and renders in parallel. Cuts agent wait time by 36.3% compared to a baseline parallel pipeline.
+* `serving` `kernel` `hardware` [SpecSearch: Towards Hardware-Aware Efficient Speculative Decoding](http://arxiv.org/abs/2611.22296v1)
+  > **TL;DR**: Presents SpecSearch, a hardware-aware search engine for optimizing speculative decoding configurations to maximize LLM inference throughput. It uses an analytical cost model and a Jev-based predictor to select draft lengths and precisions. Achieves up to 2.01x higher throughput than autoregressive decoding on vLLM.
+* `serving` `offloading` `kernel` [XM-Sparse: High-Throughput Sparse-Attention LLM Serving over Scale-up Memory Pools](http://arxiv.org/abs/2611.22280v1)
+  > **TL;DR**: Addresses the bottleneck of GPU HBM capacity for sparse-attention LLM serving. Proposes XM-Sparse, a system that aggressively offloads KV and index caches to scale-up memory pools using TMA-based retrieval and coordinated prefetching. Achieves up to 4.98x higher throughput than PCIe-based offloading.
+* `MoE` `serving` `networking` [Communicate the Change: Efficient Expert Parallelism via Activation Compression](http://arxiv.org/abs/2611.22215v1)
+  > **TL;DR**: Proposes EchoMoE to reduce MoE inference communication bottlenecks by compressing hidden state differences relative to a reference. Reduces inter-node communication volume by 58% and improves throughput by 22.6%, with minimal accuracy loss.
+* `training` `RL` `offloading` [TAILROLL: Tail-Aware Rollout Acceleration for RL-Based LLM Post-Training](http://arxiv.org/abs/2611.22206v1)
+  > **TL;DR**: Addresses the rollout bottleneck in RL post-training of LLMs caused by straggler responses. Proposes TAILROLL, an online scheduler with in-flight migration and sufficiency-gated termination to balance load and reduce idle time. Reduces rollout bubble ratio by 21-74% and cuts full step time by 21-22%.
+* `serving` `storage` `networking` [Collecting Infrastructure-Level Measures for Energy Analysis in Modern Computing Infrastructures](http://arxiv.org/abs/2611.22160v1)
+  > **TL;DR**: Proposes a methodology for cluster-wide, synchronous energy and performance data collection to analyze modern heterogeneous workloads. Designs a scalable pipeline aggregating metrics at 1 Hz from multiple infrastructure subsystems. Case study on LLM inference reveals system-level dynamics missed by localized measurement.
+* `serving` `offloading` `edge` [HyCoInfer: Cloud-Edge Collaborative Inference for Large Language Models on Heterogeneous GPU-FPGA Architectures](http://arxiv.org/abs/2611.22086v1)
+  > **TL;DR**: Proposes a hybrid cloud-edge LLM serving system, HyCoInfer, that offloads decoding to edge FPGAs. It uses load-aware request partitioning and optimizes KV cache transfer with compression to balance workloads. At 500 Mbps, it achieves 4.11x higher request goodput and reduces mean latency by 61.1%.
+
 ### 2026-11-16
 * `training` `quantization` `kernel` [CertiSum: Bitwise-Identical MXFP4 Training Across Platforms and Parallelism Layouts](http://arxiv.org/abs/2611.21584v1)
   > **TL;DR**: Presents CertiSum to ensure bitwise-deterministic training with MXFP4 quantization across hardware and parallelism layouts. The method certifies native matrix multiplication results for exactness and recomputes uncertified outputs using exact kernels. Adds 11.8-60.5% latency vs. non-exact MXFP4 while achieving speedups of up to 1.70x over deterministic BF16.
