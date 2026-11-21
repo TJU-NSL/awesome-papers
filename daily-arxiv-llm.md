@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1823-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.11.19-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1842-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.11.20-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,48 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-11-19
+* `serving` `offloading` [TideCache: Efficient Hybrid LLM Serving with Transparent Cache Management and Layer-Wise Streaming](http://arxiv.org/abs/2611.26619v1)
+  > **TL;DR**: Presents TideCache to optimize hybrid LLM serving with heterogeneous KV caches. It uses a transparent cache pool, layer-wise streaming of bounded-state layers, and dynamic scheduling. Achieves up to 2.04x higher throughput and 20-59% lower P50 latency compared to SGLang with HiCache.
+* `serving` `agent` `resource_management` [Held While Waiting: What LLM Agent Sessions Reserve on Serverless and Agent Runtimes](http://arxiv.org/abs/2611.26480v1)
+  > **TL;DR**: Identifies resource inefficiency in LLM agent runtimes where environments are exclusively reserved per conversation, mostly during waiting. Proposes sharing environments across conversations and smarter conversation closing. Simulation shows 64 shared conversations reduce environments by 59x with minimal latency impact.
+* `serving` `agent` `offloading` [Aggron: Aggressive Compression of Agentic KV Caches during Head-of-Line Stalls in the Request Queue](http://arxiv.org/abs/2611.26435v1)
+  > **TL;DR**: Addresses the KV cache capacity bottleneck in long, multi-turn LLM agent serving. Proposes Aggron, a system that performs aggressive, selective KV cache compression during head-of-line stalls using a separate summarization queue. Achieves a 27-31% reduction in P99 program latency at high load.
+* `serving` `kernel` `sparse` [Accelerating Mixture of Block Attention via Dynamic Routing, KV-Centric Execution and Runtime Pipelining](http://arxiv.org/abs/2611.26268v1)
+  > **TL;DR**: Improves inference efficiency for Mixture of Block Attention (MoBA) by co-designing dynamic routing, KV-centric execution, and runtime pipelining to decouple scheduling from retention granularity. Accelerates end-to-end generation by 1.20-1.60x over FlashMoBA with a higher RULER score.
+* `networking` `training` `hardware` [Towards Scale-Up Networking: Challenges and Open Questions](http://arxiv.org/abs/2611.26156v1)
+  > **TL;DR**: Analyzes communication bottlenecks in distributed AI training/inference systems. Derives requirements from parallelism strategies to evaluate scale-up fabrics (topologies, protocols, semantics). Provides a framework to assess trade-offs in performance, scalability, and cost for future interconnects.
+* `serving` `offloading` [Live Migration of Gated DeltaNet Requests: Exact Catch-Up and the Cost of Log Backlog](http://arxiv.org/abs/2611.26153v1)
+  > **TL;DR**: Presents a system for live migration of streaming LLM inference requests (Gated DeltaNet) between workers. Proposes compact update logs and exact catch-up methods for state transfer. Reduces median handoff gap from ~450 ms to 81 ms with 32-step replay at 10 MB/s.
+* `kernel` `serving` [AscMLA: Unlocking FP4 Efficiency for Long-Context MLA Decoding through Asymmetric Scaling](http://arxiv.org/abs/2611.26106v1)
+  > **TL;DR**: Proposes AscMLA, a method to enable efficient FP4 quantization for long-context multi-head latent attention (MLA) KV caches. Uses asymmetric scaling for K and V with pipelined scale delivery to avoid dequantization overhead. Achieves a 1.35x geometric-mean speedup over TRT-LLM's FP8 kernels.
+
+### 2026-11-18
+* `agent` `serving` `offloading` [TripleKV: Predict, Prefetch, Protect -- KV Cache Management for AI Agents](http://arxiv.org/abs/2611.25112v1)
+  > **TL;DR**: Addresses KV cache retrieval stalls during LLM agent inference by proposing TripleKV, a three-tier cache manager that prefetches KV blocks during tool execution. Reduces P95 time-to-first-token by up to 49% and critical-path SSD reads to under 10%.
+* `serving` `training` [Berth: SLO-Preserving GPU Sharing Without New Preemption](http://arxiv.org/abs/2611.25091v1)
+  > **TL;DR**: Proposes Berth, a user-space system for SLO-preserving GPU sharing between latency-sensitive LLM inference and best-effort training. Uses a preloaded shim to control when best-effort kernels are fed to the GPU, avoiding kernel/driver modifications. Achieves near-isolation SLO attainment while increasing best-effort throughput by 2.7-3.5x.
+* `serving` `offloading` `kernel` [Twindex: Index Cache Offloading with Coarse-to-Fine Selection for Long-Context Sparse-Attention Serving](http://arxiv.org/abs/2611.25078v1)
+  > **TL;DR**: Addresses the GPU memory bottleneck caused by indexer caches in long-context sparse-attention model serving. Proposes Twindex, a system that offloads the full indexer cache to host memory while keeping a learned, compact coarse-grained copy in HBM for candidate selection. Increases the number of concurrent requests by up to 3.03x at 1M tokens with minimal accuracy loss.
+* `MoE` `serving` `training` [Harvesting Expert-Parallel Bubbles for Fine-Tuning](http://arxiv.org/abs/2611.24496v1)
+  > **TL;DR**: Proposes BubbleTea, a colocation system that reclaims idle expert-parallel bubbles in MoE model serving for fine-tuning. Dynamically schedules fine-tuning chunks by predicting per-GPU bubbles from token assignments. Achieves 1.9-6.2x higher fine-tuning throughput than a state-of-the-art system with p90 latency within 10% of serving alone.
+* `serving` `kernel` [A Runtime System for Mitigating Crossbar Port Contention on SM-Partitioned GPUs](http://arxiv.org/abs/2611.24458v1)
+  > **TL;DR**: Investigates crossbar port contention for latency-critical LLM inference on GPUs with concurrent workloads. Proposes GPCPlace, a runtime system that dynamically chooses between spreading or packing workloads across GPU clusters. Improves latency-critical workload speed by 1.15x on average over baseline.
+* `kernel` `serving` [Dissecting an Unexplored SASS Control-Code Field: Barrier Exemption and Programmable Warp Priority](http://arxiv.org/abs/2611.24437v1)
+  > **TL;DR**: Investigates an unexplored GPU ISA control code for barrier exemption and programmable warp priority. Proposes a binary optimizer to insert these codes post-compilation, improving warp scheduling. Speeds up end-to-end LLM inference in vLLM by up to 3.6%.
+* `training` `diffusion` [OpenGNS: An Open Dataset of the Gradient Noise Scale across Vision, Language, and Diffusion Models](http://arxiv.org/abs/2611.24331v1)
+  > **TL;DR**: Presents OpenGNS, a dataset of Gradient Noise Scale measurements for studying training dynamics. Analyzes GNS trends across vision, language, and diffusion model families using Maximal Update Parameterization. Finds GNS acts as a stable 'training temperature' under muP scaling.
+* `serving` `training` `offloading` [eFAIR: Fair LLM Serving under Hourly Electricity Commitments](http://arxiv.org/abs/2611.24119v1)
+  > **TL;DR**: Presents eFAIR, an online scheduler for fair LLM serving under hourly electricity constraints. It coordinates request dispatching, power budgeting, and GPU frequency scaling via a leximin-optimal normalized-throughput target. Improves the 10th percentile normalized throughput by 28.0%-31.0% over baselines while adhering to energy budgets.
+* `serving` `edge` `networking` [LEDGE: An Efficient Simulator for Distributed LLM Serving on Heterogeneous Edge Devices](http://arxiv.org/abs/2611.24085v1)
+  > **TL;DR**: Presents LEDGE, a lightweight simulator for distributed LLM serving on heterogeneous edge devices. It uses event graphs and pre-calibrated performance models to explore placements and predict latency without tensor execution. Achieves 135.3x aggregate speedup over physical inference with a 3.6% latency MAPE.
+* `serving` `kernel` `MoE` [A Fast, Programmable GPU-to-CPU Invocation Layer for GPU-Initiated Communication](http://arxiv.org/abs/2611.23848v1)
+  > **TL;DR**: Investigates GPU-initiated communication for improving workload performance. Proposes KIWI, a programmable reverse-offload framework enabling custom communication operations. Reduces per-output token time in vLLM by up to 29% for mixture-of-experts models.
+* `serving` `agent` `offloading` [TripleKV: Predict, Prefetch, Protect -- KV Cache Management for AI Agents](http://arxiv.org/abs/2611.25112v1)
+  > **TL;DR**: Addresses the problem of KV cache management overheads for LLM agents with large, concurrent contexts. Proposes TripleKV, a three-tier cache system that predicts tool completion to prefetch KV blocks from SSD to DRAM, avoiding GPU stalls. Reduces critical-path SSD reads from 45-76% to under 10% and cuts P95 TTFT by up to 49%.
+* `serving` `training` `MoE` [Harvesting Expert-Parallel Bubbles for Fine-Tuning](http://arxiv.org/abs/2611.24496v1)
+  > **TL;DR**: Presents BubbleTea, a system that colocates fine-tuning within the expert-parallel bubbles of serving MoE LLMs. It predicts per-GPU idle time from token routing and fills it with fine-tuning chunks that reuse loaded weights. Achieves 1.9-6.2x faster fine-tuning throughput than a baseline while keeping p90 latency increase below 10%.
+
 ### 2026-11-17
 * `training` `networking` `sparse` [SPICE: Sparse Parameter Gossip for LLM Pretraining](http://arxiv.org/abs/2611.23053v1)
   > **TL;DR**: Addresses communication bottlenecks in decentralized LLM pretraining across limited bandwidth. Proposes SPICE, which uses sparse parameter gossip with error feedback for efficient peer-to-peer exchanges. Achieves higher throughput than DDP and dense gossip under bandwidth constraints.
