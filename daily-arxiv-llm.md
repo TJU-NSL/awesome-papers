@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1842-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.11.21-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1843-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.11.22-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,10 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-11-20
+* `serving` `agent` `offloading` [Contexture: Runtime Context Eviction for High-Throughput Agent Serving](http://arxiv.org/abs/2611.26980v1)
+  > **TL;DR**: Addresses GPU KV cache pressure from long agent histories. Proposes Contexture, a runtime context eviction system that identifies and removes superseded tool outputs to manage shared cache. Increases throughput under SLO by 20-73% and reduces GPU energy by up to 11%.
+
 ### 2026-11-19
 * `serving` `offloading` [TideCache: Efficient Hybrid LLM Serving with Transparent Cache Management and Layer-Wise Streaming](http://arxiv.org/abs/2611.26619v1)
   > **TL;DR**: Presents TideCache to optimize hybrid LLM serving with heterogeneous KV caches. It uses a transparent cache pool, layer-wise streaming of bounded-state layers, and dynamic scheduling. Achieves up to 2.04x higher throughput and 20-59% lower P50 latency compared to SGLang with HiCache.
