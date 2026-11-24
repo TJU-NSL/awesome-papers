@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1843-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.11.22-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1858-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.11.23-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,42 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-11-23
+* `training` `MoE` `networking` [A Pipeline-Parallel System for Depth-Recurrent Models](http://arxiv.org/abs/2611.30581v1)
+  > **TL;DR**: Presents Loop-PP, a pipeline parallelism system for depth-recurrent (looped) models with cyclic stage graphs. It introduces a new scheduler and communication protocol to handle multiple stage visits per micro-batch. Reduces peak memory by up to 32.8% and increases throughput by 12.7% for 8B-60B MoE models.
+* `MoE` `kernel` `serving` [GC-MoE K3: A Green-Context Role Graph for Latent Mixture-of-Experts Decode](http://arxiv.org/abs/2611.30542v1)
+  > **TL;DR**: Proposes GC-MoE K3, a CUDA Graph-based scheduler for Mixture-of-Experts layers that optimizes the compute graph by splitting roles and overlapping operations. Achieves a mean speedup of 1.1324x against an SGLang-style reference on Blackwell GPUs.
+* `serving` `edge` [CGSpec: Consistency-Guided Speculative Decoding with Overlap-Aware Verification Scheduling for Edge-Cloud Inference](http://arxiv.org/abs/2611.30455v1)
+  > **TL;DR**: Proposes CGSpec, a framework for multi-client edge-cloud speculative decoding that minimizes draft disagreement and improves verifier scheduling. It uses consistency-guided draft tree construction and an overlap-aware scheduler for verification. Achieves up to 33.0% higher mean client throughput than SOTA methods.
+* `serving` `multi-modal` `edge` [MotionServe: Efficient Multi-Robot Serving by Exploiting Robot Execution Slack](http://arxiv.org/abs/2611.30083v1)
+  > **TL;DR**: Presents MotionServe, a shared-GPU serving system for multi-robot VLA policies that coordinates observation timing with batch formation to avoid robot stalls. Uses motion-aware triggers and SlackBatch scheduling to overlap inference with execution. At 96 robots, reduces mean stall per episode by 43.4%.
+* `kernel` `serving` `quantization` [Fast 4-bit KV-Cache Decoding on Hopper GPUs: Why Existing Kernels Are Slow and How to Fix Them](http://arxiv.org/abs/2611.30027v1)
+  > **TL;DR**: Proposes a new GPU kernel for 4-bit KV-cache decoding on Hopper GPUs to overcome software decoding bottlenecks. The design overlaps data loading with computation via TMA and optimized warp scheduling. Achieves 67-75% of peak bandwidth and decodes 1.12-1.64x faster per step than FP8 in vLLM.
+* `hardware` `serving` [Measuring GPU Memory Traffic on the NVIDIA GB10 Without C2C Telemetry](http://arxiv.org/abs/2611.29915v1)
+  > **TL;DR**: Presents a method to measure GPU memory traffic on NVIDIA's GB10 system without C2C telemetry, using L2 sector counters. Applied to Mistral 7B inference, the tool measures 13.47 GiB read per token at 83% of peak memory bandwidth.
+* `agent` `serving` `offloading` [TideSand: Performance-Accurate Sandbox Multiplexing for LLM Agents](http://arxiv.org/abs/2611.31118v1)
+  > **TL;DR**: Presents TideSand, a system for multiplexing resources in LLM agent sandboxes. It uses agent-aware scheduling, speculative memory swapping, and selective rollback to reduce contention. Achieves 3.8-10x higher throughput than strict reservation while maintaining tool-call fidelity.
+
+### 2026-11-22
+* `serving` `agentic` [NoeVera: Can Knowledge Guide Experiments and Experiments Refine Knowledge?](http://arxiv.org/abs/2611.29255v1)
+  > **TL;DR**: Presents NoeVera, an agentic system that uses a knowledge base to guide LLM serving configuration experiments. It employs decision-aware retrieval and role-specific agents to invoke simulators, reducing search iterations. Achieves within 5% of optimum in a median of 6-7 simulator calls and 1.30x vLLM throughput.
+* `kernel` `sparse` `serving` [Zarc: Exact Nearest Neighbors over a Billion Vectors in Seconds](http://arxiv.org/abs/2611.29252v1)
+  > **TL;DR**: Presents Zarc, a system for exact nearest neighbor search using a proof-based vector filtering method. It stores compact proof rows in GPU memory and fetches full vectors for candidates, enabling exact search on billion-scale datasets. Achieves 1.1-second query time for 10k queries on 1B vectors, versus 5 minutes for exhaustive search.
+* `training` `RL` [ARC: Adaptive Rollout Control for Efficient Synchronous LLM Reinforcement Learning](http://arxiv.org/abs/2611.29156v1)
+  > **TL;DR**: Addresses accelerator idling and wasted computation in synchronous RL for LLMs. Proposes ARC, a closed-loop architecture with calibrated backfill and deferred completion to dynamically manage rollout groups. Reduces rollout time by 37.4% and improves throughput by 50.1%.
+* `serving` `networking` [When Does Decomposition Help? Empirical Study on Workload-Architecture Affinity in LLM Inference Serving](http://arxiv.org/abs/2611.29104v1)
+  > **TL;DR**: Empirically studies when decomposed architectures (e.g., pipeline parallelism, disaggregation) improve LLM inference serving efficiency. Compares five serving organizations on fixed hardware, finding a workload-architecture affinity. A hybrid pipeline-based design reduces time to first token for long prompts by 58-59%.
+
+### 2026-11-21
+* `serving` `offloading` [HiPerfCC-KVCache: Accelerating Confidential LLM Serving with Hierarchical KV Caching](http://arxiv.org/abs/2611.28702v1)
+  > **TL;DR**: Addresses the performance degradation of hierarchical KV caching under GPU confidential computing. Proposes HiPerfCC-KVCache with optimized resource management and parallelized transfers using auxiliary contexts. Achieves up to 2.72x higher throughput and 59% lower time to first token.
+* `serving` `sparse` `offloading` [IndexerStage: Staging Indexer-K across Memory Tiers for Sparse-Attention LLM Serving](http://arxiv.org/abs/2611.28625v1)
+  > **TL;DR**: Addresses GPU memory bottleneck in sparse-attention LLM serving from Indexer-K state. Proposes IndexerStage, a runtime that stages state across memory tiers with joint admission control for transfers. Increases batch size by up to 23.08% and decode throughput by up to 1.31x.
+* `MoE` `offloading` `serving` [CCAMoE: Cache-Conditioned Adaptive Inference for Offloaded MoE](http://arxiv.org/abs/2611.28550v1)
+  > **TL;DR**: Addresses decoding latency for memory-constrained MoE models using expert offloading. Proposes CCAMoE, a runtime that combines cache-conditioned speculative decoding and coordinated expert-cache updates, eliminating separate draft weights. Achieves up to 2.33x speedup over baselines.
+* `serving` `sparse` `kernel` [DisSparse: Pipelined Top-$p$ Sparse Attention for Long-Context LLM Serving](http://arxiv.org/abs/2611.28522v1)
+  > **TL;DR**: Proposes DisSparse, a system for efficient long-context LLM serving by replacing fixed-budget top-k with adaptive top-p sparse attention. Decouples selection from scheduling, pipelines computation, and introduces fast histogram-based kernels and token relocation. Achieves 1.17-1.80x speedup in sparsity analysis over top-p baselines.
+
 ### 2026-11-20
 * `serving` `agent` `offloading` [Contexture: Runtime Context Eviction for High-Throughput Agent Serving](http://arxiv.org/abs/2611.26980v1)
   > **TL;DR**: Addresses GPU KV cache pressure from long agent histories. Proposes Contexture, a runtime context eviction system that identifies and removes superseded tool outputs to manage shared cache. Increases throughput under SLO by 20-73% and reduces GPU energy by up to 11%.
