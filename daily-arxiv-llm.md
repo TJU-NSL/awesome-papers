@@ -3,8 +3,8 @@
 
 # Daily Arxiv Papers (LMSys)
 
-![Static Badge](https://img.shields.io/badge/total_papers-1872-blue?logo=gitbook)
-![Static Badge](https://img.shields.io/badge/update-2026.11.24-red?logo=fireship)
+![Static Badge](https://img.shields.io/badge/total_papers-1876-blue?logo=gitbook)
+![Static Badge](https://img.shields.io/badge/update-2026.11.25-red?logo=fireship)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.DC-green)](https://arxiv.org/list/cs.DC/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.OS-green)](https://arxiv.org/list/cs.OS/recent)
 [![Static Badge](https://img.shields.io/badge/arXiv-cs.LG-green)](https://arxiv.org/list/cs.LG/recent)
@@ -20,6 +20,16 @@
 **🔖TAGS**:`serving` `training` `offline` `thinking` `RL` `MoE` `RAG` `video` `multi-modal` `sparse` `quantization` `offloading` `hardware` `storage` `kernel` `diffusion` `agentic` `edge` `networking` `Agent` `GUI`
 
 ---
+### 2026-11-25
+* `serving` `MoE` `quantization` [PipeAxes: Decoupling Compute and Communication Granularities for Pipeline-Parallel LLM Serving](http://arxiv.org/abs/2611.34615v1)
+  > **TL;DR**: Proposes PipeAxes, a pipeline-parallel LLM serving system that decouples compute and communication granularities. It uses layer-wise prefill slicing, fused Hadamard-INT4 compression, and latency-aware scheduling. Achieves 512 ms p95 TTFT (vs. 129.8 s baseline) in a mixed 64K-context workload.
+* `hardware` `kernel` `serving` [Libtt: A Compiler and Runtime for Tenstorrent Processors](http://arxiv.org/abs/2611.34273v1)
+  > **TL;DR**: Introduces libtt, a compiler and runtime for Tenstorrent processors to run PyTorch, JAX, and XLA-based workloads. The system provides a PJRT-compatible interface and new optimizations for the hardware. It supports ML workloads including SGLang for serving, achieving functional parity with existing test suites.
+* `serving` `quantization` [CoordRoute: Coordinated Multi-Model Routing for Maximum Compute-Budget Utility](http://arxiv.org/abs/2611.34161v1)
+  > **TL;DR**: Investigates how to optimally route requests across LLMs under a shared compute budget. Proposes CoordRoute, a coordinated router with relative demand prediction, a lookahead solver, and budget-aware runtime correction. Achieves an 18.72% improvement in total satisfaction over existing routers.
+* `serving` [Asymmetric Speculative Decoding: Unlocking In-Context Learning in Draft Models](http://arxiv.org/abs/2611.34010v1)
+  > **TL;DR**: Proposes AsymSpec, a speculative decoding variant that increases acceptance rates by providing different prompts to draft and target models. The draft model's prompt includes example solutions to reformulate its task from reasoning to simulation. Achieves up to 4.95× speedup over autoregressive decoding.
+
 ### 2026-11-24
 * `kernel` `hardware` [Estimating GPU Roofline Arithmetic Intensity with Off-the-Shelf LLMs and Compiler Artifacts](http://arxiv.org/abs/2611.32975v1)
   > **TL;DR**: Investigates if LLMs can estimate GPU Roofline arithmetic intensity without hardware access. Uses off-the-shelf LLMs with compiler artifacts to analyze kernels, improving the share of estimates within 1.20x of profiled values from 8-14% to 26-32%.
